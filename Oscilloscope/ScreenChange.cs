@@ -8,19 +8,5 @@ namespace Oscilloscope
 {
     class ScreenChange
     {
-        void swapTabsPositions()
-        {
-
-        }
-
-        void closeMainTabs()
-        {
-
-        }
-
-        void openMainTabs()
-        {
-
-        }
     }
 }

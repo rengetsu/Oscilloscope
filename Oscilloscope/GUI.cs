@@ -42,5 +42,10 @@ namespace Oscilloscope
             //  Define MDI parent form
             triggerform.Show();
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
