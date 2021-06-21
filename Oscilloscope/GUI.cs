@@ -17,7 +17,7 @@ namespace Oscilloscope
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void downMenu_ChannelsButton_Click(object sender, EventArgs e)
         {
             //  Child Form Object
             Channels_Form channelsform = new Channels_Form();
@@ -30,7 +30,7 @@ namespace Oscilloscope
             channelsform.Show();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void downMenu_AcquireButton_Click(object sender, EventArgs e)
         {
             //  Child From Object
             Trigger_Form triggerform = new Trigger_Form();
@@ -41,11 +41,6 @@ namespace Oscilloscope
 
             //  Define MDI parent form
             triggerform.Show();
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }
