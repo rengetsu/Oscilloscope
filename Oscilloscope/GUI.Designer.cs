@@ -126,8 +126,12 @@ namespace Oscilloscope
             this.downMenu_TriggerButton = new System.Windows.Forms.PictureBox();
             this.rightMainTab = new System.Windows.Forms.Panel();
             this.rightTopTab = new System.Windows.Forms.Panel();
+            this.iconPanel = new System.Windows.Forms.PictureBox();
+            this.screenFramePanel = new System.Windows.Forms.Panel();
             this.leftMainTab.SuspendLayout();
             this.mainTab.SuspendLayout();
+            this.screenPanel.SuspendLayout();
+            this.measurementsPanel.SuspendLayout();
             this.permanentControlsPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ChannelFour_OffsetButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ChannelFour_PositionButton)).BeginInit();
@@ -208,6 +212,7 @@ namespace Oscilloscope
             ((System.ComponentModel.ISupportInitialize)(this.downMenu_SaveButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.downMenu_TriggerButton)).BeginInit();
             this.rightMainTab.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPanel)).BeginInit();
             this.SuspendLayout();
             // 
             // leftMainTab
@@ -249,6 +254,7 @@ namespace Oscilloscope
             // screenPanel
             // 
             this.screenPanel.BackColor = System.Drawing.Color.Black;
+            this.screenPanel.Controls.Add(this.screenFramePanel);
             this.screenPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.screenPanel.ForeColor = System.Drawing.SystemColors.ControlText;
             this.screenPanel.Location = new System.Drawing.Point(0, 68);
@@ -277,6 +283,7 @@ namespace Oscilloscope
             // measurementsPanel
             // 
             this.measurementsPanel.BackColor = System.Drawing.Color.Black;
+            this.measurementsPanel.Controls.Add(this.iconPanel);
             this.measurementsPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.measurementsPanel.Location = new System.Drawing.Point(0, 439);
             this.measurementsPanel.Name = "measurementsPanel";
@@ -1301,6 +1308,25 @@ namespace Oscilloscope
             this.rightTopTab.Size = new System.Drawing.Size(230, 56);
             this.rightTopTab.TabIndex = 1;
             // 
+            // iconPanel
+            // 
+            this.iconPanel.Image = ((System.Drawing.Image)(resources.GetObject("iconPanel.Image")));
+            this.iconPanel.Location = new System.Drawing.Point(568, 3);
+            this.iconPanel.Margin = new System.Windows.Forms.Padding(0);
+            this.iconPanel.Name = "iconPanel";
+            this.iconPanel.Size = new System.Drawing.Size(239, 104);
+            this.iconPanel.TabIndex = 0;
+            this.iconPanel.TabStop = false;
+            // 
+            // screenFramePanel
+            // 
+            this.screenFramePanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.screenFramePanel.Location = new System.Drawing.Point(3, 6);
+            this.screenFramePanel.Margin = new System.Windows.Forms.Padding(0);
+            this.screenFramePanel.Name = "screenFramePanel";
+            this.screenFramePanel.Size = new System.Drawing.Size(804, 346);
+            this.screenFramePanel.TabIndex = 0;
+            // 
             // GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1314,6 +1340,8 @@ namespace Oscilloscope
             this.Text = "Form1";
             this.leftMainTab.ResumeLayout(false);
             this.mainTab.ResumeLayout(false);
+            this.screenPanel.ResumeLayout(false);
+            this.measurementsPanel.ResumeLayout(false);
             this.permanentControlsPanel.ResumeLayout(false);
             this.permanentControlsPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ChannelFour_OffsetButton)).EndInit();
@@ -1395,6 +1423,7 @@ namespace Oscilloscope
             ((System.ComponentModel.ISupportInitialize)(this.downMenu_SaveButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.downMenu_TriggerButton)).EndInit();
             this.rightMainTab.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.iconPanel)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1416,9 +1445,11 @@ namespace Oscilloscope
 
         //  Screen Panel
         private System.Windows.Forms.Panel screenPanel;                                 //  Screen Panel
+        private System.Windows.Forms.Panel screenFramePanel;                            //  Screen Frame Panel
 
         //  Measurements Panel
         private System.Windows.Forms.Panel measurementsPanel;                           //  Measurements Panel
+        private System.Windows.Forms.PictureBox iconPanel;                              //  Icon Panel
 
         //  Permament Controls Panel
         private System.Windows.Forms.Panel permanentControlsPanel;                      //  Permanent Controls Panel
