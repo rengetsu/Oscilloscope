@@ -19,6 +19,7 @@ namespace Oscilloscope
 
         private void downMenu_ChannelsButton_Click(object sender, EventArgs e)
         {
+            leftMainTab.Visible = true;
             //  Child Form Object
             Channels_Form channelsform = new Channels_Form();
             channelsform.TopLevel = false;
@@ -32,6 +33,12 @@ namespace Oscilloscope
 
         private void downMenu_AcquireButton_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void downMenu_TriggerButton_Click(object sender, EventArgs e)
+        {
+            rightMainTab.Visible = true;
             //  Child From Object
             Trigger_Form triggerform = new Trigger_Form();
             triggerform.TopLevel = false;
@@ -41,6 +48,51 @@ namespace Oscilloscope
 
             //  Define MDI parent form
             triggerform.Show();
+        }
+
+        private void downMenu_DisplayButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void downMenu_SaveButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void downMenu_MarkerButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void downMenu_MeasureButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void downMenu_MathButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void downMenu_HistogramButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void downMenu_DiagramButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void downMenu_MaskButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void downMenu_UtilityButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
