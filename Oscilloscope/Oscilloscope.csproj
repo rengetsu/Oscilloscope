@@ -52,6 +52,7 @@
     <Compile Include="Channels_Form.Designer.cs">
       <DependentUpon>Channels_Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="Configuration.cs" />
     <Compile Include="GUI.cs">
       <SubType>Form</SubType>
     </Compile>
