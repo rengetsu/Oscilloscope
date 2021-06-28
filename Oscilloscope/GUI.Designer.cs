@@ -34,9 +34,21 @@ namespace Oscilloscope
             this.leftTopTab = new System.Windows.Forms.Panel();
             this.mainTab = new System.Windows.Forms.Panel();
             this.screenPanel = new System.Windows.Forms.Panel();
+            this.screenFramePanel = new System.Windows.Forms.Panel();
             this.topControlsPanel = new System.Windows.Forms.Panel();
             this.topMenuPanel = new System.Windows.Forms.Panel();
+            this.topMenu_ClearButton = new System.Windows.Forms.PictureBox();
+            this.topMenu_RunButton = new System.Windows.Forms.PictureBox();
+            this.topMenu_StopButton = new System.Windows.Forms.PictureBox();
+            this.topMenu_SingleButton = new System.Windows.Forms.PictureBox();
+            this.topMenu_AutoscaleButton = new System.Windows.Forms.PictureBox();
+            this.topMenu_DefaultButton = new System.Windows.Forms.PictureBox();
+            this.topMenu_BackButton = new System.Windows.Forms.PictureBox();
+            this.topMenu_ForwardButton = new System.Windows.Forms.PictureBox();
+            this.topMenu_CopyButton = new System.Windows.Forms.PictureBox();
+            this.topMenu_HelpButton = new System.Windows.Forms.PictureBox();
             this.measurementsPanel = new System.Windows.Forms.Panel();
+            this.iconPanel = new System.Windows.Forms.PictureBox();
             this.permanentControlsPanel = new System.Windows.Forms.Panel();
             this.ChannelFour_OffsetButton = new System.Windows.Forms.PictureBox();
             this.ChannelFour_PositionButton = new System.Windows.Forms.PictureBox();
@@ -126,12 +138,22 @@ namespace Oscilloscope
             this.downMenu_TriggerButton = new System.Windows.Forms.PictureBox();
             this.rightMainTab = new System.Windows.Forms.Panel();
             this.rightTopTab = new System.Windows.Forms.Panel();
-            this.iconPanel = new System.Windows.Forms.PictureBox();
-            this.screenFramePanel = new System.Windows.Forms.Panel();
             this.leftMainTab.SuspendLayout();
             this.mainTab.SuspendLayout();
             this.screenPanel.SuspendLayout();
+            this.topMenuPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.topMenu_ClearButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.topMenu_RunButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.topMenu_StopButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.topMenu_SingleButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.topMenu_AutoscaleButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.topMenu_DefaultButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.topMenu_BackButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.topMenu_ForwardButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.topMenu_CopyButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.topMenu_HelpButton)).BeginInit();
             this.measurementsPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPanel)).BeginInit();
             this.permanentControlsPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ChannelFour_OffsetButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ChannelFour_PositionButton)).BeginInit();
@@ -212,7 +234,6 @@ namespace Oscilloscope
             ((System.ComponentModel.ISupportInitialize)(this.downMenu_SaveButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.downMenu_TriggerButton)).BeginInit();
             this.rightMainTab.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPanel)).BeginInit();
             this.SuspendLayout();
             // 
             // leftMainTab
@@ -262,6 +283,15 @@ namespace Oscilloscope
             this.screenPanel.Size = new System.Drawing.Size(1040, 371);
             this.screenPanel.TabIndex = 17;
             // 
+            // screenFramePanel
+            // 
+            this.screenFramePanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.screenFramePanel.Location = new System.Drawing.Point(3, 6);
+            this.screenFramePanel.Margin = new System.Windows.Forms.Padding(0);
+            this.screenFramePanel.Name = "screenFramePanel";
+            this.screenFramePanel.Size = new System.Drawing.Size(804, 346);
+            this.screenFramePanel.TabIndex = 0;
+            // 
             // topControlsPanel
             // 
             this.topControlsPanel.BackColor = System.Drawing.Color.Black;
@@ -273,12 +303,115 @@ namespace Oscilloscope
             // 
             // topMenuPanel
             // 
-            this.topMenuPanel.BackColor = System.Drawing.Color.DimGray;
+            this.topMenuPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
+            this.topMenuPanel.Controls.Add(this.topMenu_ClearButton);
+            this.topMenuPanel.Controls.Add(this.topMenu_RunButton);
+            this.topMenuPanel.Controls.Add(this.topMenu_StopButton);
+            this.topMenuPanel.Controls.Add(this.topMenu_SingleButton);
+            this.topMenuPanel.Controls.Add(this.topMenu_AutoscaleButton);
+            this.topMenuPanel.Controls.Add(this.topMenu_DefaultButton);
+            this.topMenuPanel.Controls.Add(this.topMenu_BackButton);
+            this.topMenuPanel.Controls.Add(this.topMenu_ForwardButton);
+            this.topMenuPanel.Controls.Add(this.topMenu_CopyButton);
+            this.topMenuPanel.Controls.Add(this.topMenu_HelpButton);
             this.topMenuPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.topMenuPanel.Location = new System.Drawing.Point(0, 0);
             this.topMenuPanel.Name = "topMenuPanel";
             this.topMenuPanel.Size = new System.Drawing.Size(1040, 27);
             this.topMenuPanel.TabIndex = 15;
+            // 
+            // topMenu_ClearButton
+            // 
+            this.topMenu_ClearButton.Image = ((System.Drawing.Image)(resources.GetObject("topMenu_ClearButton.Image")));
+            this.topMenu_ClearButton.Location = new System.Drawing.Point(3, 1);
+            this.topMenu_ClearButton.Name = "topMenu_ClearButton";
+            this.topMenu_ClearButton.Size = new System.Drawing.Size(75, 24);
+            this.topMenu_ClearButton.TabIndex = 9;
+            this.topMenu_ClearButton.TabStop = false;
+            // 
+            // topMenu_RunButton
+            // 
+            this.topMenu_RunButton.Image = ((System.Drawing.Image)(resources.GetObject("topMenu_RunButton.Image")));
+            this.topMenu_RunButton.Location = new System.Drawing.Point(85, 3);
+            this.topMenu_RunButton.Margin = new System.Windows.Forms.Padding(0);
+            this.topMenu_RunButton.Name = "topMenu_RunButton";
+            this.topMenu_RunButton.Size = new System.Drawing.Size(81, 21);
+            this.topMenu_RunButton.TabIndex = 8;
+            this.topMenu_RunButton.TabStop = false;
+            // 
+            // topMenu_StopButton
+            // 
+            this.topMenu_StopButton.Image = ((System.Drawing.Image)(resources.GetObject("topMenu_StopButton.Image")));
+            this.topMenu_StopButton.Location = new System.Drawing.Point(166, 3);
+            this.topMenu_StopButton.Margin = new System.Windows.Forms.Padding(0);
+            this.topMenu_StopButton.Name = "topMenu_StopButton";
+            this.topMenu_StopButton.Size = new System.Drawing.Size(80, 21);
+            this.topMenu_StopButton.TabIndex = 7;
+            this.topMenu_StopButton.TabStop = false;
+            // 
+            // topMenu_SingleButton
+            // 
+            this.topMenu_SingleButton.Image = ((System.Drawing.Image)(resources.GetObject("topMenu_SingleButton.Image")));
+            this.topMenu_SingleButton.Location = new System.Drawing.Point(246, 3);
+            this.topMenu_SingleButton.Margin = new System.Windows.Forms.Padding(0);
+            this.topMenu_SingleButton.Name = "topMenu_SingleButton";
+            this.topMenu_SingleButton.Size = new System.Drawing.Size(80, 21);
+            this.topMenu_SingleButton.TabIndex = 6;
+            this.topMenu_SingleButton.TabStop = false;
+            // 
+            // topMenu_AutoscaleButton
+            // 
+            this.topMenu_AutoscaleButton.Image = ((System.Drawing.Image)(resources.GetObject("topMenu_AutoscaleButton.Image")));
+            this.topMenu_AutoscaleButton.Location = new System.Drawing.Point(331, 3);
+            this.topMenu_AutoscaleButton.Name = "topMenu_AutoscaleButton";
+            this.topMenu_AutoscaleButton.Size = new System.Drawing.Size(108, 21);
+            this.topMenu_AutoscaleButton.TabIndex = 5;
+            this.topMenu_AutoscaleButton.TabStop = false;
+            // 
+            // topMenu_DefaultButton
+            // 
+            this.topMenu_DefaultButton.Image = ((System.Drawing.Image)(resources.GetObject("topMenu_DefaultButton.Image")));
+            this.topMenu_DefaultButton.Location = new System.Drawing.Point(442, 3);
+            this.topMenu_DefaultButton.Name = "topMenu_DefaultButton";
+            this.topMenu_DefaultButton.Size = new System.Drawing.Size(128, 21);
+            this.topMenu_DefaultButton.TabIndex = 4;
+            this.topMenu_DefaultButton.TabStop = false;
+            // 
+            // topMenu_BackButton
+            // 
+            this.topMenu_BackButton.Image = ((System.Drawing.Image)(resources.GetObject("topMenu_BackButton.Image")));
+            this.topMenu_BackButton.Location = new System.Drawing.Point(575, 3);
+            this.topMenu_BackButton.Name = "topMenu_BackButton";
+            this.topMenu_BackButton.Size = new System.Drawing.Size(36, 21);
+            this.topMenu_BackButton.TabIndex = 3;
+            this.topMenu_BackButton.TabStop = false;
+            // 
+            // topMenu_ForwardButton
+            // 
+            this.topMenu_ForwardButton.Image = ((System.Drawing.Image)(resources.GetObject("topMenu_ForwardButton.Image")));
+            this.topMenu_ForwardButton.Location = new System.Drawing.Point(616, 3);
+            this.topMenu_ForwardButton.Name = "topMenu_ForwardButton";
+            this.topMenu_ForwardButton.Size = new System.Drawing.Size(36, 21);
+            this.topMenu_ForwardButton.TabIndex = 2;
+            this.topMenu_ForwardButton.TabStop = false;
+            // 
+            // topMenu_CopyButton
+            // 
+            this.topMenu_CopyButton.Image = ((System.Drawing.Image)(resources.GetObject("topMenu_CopyButton.Image")));
+            this.topMenu_CopyButton.Location = new System.Drawing.Point(656, 3);
+            this.topMenu_CopyButton.Name = "topMenu_CopyButton";
+            this.topMenu_CopyButton.Size = new System.Drawing.Size(78, 21);
+            this.topMenu_CopyButton.TabIndex = 1;
+            this.topMenu_CopyButton.TabStop = false;
+            // 
+            // topMenu_HelpButton
+            // 
+            this.topMenu_HelpButton.Image = ((System.Drawing.Image)(resources.GetObject("topMenu_HelpButton.Image")));
+            this.topMenu_HelpButton.Location = new System.Drawing.Point(736, 3);
+            this.topMenu_HelpButton.Name = "topMenu_HelpButton";
+            this.topMenu_HelpButton.Size = new System.Drawing.Size(70, 21);
+            this.topMenu_HelpButton.TabIndex = 0;
+            this.topMenu_HelpButton.TabStop = false;
             // 
             // measurementsPanel
             // 
@@ -289,6 +422,16 @@ namespace Oscilloscope
             this.measurementsPanel.Name = "measurementsPanel";
             this.measurementsPanel.Size = new System.Drawing.Size(1040, 116);
             this.measurementsPanel.TabIndex = 14;
+            // 
+            // iconPanel
+            // 
+            this.iconPanel.Image = ((System.Drawing.Image)(resources.GetObject("iconPanel.Image")));
+            this.iconPanel.Location = new System.Drawing.Point(568, 3);
+            this.iconPanel.Margin = new System.Windows.Forms.Padding(0);
+            this.iconPanel.Name = "iconPanel";
+            this.iconPanel.Size = new System.Drawing.Size(239, 104);
+            this.iconPanel.TabIndex = 0;
+            this.iconPanel.TabStop = false;
             // 
             // permanentControlsPanel
             // 
@@ -1308,25 +1451,6 @@ namespace Oscilloscope
             this.rightTopTab.Size = new System.Drawing.Size(230, 56);
             this.rightTopTab.TabIndex = 1;
             // 
-            // iconPanel
-            // 
-            this.iconPanel.Image = ((System.Drawing.Image)(resources.GetObject("iconPanel.Image")));
-            this.iconPanel.Location = new System.Drawing.Point(568, 3);
-            this.iconPanel.Margin = new System.Windows.Forms.Padding(0);
-            this.iconPanel.Name = "iconPanel";
-            this.iconPanel.Size = new System.Drawing.Size(239, 104);
-            this.iconPanel.TabIndex = 0;
-            this.iconPanel.TabStop = false;
-            // 
-            // screenFramePanel
-            // 
-            this.screenFramePanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.screenFramePanel.Location = new System.Drawing.Point(3, 6);
-            this.screenFramePanel.Margin = new System.Windows.Forms.Padding(0);
-            this.screenFramePanel.Name = "screenFramePanel";
-            this.screenFramePanel.Size = new System.Drawing.Size(804, 346);
-            this.screenFramePanel.TabIndex = 0;
-            // 
             // GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1337,11 +1461,24 @@ namespace Oscilloscope
             this.Controls.Add(this.leftMainTab);
             this.IsMdiContainer = true;
             this.Name = "GUI";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.leftMainTab.ResumeLayout(false);
             this.mainTab.ResumeLayout(false);
             this.screenPanel.ResumeLayout(false);
+            this.topMenuPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.topMenu_ClearButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.topMenu_RunButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.topMenu_StopButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.topMenu_SingleButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.topMenu_AutoscaleButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.topMenu_DefaultButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.topMenu_BackButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.topMenu_ForwardButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.topMenu_CopyButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.topMenu_HelpButton)).EndInit();
             this.measurementsPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.iconPanel)).EndInit();
             this.permanentControlsPanel.ResumeLayout(false);
             this.permanentControlsPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ChannelFour_OffsetButton)).EndInit();
@@ -1423,7 +1560,6 @@ namespace Oscilloscope
             ((System.ComponentModel.ISupportInitialize)(this.downMenu_SaveButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.downMenu_TriggerButton)).EndInit();
             this.rightMainTab.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.iconPanel)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1439,6 +1575,18 @@ namespace Oscilloscope
 
         //  Top Menu Panel
         private System.Windows.Forms.Panel topMenuPanel;                                //  Top Menu Panel
+
+        //  Top Menu Buttons
+        private System.Windows.Forms.PictureBox topMenu_HelpButton;                     //  Help Button
+        private System.Windows.Forms.PictureBox topMenu_CopyButton;                     //  Copy Button
+        private System.Windows.Forms.PictureBox topMenu_BackButton;                     //  Back Button
+        private System.Windows.Forms.PictureBox topMenu_ForwardButton;                  //  Forward Button
+        private System.Windows.Forms.PictureBox topMenu_DefaultButton;                  //  Default Button
+        private System.Windows.Forms.PictureBox topMenu_AutoscaleButton;                //  Autoscale Button
+        private System.Windows.Forms.PictureBox topMenu_SingleButton;                   //  Single Button
+        private System.Windows.Forms.PictureBox topMenu_StopButton;                     //  Stop Button
+        private System.Windows.Forms.PictureBox topMenu_RunButton;                      //  Run Button
+        private System.Windows.Forms.PictureBox topMenu_ClearButton;                    //  Clear Button
 
         //  Top Controls Panel
         private System.Windows.Forms.Panel topControlsPanel;                            //  Top Controls Panel
@@ -1544,6 +1692,8 @@ namespace Oscilloscope
 
         //  Down Menu Panel
         private System.Windows.Forms.Panel downMenuPanel;                               //  Down Menu Panel
+
+        //  Down Menu Icons and Buttons
         private System.Windows.Forms.PictureBox downMenu_LeftMouseIcon;                 //  Left Mouse Icon
         private System.Windows.Forms.PictureBox downMenu_ChannelsButton;                //  Channels Button
         private System.Windows.Forms.PictureBox downMenu_AcquireButton;                 //  Acquire Button
