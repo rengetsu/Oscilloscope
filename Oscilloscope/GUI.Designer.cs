@@ -34,7 +34,6 @@ namespace Oscilloscope
             this.leftTopTab = new System.Windows.Forms.Panel();
             this.mainTab = new System.Windows.Forms.Panel();
             this.screenPanel = new System.Windows.Forms.Panel();
-            this.screenFramePanel = new System.Windows.Forms.Panel();
             this.topControlsPanel = new System.Windows.Forms.Panel();
             this.topMenuPanel = new System.Windows.Forms.Panel();
             this.topMenu_ClearButton = new System.Windows.Forms.PictureBox();
@@ -48,6 +47,7 @@ namespace Oscilloscope
             this.topMenu_CopyButton = new System.Windows.Forms.PictureBox();
             this.topMenu_HelpButton = new System.Windows.Forms.PictureBox();
             this.measurementsPanel = new System.Windows.Forms.Panel();
+            this.measurementAreaScale = new System.Windows.Forms.PictureBox();
             this.iconPanel = new System.Windows.Forms.PictureBox();
             this.permanentControlsPanel = new System.Windows.Forms.Panel();
             this.ChannelFour_OffsetButton = new System.Windows.Forms.PictureBox();
@@ -138,9 +138,11 @@ namespace Oscilloscope
             this.downMenu_TriggerButton = new System.Windows.Forms.PictureBox();
             this.rightMainTab = new System.Windows.Forms.Panel();
             this.rightTopTab = new System.Windows.Forms.Panel();
+            this.leftTopTab_CancelButton = new System.Windows.Forms.PictureBox();
+            this.rightTopTab_CancelButton = new System.Windows.Forms.PictureBox();
             this.leftMainTab.SuspendLayout();
+            this.leftTopTab.SuspendLayout();
             this.mainTab.SuspendLayout();
-            this.screenPanel.SuspendLayout();
             this.topMenuPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.topMenu_ClearButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.topMenu_RunButton)).BeginInit();
@@ -153,6 +155,7 @@ namespace Oscilloscope
             ((System.ComponentModel.ISupportInitialize)(this.topMenu_CopyButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.topMenu_HelpButton)).BeginInit();
             this.measurementsPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.measurementAreaScale)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPanel)).BeginInit();
             this.permanentControlsPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ChannelFour_OffsetButton)).BeginInit();
@@ -234,6 +237,9 @@ namespace Oscilloscope
             ((System.ComponentModel.ISupportInitialize)(this.downMenu_SaveButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.downMenu_TriggerButton)).BeginInit();
             this.rightMainTab.SuspendLayout();
+            this.rightTopTab.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.leftTopTab_CancelButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rightTopTab_CancelButton)).BeginInit();
             this.SuspendLayout();
             // 
             // leftMainTab
@@ -250,7 +256,8 @@ namespace Oscilloscope
             // 
             // leftTopTab
             // 
-            this.leftTopTab.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.leftTopTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
+            this.leftTopTab.Controls.Add(this.leftTopTab_CancelButton);
             this.leftTopTab.Location = new System.Drawing.Point(0, 0);
             this.leftTopTab.Margin = new System.Windows.Forms.Padding(0);
             this.leftTopTab.Name = "leftTopTab";
@@ -275,22 +282,14 @@ namespace Oscilloscope
             // screenPanel
             // 
             this.screenPanel.BackColor = System.Drawing.Color.Black;
-            this.screenPanel.Controls.Add(this.screenFramePanel);
+            this.screenPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("screenPanel.BackgroundImage")));
+            this.screenPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.screenPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.screenPanel.ForeColor = System.Drawing.SystemColors.ControlText;
             this.screenPanel.Location = new System.Drawing.Point(0, 68);
             this.screenPanel.Name = "screenPanel";
             this.screenPanel.Size = new System.Drawing.Size(1040, 371);
             this.screenPanel.TabIndex = 17;
-            // 
-            // screenFramePanel
-            // 
-            this.screenFramePanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.screenFramePanel.Location = new System.Drawing.Point(3, 6);
-            this.screenFramePanel.Margin = new System.Windows.Forms.Padding(0);
-            this.screenFramePanel.Name = "screenFramePanel";
-            this.screenFramePanel.Size = new System.Drawing.Size(804, 346);
-            this.screenFramePanel.TabIndex = 0;
             // 
             // topControlsPanel
             // 
@@ -416,6 +415,7 @@ namespace Oscilloscope
             // measurementsPanel
             // 
             this.measurementsPanel.BackColor = System.Drawing.Color.Black;
+            this.measurementsPanel.Controls.Add(this.measurementAreaScale);
             this.measurementsPanel.Controls.Add(this.iconPanel);
             this.measurementsPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.measurementsPanel.Location = new System.Drawing.Point(0, 439);
@@ -423,13 +423,25 @@ namespace Oscilloscope
             this.measurementsPanel.Size = new System.Drawing.Size(1040, 116);
             this.measurementsPanel.TabIndex = 14;
             // 
+            // measurementAreaScale
+            // 
+            this.measurementAreaScale.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.measurementAreaScale.Image = ((System.Drawing.Image)(resources.GetObject("measurementAreaScale.Image")));
+            this.measurementAreaScale.Location = new System.Drawing.Point(0, 15);
+            this.measurementAreaScale.Margin = new System.Windows.Forms.Padding(0);
+            this.measurementAreaScale.Name = "measurementAreaScale";
+            this.measurementAreaScale.Size = new System.Drawing.Size(807, 99);
+            this.measurementAreaScale.TabIndex = 1;
+            this.measurementAreaScale.TabStop = false;
+            // 
             // iconPanel
             // 
+            this.iconPanel.Dock = System.Windows.Forms.DockStyle.Right;
             this.iconPanel.Image = ((System.Drawing.Image)(resources.GetObject("iconPanel.Image")));
-            this.iconPanel.Location = new System.Drawing.Point(568, 3);
+            this.iconPanel.Location = new System.Drawing.Point(801, 0);
             this.iconPanel.Margin = new System.Windows.Forms.Padding(0);
             this.iconPanel.Name = "iconPanel";
-            this.iconPanel.Size = new System.Drawing.Size(239, 104);
+            this.iconPanel.Size = new System.Drawing.Size(239, 116);
             this.iconPanel.TabIndex = 0;
             this.iconPanel.TabStop = false;
             // 
@@ -1444,12 +1456,33 @@ namespace Oscilloscope
             // 
             // rightTopTab
             // 
-            this.rightTopTab.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.rightTopTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
+            this.rightTopTab.Controls.Add(this.rightTopTab_CancelButton);
             this.rightTopTab.Location = new System.Drawing.Point(0, 0);
             this.rightTopTab.Margin = new System.Windows.Forms.Padding(0);
             this.rightTopTab.Name = "rightTopTab";
             this.rightTopTab.Size = new System.Drawing.Size(230, 56);
             this.rightTopTab.TabIndex = 1;
+            // 
+            // leftTopTab_CancelButton
+            // 
+            this.leftTopTab_CancelButton.Image = ((System.Drawing.Image)(resources.GetObject("leftTopTab_CancelButton.Image")));
+            this.leftTopTab_CancelButton.Location = new System.Drawing.Point(189, 6);
+            this.leftTopTab_CancelButton.Name = "leftTopTab_CancelButton";
+            this.leftTopTab_CancelButton.Size = new System.Drawing.Size(23, 21);
+            this.leftTopTab_CancelButton.TabIndex = 0;
+            this.leftTopTab_CancelButton.TabStop = false;
+            this.leftTopTab_CancelButton.Click += new System.EventHandler(this.leftTopTab_CancelButton_Click);
+            // 
+            // rightTopTab_CancelButton
+            // 
+            this.rightTopTab_CancelButton.Image = ((System.Drawing.Image)(resources.GetObject("rightTopTab_CancelButton.Image")));
+            this.rightTopTab_CancelButton.Location = new System.Drawing.Point(15, 6);
+            this.rightTopTab_CancelButton.Name = "rightTopTab_CancelButton";
+            this.rightTopTab_CancelButton.Size = new System.Drawing.Size(23, 21);
+            this.rightTopTab_CancelButton.TabIndex = 0;
+            this.rightTopTab_CancelButton.TabStop = false;
+            this.rightTopTab_CancelButton.Click += new System.EventHandler(this.rightTopTab_CancelButton_Click);
             // 
             // GUI
             // 
@@ -1464,8 +1497,8 @@ namespace Oscilloscope
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.leftMainTab.ResumeLayout(false);
+            this.leftTopTab.ResumeLayout(false);
             this.mainTab.ResumeLayout(false);
-            this.screenPanel.ResumeLayout(false);
             this.topMenuPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.topMenu_ClearButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.topMenu_RunButton)).EndInit();
@@ -1478,6 +1511,7 @@ namespace Oscilloscope
             ((System.ComponentModel.ISupportInitialize)(this.topMenu_CopyButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.topMenu_HelpButton)).EndInit();
             this.measurementsPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.measurementAreaScale)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPanel)).EndInit();
             this.permanentControlsPanel.ResumeLayout(false);
             this.permanentControlsPanel.PerformLayout();
@@ -1560,6 +1594,9 @@ namespace Oscilloscope
             ((System.ComponentModel.ISupportInitialize)(this.downMenu_SaveButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.downMenu_TriggerButton)).EndInit();
             this.rightMainTab.ResumeLayout(false);
+            this.rightTopTab.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.leftTopTab_CancelButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rightTopTab_CancelButton)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1593,10 +1630,12 @@ namespace Oscilloscope
 
         //  Screen Panel
         private System.Windows.Forms.Panel screenPanel;                                 //  Screen Panel
-        private System.Windows.Forms.Panel screenFramePanel;                            //  Screen Frame Panel
 
         //  Measurements Panel
         private System.Windows.Forms.Panel measurementsPanel;                           //  Measurements Panel
+
+        //  Measurements Elements
+        private System.Windows.Forms.PictureBox measurementAreaScale;                   //  Measurement Area Scale
         private System.Windows.Forms.PictureBox iconPanel;                              //  Icon Panel
 
         //  Permament Controls Panel
@@ -1709,6 +1748,8 @@ namespace Oscilloscope
         private System.Windows.Forms.PictureBox downMenu_MaskButton;                    //  Mask Button
         private System.Windows.Forms.PictureBox downMenu_EmptyButtons;                  //  Empty Buttons
         private System.Windows.Forms.PictureBox downMenu_UtilityButton;                 //  Utility Button
+        private System.Windows.Forms.PictureBox leftTopTab_CancelButton;
+        private System.Windows.Forms.PictureBox rightTopTab_CancelButton;
     }
 }
 
