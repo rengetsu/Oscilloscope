@@ -94,5 +94,15 @@ namespace Oscilloscope
         {
 
         }
+
+        private void leftTopTab_CancelButton_Click(object sender, EventArgs e)
+        {
+            leftMainTab.Visible = false;
+        }
+
+        private void rightTopTab_CancelButton_Click(object sender, EventArgs e)
+        {
+            rightMainTab.Visible = false;
+        }
     }
 }
