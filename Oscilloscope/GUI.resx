@@ -483,6 +483,52 @@
         1hrUN+0Ueqyg3UIuBDFkihJ0xtYa1Df1r7rAun8Aakxrx0Js4S4AAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="measurementArea_MinButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAB4AAAASCAIAAADDkPmOAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAIxJREFUOE/lj9ERhDAIRFNV6kk3FEMvqYUS3IQMMSqO4/Dj3fswsOjDJEVCGVKw
+        NBEMYbhXadrfUGeqiEQq5ZEUtkCHc+SD1xx1BSpADx4KJzdqIhYuvWWa/6o3wEALXdqK415krjrjYy79
+        YdFZvWR7kPhqray4VHffC7Xx3+ogvqueRxyLEE0gzZjSBpC+1Wqz883QAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="measurementArea_MidButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAB4AAAASCAIAAADDkPmOAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAALlJREFUOE/V1DsOgzAMBuBcr2fJDXqFTtwiOQUjJ/AFyICEGMjSIQu1k5DGokOD
+        3Kr95SEx5uMhhEpZRZNRDG4u11Gwsi7upiL9p+kbbJjBsOYruvOOJjfXT7lj7rERbDfqPrBDsRrpObjZ
+        a+pMltaZZpN7tdLeQpzGLXhb6PQEsOBkEksaaI0KLHj+YPDGscXpwzVaaHoV1YLTNXeCLs3v0vWnIkzv
+        zWfeoIXqf+kP/lRTcCMYEpV6AHKRPJBt52R3AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="measurementArea_MaxButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAB4AAAASCAIAAADDkPmOAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAALNJREFUOE/VksERhSAMRKmKeuiGYuiFWijBJRuiUQ6Ok4vv4M8G8gTnJzJCUSlw
+        IQIVhnvJ1P5dnWtHGKPXrJ3Sbo33YOyh7oAqZBCprrWNViS2qi2o150I38Zbsdb1dQyUG3XGRCvysJZu
+        EVxT7JxxG5F2alZWrAmGhWmsPa9qIG/Vxtm6LvoTSpp8VVMgi26f9CF9+0GMx1kn9rfhqp5WwxpHeVGH
+        8l/1+ROHEyIEMo0pHSPs6ioCwBG2AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="measurementArea_AutoButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAB4AAAASCAIAAADDkPmOAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAKpJREFUOE/VkesNhCAQhKnKeuzGYujFWizBGQZh93KcZ1x/OAlh9vUBmqQtVBUK
+        uSBCFRjOlYh9O3rO8FCea2Ig9Z10oaOjD/Lp1GV0GVhzXrktU88J0my/AcXatHBGOiYNWmUUmmH9G9rZ
+        cQFGaAO07D/QowB7WfZJVYV9H+0+gr23Wn+c4iNbgOHy5PZf0PP5HI2ZLBO2qVHgy3pA70X3LU4OiCBQ
+        JKa0AyDAFCHcjadVAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="measurementArea_ScalesButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAC4AAAASCAYAAAAkAezhAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        xAAADsQBlSsOGwAAASJJREFUSEvtlzEOgzAMRXu9noUb9ApM3AJOwcgJuEAZkBADLAwsbhxicJ2EgFSh
+        RsLSlwrE8fOPM/QBAFrDMEAMIt4V+vl6RyGCjwqahMw3+K7yCY8XoO7d309qH5yKsWjK1r02pMvAf1zo
+        MvCknHUdr8PyNLoRkmyExjxSrPkS3JVv9k5r886EiyHsOAsLYi3WQlFvhRepdx0umqHIWA6Cmwblfvgc
+        NMzID67VQ6W3YaEKkyNVbudQ4S1scHuNCcc3XwMBcCYaA+Vy4QGXbi0N+sG9rtJaCjwlseY4OD9q+i1G
+        hRpagHZGZQWbIJV1uMisM+DygmB8OSRd0U3w0Zqh8YFjvuciW2PELi3Xccf/TDf41dLgapKigkdWZI70
+        jwQ8PiZpyDXp2xpoAAAAAElFTkSuQmCC
+</value>
+  </data>
   <data name="measurementAreaScale.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAycAAABjCAYAAACBiH9OAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
