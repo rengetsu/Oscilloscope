@@ -140,6 +140,30 @@ namespace Oscilloscope
             this.rightMainTab = new System.Windows.Forms.Panel();
             this.rightTopTab = new System.Windows.Forms.Panel();
             this.rightTopTab_CancelButton = new System.Windows.Forms.PictureBox();
+            this.measurementArea_ChannelOne = new System.Windows.Forms.Label();
+            this.measurementArea_VerticalScale_1ch = new System.Windows.Forms.Label();
+            this.measurementArea_OffsetPosition_1ch = new System.Windows.Forms.Label();
+            this.measurementArea_HorizontalScale_1ch = new System.Windows.Forms.Label();
+            this.measurementArea_DelayPosition_1ch = new System.Windows.Forms.Label();
+            this.measurementArea_ChannelTwo = new System.Windows.Forms.Label();
+            this.measurementArea_VerticalScale_2ch = new System.Windows.Forms.Label();
+            this.measurementArea_OffsetPosition_2ch = new System.Windows.Forms.Label();
+            this.measurementArea_HorizontalScale_2ch = new System.Windows.Forms.Label();
+            this.measurementArea_DelayPosition_2ch = new System.Windows.Forms.Label();
+            this.measurementArea_ChannelThree = new System.Windows.Forms.Label();
+            this.measurementArea_ChannelFour = new System.Windows.Forms.Label();
+            this.measurementArea_VerticalScale_3ch = new System.Windows.Forms.Label();
+            this.measurementArea_VerticalScale_4ch = new System.Windows.Forms.Label();
+            this.measurementArea_OffsetPosition_3ch = new System.Windows.Forms.Label();
+            this.measurementArea_OffsetPosition_4ch = new System.Windows.Forms.Label();
+            this.measurementArea_HorizontalScale_3ch = new System.Windows.Forms.Label();
+            this.measurementArea_HorizontalScale_4ch = new System.Windows.Forms.Label();
+            this.measurementArea_DelayPosition_3ch = new System.Windows.Forms.Label();
+            this.measurementArea_DelayPosition_4ch = new System.Windows.Forms.Label();
+            this.measurementArea_HorizontalScale = new System.Windows.Forms.Label();
+            this.measurementArea_DelayPosition = new System.Windows.Forms.Label();
+            this.measurementArea_OffsetPosition = new System.Windows.Forms.Label();
+            this.measurementArea_VerticalScale = new System.Windows.Forms.Label();
             this.leftMainTab.SuspendLayout();
             this.leftTopTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.leftTopTab_CancelButton)).BeginInit();
@@ -426,6 +450,30 @@ namespace Oscilloscope
             // measurementsPanel
             // 
             this.measurementsPanel.BackColor = System.Drawing.Color.Black;
+            this.measurementsPanel.Controls.Add(this.measurementArea_VerticalScale);
+            this.measurementsPanel.Controls.Add(this.measurementArea_OffsetPosition);
+            this.measurementsPanel.Controls.Add(this.measurementArea_DelayPosition);
+            this.measurementsPanel.Controls.Add(this.measurementArea_HorizontalScale);
+            this.measurementsPanel.Controls.Add(this.measurementArea_DelayPosition_4ch);
+            this.measurementsPanel.Controls.Add(this.measurementArea_DelayPosition_3ch);
+            this.measurementsPanel.Controls.Add(this.measurementArea_HorizontalScale_4ch);
+            this.measurementsPanel.Controls.Add(this.measurementArea_HorizontalScale_3ch);
+            this.measurementsPanel.Controls.Add(this.measurementArea_OffsetPosition_4ch);
+            this.measurementsPanel.Controls.Add(this.measurementArea_OffsetPosition_3ch);
+            this.measurementsPanel.Controls.Add(this.measurementArea_VerticalScale_4ch);
+            this.measurementsPanel.Controls.Add(this.measurementArea_VerticalScale_3ch);
+            this.measurementsPanel.Controls.Add(this.measurementArea_ChannelFour);
+            this.measurementsPanel.Controls.Add(this.measurementArea_ChannelThree);
+            this.measurementsPanel.Controls.Add(this.measurementArea_DelayPosition_2ch);
+            this.measurementsPanel.Controls.Add(this.measurementArea_HorizontalScale_2ch);
+            this.measurementsPanel.Controls.Add(this.measurementArea_OffsetPosition_2ch);
+            this.measurementsPanel.Controls.Add(this.measurementArea_VerticalScale_2ch);
+            this.measurementsPanel.Controls.Add(this.measurementArea_ChannelTwo);
+            this.measurementsPanel.Controls.Add(this.measurementArea_DelayPosition_1ch);
+            this.measurementsPanel.Controls.Add(this.measurementArea_HorizontalScale_1ch);
+            this.measurementsPanel.Controls.Add(this.measurementArea_OffsetPosition_1ch);
+            this.measurementsPanel.Controls.Add(this.measurementArea_VerticalScale_1ch);
+            this.measurementsPanel.Controls.Add(this.measurementArea_ChannelOne);
             this.measurementsPanel.Controls.Add(this.measurementAreaScale);
             this.measurementsPanel.Controls.Add(this.iconPanel);
             this.measurementsPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -1485,6 +1533,294 @@ namespace Oscilloscope
             this.rightTopTab_CancelButton.TabStop = false;
             this.rightTopTab_CancelButton.Click += new System.EventHandler(this.rightTopTab_CancelButton_Click);
             // 
+            // measurementArea_ChannelOne
+            // 
+            this.measurementArea_ChannelOne.AutoSize = true;
+            this.measurementArea_ChannelOne.BackColor = System.Drawing.Color.Black;
+            this.measurementArea_ChannelOne.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.measurementArea_ChannelOne.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.measurementArea_ChannelOne.Location = new System.Drawing.Point(5, 42);
+            this.measurementArea_ChannelOne.Name = "measurementArea_ChannelOne";
+            this.measurementArea_ChannelOne.Size = new System.Drawing.Size(61, 14);
+            this.measurementArea_ChannelOne.TabIndex = 2;
+            this.measurementArea_ChannelOne.Text = "Channel 1";
+            // 
+            // measurementArea_VerticalScale_1ch
+            // 
+            this.measurementArea_VerticalScale_1ch.AutoSize = true;
+            this.measurementArea_VerticalScale_1ch.BackColor = System.Drawing.Color.Black;
+            this.measurementArea_VerticalScale_1ch.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.measurementArea_VerticalScale_1ch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.measurementArea_VerticalScale_1ch.Location = new System.Drawing.Point(153, 42);
+            this.measurementArea_VerticalScale_1ch.Name = "measurementArea_VerticalScale_1ch";
+            this.measurementArea_VerticalScale_1ch.Size = new System.Drawing.Size(66, 14);
+            this.measurementArea_VerticalScale_1ch.TabIndex = 3;
+            this.measurementArea_VerticalScale_1ch.Text = "100 mV/div";
+            // 
+            // measurementArea_OffsetPosition_1ch
+            // 
+            this.measurementArea_OffsetPosition_1ch.AutoSize = true;
+            this.measurementArea_OffsetPosition_1ch.BackColor = System.Drawing.Color.Black;
+            this.measurementArea_OffsetPosition_1ch.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.measurementArea_OffsetPosition_1ch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.measurementArea_OffsetPosition_1ch.Location = new System.Drawing.Point(309, 42);
+            this.measurementArea_OffsetPosition_1ch.Name = "measurementArea_OffsetPosition_1ch";
+            this.measurementArea_OffsetPosition_1ch.Size = new System.Drawing.Size(24, 14);
+            this.measurementArea_OffsetPosition_1ch.TabIndex = 4;
+            this.measurementArea_OffsetPosition_1ch.Text = "0 V";
+            // 
+            // measurementArea_HorizontalScale_1ch
+            // 
+            this.measurementArea_HorizontalScale_1ch.AutoSize = true;
+            this.measurementArea_HorizontalScale_1ch.BackColor = System.Drawing.Color.Black;
+            this.measurementArea_HorizontalScale_1ch.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.measurementArea_HorizontalScale_1ch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.measurementArea_HorizontalScale_1ch.Location = new System.Drawing.Point(466, 42);
+            this.measurementArea_HorizontalScale_1ch.Name = "measurementArea_HorizontalScale_1ch";
+            this.measurementArea_HorizontalScale_1ch.Size = new System.Drawing.Size(55, 14);
+            this.measurementArea_HorizontalScale_1ch.TabIndex = 5;
+            this.measurementArea_HorizontalScale_1ch.Text = "10 ns/div";
+            // 
+            // measurementArea_DelayPosition_1ch
+            // 
+            this.measurementArea_DelayPosition_1ch.AutoSize = true;
+            this.measurementArea_DelayPosition_1ch.BackColor = System.Drawing.Color.Black;
+            this.measurementArea_DelayPosition_1ch.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.measurementArea_DelayPosition_1ch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.measurementArea_DelayPosition_1ch.Location = new System.Drawing.Point(608, 42);
+            this.measurementArea_DelayPosition_1ch.Name = "measurementArea_DelayPosition_1ch";
+            this.measurementArea_DelayPosition_1ch.Size = new System.Drawing.Size(40, 14);
+            this.measurementArea_DelayPosition_1ch.TabIndex = 6;
+            this.measurementArea_DelayPosition_1ch.Text = "-50 ns";
+            // 
+            // measurementArea_ChannelTwo
+            // 
+            this.measurementArea_ChannelTwo.AutoSize = true;
+            this.measurementArea_ChannelTwo.BackColor = System.Drawing.Color.Black;
+            this.measurementArea_ChannelTwo.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.measurementArea_ChannelTwo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.measurementArea_ChannelTwo.Location = new System.Drawing.Point(5, 58);
+            this.measurementArea_ChannelTwo.Name = "measurementArea_ChannelTwo";
+            this.measurementArea_ChannelTwo.Size = new System.Drawing.Size(61, 14);
+            this.measurementArea_ChannelTwo.TabIndex = 7;
+            this.measurementArea_ChannelTwo.Text = "Channel 2";
+            // 
+            // measurementArea_VerticalScale_2ch
+            // 
+            this.measurementArea_VerticalScale_2ch.AutoSize = true;
+            this.measurementArea_VerticalScale_2ch.BackColor = System.Drawing.Color.Black;
+            this.measurementArea_VerticalScale_2ch.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.measurementArea_VerticalScale_2ch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.measurementArea_VerticalScale_2ch.Location = new System.Drawing.Point(153, 58);
+            this.measurementArea_VerticalScale_2ch.Name = "measurementArea_VerticalScale_2ch";
+            this.measurementArea_VerticalScale_2ch.Size = new System.Drawing.Size(66, 14);
+            this.measurementArea_VerticalScale_2ch.TabIndex = 8;
+            this.measurementArea_VerticalScale_2ch.Text = "100 mV/div";
+            // 
+            // measurementArea_OffsetPosition_2ch
+            // 
+            this.measurementArea_OffsetPosition_2ch.AutoSize = true;
+            this.measurementArea_OffsetPosition_2ch.BackColor = System.Drawing.Color.Black;
+            this.measurementArea_OffsetPosition_2ch.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.measurementArea_OffsetPosition_2ch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.measurementArea_OffsetPosition_2ch.Location = new System.Drawing.Point(309, 58);
+            this.measurementArea_OffsetPosition_2ch.Name = "measurementArea_OffsetPosition_2ch";
+            this.measurementArea_OffsetPosition_2ch.Size = new System.Drawing.Size(24, 14);
+            this.measurementArea_OffsetPosition_2ch.TabIndex = 9;
+            this.measurementArea_OffsetPosition_2ch.Text = "0 V";
+            // 
+            // measurementArea_HorizontalScale_2ch
+            // 
+            this.measurementArea_HorizontalScale_2ch.AutoSize = true;
+            this.measurementArea_HorizontalScale_2ch.BackColor = System.Drawing.Color.Black;
+            this.measurementArea_HorizontalScale_2ch.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.measurementArea_HorizontalScale_2ch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.measurementArea_HorizontalScale_2ch.Location = new System.Drawing.Point(466, 58);
+            this.measurementArea_HorizontalScale_2ch.Name = "measurementArea_HorizontalScale_2ch";
+            this.measurementArea_HorizontalScale_2ch.Size = new System.Drawing.Size(55, 14);
+            this.measurementArea_HorizontalScale_2ch.TabIndex = 10;
+            this.measurementArea_HorizontalScale_2ch.Text = "10 ns/div";
+            // 
+            // measurementArea_DelayPosition_2ch
+            // 
+            this.measurementArea_DelayPosition_2ch.AutoSize = true;
+            this.measurementArea_DelayPosition_2ch.BackColor = System.Drawing.Color.Black;
+            this.measurementArea_DelayPosition_2ch.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.measurementArea_DelayPosition_2ch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.measurementArea_DelayPosition_2ch.Location = new System.Drawing.Point(608, 58);
+            this.measurementArea_DelayPosition_2ch.Name = "measurementArea_DelayPosition_2ch";
+            this.measurementArea_DelayPosition_2ch.Size = new System.Drawing.Size(40, 14);
+            this.measurementArea_DelayPosition_2ch.TabIndex = 11;
+            this.measurementArea_DelayPosition_2ch.Text = "-50 ns";
+            // 
+            // measurementArea_ChannelThree
+            // 
+            this.measurementArea_ChannelThree.AutoSize = true;
+            this.measurementArea_ChannelThree.BackColor = System.Drawing.Color.Black;
+            this.measurementArea_ChannelThree.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.measurementArea_ChannelThree.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.measurementArea_ChannelThree.Location = new System.Drawing.Point(5, 74);
+            this.measurementArea_ChannelThree.Name = "measurementArea_ChannelThree";
+            this.measurementArea_ChannelThree.Size = new System.Drawing.Size(61, 14);
+            this.measurementArea_ChannelThree.TabIndex = 12;
+            this.measurementArea_ChannelThree.Text = "Channel 3";
+            // 
+            // measurementArea_ChannelFour
+            // 
+            this.measurementArea_ChannelFour.AutoSize = true;
+            this.measurementArea_ChannelFour.BackColor = System.Drawing.Color.Black;
+            this.measurementArea_ChannelFour.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.measurementArea_ChannelFour.ForeColor = System.Drawing.Color.HotPink;
+            this.measurementArea_ChannelFour.Location = new System.Drawing.Point(5, 90);
+            this.measurementArea_ChannelFour.Name = "measurementArea_ChannelFour";
+            this.measurementArea_ChannelFour.Size = new System.Drawing.Size(61, 14);
+            this.measurementArea_ChannelFour.TabIndex = 13;
+            this.measurementArea_ChannelFour.Text = "Channel 4";
+            // 
+            // measurementArea_VerticalScale_3ch
+            // 
+            this.measurementArea_VerticalScale_3ch.AutoSize = true;
+            this.measurementArea_VerticalScale_3ch.BackColor = System.Drawing.Color.Black;
+            this.measurementArea_VerticalScale_3ch.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.measurementArea_VerticalScale_3ch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.measurementArea_VerticalScale_3ch.Location = new System.Drawing.Point(153, 74);
+            this.measurementArea_VerticalScale_3ch.Name = "measurementArea_VerticalScale_3ch";
+            this.measurementArea_VerticalScale_3ch.Size = new System.Drawing.Size(66, 14);
+            this.measurementArea_VerticalScale_3ch.TabIndex = 14;
+            this.measurementArea_VerticalScale_3ch.Text = "100 mV/div";
+            // 
+            // measurementArea_VerticalScale_4ch
+            // 
+            this.measurementArea_VerticalScale_4ch.AutoSize = true;
+            this.measurementArea_VerticalScale_4ch.BackColor = System.Drawing.Color.Black;
+            this.measurementArea_VerticalScale_4ch.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.measurementArea_VerticalScale_4ch.ForeColor = System.Drawing.Color.HotPink;
+            this.measurementArea_VerticalScale_4ch.Location = new System.Drawing.Point(153, 90);
+            this.measurementArea_VerticalScale_4ch.Name = "measurementArea_VerticalScale_4ch";
+            this.measurementArea_VerticalScale_4ch.Size = new System.Drawing.Size(66, 14);
+            this.measurementArea_VerticalScale_4ch.TabIndex = 15;
+            this.measurementArea_VerticalScale_4ch.Text = "100 mV/div";
+            // 
+            // measurementArea_OffsetPosition_3ch
+            // 
+            this.measurementArea_OffsetPosition_3ch.AutoSize = true;
+            this.measurementArea_OffsetPosition_3ch.BackColor = System.Drawing.Color.Black;
+            this.measurementArea_OffsetPosition_3ch.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.measurementArea_OffsetPosition_3ch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.measurementArea_OffsetPosition_3ch.Location = new System.Drawing.Point(309, 74);
+            this.measurementArea_OffsetPosition_3ch.Name = "measurementArea_OffsetPosition_3ch";
+            this.measurementArea_OffsetPosition_3ch.Size = new System.Drawing.Size(24, 14);
+            this.measurementArea_OffsetPosition_3ch.TabIndex = 16;
+            this.measurementArea_OffsetPosition_3ch.Text = "0 V";
+            // 
+            // measurementArea_OffsetPosition_4ch
+            // 
+            this.measurementArea_OffsetPosition_4ch.AutoSize = true;
+            this.measurementArea_OffsetPosition_4ch.BackColor = System.Drawing.Color.Black;
+            this.measurementArea_OffsetPosition_4ch.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.measurementArea_OffsetPosition_4ch.ForeColor = System.Drawing.Color.HotPink;
+            this.measurementArea_OffsetPosition_4ch.Location = new System.Drawing.Point(309, 90);
+            this.measurementArea_OffsetPosition_4ch.Name = "measurementArea_OffsetPosition_4ch";
+            this.measurementArea_OffsetPosition_4ch.Size = new System.Drawing.Size(24, 14);
+            this.measurementArea_OffsetPosition_4ch.TabIndex = 17;
+            this.measurementArea_OffsetPosition_4ch.Text = "0 V";
+            // 
+            // measurementArea_HorizontalScale_3ch
+            // 
+            this.measurementArea_HorizontalScale_3ch.AutoSize = true;
+            this.measurementArea_HorizontalScale_3ch.BackColor = System.Drawing.Color.Black;
+            this.measurementArea_HorizontalScale_3ch.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.measurementArea_HorizontalScale_3ch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.measurementArea_HorizontalScale_3ch.Location = new System.Drawing.Point(466, 74);
+            this.measurementArea_HorizontalScale_3ch.Name = "measurementArea_HorizontalScale_3ch";
+            this.measurementArea_HorizontalScale_3ch.Size = new System.Drawing.Size(55, 14);
+            this.measurementArea_HorizontalScale_3ch.TabIndex = 18;
+            this.measurementArea_HorizontalScale_3ch.Text = "10 ns/div";
+            // 
+            // measurementArea_HorizontalScale_4ch
+            // 
+            this.measurementArea_HorizontalScale_4ch.AutoSize = true;
+            this.measurementArea_HorizontalScale_4ch.BackColor = System.Drawing.Color.Black;
+            this.measurementArea_HorizontalScale_4ch.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.measurementArea_HorizontalScale_4ch.ForeColor = System.Drawing.Color.HotPink;
+            this.measurementArea_HorizontalScale_4ch.Location = new System.Drawing.Point(466, 90);
+            this.measurementArea_HorizontalScale_4ch.Name = "measurementArea_HorizontalScale_4ch";
+            this.measurementArea_HorizontalScale_4ch.Size = new System.Drawing.Size(55, 14);
+            this.measurementArea_HorizontalScale_4ch.TabIndex = 19;
+            this.measurementArea_HorizontalScale_4ch.Text = "10 ns/div";
+            // 
+            // measurementArea_DelayPosition_3ch
+            // 
+            this.measurementArea_DelayPosition_3ch.AutoSize = true;
+            this.measurementArea_DelayPosition_3ch.BackColor = System.Drawing.Color.Black;
+            this.measurementArea_DelayPosition_3ch.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.measurementArea_DelayPosition_3ch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.measurementArea_DelayPosition_3ch.Location = new System.Drawing.Point(608, 74);
+            this.measurementArea_DelayPosition_3ch.Name = "measurementArea_DelayPosition_3ch";
+            this.measurementArea_DelayPosition_3ch.Size = new System.Drawing.Size(40, 14);
+            this.measurementArea_DelayPosition_3ch.TabIndex = 20;
+            this.measurementArea_DelayPosition_3ch.Text = "-50 ns";
+            // 
+            // measurementArea_DelayPosition_4ch
+            // 
+            this.measurementArea_DelayPosition_4ch.AutoSize = true;
+            this.measurementArea_DelayPosition_4ch.BackColor = System.Drawing.Color.Black;
+            this.measurementArea_DelayPosition_4ch.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.measurementArea_DelayPosition_4ch.ForeColor = System.Drawing.Color.HotPink;
+            this.measurementArea_DelayPosition_4ch.Location = new System.Drawing.Point(608, 90);
+            this.measurementArea_DelayPosition_4ch.Name = "measurementArea_DelayPosition_4ch";
+            this.measurementArea_DelayPosition_4ch.Size = new System.Drawing.Size(40, 14);
+            this.measurementArea_DelayPosition_4ch.TabIndex = 21;
+            this.measurementArea_DelayPosition_4ch.Text = "-50 ns";
+            // 
+            // measurementArea_HorizontalScale
+            // 
+            this.measurementArea_HorizontalScale.AutoSize = true;
+            this.measurementArea_HorizontalScale.BackColor = System.Drawing.Color.Black;
+            this.measurementArea_HorizontalScale.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.measurementArea_HorizontalScale.ForeColor = System.Drawing.Color.White;
+            this.measurementArea_HorizontalScale.Location = new System.Drawing.Point(466, 26);
+            this.measurementArea_HorizontalScale.Name = "measurementArea_HorizontalScale";
+            this.measurementArea_HorizontalScale.Size = new System.Drawing.Size(94, 14);
+            this.measurementArea_HorizontalScale.TabIndex = 22;
+            this.measurementArea_HorizontalScale.Text = "Horizontal Scale";
+            // 
+            // measurementArea_DelayPosition
+            // 
+            this.measurementArea_DelayPosition.AutoSize = true;
+            this.measurementArea_DelayPosition.BackColor = System.Drawing.Color.Black;
+            this.measurementArea_DelayPosition.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.measurementArea_DelayPosition.ForeColor = System.Drawing.Color.White;
+            this.measurementArea_DelayPosition.Location = new System.Drawing.Point(608, 26);
+            this.measurementArea_DelayPosition.Name = "measurementArea_DelayPosition";
+            this.measurementArea_DelayPosition.Size = new System.Drawing.Size(93, 14);
+            this.measurementArea_DelayPosition.TabIndex = 23;
+            this.measurementArea_DelayPosition.Text = "Delay + Position";
+            // 
+            // measurementArea_OffsetPosition
+            // 
+            this.measurementArea_OffsetPosition.AutoSize = true;
+            this.measurementArea_OffsetPosition.BackColor = System.Drawing.Color.Black;
+            this.measurementArea_OffsetPosition.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.measurementArea_OffsetPosition.ForeColor = System.Drawing.Color.White;
+            this.measurementArea_OffsetPosition.Location = new System.Drawing.Point(309, 26);
+            this.measurementArea_OffsetPosition.Name = "measurementArea_OffsetPosition";
+            this.measurementArea_OffsetPosition.Size = new System.Drawing.Size(98, 14);
+            this.measurementArea_OffsetPosition.TabIndex = 24;
+            this.measurementArea_OffsetPosition.Text = "Offset + Position";
+            // 
+            // measurementArea_VerticalScale
+            // 
+            this.measurementArea_VerticalScale.AutoSize = true;
+            this.measurementArea_VerticalScale.BackColor = System.Drawing.Color.Black;
+            this.measurementArea_VerticalScale.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.measurementArea_VerticalScale.ForeColor = System.Drawing.Color.White;
+            this.measurementArea_VerticalScale.Location = new System.Drawing.Point(153, 26);
+            this.measurementArea_VerticalScale.Name = "measurementArea_VerticalScale";
+            this.measurementArea_VerticalScale.Size = new System.Drawing.Size(80, 14);
+            this.measurementArea_VerticalScale.TabIndex = 25;
+            this.measurementArea_VerticalScale.Text = "Vertical Scale";
+            // 
             // GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1513,6 +1849,7 @@ namespace Oscilloscope
             ((System.ComponentModel.ISupportInitialize)(this.topMenu_CopyButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.topMenu_HelpButton)).EndInit();
             this.measurementsPanel.ResumeLayout(false);
+            this.measurementsPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.measurementAreaScale)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPanel)).EndInit();
             this.permanentControlsPanel.ResumeLayout(false);
@@ -1643,8 +1980,44 @@ namespace Oscilloscope
         //  Measurements Panel
         private System.Windows.Forms.Panel measurementsPanel;                           //  Measurements Panel
 
-        //  Measurements Elements
+        //  Measurement Area Scale
         private System.Windows.Forms.PictureBox measurementAreaScale;                   //  Measurement Area Scale
+
+        //  Measurement Area Channels
+        private System.Windows.Forms.Label measurementArea_ChannelOne;                  //  Measurement Area Channel One
+        private System.Windows.Forms.Label measurementArea_ChannelTwo;                  //  Measurement Area Channel Two
+        private System.Windows.Forms.Label measurementArea_ChannelThree;                //  Measurement Area Channel Three
+        private System.Windows.Forms.Label measurementArea_ChannelFour;                 //  Measurement Area Channel Four
+
+        //  Measurement Area Vertical Scale
+        private System.Windows.Forms.Label measurementArea_VerticalScale;               //  Measurement Area Vertical Scale
+        private System.Windows.Forms.Label measurementArea_VerticalScale_1ch;           //  Measurement Area Vertical Scale 1 channel
+        private System.Windows.Forms.Label measurementArea_VerticalScale_2ch;           //  Measurement Area Vertical Scale 2 channel
+        private System.Windows.Forms.Label measurementArea_VerticalScale_3ch;           //  Measurement Area Vertical Scale 3 channel
+        private System.Windows.Forms.Label measurementArea_VerticalScale_4ch;           //  Measurement Area Vertical Scale 4 channel
+
+        //  Measurement Area Offset Position
+        private System.Windows.Forms.Label measurementArea_OffsetPosition;              //  Measurement Area Offset Position
+        private System.Windows.Forms.Label measurementArea_OffsetPosition_1ch;          //  Measurement Area Offset Position 1 channel
+        private System.Windows.Forms.Label measurementArea_OffsetPosition_2ch;          //  Measurement Area Offset Position 2 channel
+        private System.Windows.Forms.Label measurementArea_OffsetPosition_3ch;          //  Measurement Area Offset Position 3 channel
+        private System.Windows.Forms.Label measurementArea_OffsetPosition_4ch;          //  Measurement Area Offset Position 4 channel
+        
+        //  Measurement Area Horizontal Scale
+        private System.Windows.Forms.Label measurementArea_HorizontalScale;             //  Measurement Area Horizontal Scale
+        private System.Windows.Forms.Label measurementArea_HorizontalScale_1ch;         //  Measurement Area Horizontal Scale 1 channel
+        private System.Windows.Forms.Label measurementArea_HorizontalScale_2ch;         //  Measurement Area Horizontal Scale 2 channel
+        private System.Windows.Forms.Label measurementArea_HorizontalScale_3ch;         //  Measurement Area Horizontal Scale 3 channel
+        private System.Windows.Forms.Label measurementArea_HorizontalScale_4ch;         //  Measurement Area Horizontal Scale 4 channel
+        
+        //  Measurement Area Delay Position
+        private System.Windows.Forms.Label measurementArea_DelayPosition;               //  Measurement Area Delay Position
+        private System.Windows.Forms.Label measurementArea_DelayPosition_1ch;           //  Measurement Area Delay Position 1 channel
+        private System.Windows.Forms.Label measurementArea_DelayPosition_2ch;           //  Measurement Area Delay Position 2 channel
+        private System.Windows.Forms.Label measurementArea_DelayPosition_3ch;           //  Measurement Area Delay Position 3 channel
+        private System.Windows.Forms.Label measurementArea_DelayPosition_4ch;           //  Measurement Area Delay Position 4 channel
+        
+        //  Icon Panel
         private System.Windows.Forms.PictureBox iconPanel;                              //  Icon Panel
 
         //  Permament Controls Panel
