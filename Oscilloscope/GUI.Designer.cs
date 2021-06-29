@@ -32,6 +32,7 @@ namespace Oscilloscope
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GUI));
             this.leftMainTab = new System.Windows.Forms.Panel();
             this.leftTopTab = new System.Windows.Forms.Panel();
+            this.leftTopTab_CancelButton = new System.Windows.Forms.PictureBox();
             this.mainTab = new System.Windows.Forms.Panel();
             this.screenPanel = new System.Windows.Forms.Panel();
             this.topControlsPanel = new System.Windows.Forms.Panel();
@@ -138,10 +139,10 @@ namespace Oscilloscope
             this.downMenu_TriggerButton = new System.Windows.Forms.PictureBox();
             this.rightMainTab = new System.Windows.Forms.Panel();
             this.rightTopTab = new System.Windows.Forms.Panel();
-            this.leftTopTab_CancelButton = new System.Windows.Forms.PictureBox();
             this.rightTopTab_CancelButton = new System.Windows.Forms.PictureBox();
             this.leftMainTab.SuspendLayout();
             this.leftTopTab.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.leftTopTab_CancelButton)).BeginInit();
             this.mainTab.SuspendLayout();
             this.topMenuPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.topMenu_ClearButton)).BeginInit();
@@ -238,7 +239,6 @@ namespace Oscilloscope
             ((System.ComponentModel.ISupportInitialize)(this.downMenu_TriggerButton)).BeginInit();
             this.rightMainTab.SuspendLayout();
             this.rightTopTab.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.leftTopTab_CancelButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rightTopTab_CancelButton)).BeginInit();
             this.SuspendLayout();
             // 
@@ -264,8 +264,19 @@ namespace Oscilloscope
             this.leftTopTab.Size = new System.Drawing.Size(230, 56);
             this.leftTopTab.TabIndex = 0;
             // 
+            // leftTopTab_CancelButton
+            // 
+            this.leftTopTab_CancelButton.Image = ((System.Drawing.Image)(resources.GetObject("leftTopTab_CancelButton.Image")));
+            this.leftTopTab_CancelButton.Location = new System.Drawing.Point(189, 6);
+            this.leftTopTab_CancelButton.Name = "leftTopTab_CancelButton";
+            this.leftTopTab_CancelButton.Size = new System.Drawing.Size(23, 21);
+            this.leftTopTab_CancelButton.TabIndex = 0;
+            this.leftTopTab_CancelButton.TabStop = false;
+            this.leftTopTab_CancelButton.Click += new System.EventHandler(this.leftTopTab_CancelButton_Click);
+            // 
             // mainTab
             // 
+            this.mainTab.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.mainTab.BackColor = System.Drawing.Color.Silver;
             this.mainTab.Controls.Add(this.screenPanel);
             this.mainTab.Controls.Add(this.topControlsPanel);
@@ -1464,16 +1475,6 @@ namespace Oscilloscope
             this.rightTopTab.Size = new System.Drawing.Size(230, 56);
             this.rightTopTab.TabIndex = 1;
             // 
-            // leftTopTab_CancelButton
-            // 
-            this.leftTopTab_CancelButton.Image = ((System.Drawing.Image)(resources.GetObject("leftTopTab_CancelButton.Image")));
-            this.leftTopTab_CancelButton.Location = new System.Drawing.Point(189, 6);
-            this.leftTopTab_CancelButton.Name = "leftTopTab_CancelButton";
-            this.leftTopTab_CancelButton.Size = new System.Drawing.Size(23, 21);
-            this.leftTopTab_CancelButton.TabIndex = 0;
-            this.leftTopTab_CancelButton.TabStop = false;
-            this.leftTopTab_CancelButton.Click += new System.EventHandler(this.leftTopTab_CancelButton_Click);
-            // 
             // rightTopTab_CancelButton
             // 
             this.rightTopTab_CancelButton.Image = ((System.Drawing.Image)(resources.GetObject("rightTopTab_CancelButton.Image")));
@@ -1498,6 +1499,7 @@ namespace Oscilloscope
             this.Text = "Form1";
             this.leftMainTab.ResumeLayout(false);
             this.leftTopTab.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.leftTopTab_CancelButton)).EndInit();
             this.mainTab.ResumeLayout(false);
             this.topMenuPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.topMenu_ClearButton)).EndInit();
@@ -1595,7 +1597,6 @@ namespace Oscilloscope
             ((System.ComponentModel.ISupportInitialize)(this.downMenu_TriggerButton)).EndInit();
             this.rightMainTab.ResumeLayout(false);
             this.rightTopTab.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.leftTopTab_CancelButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rightTopTab_CancelButton)).EndInit();
             this.ResumeLayout(false);
 
@@ -1606,9 +1607,17 @@ namespace Oscilloscope
         //  Tabs
         private System.Windows.Forms.Panel mainTab;                                     //  Main Tab
         private System.Windows.Forms.Panel leftMainTab;                                 //  Left Main Tab
+
+        //  Left Top Tab
         private System.Windows.Forms.Panel leftTopTab;                                  //  Left Top Tab
+        private System.Windows.Forms.PictureBox leftTopTab_CancelButton;                //  Left Top Tab Cancel Button
+
+        //  Right Main Tab
         private System.Windows.Forms.Panel rightMainTab;                                //  Right Main Tab
+
+        //  Right Top Tab
         private System.Windows.Forms.Panel rightTopTab;                                 //  Right Top Tab
+        private System.Windows.Forms.PictureBox rightTopTab_CancelButton;               //  Right Top Tab Cancel Button
 
         //  Top Menu Panel
         private System.Windows.Forms.Panel topMenuPanel;                                //  Top Menu Panel
@@ -1748,8 +1757,6 @@ namespace Oscilloscope
         private System.Windows.Forms.PictureBox downMenu_MaskButton;                    //  Mask Button
         private System.Windows.Forms.PictureBox downMenu_EmptyButtons;                  //  Empty Buttons
         private System.Windows.Forms.PictureBox downMenu_UtilityButton;                 //  Utility Button
-        private System.Windows.Forms.PictureBox leftTopTab_CancelButton;
-        private System.Windows.Forms.PictureBox rightTopTab_CancelButton;
     }
 }
 
