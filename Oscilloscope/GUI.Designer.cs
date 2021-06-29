@@ -48,6 +48,10 @@ namespace Oscilloscope
             this.topMenu_CopyButton = new System.Windows.Forms.PictureBox();
             this.topMenu_HelpButton = new System.Windows.Forms.PictureBox();
             this.measurementsPanel = new System.Windows.Forms.Panel();
+            this.measurementArea_MinButton = new System.Windows.Forms.PictureBox();
+            this.measurementArea_MidButton = new System.Windows.Forms.PictureBox();
+            this.measurementArea_MaxButton = new System.Windows.Forms.PictureBox();
+            this.measurementArea_AutoButton = new System.Windows.Forms.PictureBox();
             this.measurementArea_ScalesButton = new System.Windows.Forms.PictureBox();
             this.measurementArea_VerticalScale = new System.Windows.Forms.Label();
             this.measurementArea_OffsetPosition = new System.Windows.Forms.Label();
@@ -165,10 +169,6 @@ namespace Oscilloscope
             this.rightMainTab = new System.Windows.Forms.Panel();
             this.rightTopTab = new System.Windows.Forms.Panel();
             this.rightTopTab_CancelButton = new System.Windows.Forms.PictureBox();
-            this.measurementArea_AutoButton = new System.Windows.Forms.PictureBox();
-            this.measurementArea_MaxButton = new System.Windows.Forms.PictureBox();
-            this.measurementArea_MidButton = new System.Windows.Forms.PictureBox();
-            this.measurementArea_MinButton = new System.Windows.Forms.PictureBox();
             this.leftMainTab.SuspendLayout();
             this.leftTopTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.leftTopTab_CancelButton)).BeginInit();
@@ -185,6 +185,10 @@ namespace Oscilloscope
             ((System.ComponentModel.ISupportInitialize)(this.topMenu_CopyButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.topMenu_HelpButton)).BeginInit();
             this.measurementsPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.measurementArea_MinButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.measurementArea_MidButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.measurementArea_MaxButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.measurementArea_AutoButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.measurementArea_ScalesButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.measurementAreaScale)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPanel)).BeginInit();
@@ -270,10 +274,6 @@ namespace Oscilloscope
             this.rightMainTab.SuspendLayout();
             this.rightTopTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.rightTopTab_CancelButton)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.measurementArea_AutoButton)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.measurementArea_MaxButton)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.measurementArea_MidButton)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.measurementArea_MinButton)).BeginInit();
             this.SuspendLayout();
             // 
             // leftMainTab
@@ -497,6 +497,42 @@ namespace Oscilloscope
             this.measurementsPanel.Size = new System.Drawing.Size(1040, 116);
             this.measurementsPanel.TabIndex = 14;
             // 
+            // measurementArea_MinButton
+            // 
+            this.measurementArea_MinButton.Image = ((System.Drawing.Image)(resources.GetObject("measurementArea_MinButton.Image")));
+            this.measurementArea_MinButton.Location = new System.Drawing.Point(767, 5);
+            this.measurementArea_MinButton.Name = "measurementArea_MinButton";
+            this.measurementArea_MinButton.Size = new System.Drawing.Size(30, 18);
+            this.measurementArea_MinButton.TabIndex = 30;
+            this.measurementArea_MinButton.TabStop = false;
+            // 
+            // measurementArea_MidButton
+            // 
+            this.measurementArea_MidButton.Image = ((System.Drawing.Image)(resources.GetObject("measurementArea_MidButton.Image")));
+            this.measurementArea_MidButton.Location = new System.Drawing.Point(735, 5);
+            this.measurementArea_MidButton.Name = "measurementArea_MidButton";
+            this.measurementArea_MidButton.Size = new System.Drawing.Size(30, 18);
+            this.measurementArea_MidButton.TabIndex = 29;
+            this.measurementArea_MidButton.TabStop = false;
+            // 
+            // measurementArea_MaxButton
+            // 
+            this.measurementArea_MaxButton.Image = ((System.Drawing.Image)(resources.GetObject("measurementArea_MaxButton.Image")));
+            this.measurementArea_MaxButton.Location = new System.Drawing.Point(703, 5);
+            this.measurementArea_MaxButton.Name = "measurementArea_MaxButton";
+            this.measurementArea_MaxButton.Size = new System.Drawing.Size(30, 18);
+            this.measurementArea_MaxButton.TabIndex = 28;
+            this.measurementArea_MaxButton.TabStop = false;
+            // 
+            // measurementArea_AutoButton
+            // 
+            this.measurementArea_AutoButton.Image = ((System.Drawing.Image)(resources.GetObject("measurementArea_AutoButton.Image")));
+            this.measurementArea_AutoButton.Location = new System.Drawing.Point(671, 5);
+            this.measurementArea_AutoButton.Name = "measurementArea_AutoButton";
+            this.measurementArea_AutoButton.Size = new System.Drawing.Size(30, 18);
+            this.measurementArea_AutoButton.TabIndex = 27;
+            this.measurementArea_AutoButton.TabStop = false;
+            // 
             // measurementArea_ScalesButton
             // 
             this.measurementArea_ScalesButton.Image = ((System.Drawing.Image)(resources.GetObject("measurementArea_ScalesButton.Image")));
@@ -559,7 +595,7 @@ namespace Oscilloscope
             this.measurementArea_DelayPosition_4ch.AutoSize = true;
             this.measurementArea_DelayPosition_4ch.BackColor = System.Drawing.Color.Black;
             this.measurementArea_DelayPosition_4ch.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.measurementArea_DelayPosition_4ch.ForeColor = System.Drawing.Color.HotPink;
+            this.measurementArea_DelayPosition_4ch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(140)))), ((int)(((byte)(196)))));
             this.measurementArea_DelayPosition_4ch.Location = new System.Drawing.Point(608, 90);
             this.measurementArea_DelayPosition_4ch.Name = "measurementArea_DelayPosition_4ch";
             this.measurementArea_DelayPosition_4ch.Size = new System.Drawing.Size(40, 14);
@@ -571,7 +607,7 @@ namespace Oscilloscope
             this.measurementArea_DelayPosition_3ch.AutoSize = true;
             this.measurementArea_DelayPosition_3ch.BackColor = System.Drawing.Color.Black;
             this.measurementArea_DelayPosition_3ch.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.measurementArea_DelayPosition_3ch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.measurementArea_DelayPosition_3ch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(252)))), ((int)(((byte)(148)))));
             this.measurementArea_DelayPosition_3ch.Location = new System.Drawing.Point(608, 74);
             this.measurementArea_DelayPosition_3ch.Name = "measurementArea_DelayPosition_3ch";
             this.measurementArea_DelayPosition_3ch.Size = new System.Drawing.Size(40, 14);
@@ -583,7 +619,7 @@ namespace Oscilloscope
             this.measurementArea_HorizontalScale_4ch.AutoSize = true;
             this.measurementArea_HorizontalScale_4ch.BackColor = System.Drawing.Color.Black;
             this.measurementArea_HorizontalScale_4ch.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.measurementArea_HorizontalScale_4ch.ForeColor = System.Drawing.Color.HotPink;
+            this.measurementArea_HorizontalScale_4ch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(140)))), ((int)(((byte)(196)))));
             this.measurementArea_HorizontalScale_4ch.Location = new System.Drawing.Point(466, 90);
             this.measurementArea_HorizontalScale_4ch.Name = "measurementArea_HorizontalScale_4ch";
             this.measurementArea_HorizontalScale_4ch.Size = new System.Drawing.Size(55, 14);
@@ -595,7 +631,7 @@ namespace Oscilloscope
             this.measurementArea_HorizontalScale_3ch.AutoSize = true;
             this.measurementArea_HorizontalScale_3ch.BackColor = System.Drawing.Color.Black;
             this.measurementArea_HorizontalScale_3ch.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.measurementArea_HorizontalScale_3ch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.measurementArea_HorizontalScale_3ch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(252)))), ((int)(((byte)(148)))));
             this.measurementArea_HorizontalScale_3ch.Location = new System.Drawing.Point(466, 74);
             this.measurementArea_HorizontalScale_3ch.Name = "measurementArea_HorizontalScale_3ch";
             this.measurementArea_HorizontalScale_3ch.Size = new System.Drawing.Size(55, 14);
@@ -607,7 +643,7 @@ namespace Oscilloscope
             this.measurementArea_OffsetPosition_4ch.AutoSize = true;
             this.measurementArea_OffsetPosition_4ch.BackColor = System.Drawing.Color.Black;
             this.measurementArea_OffsetPosition_4ch.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.measurementArea_OffsetPosition_4ch.ForeColor = System.Drawing.Color.HotPink;
+            this.measurementArea_OffsetPosition_4ch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(140)))), ((int)(((byte)(196)))));
             this.measurementArea_OffsetPosition_4ch.Location = new System.Drawing.Point(309, 90);
             this.measurementArea_OffsetPosition_4ch.Name = "measurementArea_OffsetPosition_4ch";
             this.measurementArea_OffsetPosition_4ch.Size = new System.Drawing.Size(24, 14);
@@ -619,7 +655,7 @@ namespace Oscilloscope
             this.measurementArea_OffsetPosition_3ch.AutoSize = true;
             this.measurementArea_OffsetPosition_3ch.BackColor = System.Drawing.Color.Black;
             this.measurementArea_OffsetPosition_3ch.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.measurementArea_OffsetPosition_3ch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.measurementArea_OffsetPosition_3ch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(252)))), ((int)(((byte)(148)))));
             this.measurementArea_OffsetPosition_3ch.Location = new System.Drawing.Point(309, 74);
             this.measurementArea_OffsetPosition_3ch.Name = "measurementArea_OffsetPosition_3ch";
             this.measurementArea_OffsetPosition_3ch.Size = new System.Drawing.Size(24, 14);
@@ -631,7 +667,7 @@ namespace Oscilloscope
             this.measurementArea_VerticalScale_4ch.AutoSize = true;
             this.measurementArea_VerticalScale_4ch.BackColor = System.Drawing.Color.Black;
             this.measurementArea_VerticalScale_4ch.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.measurementArea_VerticalScale_4ch.ForeColor = System.Drawing.Color.HotPink;
+            this.measurementArea_VerticalScale_4ch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(140)))), ((int)(((byte)(196)))));
             this.measurementArea_VerticalScale_4ch.Location = new System.Drawing.Point(153, 90);
             this.measurementArea_VerticalScale_4ch.Name = "measurementArea_VerticalScale_4ch";
             this.measurementArea_VerticalScale_4ch.Size = new System.Drawing.Size(66, 14);
@@ -643,7 +679,7 @@ namespace Oscilloscope
             this.measurementArea_VerticalScale_3ch.AutoSize = true;
             this.measurementArea_VerticalScale_3ch.BackColor = System.Drawing.Color.Black;
             this.measurementArea_VerticalScale_3ch.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.measurementArea_VerticalScale_3ch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.measurementArea_VerticalScale_3ch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(252)))), ((int)(((byte)(148)))));
             this.measurementArea_VerticalScale_3ch.Location = new System.Drawing.Point(153, 74);
             this.measurementArea_VerticalScale_3ch.Name = "measurementArea_VerticalScale_3ch";
             this.measurementArea_VerticalScale_3ch.Size = new System.Drawing.Size(66, 14);
@@ -655,7 +691,7 @@ namespace Oscilloscope
             this.measurementArea_ChannelFour.AutoSize = true;
             this.measurementArea_ChannelFour.BackColor = System.Drawing.Color.Black;
             this.measurementArea_ChannelFour.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.measurementArea_ChannelFour.ForeColor = System.Drawing.Color.HotPink;
+            this.measurementArea_ChannelFour.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(140)))), ((int)(((byte)(196)))));
             this.measurementArea_ChannelFour.Location = new System.Drawing.Point(5, 90);
             this.measurementArea_ChannelFour.Name = "measurementArea_ChannelFour";
             this.measurementArea_ChannelFour.Size = new System.Drawing.Size(61, 14);
@@ -667,7 +703,7 @@ namespace Oscilloscope
             this.measurementArea_ChannelThree.AutoSize = true;
             this.measurementArea_ChannelThree.BackColor = System.Drawing.Color.Black;
             this.measurementArea_ChannelThree.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.measurementArea_ChannelThree.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.measurementArea_ChannelThree.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(252)))), ((int)(((byte)(148)))));
             this.measurementArea_ChannelThree.Location = new System.Drawing.Point(5, 74);
             this.measurementArea_ChannelThree.Name = "measurementArea_ChannelThree";
             this.measurementArea_ChannelThree.Size = new System.Drawing.Size(61, 14);
@@ -679,7 +715,7 @@ namespace Oscilloscope
             this.measurementArea_DelayPosition_2ch.AutoSize = true;
             this.measurementArea_DelayPosition_2ch.BackColor = System.Drawing.Color.Black;
             this.measurementArea_DelayPosition_2ch.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.measurementArea_DelayPosition_2ch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.measurementArea_DelayPosition_2ch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.measurementArea_DelayPosition_2ch.Location = new System.Drawing.Point(608, 58);
             this.measurementArea_DelayPosition_2ch.Name = "measurementArea_DelayPosition_2ch";
             this.measurementArea_DelayPosition_2ch.Size = new System.Drawing.Size(40, 14);
@@ -691,7 +727,7 @@ namespace Oscilloscope
             this.measurementArea_HorizontalScale_2ch.AutoSize = true;
             this.measurementArea_HorizontalScale_2ch.BackColor = System.Drawing.Color.Black;
             this.measurementArea_HorizontalScale_2ch.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.measurementArea_HorizontalScale_2ch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.measurementArea_HorizontalScale_2ch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.measurementArea_HorizontalScale_2ch.Location = new System.Drawing.Point(466, 58);
             this.measurementArea_HorizontalScale_2ch.Name = "measurementArea_HorizontalScale_2ch";
             this.measurementArea_HorizontalScale_2ch.Size = new System.Drawing.Size(55, 14);
@@ -703,7 +739,7 @@ namespace Oscilloscope
             this.measurementArea_OffsetPosition_2ch.AutoSize = true;
             this.measurementArea_OffsetPosition_2ch.BackColor = System.Drawing.Color.Black;
             this.measurementArea_OffsetPosition_2ch.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.measurementArea_OffsetPosition_2ch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.measurementArea_OffsetPosition_2ch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.measurementArea_OffsetPosition_2ch.Location = new System.Drawing.Point(309, 58);
             this.measurementArea_OffsetPosition_2ch.Name = "measurementArea_OffsetPosition_2ch";
             this.measurementArea_OffsetPosition_2ch.Size = new System.Drawing.Size(24, 14);
@@ -715,7 +751,7 @@ namespace Oscilloscope
             this.measurementArea_VerticalScale_2ch.AutoSize = true;
             this.measurementArea_VerticalScale_2ch.BackColor = System.Drawing.Color.Black;
             this.measurementArea_VerticalScale_2ch.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.measurementArea_VerticalScale_2ch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.measurementArea_VerticalScale_2ch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.measurementArea_VerticalScale_2ch.Location = new System.Drawing.Point(153, 58);
             this.measurementArea_VerticalScale_2ch.Name = "measurementArea_VerticalScale_2ch";
             this.measurementArea_VerticalScale_2ch.Size = new System.Drawing.Size(66, 14);
@@ -727,7 +763,7 @@ namespace Oscilloscope
             this.measurementArea_ChannelTwo.AutoSize = true;
             this.measurementArea_ChannelTwo.BackColor = System.Drawing.Color.Black;
             this.measurementArea_ChannelTwo.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.measurementArea_ChannelTwo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.measurementArea_ChannelTwo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.measurementArea_ChannelTwo.Location = new System.Drawing.Point(5, 58);
             this.measurementArea_ChannelTwo.Name = "measurementArea_ChannelTwo";
             this.measurementArea_ChannelTwo.Size = new System.Drawing.Size(61, 14);
@@ -739,7 +775,7 @@ namespace Oscilloscope
             this.measurementArea_DelayPosition_1ch.AutoSize = true;
             this.measurementArea_DelayPosition_1ch.BackColor = System.Drawing.Color.Black;
             this.measurementArea_DelayPosition_1ch.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.measurementArea_DelayPosition_1ch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.measurementArea_DelayPosition_1ch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(132)))));
             this.measurementArea_DelayPosition_1ch.Location = new System.Drawing.Point(608, 42);
             this.measurementArea_DelayPosition_1ch.Name = "measurementArea_DelayPosition_1ch";
             this.measurementArea_DelayPosition_1ch.Size = new System.Drawing.Size(40, 14);
@@ -751,7 +787,7 @@ namespace Oscilloscope
             this.measurementArea_HorizontalScale_1ch.AutoSize = true;
             this.measurementArea_HorizontalScale_1ch.BackColor = System.Drawing.Color.Black;
             this.measurementArea_HorizontalScale_1ch.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.measurementArea_HorizontalScale_1ch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.measurementArea_HorizontalScale_1ch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(132)))));
             this.measurementArea_HorizontalScale_1ch.Location = new System.Drawing.Point(466, 42);
             this.measurementArea_HorizontalScale_1ch.Name = "measurementArea_HorizontalScale_1ch";
             this.measurementArea_HorizontalScale_1ch.Size = new System.Drawing.Size(55, 14);
@@ -763,7 +799,7 @@ namespace Oscilloscope
             this.measurementArea_OffsetPosition_1ch.AutoSize = true;
             this.measurementArea_OffsetPosition_1ch.BackColor = System.Drawing.Color.Black;
             this.measurementArea_OffsetPosition_1ch.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.measurementArea_OffsetPosition_1ch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.measurementArea_OffsetPosition_1ch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(132)))));
             this.measurementArea_OffsetPosition_1ch.Location = new System.Drawing.Point(309, 42);
             this.measurementArea_OffsetPosition_1ch.Name = "measurementArea_OffsetPosition_1ch";
             this.measurementArea_OffsetPosition_1ch.Size = new System.Drawing.Size(24, 14);
@@ -775,7 +811,7 @@ namespace Oscilloscope
             this.measurementArea_VerticalScale_1ch.AutoSize = true;
             this.measurementArea_VerticalScale_1ch.BackColor = System.Drawing.Color.Black;
             this.measurementArea_VerticalScale_1ch.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.measurementArea_VerticalScale_1ch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.measurementArea_VerticalScale_1ch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(132)))));
             this.measurementArea_VerticalScale_1ch.Location = new System.Drawing.Point(153, 42);
             this.measurementArea_VerticalScale_1ch.Name = "measurementArea_VerticalScale_1ch";
             this.measurementArea_VerticalScale_1ch.Size = new System.Drawing.Size(66, 14);
@@ -787,7 +823,7 @@ namespace Oscilloscope
             this.measurementArea_ChannelOne.AutoSize = true;
             this.measurementArea_ChannelOne.BackColor = System.Drawing.Color.Black;
             this.measurementArea_ChannelOne.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.measurementArea_ChannelOne.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.measurementArea_ChannelOne.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(132)))));
             this.measurementArea_ChannelOne.Location = new System.Drawing.Point(5, 42);
             this.measurementArea_ChannelOne.Name = "measurementArea_ChannelOne";
             this.measurementArea_ChannelOne.Size = new System.Drawing.Size(61, 14);
@@ -1039,7 +1075,7 @@ namespace Oscilloscope
             this.ChannelFour_PosOfs_TextBox.BackColor = System.Drawing.Color.Black;
             this.ChannelFour_PosOfs_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ChannelFour_PosOfs_TextBox.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ChannelFour_PosOfs_TextBox.ForeColor = System.Drawing.Color.HotPink;
+            this.ChannelFour_PosOfs_TextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(140)))), ((int)(((byte)(196)))));
             this.ChannelFour_PosOfs_TextBox.Location = new System.Drawing.Point(422, 52);
             this.ChannelFour_PosOfs_TextBox.Margin = new System.Windows.Forms.Padding(0);
             this.ChannelFour_PosOfs_TextBox.Name = "ChannelFour_PosOfs_TextBox";
@@ -1113,7 +1149,7 @@ namespace Oscilloscope
             this.ChannelThree_PosOfs_TextBox.BackColor = System.Drawing.Color.Black;
             this.ChannelThree_PosOfs_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ChannelThree_PosOfs_TextBox.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ChannelThree_PosOfs_TextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.ChannelThree_PosOfs_TextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(252)))), ((int)(((byte)(148)))));
             this.ChannelThree_PosOfs_TextBox.Location = new System.Drawing.Point(293, 52);
             this.ChannelThree_PosOfs_TextBox.Margin = new System.Windows.Forms.Padding(0);
             this.ChannelThree_PosOfs_TextBox.Name = "ChannelThree_PosOfs_TextBox";
@@ -1211,7 +1247,7 @@ namespace Oscilloscope
             this.ChannelOne_PosOfs_TextBox.BackColor = System.Drawing.Color.Black;
             this.ChannelOne_PosOfs_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ChannelOne_PosOfs_TextBox.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ChannelOne_PosOfs_TextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.ChannelOne_PosOfs_TextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(132)))));
             this.ChannelOne_PosOfs_TextBox.Location = new System.Drawing.Point(35, 52);
             this.ChannelOne_PosOfs_TextBox.Margin = new System.Windows.Forms.Padding(0);
             this.ChannelOne_PosOfs_TextBox.Name = "ChannelOne_PosOfs_TextBox";
@@ -1335,7 +1371,7 @@ namespace Oscilloscope
             this.ChannelFour_TextBox.BackColor = System.Drawing.Color.Black;
             this.ChannelFour_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ChannelFour_TextBox.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ChannelFour_TextBox.ForeColor = System.Drawing.Color.HotPink;
+            this.ChannelFour_TextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(140)))), ((int)(((byte)(196)))));
             this.ChannelFour_TextBox.Location = new System.Drawing.Point(422, 6);
             this.ChannelFour_TextBox.Margin = new System.Windows.Forms.Padding(0);
             this.ChannelFour_TextBox.Name = "ChannelFour_TextBox";
@@ -1409,7 +1445,7 @@ namespace Oscilloscope
             this.ChannelThree_TextBox.BackColor = System.Drawing.Color.Black;
             this.ChannelThree_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ChannelThree_TextBox.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ChannelThree_TextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.ChannelThree_TextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(252)))), ((int)(((byte)(148)))));
             this.ChannelThree_TextBox.Location = new System.Drawing.Point(293, 6);
             this.ChannelThree_TextBox.Margin = new System.Windows.Forms.Padding(0);
             this.ChannelThree_TextBox.Name = "ChannelThree_TextBox";
@@ -1527,7 +1563,7 @@ namespace Oscilloscope
             this.ChannelOne_TextBox.BackColor = System.Drawing.Color.Black;
             this.ChannelOne_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ChannelOne_TextBox.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ChannelOne_TextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.ChannelOne_TextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(132)))));
             this.ChannelOne_TextBox.Location = new System.Drawing.Point(35, 6);
             this.ChannelOne_TextBox.Margin = new System.Windows.Forms.Padding(0);
             this.ChannelOne_TextBox.Name = "ChannelOne_TextBox";
@@ -1845,42 +1881,6 @@ namespace Oscilloscope
             this.rightTopTab_CancelButton.TabStop = false;
             this.rightTopTab_CancelButton.Click += new System.EventHandler(this.rightTopTab_CancelButton_Click);
             // 
-            // measurementArea_AutoButton
-            // 
-            this.measurementArea_AutoButton.Image = ((System.Drawing.Image)(resources.GetObject("measurementArea_AutoButton.Image")));
-            this.measurementArea_AutoButton.Location = new System.Drawing.Point(671, 5);
-            this.measurementArea_AutoButton.Name = "measurementArea_AutoButton";
-            this.measurementArea_AutoButton.Size = new System.Drawing.Size(30, 18);
-            this.measurementArea_AutoButton.TabIndex = 27;
-            this.measurementArea_AutoButton.TabStop = false;
-            // 
-            // measurementArea_MaxButton
-            // 
-            this.measurementArea_MaxButton.Image = ((System.Drawing.Image)(resources.GetObject("measurementArea_MaxButton.Image")));
-            this.measurementArea_MaxButton.Location = new System.Drawing.Point(703, 5);
-            this.measurementArea_MaxButton.Name = "measurementArea_MaxButton";
-            this.measurementArea_MaxButton.Size = new System.Drawing.Size(30, 18);
-            this.measurementArea_MaxButton.TabIndex = 28;
-            this.measurementArea_MaxButton.TabStop = false;
-            // 
-            // measurementArea_MidButton
-            // 
-            this.measurementArea_MidButton.Image = ((System.Drawing.Image)(resources.GetObject("measurementArea_MidButton.Image")));
-            this.measurementArea_MidButton.Location = new System.Drawing.Point(735, 5);
-            this.measurementArea_MidButton.Name = "measurementArea_MidButton";
-            this.measurementArea_MidButton.Size = new System.Drawing.Size(30, 18);
-            this.measurementArea_MidButton.TabIndex = 29;
-            this.measurementArea_MidButton.TabStop = false;
-            // 
-            // measurementArea_MinButton
-            // 
-            this.measurementArea_MinButton.Image = ((System.Drawing.Image)(resources.GetObject("measurementArea_MinButton.Image")));
-            this.measurementArea_MinButton.Location = new System.Drawing.Point(767, 5);
-            this.measurementArea_MinButton.Name = "measurementArea_MinButton";
-            this.measurementArea_MinButton.Size = new System.Drawing.Size(30, 18);
-            this.measurementArea_MinButton.TabIndex = 30;
-            this.measurementArea_MinButton.TabStop = false;
-            // 
             // GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1910,6 +1910,10 @@ namespace Oscilloscope
             ((System.ComponentModel.ISupportInitialize)(this.topMenu_HelpButton)).EndInit();
             this.measurementsPanel.ResumeLayout(false);
             this.measurementsPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.measurementArea_MinButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.measurementArea_MidButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.measurementArea_MaxButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.measurementArea_AutoButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.measurementArea_ScalesButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.measurementAreaScale)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPanel)).EndInit();
@@ -1996,10 +2000,6 @@ namespace Oscilloscope
             this.rightMainTab.ResumeLayout(false);
             this.rightTopTab.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.rightTopTab_CancelButton)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.measurementArea_AutoButton)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.measurementArea_MaxButton)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.measurementArea_MidButton)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.measurementArea_MinButton)).EndInit();
             this.ResumeLayout(false);
 
         }
