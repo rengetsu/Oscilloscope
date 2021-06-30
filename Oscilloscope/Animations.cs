@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Oscilloscope
 {
-    class Configuration
+    class Animations
     {
     }
 }

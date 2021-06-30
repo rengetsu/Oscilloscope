@@ -12,6 +12,9 @@ namespace Oscilloscope
 {
     public partial class GUI : Form
     {
+        //  Calls to other classes
+        Calibrations cal = new Calibrations();
+
         public GUI()
         {
             InitializeComponent();
@@ -103,6 +106,11 @@ namespace Oscilloscope
         private void rightTopTab_CancelButton_Click(object sender, EventArgs e)
         {
             rightMainTab.Visible = false;
+        }
+
+        private void ChannelOne_SmallUpButton_Click(object sender, EventArgs e)
+        {
+            ChannelOne_TextBox.Text = cal.Channel_SmallStep_Up();
         }
     }
 }
