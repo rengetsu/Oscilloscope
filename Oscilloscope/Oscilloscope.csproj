@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Animations.cs" />
     <Compile Include="Calibrations.cs" />
     <Compile Include="Channels_Form.cs">
       <SubType>Form</SubType>
@@ -53,7 +54,7 @@
     <Compile Include="Channels_Form.Designer.cs">
       <DependentUpon>Channels_Form.cs</DependentUpon>
     </Compile>
-    <Compile Include="Configuration.cs" />
+    <Compile Include="Configurations.cs" />
     <Compile Include="GUI.cs">
       <SubType>Form</SubType>
     </Compile>
