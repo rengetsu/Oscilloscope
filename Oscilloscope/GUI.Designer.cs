@@ -36,6 +36,10 @@ namespace Oscilloscope
             this.mainTab = new System.Windows.Forms.Panel();
             this.screenPanel = new System.Windows.Forms.Panel();
             this.topControlsPanel = new System.Windows.Forms.Panel();
+            this.statusArea_ChannelFourPanel = new System.Windows.Forms.Panel();
+            this.statusArea_ChannelFourFrame = new System.Windows.Forms.PictureBox();
+            this.statusArea_ChannelThreePanel = new System.Windows.Forms.Panel();
+            this.statusArea_ChannelThreeFrame = new System.Windows.Forms.PictureBox();
             this.statusArea_ChannelTwoPanel = new System.Windows.Forms.Panel();
             this.statusArea_ChannelTwoFrame = new System.Windows.Forms.PictureBox();
             this.statusArea_ChannelOnePanel = new System.Windows.Forms.Panel();
@@ -173,15 +177,17 @@ namespace Oscilloscope
             this.rightMainTab = new System.Windows.Forms.Panel();
             this.rightTopTab = new System.Windows.Forms.Panel();
             this.rightTopTab_CancelButton = new System.Windows.Forms.PictureBox();
-            this.statusArea_ChannelThreePanel = new System.Windows.Forms.Panel();
-            this.statusArea_ChannelThreeFrame = new System.Windows.Forms.PictureBox();
-            this.statusArea_ChannelFourPanel = new System.Windows.Forms.Panel();
-            this.statusArea_ChannelFourFrame = new System.Windows.Forms.PictureBox();
+            this.statusArea_FirstPanel = new System.Windows.Forms.Panel();
+            this.statusArea_FirstFrame = new System.Windows.Forms.PictureBox();
             this.leftMainTab.SuspendLayout();
             this.leftTopTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.leftTopTab_CancelButton)).BeginInit();
             this.mainTab.SuspendLayout();
             this.topControlsPanel.SuspendLayout();
+            this.statusArea_ChannelFourPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.statusArea_ChannelFourFrame)).BeginInit();
+            this.statusArea_ChannelThreePanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.statusArea_ChannelThreeFrame)).BeginInit();
             this.statusArea_ChannelTwoPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.statusArea_ChannelTwoFrame)).BeginInit();
             this.statusArea_ChannelOnePanel.SuspendLayout();
@@ -287,10 +293,8 @@ namespace Oscilloscope
             this.rightMainTab.SuspendLayout();
             this.rightTopTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.rightTopTab_CancelButton)).BeginInit();
-            this.statusArea_ChannelThreePanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.statusArea_ChannelThreeFrame)).BeginInit();
-            this.statusArea_ChannelFourPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.statusArea_ChannelFourFrame)).BeginInit();
+            this.statusArea_FirstPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.statusArea_FirstFrame)).BeginInit();
             this.SuspendLayout();
             // 
             // leftMainTab
@@ -356,6 +360,7 @@ namespace Oscilloscope
             // topControlsPanel
             // 
             this.topControlsPanel.BackColor = System.Drawing.Color.Black;
+            this.topControlsPanel.Controls.Add(this.statusArea_FirstPanel);
             this.topControlsPanel.Controls.Add(this.statusArea_ChannelFourPanel);
             this.topControlsPanel.Controls.Add(this.statusArea_ChannelThreePanel);
             this.topControlsPanel.Controls.Add(this.statusArea_ChannelTwoPanel);
@@ -366,10 +371,49 @@ namespace Oscilloscope
             this.topControlsPanel.Size = new System.Drawing.Size(1040, 41);
             this.topControlsPanel.TabIndex = 16;
             // 
+            // statusArea_ChannelFourPanel
+            // 
+            this.statusArea_ChannelFourPanel.Controls.Add(this.statusArea_ChannelFourFrame);
+            this.statusArea_ChannelFourPanel.Location = new System.Drawing.Point(354, 3);
+            this.statusArea_ChannelFourPanel.Margin = new System.Windows.Forms.Padding(0);
+            this.statusArea_ChannelFourPanel.Name = "statusArea_ChannelFourPanel";
+            this.statusArea_ChannelFourPanel.Size = new System.Drawing.Size(110, 38);
+            this.statusArea_ChannelFourPanel.TabIndex = 3;
+            // 
+            // statusArea_ChannelFourFrame
+            // 
+            this.statusArea_ChannelFourFrame.Image = ((System.Drawing.Image)(resources.GetObject("statusArea_ChannelFourFrame.Image")));
+            this.statusArea_ChannelFourFrame.Location = new System.Drawing.Point(0, 0);
+            this.statusArea_ChannelFourFrame.Margin = new System.Windows.Forms.Padding(0);
+            this.statusArea_ChannelFourFrame.Name = "statusArea_ChannelFourFrame";
+            this.statusArea_ChannelFourFrame.Size = new System.Drawing.Size(110, 36);
+            this.statusArea_ChannelFourFrame.TabIndex = 0;
+            this.statusArea_ChannelFourFrame.TabStop = false;
+            // 
+            // statusArea_ChannelThreePanel
+            // 
+            this.statusArea_ChannelThreePanel.Controls.Add(this.statusArea_ChannelThreeFrame);
+            this.statusArea_ChannelThreePanel.Location = new System.Drawing.Point(241, 3);
+            this.statusArea_ChannelThreePanel.Margin = new System.Windows.Forms.Padding(0);
+            this.statusArea_ChannelThreePanel.Name = "statusArea_ChannelThreePanel";
+            this.statusArea_ChannelThreePanel.Size = new System.Drawing.Size(110, 38);
+            this.statusArea_ChannelThreePanel.TabIndex = 2;
+            // 
+            // statusArea_ChannelThreeFrame
+            // 
+            this.statusArea_ChannelThreeFrame.Image = ((System.Drawing.Image)(resources.GetObject("statusArea_ChannelThreeFrame.Image")));
+            this.statusArea_ChannelThreeFrame.Location = new System.Drawing.Point(0, 0);
+            this.statusArea_ChannelThreeFrame.Margin = new System.Windows.Forms.Padding(0);
+            this.statusArea_ChannelThreeFrame.Name = "statusArea_ChannelThreeFrame";
+            this.statusArea_ChannelThreeFrame.Size = new System.Drawing.Size(110, 36);
+            this.statusArea_ChannelThreeFrame.TabIndex = 0;
+            this.statusArea_ChannelThreeFrame.TabStop = false;
+            // 
             // statusArea_ChannelTwoPanel
             // 
             this.statusArea_ChannelTwoPanel.Controls.Add(this.statusArea_ChannelTwoFrame);
             this.statusArea_ChannelTwoPanel.Location = new System.Drawing.Point(128, 3);
+            this.statusArea_ChannelTwoPanel.Margin = new System.Windows.Forms.Padding(0);
             this.statusArea_ChannelTwoPanel.Name = "statusArea_ChannelTwoPanel";
             this.statusArea_ChannelTwoPanel.Size = new System.Drawing.Size(110, 38);
             this.statusArea_ChannelTwoPanel.TabIndex = 1;
@@ -388,6 +432,7 @@ namespace Oscilloscope
             // 
             this.statusArea_ChannelOnePanel.Controls.Add(this.statusArea_ChannelOneFrame);
             this.statusArea_ChannelOnePanel.Location = new System.Drawing.Point(15, 3);
+            this.statusArea_ChannelOnePanel.Margin = new System.Windows.Forms.Padding(0);
             this.statusArea_ChannelOnePanel.Name = "statusArea_ChannelOnePanel";
             this.statusArea_ChannelOnePanel.Size = new System.Drawing.Size(110, 38);
             this.statusArea_ChannelOnePanel.TabIndex = 0;
@@ -1668,6 +1713,7 @@ namespace Oscilloscope
             this.ChannelOne_SmallUpButton.Size = new System.Drawing.Size(20, 18);
             this.ChannelOne_SmallUpButton.TabIndex = 5;
             this.ChannelOne_SmallUpButton.TabStop = false;
+            this.ChannelOne_SmallUpButton.Click += new System.EventHandler(this.ChannelOne_SmallUpButton_Click);
             // 
             // ChannelOne_SmallDownButton
             // 
@@ -1938,41 +1984,24 @@ namespace Oscilloscope
             this.rightTopTab_CancelButton.TabStop = false;
             this.rightTopTab_CancelButton.Click += new System.EventHandler(this.rightTopTab_CancelButton_Click);
             // 
-            // statusArea_ChannelThreePanel
+            // statusArea_FirstPanel
             // 
-            this.statusArea_ChannelThreePanel.Controls.Add(this.statusArea_ChannelThreeFrame);
-            this.statusArea_ChannelThreePanel.Location = new System.Drawing.Point(241, 3);
-            this.statusArea_ChannelThreePanel.Name = "statusArea_ChannelThreePanel";
-            this.statusArea_ChannelThreePanel.Size = new System.Drawing.Size(110, 38);
-            this.statusArea_ChannelThreePanel.TabIndex = 2;
+            this.statusArea_FirstPanel.Controls.Add(this.statusArea_FirstFrame);
+            this.statusArea_FirstPanel.Location = new System.Drawing.Point(468, 3);
+            this.statusArea_FirstPanel.Margin = new System.Windows.Forms.Padding(0);
+            this.statusArea_FirstPanel.Name = "statusArea_FirstPanel";
+            this.statusArea_FirstPanel.Size = new System.Drawing.Size(170, 38);
+            this.statusArea_FirstPanel.TabIndex = 4;
             // 
-            // statusArea_ChannelThreeFrame
+            // statusArea_FirstFrame
             // 
-            this.statusArea_ChannelThreeFrame.Image = ((System.Drawing.Image)(resources.GetObject("statusArea_ChannelThreeFrame.Image")));
-            this.statusArea_ChannelThreeFrame.Location = new System.Drawing.Point(0, 0);
-            this.statusArea_ChannelThreeFrame.Name = "statusArea_ChannelThreeFrame";
-            this.statusArea_ChannelThreeFrame.Size = new System.Drawing.Size(110, 36);
-            this.statusArea_ChannelThreeFrame.TabIndex = 0;
-            this.statusArea_ChannelThreeFrame.TabStop = false;
-            // 
-            // statusArea_ChannelFourPanel
-            // 
-            this.statusArea_ChannelFourPanel.Controls.Add(this.statusArea_ChannelFourFrame);
-            this.statusArea_ChannelFourPanel.Location = new System.Drawing.Point(354, 3);
-            this.statusArea_ChannelFourPanel.Margin = new System.Windows.Forms.Padding(0);
-            this.statusArea_ChannelFourPanel.Name = "statusArea_ChannelFourPanel";
-            this.statusArea_ChannelFourPanel.Size = new System.Drawing.Size(110, 36);
-            this.statusArea_ChannelFourPanel.TabIndex = 3;
-            // 
-            // statusArea_ChannelFourFrame
-            // 
-            this.statusArea_ChannelFourFrame.Image = ((System.Drawing.Image)(resources.GetObject("statusArea_ChannelFourFrame.Image")));
-            this.statusArea_ChannelFourFrame.Location = new System.Drawing.Point(0, 0);
-            this.statusArea_ChannelFourFrame.Margin = new System.Windows.Forms.Padding(0);
-            this.statusArea_ChannelFourFrame.Name = "statusArea_ChannelFourFrame";
-            this.statusArea_ChannelFourFrame.Size = new System.Drawing.Size(110, 36);
-            this.statusArea_ChannelFourFrame.TabIndex = 0;
-            this.statusArea_ChannelFourFrame.TabStop = false;
+            this.statusArea_FirstFrame.Image = ((System.Drawing.Image)(resources.GetObject("statusArea_FirstFrame.Image")));
+            this.statusArea_FirstFrame.Location = new System.Drawing.Point(0, 0);
+            this.statusArea_FirstFrame.Margin = new System.Windows.Forms.Padding(0);
+            this.statusArea_FirstFrame.Name = "statusArea_FirstFrame";
+            this.statusArea_FirstFrame.Size = new System.Drawing.Size(170, 36);
+            this.statusArea_FirstFrame.TabIndex = 0;
+            this.statusArea_FirstFrame.TabStop = false;
             // 
             // GUI
             // 
@@ -1991,6 +2020,10 @@ namespace Oscilloscope
             ((System.ComponentModel.ISupportInitialize)(this.leftTopTab_CancelButton)).EndInit();
             this.mainTab.ResumeLayout(false);
             this.topControlsPanel.ResumeLayout(false);
+            this.statusArea_ChannelFourPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.statusArea_ChannelFourFrame)).EndInit();
+            this.statusArea_ChannelThreePanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.statusArea_ChannelThreeFrame)).EndInit();
             this.statusArea_ChannelTwoPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.statusArea_ChannelTwoFrame)).EndInit();
             this.statusArea_ChannelOnePanel.ResumeLayout(false);
@@ -2098,10 +2131,8 @@ namespace Oscilloscope
             this.rightMainTab.ResumeLayout(false);
             this.rightTopTab.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.rightTopTab_CancelButton)).EndInit();
-            this.statusArea_ChannelThreePanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.statusArea_ChannelThreeFrame)).EndInit();
-            this.statusArea_ChannelFourPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.statusArea_ChannelFourFrame)).EndInit();
+            this.statusArea_FirstPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.statusArea_FirstFrame)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2314,6 +2345,8 @@ namespace Oscilloscope
         private System.Windows.Forms.PictureBox downMenu_MaskButton;                    //  Mask Button
         private System.Windows.Forms.PictureBox downMenu_EmptyButtons;                  //  Empty Buttons
         private System.Windows.Forms.PictureBox downMenu_UtilityButton;                 //  Utility Button
+        private System.Windows.Forms.Panel statusArea_FirstPanel;
+        private System.Windows.Forms.PictureBox statusArea_FirstFrame;
     }
 }
 
