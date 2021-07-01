@@ -202,16 +202,16 @@
         AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="statusArea_ThirdFrame.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="statusArea_DisplayFrame.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAJYAAAAkCAYAAABrA8OcAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAACVSURBVHhe7dIxDsJAEARB//+15AQLMoeQU86dVVDSaift
-        Y2Y+no+BbaunX1TfwGDHaklU3O/dlLC4n7BICIuEsEgIi4SwSAiLhLBICIuEsEgIi4SwSAiLhLBICIuE
-        sEgIi4SwSAiLhLBICIuEsEgIi4SwSAiLhLBICIuEsEgIi4SwSAiLxBnWOi4D/Gu1dH3ArrOnOV7Z5VhZ
-        AZlxEwAAAABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAAJYAAAAkCAYAAABrA8OcAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        xAAADsQBlSsOGwAAAJVJREFUeF7t0jEOwkAQBEH//7XkBAsyh5BTzp1VUNJqJ+1jZj6ej4Ftq6dfVN/A
+        YMdqSVTc792UsLifsEgIi4SwSAiLhLBICIuEsEgIi4SwSAiLhLBICIuEsEgIi4SwSAiLhLBICIuEsEgI
+        i4SwSAiLhLBICIuEsEgIi4SwSAiLhLBICIvEGdY6LgP8a7V0fcCus6c5XtnlWFkBmXETAAAAAElFTkSu
+        QmCC
 </value>
   </data>
-  <data name="statusArea_SecondFrame.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="statusArea_TriggerFrame.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAJIAAAAkCAYAAABi6GPmAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         xAAADsQBlSsOGwAAAJZJREFUeF7t0jEOwkAQBEH//7XkBAsyh5AzTu6wgpJWO2kfM/PxfAxsW/38IvoG
@@ -220,7 +220,7 @@
         rkJggg==
 </value>
   </data>
-  <data name="statusArea_FirstFrame.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="statusArea_AcquireFrame.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAKoAAAAkCAYAAAAZzKEqAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         xAAADsQBlSsOGwAAAJlJREFUeF7t0jEKw0AQBEH9/7XKHZyMdMboB9tQQcGyk/ax1np8zgXj7D7/kf6C
@@ -1552,7 +1552,7 @@
         YII=
 </value>
   </data>
-  <data name="Timebase_TriggerDelay.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Timebase_Trigger_Delay.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACEAAAAPCAYAAABqQqYpAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         xAAADsQBlSsOGwAAAqtJREFUSEvFU8FOGlEU5d/4iMbCUCcu3KBFAVuTlsSQYuNIbLGVaCySlNA2RjoI
@@ -1569,7 +1569,7 @@
         2udTucHTNhjlXIfrLSwskDwCwgQHdxSLxcQb3Ta4DteT2gj8BnJy1LWUHaQ8AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="Timebase_TriggerPosition.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Timebase_Trigger_Position.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACEAAAAQCAYAAACYwhZnAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         xAAADsQBlSsOGwAAAwpJREFUSEvFkl1Ik1EYx73vKiIqqKyb6ELKcqipWCZlYlCUpSbqNh2baV/alxdC

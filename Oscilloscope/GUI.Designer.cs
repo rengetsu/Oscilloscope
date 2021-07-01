@@ -36,17 +36,40 @@ namespace Oscilloscope
             this.mainTab = new System.Windows.Forms.Panel();
             this.screenPanel = new System.Windows.Forms.Panel();
             this.topControlsPanel = new System.Windows.Forms.Panel();
-            this.statusArea_SecondPanel = new System.Windows.Forms.Panel();
-            this.statusArea_SecondFrame = new System.Windows.Forms.PictureBox();
-            this.statusArea_FirstPanel = new System.Windows.Forms.Panel();
-            this.statusArea_FirstFrame = new System.Windows.Forms.PictureBox();
+            this.statusArea_DisplayPanel = new System.Windows.Forms.Panel();
+            this.statusArea_Display_PersistenceTime = new System.Windows.Forms.Label();
+            this.statusArea_Display_Style = new System.Windows.Forms.Label();
+            this.statusArea_DisplayFrame = new System.Windows.Forms.PictureBox();
+            this.statusArea_TriggerPanel = new System.Windows.Forms.Panel();
+            this.statusArea_Trigger_Style = new System.Windows.Forms.Label();
+            this.statusArea_Trigger_Sensitivity = new System.Windows.Forms.Label();
+            this.statusArea_Trigger_Frequency = new System.Windows.Forms.Label();
+            this.statusArea_Trigger_Mode = new System.Windows.Forms.Label();
+            this.statusArea_Trigger_Source = new System.Windows.Forms.Label();
+            this.statusArea_TriggerFrame = new System.Windows.Forms.PictureBox();
+            this.statusArea_AcquirePanel = new System.Windows.Forms.Panel();
+            this.statusArea_Acquire_Waveforms = new System.Windows.Forms.Label();
+            this.statusArea_Acquire_Mode = new System.Windows.Forms.Label();
+            this.statusArea_Acquire_KS = new System.Windows.Forms.Label();
+            this.statusArea_Acquire_SamplingMode = new System.Windows.Forms.Label();
+            this.statusArea_Acquire_SampleRate = new System.Windows.Forms.Label();
+            this.statusArea_Acquire_Scale = new System.Windows.Forms.Label();
+            this.statusArea_AcquireFrame = new System.Windows.Forms.PictureBox();
             this.statusArea_ChannelFourPanel = new System.Windows.Forms.Panel();
+            this.statusArea_ChannelFour_Offset = new System.Windows.Forms.Label();
+            this.statusArea_ChannelFour_Scale = new System.Windows.Forms.Label();
             this.statusArea_ChannelFourFrame = new System.Windows.Forms.PictureBox();
             this.statusArea_ChannelThreePanel = new System.Windows.Forms.Panel();
+            this.statusArea_ChannelThree_Offset = new System.Windows.Forms.Label();
+            this.statusArea_ChannelThree_Scale = new System.Windows.Forms.Label();
             this.statusArea_ChannelThreeFrame = new System.Windows.Forms.PictureBox();
             this.statusArea_ChannelTwoPanel = new System.Windows.Forms.Panel();
+            this.statusArea_ChannelTwo_Offset = new System.Windows.Forms.Label();
+            this.statusArea_ChannelTwo_Scale = new System.Windows.Forms.Label();
             this.statusArea_ChannelTwoFrame = new System.Windows.Forms.PictureBox();
             this.statusArea_ChannelOnePanel = new System.Windows.Forms.Panel();
+            this.statusArea_ChannelOne_Offset = new System.Windows.Forms.Label();
+            this.statusArea_ChannelOne_Scale = new System.Windows.Forms.Label();
             this.statusArea_ChannelOneFrame = new System.Windows.Forms.PictureBox();
             this.topMenuPanel = new System.Windows.Forms.Panel();
             this.topMenu_ClearButton = new System.Windows.Forms.PictureBox();
@@ -158,8 +181,8 @@ namespace Oscilloscope
             this.ChannelOne_DefaultButton = new System.Windows.Forms.PictureBox();
             this.ChannelOne_SmallUpButton = new System.Windows.Forms.PictureBox();
             this.ChannelOne_SmallDownButton = new System.Windows.Forms.PictureBox();
-            this.Timebase_TriggerDelay = new System.Windows.Forms.PictureBox();
-            this.Timebase_TriggerPosition = new System.Windows.Forms.PictureBox();
+            this.Timebase_Trigger_Delay = new System.Windows.Forms.PictureBox();
+            this.Timebase_Trigger_Position = new System.Windows.Forms.PictureBox();
             this.ChannelTwo_Button = new System.Windows.Forms.PictureBox();
             this.ChannelOne_Button = new System.Windows.Forms.PictureBox();
             this.downMenuPanel = new System.Windows.Forms.Panel();
@@ -181,17 +204,17 @@ namespace Oscilloscope
             this.rightMainTab = new System.Windows.Forms.Panel();
             this.rightTopTab = new System.Windows.Forms.Panel();
             this.rightTopTab_CancelButton = new System.Windows.Forms.PictureBox();
-            this.statusArea_ThirdPanel = new System.Windows.Forms.Panel();
-            this.statusArea_ThirdFrame = new System.Windows.Forms.PictureBox();
             this.leftMainTab.SuspendLayout();
             this.leftTopTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.leftTopTab_CancelButton)).BeginInit();
             this.mainTab.SuspendLayout();
             this.topControlsPanel.SuspendLayout();
-            this.statusArea_SecondPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.statusArea_SecondFrame)).BeginInit();
-            this.statusArea_FirstPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.statusArea_FirstFrame)).BeginInit();
+            this.statusArea_DisplayPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.statusArea_DisplayFrame)).BeginInit();
+            this.statusArea_TriggerPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.statusArea_TriggerFrame)).BeginInit();
+            this.statusArea_AcquirePanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.statusArea_AcquireFrame)).BeginInit();
             this.statusArea_ChannelFourPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.statusArea_ChannelFourFrame)).BeginInit();
             this.statusArea_ChannelThreePanel.SuspendLayout();
@@ -278,8 +301,8 @@ namespace Oscilloscope
             ((System.ComponentModel.ISupportInitialize)(this.ChannelOne_DefaultButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ChannelOne_SmallUpButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ChannelOne_SmallDownButton)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Timebase_TriggerDelay)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Timebase_TriggerPosition)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Timebase_Trigger_Delay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Timebase_Trigger_Position)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ChannelTwo_Button)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ChannelOne_Button)).BeginInit();
             this.downMenuPanel.SuspendLayout();
@@ -301,8 +324,6 @@ namespace Oscilloscope
             this.rightMainTab.SuspendLayout();
             this.rightTopTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.rightTopTab_CancelButton)).BeginInit();
-            this.statusArea_ThirdPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.statusArea_ThirdFrame)).BeginInit();
             this.SuspendLayout();
             // 
             // leftMainTab
@@ -368,9 +389,9 @@ namespace Oscilloscope
             // topControlsPanel
             // 
             this.topControlsPanel.BackColor = System.Drawing.Color.Black;
-            this.topControlsPanel.Controls.Add(this.statusArea_ThirdPanel);
-            this.topControlsPanel.Controls.Add(this.statusArea_SecondPanel);
-            this.topControlsPanel.Controls.Add(this.statusArea_FirstPanel);
+            this.topControlsPanel.Controls.Add(this.statusArea_DisplayPanel);
+            this.topControlsPanel.Controls.Add(this.statusArea_TriggerPanel);
+            this.topControlsPanel.Controls.Add(this.statusArea_AcquirePanel);
             this.topControlsPanel.Controls.Add(this.statusArea_ChannelFourPanel);
             this.topControlsPanel.Controls.Add(this.statusArea_ChannelThreePanel);
             this.topControlsPanel.Controls.Add(this.statusArea_ChannelTwoPanel);
@@ -381,52 +402,260 @@ namespace Oscilloscope
             this.topControlsPanel.Size = new System.Drawing.Size(1040, 41);
             this.topControlsPanel.TabIndex = 16;
             // 
-            // statusArea_SecondPanel
+            // statusArea_DisplayPanel
             // 
-            this.statusArea_SecondPanel.Controls.Add(this.statusArea_SecondFrame);
-            this.statusArea_SecondPanel.Location = new System.Drawing.Point(652, 3);
-            this.statusArea_SecondPanel.Margin = new System.Windows.Forms.Padding(0);
-            this.statusArea_SecondPanel.Name = "statusArea_SecondPanel";
-            this.statusArea_SecondPanel.Size = new System.Drawing.Size(146, 38);
-            this.statusArea_SecondPanel.TabIndex = 5;
+            this.statusArea_DisplayPanel.Controls.Add(this.statusArea_Display_PersistenceTime);
+            this.statusArea_DisplayPanel.Controls.Add(this.statusArea_Display_Style);
+            this.statusArea_DisplayPanel.Controls.Add(this.statusArea_DisplayFrame);
+            this.statusArea_DisplayPanel.Location = new System.Drawing.Point(807, 3);
+            this.statusArea_DisplayPanel.Margin = new System.Windows.Forms.Padding(0);
+            this.statusArea_DisplayPanel.Name = "statusArea_DisplayPanel";
+            this.statusArea_DisplayPanel.Size = new System.Drawing.Size(150, 38);
+            this.statusArea_DisplayPanel.TabIndex = 6;
             // 
-            // statusArea_SecondFrame
+            // statusArea_Display_PersistenceTime
             // 
-            this.statusArea_SecondFrame.Image = ((System.Drawing.Image)(resources.GetObject("statusArea_SecondFrame.Image")));
-            this.statusArea_SecondFrame.Location = new System.Drawing.Point(0, 0);
-            this.statusArea_SecondFrame.Margin = new System.Windows.Forms.Padding(0);
-            this.statusArea_SecondFrame.Name = "statusArea_SecondFrame";
-            this.statusArea_SecondFrame.Size = new System.Drawing.Size(146, 36);
-            this.statusArea_SecondFrame.TabIndex = 0;
-            this.statusArea_SecondFrame.TabStop = false;
+            this.statusArea_Display_PersistenceTime.AutoSize = true;
+            this.statusArea_Display_PersistenceTime.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statusArea_Display_PersistenceTime.ForeColor = System.Drawing.Color.White;
+            this.statusArea_Display_PersistenceTime.Location = new System.Drawing.Point(111, 3);
+            this.statusArea_Display_PersistenceTime.Margin = new System.Windows.Forms.Padding(0);
+            this.statusArea_Display_PersistenceTime.Name = "statusArea_Display_PersistenceTime";
+            this.statusArea_Display_PersistenceTime.Size = new System.Drawing.Size(23, 14);
+            this.statusArea_Display_PersistenceTime.TabIndex = 8;
+            this.statusArea_Display_PersistenceTime.Text = "2 s";
             // 
-            // statusArea_FirstPanel
+            // statusArea_Display_Style
             // 
-            this.statusArea_FirstPanel.Controls.Add(this.statusArea_FirstFrame);
-            this.statusArea_FirstPanel.Location = new System.Drawing.Point(473, 3);
-            this.statusArea_FirstPanel.Margin = new System.Windows.Forms.Padding(0);
-            this.statusArea_FirstPanel.Name = "statusArea_FirstPanel";
-            this.statusArea_FirstPanel.Size = new System.Drawing.Size(170, 38);
-            this.statusArea_FirstPanel.TabIndex = 4;
+            this.statusArea_Display_Style.AutoSize = true;
+            this.statusArea_Display_Style.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statusArea_Display_Style.ForeColor = System.Drawing.Color.White;
+            this.statusArea_Display_Style.Location = new System.Drawing.Point(1, 3);
+            this.statusArea_Display_Style.Margin = new System.Windows.Forms.Padding(0);
+            this.statusArea_Display_Style.Name = "statusArea_Display_Style";
+            this.statusArea_Display_Style.Size = new System.Drawing.Size(78, 14);
+            this.statusArea_Display_Style.TabIndex = 7;
+            this.statusArea_Display_Style.Text = "Dots Persist.";
             // 
-            // statusArea_FirstFrame
+            // statusArea_DisplayFrame
             // 
-            this.statusArea_FirstFrame.Image = ((System.Drawing.Image)(resources.GetObject("statusArea_FirstFrame.Image")));
-            this.statusArea_FirstFrame.Location = new System.Drawing.Point(0, 0);
-            this.statusArea_FirstFrame.Margin = new System.Windows.Forms.Padding(0);
-            this.statusArea_FirstFrame.Name = "statusArea_FirstFrame";
-            this.statusArea_FirstFrame.Size = new System.Drawing.Size(170, 36);
-            this.statusArea_FirstFrame.TabIndex = 0;
-            this.statusArea_FirstFrame.TabStop = false;
+            this.statusArea_DisplayFrame.Image = ((System.Drawing.Image)(resources.GetObject("statusArea_DisplayFrame.Image")));
+            this.statusArea_DisplayFrame.Location = new System.Drawing.Point(0, 0);
+            this.statusArea_DisplayFrame.Margin = new System.Windows.Forms.Padding(0);
+            this.statusArea_DisplayFrame.Name = "statusArea_DisplayFrame";
+            this.statusArea_DisplayFrame.Size = new System.Drawing.Size(150, 36);
+            this.statusArea_DisplayFrame.TabIndex = 0;
+            this.statusArea_DisplayFrame.TabStop = false;
+            // 
+            // statusArea_TriggerPanel
+            // 
+            this.statusArea_TriggerPanel.Controls.Add(this.statusArea_Trigger_Style);
+            this.statusArea_TriggerPanel.Controls.Add(this.statusArea_Trigger_Sensitivity);
+            this.statusArea_TriggerPanel.Controls.Add(this.statusArea_Trigger_Frequency);
+            this.statusArea_TriggerPanel.Controls.Add(this.statusArea_Trigger_Mode);
+            this.statusArea_TriggerPanel.Controls.Add(this.statusArea_Trigger_Source);
+            this.statusArea_TriggerPanel.Controls.Add(this.statusArea_TriggerFrame);
+            this.statusArea_TriggerPanel.Location = new System.Drawing.Point(652, 3);
+            this.statusArea_TriggerPanel.Margin = new System.Windows.Forms.Padding(0);
+            this.statusArea_TriggerPanel.Name = "statusArea_TriggerPanel";
+            this.statusArea_TriggerPanel.Size = new System.Drawing.Size(146, 38);
+            this.statusArea_TriggerPanel.TabIndex = 5;
+            // 
+            // statusArea_Trigger_Style
+            // 
+            this.statusArea_Trigger_Style.AutoSize = true;
+            this.statusArea_Trigger_Style.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statusArea_Trigger_Style.ForeColor = System.Drawing.Color.White;
+            this.statusArea_Trigger_Style.Location = new System.Drawing.Point(41, 3);
+            this.statusArea_Trigger_Style.Margin = new System.Windows.Forms.Padding(0);
+            this.statusArea_Trigger_Style.Name = "statusArea_Trigger_Style";
+            this.statusArea_Trigger_Style.Size = new System.Drawing.Size(34, 14);
+            this.statusArea_Trigger_Style.TabIndex = 6;
+            this.statusArea_Trigger_Style.Text = "Edge";
+            // 
+            // statusArea_Trigger_Sensitivity
+            // 
+            this.statusArea_Trigger_Sensitivity.AutoSize = true;
+            this.statusArea_Trigger_Sensitivity.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statusArea_Trigger_Sensitivity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(132)))));
+            this.statusArea_Trigger_Sensitivity.Location = new System.Drawing.Point(98, 3);
+            this.statusArea_Trigger_Sensitivity.Margin = new System.Windows.Forms.Padding(0);
+            this.statusArea_Trigger_Sensitivity.Name = "statusArea_Trigger_Sensitivity";
+            this.statusArea_Trigger_Sensitivity.Size = new System.Drawing.Size(31, 14);
+            this.statusArea_Trigger_Sensitivity.TabIndex = 5;
+            this.statusArea_Trigger_Sensitivity.Text = "High";
+            // 
+            // statusArea_Trigger_Frequency
+            // 
+            this.statusArea_Trigger_Frequency.AutoSize = true;
+            this.statusArea_Trigger_Frequency.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statusArea_Trigger_Frequency.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(132)))));
+            this.statusArea_Trigger_Frequency.Location = new System.Drawing.Point(54, 19);
+            this.statusArea_Trigger_Frequency.Margin = new System.Windows.Forms.Padding(0);
+            this.statusArea_Trigger_Frequency.Name = "statusArea_Trigger_Frequency";
+            this.statusArea_Trigger_Frequency.Size = new System.Drawing.Size(91, 14);
+            this.statusArea_Trigger_Frequency.TabIndex = 4;
+            this.statusArea_Trigger_Frequency.Text = "f=33.333 33 MHz";
+            // 
+            // statusArea_Trigger_Mode
+            // 
+            this.statusArea_Trigger_Mode.AutoSize = true;
+            this.statusArea_Trigger_Mode.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statusArea_Trigger_Mode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(92)))), ((int)(((byte)(220)))));
+            this.statusArea_Trigger_Mode.Location = new System.Drawing.Point(1, 19);
+            this.statusArea_Trigger_Mode.Margin = new System.Windows.Forms.Padding(0);
+            this.statusArea_Trigger_Mode.Name = "statusArea_Trigger_Mode";
+            this.statusArea_Trigger_Mode.Size = new System.Drawing.Size(38, 14);
+            this.statusArea_Trigger_Mode.TabIndex = 3;
+            this.statusArea_Trigger_Mode.Text = "Trig\'d";
+            // 
+            // statusArea_Trigger_Source
+            // 
+            this.statusArea_Trigger_Source.AutoSize = true;
+            this.statusArea_Trigger_Source.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statusArea_Trigger_Source.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(132)))));
+            this.statusArea_Trigger_Source.Location = new System.Drawing.Point(1, 3);
+            this.statusArea_Trigger_Source.Margin = new System.Windows.Forms.Padding(0);
+            this.statusArea_Trigger_Source.Name = "statusArea_Trigger_Source";
+            this.statusArea_Trigger_Source.Size = new System.Drawing.Size(37, 14);
+            this.statusArea_Trigger_Source.TabIndex = 2;
+            this.statusArea_Trigger_Source.Text = "Ch1  /";
+            // 
+            // statusArea_TriggerFrame
+            // 
+            this.statusArea_TriggerFrame.Image = ((System.Drawing.Image)(resources.GetObject("statusArea_TriggerFrame.Image")));
+            this.statusArea_TriggerFrame.Location = new System.Drawing.Point(0, 0);
+            this.statusArea_TriggerFrame.Margin = new System.Windows.Forms.Padding(0);
+            this.statusArea_TriggerFrame.Name = "statusArea_TriggerFrame";
+            this.statusArea_TriggerFrame.Size = new System.Drawing.Size(146, 36);
+            this.statusArea_TriggerFrame.TabIndex = 0;
+            this.statusArea_TriggerFrame.TabStop = false;
+            // 
+            // statusArea_AcquirePanel
+            // 
+            this.statusArea_AcquirePanel.Controls.Add(this.statusArea_Acquire_Waveforms);
+            this.statusArea_AcquirePanel.Controls.Add(this.statusArea_Acquire_Mode);
+            this.statusArea_AcquirePanel.Controls.Add(this.statusArea_Acquire_KS);
+            this.statusArea_AcquirePanel.Controls.Add(this.statusArea_Acquire_SamplingMode);
+            this.statusArea_AcquirePanel.Controls.Add(this.statusArea_Acquire_SampleRate);
+            this.statusArea_AcquirePanel.Controls.Add(this.statusArea_Acquire_Scale);
+            this.statusArea_AcquirePanel.Controls.Add(this.statusArea_AcquireFrame);
+            this.statusArea_AcquirePanel.Location = new System.Drawing.Point(473, 3);
+            this.statusArea_AcquirePanel.Margin = new System.Windows.Forms.Padding(0);
+            this.statusArea_AcquirePanel.Name = "statusArea_AcquirePanel";
+            this.statusArea_AcquirePanel.Size = new System.Drawing.Size(170, 38);
+            this.statusArea_AcquirePanel.TabIndex = 4;
+            // 
+            // statusArea_Acquire_Waveforms
+            // 
+            this.statusArea_Acquire_Waveforms.AutoSize = true;
+            this.statusArea_Acquire_Waveforms.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statusArea_Acquire_Waveforms.ForeColor = System.Drawing.Color.Lime;
+            this.statusArea_Acquire_Waveforms.Location = new System.Drawing.Point(110, 19);
+            this.statusArea_Acquire_Waveforms.Name = "statusArea_Acquire_Waveforms";
+            this.statusArea_Acquire_Waveforms.Size = new System.Drawing.Size(41, 14);
+            this.statusArea_Acquire_Waveforms.TabIndex = 6;
+            this.statusArea_Acquire_Waveforms.Text = "1 Wfm";
+            // 
+            // statusArea_Acquire_Mode
+            // 
+            this.statusArea_Acquire_Mode.AutoSize = true;
+            this.statusArea_Acquire_Mode.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statusArea_Acquire_Mode.ForeColor = System.Drawing.Color.White;
+            this.statusArea_Acquire_Mode.Location = new System.Drawing.Point(109, 3);
+            this.statusArea_Acquire_Mode.Name = "statusArea_Acquire_Mode";
+            this.statusArea_Acquire_Mode.Size = new System.Drawing.Size(48, 14);
+            this.statusArea_Acquire_Mode.TabIndex = 5;
+            this.statusArea_Acquire_Mode.Text = "Sample";
+            // 
+            // statusArea_Acquire_KS
+            // 
+            this.statusArea_Acquire_KS.AutoSize = true;
+            this.statusArea_Acquire_KS.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statusArea_Acquire_KS.ForeColor = System.Drawing.Color.White;
+            this.statusArea_Acquire_KS.Location = new System.Drawing.Point(60, 19);
+            this.statusArea_Acquire_KS.Name = "statusArea_Acquire_KS";
+            this.statusArea_Acquire_KS.Size = new System.Drawing.Size(30, 14);
+            this.statusArea_Acquire_KS.TabIndex = 4;
+            this.statusArea_Acquire_KS.Text = "2 KS";
+            // 
+            // statusArea_Acquire_SamplingMode
+            // 
+            this.statusArea_Acquire_SamplingMode.AutoSize = true;
+            this.statusArea_Acquire_SamplingMode.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statusArea_Acquire_SamplingMode.ForeColor = System.Drawing.Color.White;
+            this.statusArea_Acquire_SamplingMode.Location = new System.Drawing.Point(67, 3);
+            this.statusArea_Acquire_SamplingMode.Name = "statusArea_Acquire_SamplingMode";
+            this.statusArea_Acquire_SamplingMode.Size = new System.Drawing.Size(20, 14);
+            this.statusArea_Acquire_SamplingMode.TabIndex = 3;
+            this.statusArea_Acquire_SamplingMode.Text = "ET";
+            // 
+            // statusArea_Acquire_SampleRate
+            // 
+            this.statusArea_Acquire_SampleRate.AutoSize = true;
+            this.statusArea_Acquire_SampleRate.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statusArea_Acquire_SampleRate.ForeColor = System.Drawing.Color.White;
+            this.statusArea_Acquire_SampleRate.Location = new System.Drawing.Point(1, 19);
+            this.statusArea_Acquire_SampleRate.Name = "statusArea_Acquire_SampleRate";
+            this.statusArea_Acquire_SampleRate.Size = new System.Drawing.Size(53, 14);
+            this.statusArea_Acquire_SampleRate.TabIndex = 2;
+            this.statusArea_Acquire_SampleRate.Text = "20 GSa/s";
+            // 
+            // statusArea_Acquire_Scale
+            // 
+            this.statusArea_Acquire_Scale.AutoSize = true;
+            this.statusArea_Acquire_Scale.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statusArea_Acquire_Scale.ForeColor = System.Drawing.Color.White;
+            this.statusArea_Acquire_Scale.Location = new System.Drawing.Point(1, 3);
+            this.statusArea_Acquire_Scale.Name = "statusArea_Acquire_Scale";
+            this.statusArea_Acquire_Scale.Size = new System.Drawing.Size(39, 14);
+            this.statusArea_Acquire_Scale.TabIndex = 1;
+            this.statusArea_Acquire_Scale.Text = "10 ns/";
+            // 
+            // statusArea_AcquireFrame
+            // 
+            this.statusArea_AcquireFrame.Image = ((System.Drawing.Image)(resources.GetObject("statusArea_AcquireFrame.Image")));
+            this.statusArea_AcquireFrame.Location = new System.Drawing.Point(0, 0);
+            this.statusArea_AcquireFrame.Margin = new System.Windows.Forms.Padding(0);
+            this.statusArea_AcquireFrame.Name = "statusArea_AcquireFrame";
+            this.statusArea_AcquireFrame.Size = new System.Drawing.Size(170, 36);
+            this.statusArea_AcquireFrame.TabIndex = 0;
+            this.statusArea_AcquireFrame.TabStop = false;
             // 
             // statusArea_ChannelFourPanel
             // 
+            this.statusArea_ChannelFourPanel.Controls.Add(this.statusArea_ChannelFour_Offset);
+            this.statusArea_ChannelFourPanel.Controls.Add(this.statusArea_ChannelFour_Scale);
             this.statusArea_ChannelFourPanel.Controls.Add(this.statusArea_ChannelFourFrame);
             this.statusArea_ChannelFourPanel.Location = new System.Drawing.Point(354, 3);
             this.statusArea_ChannelFourPanel.Margin = new System.Windows.Forms.Padding(0);
             this.statusArea_ChannelFourPanel.Name = "statusArea_ChannelFourPanel";
             this.statusArea_ChannelFourPanel.Size = new System.Drawing.Size(110, 38);
             this.statusArea_ChannelFourPanel.TabIndex = 3;
+            // 
+            // statusArea_ChannelFour_Offset
+            // 
+            this.statusArea_ChannelFour_Offset.AutoSize = true;
+            this.statusArea_ChannelFour_Offset.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statusArea_ChannelFour_Offset.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(140)))), ((int)(((byte)(196)))));
+            this.statusArea_ChannelFour_Offset.Location = new System.Drawing.Point(3, 19);
+            this.statusArea_ChannelFour_Offset.Margin = new System.Windows.Forms.Padding(0);
+            this.statusArea_ChannelFour_Offset.Name = "statusArea_ChannelFour_Offset";
+            this.statusArea_ChannelFour_Offset.Size = new System.Drawing.Size(24, 14);
+            this.statusArea_ChannelFour_Offset.TabIndex = 5;
+            this.statusArea_ChannelFour_Offset.Text = "0 V";
+            // 
+            // statusArea_ChannelFour_Scale
+            // 
+            this.statusArea_ChannelFour_Scale.AutoSize = true;
+            this.statusArea_ChannelFour_Scale.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statusArea_ChannelFour_Scale.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(140)))), ((int)(((byte)(196)))));
+            this.statusArea_ChannelFour_Scale.Location = new System.Drawing.Point(1, 3);
+            this.statusArea_ChannelFour_Scale.Margin = new System.Windows.Forms.Padding(0);
+            this.statusArea_ChannelFour_Scale.Name = "statusArea_ChannelFour_Scale";
+            this.statusArea_ChannelFour_Scale.Size = new System.Drawing.Size(50, 14);
+            this.statusArea_ChannelFour_Scale.TabIndex = 4;
+            this.statusArea_ChannelFour_Scale.Text = "100 mV/";
             // 
             // statusArea_ChannelFourFrame
             // 
@@ -440,12 +669,38 @@ namespace Oscilloscope
             // 
             // statusArea_ChannelThreePanel
             // 
+            this.statusArea_ChannelThreePanel.Controls.Add(this.statusArea_ChannelThree_Offset);
+            this.statusArea_ChannelThreePanel.Controls.Add(this.statusArea_ChannelThree_Scale);
             this.statusArea_ChannelThreePanel.Controls.Add(this.statusArea_ChannelThreeFrame);
             this.statusArea_ChannelThreePanel.Location = new System.Drawing.Point(241, 3);
             this.statusArea_ChannelThreePanel.Margin = new System.Windows.Forms.Padding(0);
             this.statusArea_ChannelThreePanel.Name = "statusArea_ChannelThreePanel";
             this.statusArea_ChannelThreePanel.Size = new System.Drawing.Size(110, 38);
             this.statusArea_ChannelThreePanel.TabIndex = 2;
+            // 
+            // statusArea_ChannelThree_Offset
+            // 
+            this.statusArea_ChannelThree_Offset.AutoSize = true;
+            this.statusArea_ChannelThree_Offset.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statusArea_ChannelThree_Offset.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(252)))), ((int)(((byte)(148)))));
+            this.statusArea_ChannelThree_Offset.Location = new System.Drawing.Point(3, 19);
+            this.statusArea_ChannelThree_Offset.Margin = new System.Windows.Forms.Padding(0);
+            this.statusArea_ChannelThree_Offset.Name = "statusArea_ChannelThree_Offset";
+            this.statusArea_ChannelThree_Offset.Size = new System.Drawing.Size(24, 14);
+            this.statusArea_ChannelThree_Offset.TabIndex = 4;
+            this.statusArea_ChannelThree_Offset.Text = "0 V";
+            // 
+            // statusArea_ChannelThree_Scale
+            // 
+            this.statusArea_ChannelThree_Scale.AutoSize = true;
+            this.statusArea_ChannelThree_Scale.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statusArea_ChannelThree_Scale.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(252)))), ((int)(((byte)(148)))));
+            this.statusArea_ChannelThree_Scale.Location = new System.Drawing.Point(1, 3);
+            this.statusArea_ChannelThree_Scale.Margin = new System.Windows.Forms.Padding(0);
+            this.statusArea_ChannelThree_Scale.Name = "statusArea_ChannelThree_Scale";
+            this.statusArea_ChannelThree_Scale.Size = new System.Drawing.Size(50, 14);
+            this.statusArea_ChannelThree_Scale.TabIndex = 3;
+            this.statusArea_ChannelThree_Scale.Text = "100 mV/";
             // 
             // statusArea_ChannelThreeFrame
             // 
@@ -459,12 +714,38 @@ namespace Oscilloscope
             // 
             // statusArea_ChannelTwoPanel
             // 
+            this.statusArea_ChannelTwoPanel.Controls.Add(this.statusArea_ChannelTwo_Offset);
+            this.statusArea_ChannelTwoPanel.Controls.Add(this.statusArea_ChannelTwo_Scale);
             this.statusArea_ChannelTwoPanel.Controls.Add(this.statusArea_ChannelTwoFrame);
             this.statusArea_ChannelTwoPanel.Location = new System.Drawing.Point(128, 3);
             this.statusArea_ChannelTwoPanel.Margin = new System.Windows.Forms.Padding(0);
             this.statusArea_ChannelTwoPanel.Name = "statusArea_ChannelTwoPanel";
             this.statusArea_ChannelTwoPanel.Size = new System.Drawing.Size(110, 38);
             this.statusArea_ChannelTwoPanel.TabIndex = 1;
+            // 
+            // statusArea_ChannelTwo_Offset
+            // 
+            this.statusArea_ChannelTwo_Offset.AutoSize = true;
+            this.statusArea_ChannelTwo_Offset.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statusArea_ChannelTwo_Offset.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.statusArea_ChannelTwo_Offset.Location = new System.Drawing.Point(3, 19);
+            this.statusArea_ChannelTwo_Offset.Margin = new System.Windows.Forms.Padding(0);
+            this.statusArea_ChannelTwo_Offset.Name = "statusArea_ChannelTwo_Offset";
+            this.statusArea_ChannelTwo_Offset.Size = new System.Drawing.Size(24, 14);
+            this.statusArea_ChannelTwo_Offset.TabIndex = 3;
+            this.statusArea_ChannelTwo_Offset.Text = "0 V";
+            // 
+            // statusArea_ChannelTwo_Scale
+            // 
+            this.statusArea_ChannelTwo_Scale.AutoSize = true;
+            this.statusArea_ChannelTwo_Scale.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statusArea_ChannelTwo_Scale.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.statusArea_ChannelTwo_Scale.Location = new System.Drawing.Point(1, 3);
+            this.statusArea_ChannelTwo_Scale.Margin = new System.Windows.Forms.Padding(0);
+            this.statusArea_ChannelTwo_Scale.Name = "statusArea_ChannelTwo_Scale";
+            this.statusArea_ChannelTwo_Scale.Size = new System.Drawing.Size(50, 14);
+            this.statusArea_ChannelTwo_Scale.TabIndex = 2;
+            this.statusArea_ChannelTwo_Scale.Text = "100 mV/";
             // 
             // statusArea_ChannelTwoFrame
             // 
@@ -478,12 +759,38 @@ namespace Oscilloscope
             // 
             // statusArea_ChannelOnePanel
             // 
+            this.statusArea_ChannelOnePanel.Controls.Add(this.statusArea_ChannelOne_Offset);
+            this.statusArea_ChannelOnePanel.Controls.Add(this.statusArea_ChannelOne_Scale);
             this.statusArea_ChannelOnePanel.Controls.Add(this.statusArea_ChannelOneFrame);
             this.statusArea_ChannelOnePanel.Location = new System.Drawing.Point(15, 3);
             this.statusArea_ChannelOnePanel.Margin = new System.Windows.Forms.Padding(0);
             this.statusArea_ChannelOnePanel.Name = "statusArea_ChannelOnePanel";
             this.statusArea_ChannelOnePanel.Size = new System.Drawing.Size(110, 38);
             this.statusArea_ChannelOnePanel.TabIndex = 0;
+            // 
+            // statusArea_ChannelOne_Offset
+            // 
+            this.statusArea_ChannelOne_Offset.AutoSize = true;
+            this.statusArea_ChannelOne_Offset.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statusArea_ChannelOne_Offset.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(132)))));
+            this.statusArea_ChannelOne_Offset.Location = new System.Drawing.Point(3, 19);
+            this.statusArea_ChannelOne_Offset.Margin = new System.Windows.Forms.Padding(0);
+            this.statusArea_ChannelOne_Offset.Name = "statusArea_ChannelOne_Offset";
+            this.statusArea_ChannelOne_Offset.Size = new System.Drawing.Size(24, 14);
+            this.statusArea_ChannelOne_Offset.TabIndex = 2;
+            this.statusArea_ChannelOne_Offset.Text = "0 V";
+            // 
+            // statusArea_ChannelOne_Scale
+            // 
+            this.statusArea_ChannelOne_Scale.AutoSize = true;
+            this.statusArea_ChannelOne_Scale.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statusArea_ChannelOne_Scale.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(132)))));
+            this.statusArea_ChannelOne_Scale.Location = new System.Drawing.Point(1, 3);
+            this.statusArea_ChannelOne_Scale.Margin = new System.Windows.Forms.Padding(0);
+            this.statusArea_ChannelOne_Scale.Name = "statusArea_ChannelOne_Scale";
+            this.statusArea_ChannelOne_Scale.Size = new System.Drawing.Size(50, 14);
+            this.statusArea_ChannelOne_Scale.TabIndex = 1;
+            this.statusArea_ChannelOne_Scale.Text = "100 mV/";
             // 
             // statusArea_ChannelOneFrame
             // 
@@ -1070,8 +1377,8 @@ namespace Oscilloscope
             this.permanentControlsPanel.Controls.Add(this.ChannelOne_DefaultButton);
             this.permanentControlsPanel.Controls.Add(this.ChannelOne_SmallUpButton);
             this.permanentControlsPanel.Controls.Add(this.ChannelOne_SmallDownButton);
-            this.permanentControlsPanel.Controls.Add(this.Timebase_TriggerDelay);
-            this.permanentControlsPanel.Controls.Add(this.Timebase_TriggerPosition);
+            this.permanentControlsPanel.Controls.Add(this.Timebase_Trigger_Delay);
+            this.permanentControlsPanel.Controls.Add(this.Timebase_Trigger_Position);
             this.permanentControlsPanel.Controls.Add(this.ChannelTwo_Button);
             this.permanentControlsPanel.Controls.Add(this.ChannelOne_Button);
             this.permanentControlsPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -1773,25 +2080,25 @@ namespace Oscilloscope
             this.ChannelOne_SmallDownButton.TabIndex = 4;
             this.ChannelOne_SmallDownButton.TabStop = false;
             // 
-            // Timebase_TriggerDelay
+            // Timebase_Trigger_Delay
             // 
-            this.Timebase_TriggerDelay.Image = ((System.Drawing.Image)(resources.GetObject("Timebase_TriggerDelay.Image")));
-            this.Timebase_TriggerDelay.Location = new System.Drawing.Point(526, 74);
-            this.Timebase_TriggerDelay.Margin = new System.Windows.Forms.Padding(0);
-            this.Timebase_TriggerDelay.Name = "Timebase_TriggerDelay";
-            this.Timebase_TriggerDelay.Size = new System.Drawing.Size(33, 15);
-            this.Timebase_TriggerDelay.TabIndex = 3;
-            this.Timebase_TriggerDelay.TabStop = false;
+            this.Timebase_Trigger_Delay.Image = ((System.Drawing.Image)(resources.GetObject("Timebase_Trigger_Delay.Image")));
+            this.Timebase_Trigger_Delay.Location = new System.Drawing.Point(526, 74);
+            this.Timebase_Trigger_Delay.Margin = new System.Windows.Forms.Padding(0);
+            this.Timebase_Trigger_Delay.Name = "Timebase_Trigger_Delay";
+            this.Timebase_Trigger_Delay.Size = new System.Drawing.Size(33, 15);
+            this.Timebase_Trigger_Delay.TabIndex = 3;
+            this.Timebase_Trigger_Delay.TabStop = false;
             // 
-            // Timebase_TriggerPosition
+            // Timebase_Trigger_Position
             // 
-            this.Timebase_TriggerPosition.Image = ((System.Drawing.Image)(resources.GetObject("Timebase_TriggerPosition.Image")));
-            this.Timebase_TriggerPosition.Location = new System.Drawing.Point(526, 58);
-            this.Timebase_TriggerPosition.Margin = new System.Windows.Forms.Padding(0);
-            this.Timebase_TriggerPosition.Name = "Timebase_TriggerPosition";
-            this.Timebase_TriggerPosition.Size = new System.Drawing.Size(33, 16);
-            this.Timebase_TriggerPosition.TabIndex = 2;
-            this.Timebase_TriggerPosition.TabStop = false;
+            this.Timebase_Trigger_Position.Image = ((System.Drawing.Image)(resources.GetObject("Timebase_Trigger_Position.Image")));
+            this.Timebase_Trigger_Position.Location = new System.Drawing.Point(526, 58);
+            this.Timebase_Trigger_Position.Margin = new System.Windows.Forms.Padding(0);
+            this.Timebase_Trigger_Position.Name = "Timebase_Trigger_Position";
+            this.Timebase_Trigger_Position.Size = new System.Drawing.Size(33, 16);
+            this.Timebase_Trigger_Position.TabIndex = 2;
+            this.Timebase_Trigger_Position.TabStop = false;
             // 
             // ChannelTwo_Button
             // 
@@ -2032,25 +2339,6 @@ namespace Oscilloscope
             this.rightTopTab_CancelButton.TabStop = false;
             this.rightTopTab_CancelButton.Click += new System.EventHandler(this.rightTopTab_CancelButton_Click);
             // 
-            // statusArea_ThirdPanel
-            // 
-            this.statusArea_ThirdPanel.Controls.Add(this.statusArea_ThirdFrame);
-            this.statusArea_ThirdPanel.Location = new System.Drawing.Point(807, 3);
-            this.statusArea_ThirdPanel.Margin = new System.Windows.Forms.Padding(0);
-            this.statusArea_ThirdPanel.Name = "statusArea_ThirdPanel";
-            this.statusArea_ThirdPanel.Size = new System.Drawing.Size(150, 38);
-            this.statusArea_ThirdPanel.TabIndex = 6;
-            // 
-            // statusArea_ThirdFrame
-            // 
-            this.statusArea_ThirdFrame.Image = ((System.Drawing.Image)(resources.GetObject("statusArea_ThirdFrame.Image")));
-            this.statusArea_ThirdFrame.Location = new System.Drawing.Point(0, 0);
-            this.statusArea_ThirdFrame.Margin = new System.Windows.Forms.Padding(0);
-            this.statusArea_ThirdFrame.Name = "statusArea_ThirdFrame";
-            this.statusArea_ThirdFrame.Size = new System.Drawing.Size(150, 36);
-            this.statusArea_ThirdFrame.TabIndex = 0;
-            this.statusArea_ThirdFrame.TabStop = false;
-            // 
             // GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2068,17 +2356,26 @@ namespace Oscilloscope
             ((System.ComponentModel.ISupportInitialize)(this.leftTopTab_CancelButton)).EndInit();
             this.mainTab.ResumeLayout(false);
             this.topControlsPanel.ResumeLayout(false);
-            this.statusArea_SecondPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.statusArea_SecondFrame)).EndInit();
-            this.statusArea_FirstPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.statusArea_FirstFrame)).EndInit();
+            this.statusArea_DisplayPanel.ResumeLayout(false);
+            this.statusArea_DisplayPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.statusArea_DisplayFrame)).EndInit();
+            this.statusArea_TriggerPanel.ResumeLayout(false);
+            this.statusArea_TriggerPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.statusArea_TriggerFrame)).EndInit();
+            this.statusArea_AcquirePanel.ResumeLayout(false);
+            this.statusArea_AcquirePanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.statusArea_AcquireFrame)).EndInit();
             this.statusArea_ChannelFourPanel.ResumeLayout(false);
+            this.statusArea_ChannelFourPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.statusArea_ChannelFourFrame)).EndInit();
             this.statusArea_ChannelThreePanel.ResumeLayout(false);
+            this.statusArea_ChannelThreePanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.statusArea_ChannelThreeFrame)).EndInit();
             this.statusArea_ChannelTwoPanel.ResumeLayout(false);
+            this.statusArea_ChannelTwoPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.statusArea_ChannelTwoFrame)).EndInit();
             this.statusArea_ChannelOnePanel.ResumeLayout(false);
+            this.statusArea_ChannelOnePanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.statusArea_ChannelOneFrame)).EndInit();
             this.topMenuPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.topMenu_ClearButton)).EndInit();
@@ -2160,8 +2457,8 @@ namespace Oscilloscope
             ((System.ComponentModel.ISupportInitialize)(this.ChannelOne_DefaultButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ChannelOne_SmallUpButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ChannelOne_SmallDownButton)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Timebase_TriggerDelay)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Timebase_TriggerPosition)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Timebase_Trigger_Delay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Timebase_Trigger_Position)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ChannelTwo_Button)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ChannelOne_Button)).EndInit();
             this.downMenuPanel.ResumeLayout(false);
@@ -2183,8 +2480,6 @@ namespace Oscilloscope
             this.rightMainTab.ResumeLayout(false);
             this.rightTopTab.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.rightTopTab_CancelButton)).EndInit();
-            this.statusArea_ThirdPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.statusArea_ThirdFrame)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2232,19 +2527,45 @@ namespace Oscilloscope
 
         //  Status Area Channel Frames
         private System.Windows.Forms.PictureBox statusArea_ChannelOneFrame;             //  Status Area Channel One Frame
+        private System.Windows.Forms.Label statusArea_ChannelOne_Scale;                 //  Status Area Channel One Scale
+        private System.Windows.Forms.Label statusArea_ChannelOne_Offset;                //  Status Area Channel One Offset
+
         private System.Windows.Forms.PictureBox statusArea_ChannelTwoFrame;             //  Status Area Channel Two Frame
+        private System.Windows.Forms.Label statusArea_ChannelTwo_Scale;                 //  Status Area Channel Two Scale
+        private System.Windows.Forms.Label statusArea_ChannelTwo_Offset;                //  Status Area Channel Two Offset
+
         private System.Windows.Forms.PictureBox statusArea_ChannelThreeFrame;           //  Status Area Channel Three Frame
+        private System.Windows.Forms.Label statusArea_ChannelThree_Scale;               //  Status Area Channel Three Scale
+        private System.Windows.Forms.Label statusArea_ChannelThree_Offset;              //  Status Area Channel Three Offset
+
         private System.Windows.Forms.PictureBox statusArea_ChannelFourFrame;            //  Status Area Channel Four Frame
+        private System.Windows.Forms.Label statusArea_ChannelFour_Scale;                //  Status Area Channel Four Scale
+        private System.Windows.Forms.Label statusArea_ChannelFour_Offset;               //  Status Area Channel Four Offset
 
-        //  Status Area Panels
-        private System.Windows.Forms.Panel statusArea_FirstPanel;                       //  Status Area First Panel
-        private System.Windows.Forms.Panel statusArea_SecondPanel;                      //  Status Area Second Panel
-        private System.Windows.Forms.Panel statusArea_ThirdPanel;                       //  Status Area Third Panel
+        //  Status Area Acquire
+        private System.Windows.Forms.Panel statusArea_AcquirePanel;                     //  Status Area Acquire Panel
+        private System.Windows.Forms.PictureBox statusArea_AcquireFrame;                //  Status Area Acquire Frame
+        private System.Windows.Forms.Label statusArea_Acquire_KS;                       //  Status Area Acquire KS
+        private System.Windows.Forms.Label statusArea_Acquire_Mode;                     //  Status Area Acquire Mode
+        private System.Windows.Forms.Label statusArea_Acquire_Scale;                    //  Status Area Acquire Scale
+        private System.Windows.Forms.Label statusArea_Acquire_Waveforms;                //  Status Area Acquire Waveforms
+        private System.Windows.Forms.Label statusArea_Acquire_SampleRate;               //  Status Area Acquire Sample Rate
+        private System.Windows.Forms.Label statusArea_Acquire_SamplingMode;             //  Status Area Acuire Sampling Mode
 
-        //  Status Area Frames
-        private System.Windows.Forms.PictureBox statusArea_FirstFrame;                  //  Status Area First Frame
-        private System.Windows.Forms.PictureBox statusArea_SecondFrame;                 //  Status Area Second Frame
-        private System.Windows.Forms.PictureBox statusArea_ThirdFrame;                  //  Status Area Third Frame
+        //  Status Area Trigger
+        private System.Windows.Forms.Panel statusArea_TriggerPanel;                     //  Status Area Trigger Panel
+        private System.Windows.Forms.PictureBox statusArea_TriggerFrame;                //  Status Area Trigger Frame
+        private System.Windows.Forms.Label statusArea_Trigger_Source;                   //  Status Area Trigger Source
+        private System.Windows.Forms.Label statusArea_Trigger_Mode;                     //  Status Area Trigger Mode
+        private System.Windows.Forms.Label statusArea_Trigger_Frequency;                //  Status Area Trigger Frequency
+        private System.Windows.Forms.Label statusArea_Trigger_Style;                    //  Status Area Trigger Style
+        private System.Windows.Forms.Label statusArea_Trigger_Sensitivity;              //  Status Area Trigger Sensitivity
+
+        //  Status Area Display
+        private System.Windows.Forms.Panel statusArea_DisplayPanel;                     //  Status Area Display Panel
+        private System.Windows.Forms.PictureBox statusArea_DisplayFrame;                //  Status Area Display Frame
+        private System.Windows.Forms.Label statusArea_Display_Style;                    //  Status Area Display Style
+        private System.Windows.Forms.Label statusArea_Display_PersistenceTime;          //  Status Area Display Persistence Time
 
         //  Screen Panel
         private System.Windows.Forms.Panel screenPanel;                                 //  Screen Panel
@@ -2256,11 +2577,11 @@ namespace Oscilloscope
         private System.Windows.Forms.PictureBox measurementAreaScale;                   //  Measurement Area Scale
 
         //  Measurement Area Buttons
-        private System.Windows.Forms.PictureBox measurementArea_ScalesButton;           //  Measurement Area Scales Button
-        private System.Windows.Forms.PictureBox measurementArea_AutoButton;             //  Measurement Area Auto Button
-        private System.Windows.Forms.PictureBox measurementArea_MaxButton;              //  Measurement Area Max Button
-        private System.Windows.Forms.PictureBox measurementArea_MidButton;              //  Measurement Area Mid Button
         private System.Windows.Forms.PictureBox measurementArea_MinButton;              //  Measurement Area Min Button
+        private System.Windows.Forms.PictureBox measurementArea_MidButton;              //  Measurement Area Mid Button
+        private System.Windows.Forms.PictureBox measurementArea_MaxButton;              //  Measurement Area Max Button
+        private System.Windows.Forms.PictureBox measurementArea_AutoButton;             //  Measurement Area Auto Button
+        private System.Windows.Forms.PictureBox measurementArea_ScalesButton;           //  Measurement Area Scales Button
 
         //  Measurement Area Channels
         private System.Windows.Forms.Label measurementArea_ChannelOne;                  //  Measurement Area Channel One
@@ -2387,8 +2708,8 @@ namespace Oscilloscope
         private System.Windows.Forms.PictureBox ChannelFour_PosOfs_StatusBar;           //  Channel Four Position Offset Status Bar
 
         //  Timebase
-        private System.Windows.Forms.PictureBox Timebase_TriggerDelay;                  //  Timebase Trigger Delay
-        private System.Windows.Forms.PictureBox Timebase_TriggerPosition;               //  Timebase Trigger Position
+        private System.Windows.Forms.PictureBox Timebase_Trigger_Delay;                 //  Timebase Trigger Delay
+        private System.Windows.Forms.PictureBox Timebase_Trigger_Position;              //  Timebase Trigger Position
 
         //  Down Menu Panel
         private System.Windows.Forms.Panel downMenuPanel;                               //  Down Menu Panel
