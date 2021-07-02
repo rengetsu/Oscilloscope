@@ -115,6 +115,36 @@ namespace Oscilloscope
             this.measurementAreaScale = new System.Windows.Forms.PictureBox();
             this.iconPanel = new System.Windows.Forms.PictureBox();
             this.permanentControlsPanel = new System.Windows.Forms.Panel();
+            this.triggerLevel_StatusBar = new System.Windows.Forms.PictureBox();
+            this.triggerLevel_TextBox = new System.Windows.Forms.TextBox();
+            this.triggerLevel_BigUpButton = new System.Windows.Forms.PictureBox();
+            this.triggerLevel_BigDownButton = new System.Windows.Forms.PictureBox();
+            this.triggerLevel_ZeroButton = new System.Windows.Forms.PictureBox();
+            this.triggerLevel_SmallUpButton = new System.Windows.Forms.PictureBox();
+            this.triggerLevel_SmallDownButton = new System.Windows.Forms.PictureBox();
+            this.triggerMode_TriggeredButton = new System.Windows.Forms.PictureBox();
+            this.triggerMode_FreerunButton = new System.Windows.Forms.PictureBox();
+            this.triggerSlope_Bislope = new System.Windows.Forms.PictureBox();
+            this.triggerSlope_Negative = new System.Windows.Forms.PictureBox();
+            this.triggerSlope_Positive = new System.Windows.Forms.PictureBox();
+            this.triggerSource_ChannelFour = new System.Windows.Forms.PictureBox();
+            this.triggerSource_ChannelThree = new System.Windows.Forms.PictureBox();
+            this.triggerSource_ChannelTwo = new System.Windows.Forms.PictureBox();
+            this.triggerSource_ChannelOne = new System.Windows.Forms.PictureBox();
+            this.timebase_StatusBar = new System.Windows.Forms.PictureBox();
+            this.timebase_BigRightButton = new System.Windows.Forms.PictureBox();
+            this.timebase_BigLeftButton = new System.Windows.Forms.PictureBox();
+            this.timebase_DefaultButton = new System.Windows.Forms.PictureBox();
+            this.timebase_SmallRightButton = new System.Windows.Forms.PictureBox();
+            this.timebase_SmallLeftButton = new System.Windows.Forms.PictureBox();
+            this.timebase_TextBox = new System.Windows.Forms.TextBox();
+            this.timebase_PosDelay_StatusBar = new System.Windows.Forms.PictureBox();
+            this.timebase_PosDelay_BigRightButton = new System.Windows.Forms.PictureBox();
+            this.timebase_PosDelay_BigLeftButton = new System.Windows.Forms.PictureBox();
+            this.timebase_PosDelay_DefaultButton = new System.Windows.Forms.PictureBox();
+            this.timebase_PosDelay_SmallRightButton = new System.Windows.Forms.PictureBox();
+            this.timebase_PosDelay_SmallLeftButton = new System.Windows.Forms.PictureBox();
+            this.timebase_PosDelay_TextBox = new System.Windows.Forms.TextBox();
             this.ChannelFour_OffsetButton = new System.Windows.Forms.PictureBox();
             this.ChannelFour_PositionButton = new System.Windows.Forms.PictureBox();
             this.ChannelThree_OffsetButton = new System.Windows.Forms.PictureBox();
@@ -181,8 +211,8 @@ namespace Oscilloscope
             this.ChannelOne_DefaultButton = new System.Windows.Forms.PictureBox();
             this.ChannelOne_SmallUpButton = new System.Windows.Forms.PictureBox();
             this.ChannelOne_SmallDownButton = new System.Windows.Forms.PictureBox();
-            this.Timebase_Trigger_Delay = new System.Windows.Forms.PictureBox();
-            this.Timebase_Trigger_Position = new System.Windows.Forms.PictureBox();
+            this.timebase_DelayButton = new System.Windows.Forms.PictureBox();
+            this.timebase_PositionButton = new System.Windows.Forms.PictureBox();
             this.ChannelTwo_Button = new System.Windows.Forms.PictureBox();
             this.ChannelOne_Button = new System.Windows.Forms.PictureBox();
             this.downMenuPanel = new System.Windows.Forms.Panel();
@@ -243,6 +273,33 @@ namespace Oscilloscope
             ((System.ComponentModel.ISupportInitialize)(this.measurementAreaScale)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPanel)).BeginInit();
             this.permanentControlsPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.triggerLevel_StatusBar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.triggerLevel_BigUpButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.triggerLevel_BigDownButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.triggerLevel_ZeroButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.triggerLevel_SmallUpButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.triggerLevel_SmallDownButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.triggerMode_TriggeredButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.triggerMode_FreerunButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.triggerSlope_Bislope)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.triggerSlope_Negative)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.triggerSlope_Positive)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.triggerSource_ChannelFour)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.triggerSource_ChannelThree)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.triggerSource_ChannelTwo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.triggerSource_ChannelOne)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timebase_StatusBar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timebase_BigRightButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timebase_BigLeftButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timebase_DefaultButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timebase_SmallRightButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timebase_SmallLeftButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timebase_PosDelay_StatusBar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timebase_PosDelay_BigRightButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timebase_PosDelay_BigLeftButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timebase_PosDelay_DefaultButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timebase_PosDelay_SmallRightButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timebase_PosDelay_SmallLeftButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ChannelFour_OffsetButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ChannelFour_PositionButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ChannelThree_OffsetButton)).BeginInit();
@@ -301,8 +358,8 @@ namespace Oscilloscope
             ((System.ComponentModel.ISupportInitialize)(this.ChannelOne_DefaultButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ChannelOne_SmallUpButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ChannelOne_SmallDownButton)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Timebase_Trigger_Delay)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Timebase_Trigger_Position)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timebase_DelayButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timebase_PositionButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ChannelTwo_Button)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ChannelOne_Button)).BeginInit();
             this.downMenuPanel.SuspendLayout();
@@ -1311,6 +1368,36 @@ namespace Oscilloscope
             // 
             // permanentControlsPanel
             // 
+            this.permanentControlsPanel.Controls.Add(this.triggerLevel_StatusBar);
+            this.permanentControlsPanel.Controls.Add(this.triggerLevel_TextBox);
+            this.permanentControlsPanel.Controls.Add(this.triggerLevel_BigUpButton);
+            this.permanentControlsPanel.Controls.Add(this.triggerLevel_BigDownButton);
+            this.permanentControlsPanel.Controls.Add(this.triggerLevel_ZeroButton);
+            this.permanentControlsPanel.Controls.Add(this.triggerLevel_SmallUpButton);
+            this.permanentControlsPanel.Controls.Add(this.triggerLevel_SmallDownButton);
+            this.permanentControlsPanel.Controls.Add(this.triggerMode_TriggeredButton);
+            this.permanentControlsPanel.Controls.Add(this.triggerMode_FreerunButton);
+            this.permanentControlsPanel.Controls.Add(this.triggerSlope_Bislope);
+            this.permanentControlsPanel.Controls.Add(this.triggerSlope_Negative);
+            this.permanentControlsPanel.Controls.Add(this.triggerSlope_Positive);
+            this.permanentControlsPanel.Controls.Add(this.triggerSource_ChannelFour);
+            this.permanentControlsPanel.Controls.Add(this.triggerSource_ChannelThree);
+            this.permanentControlsPanel.Controls.Add(this.triggerSource_ChannelTwo);
+            this.permanentControlsPanel.Controls.Add(this.triggerSource_ChannelOne);
+            this.permanentControlsPanel.Controls.Add(this.timebase_StatusBar);
+            this.permanentControlsPanel.Controls.Add(this.timebase_BigRightButton);
+            this.permanentControlsPanel.Controls.Add(this.timebase_BigLeftButton);
+            this.permanentControlsPanel.Controls.Add(this.timebase_DefaultButton);
+            this.permanentControlsPanel.Controls.Add(this.timebase_SmallRightButton);
+            this.permanentControlsPanel.Controls.Add(this.timebase_SmallLeftButton);
+            this.permanentControlsPanel.Controls.Add(this.timebase_TextBox);
+            this.permanentControlsPanel.Controls.Add(this.timebase_PosDelay_StatusBar);
+            this.permanentControlsPanel.Controls.Add(this.timebase_PosDelay_BigRightButton);
+            this.permanentControlsPanel.Controls.Add(this.timebase_PosDelay_BigLeftButton);
+            this.permanentControlsPanel.Controls.Add(this.timebase_PosDelay_DefaultButton);
+            this.permanentControlsPanel.Controls.Add(this.timebase_PosDelay_SmallRightButton);
+            this.permanentControlsPanel.Controls.Add(this.timebase_PosDelay_SmallLeftButton);
+            this.permanentControlsPanel.Controls.Add(this.timebase_PosDelay_TextBox);
             this.permanentControlsPanel.Controls.Add(this.ChannelFour_OffsetButton);
             this.permanentControlsPanel.Controls.Add(this.ChannelFour_PositionButton);
             this.permanentControlsPanel.Controls.Add(this.ChannelThree_OffsetButton);
@@ -1377,8 +1464,8 @@ namespace Oscilloscope
             this.permanentControlsPanel.Controls.Add(this.ChannelOne_DefaultButton);
             this.permanentControlsPanel.Controls.Add(this.ChannelOne_SmallUpButton);
             this.permanentControlsPanel.Controls.Add(this.ChannelOne_SmallDownButton);
-            this.permanentControlsPanel.Controls.Add(this.Timebase_Trigger_Delay);
-            this.permanentControlsPanel.Controls.Add(this.Timebase_Trigger_Position);
+            this.permanentControlsPanel.Controls.Add(this.timebase_DelayButton);
+            this.permanentControlsPanel.Controls.Add(this.timebase_PositionButton);
             this.permanentControlsPanel.Controls.Add(this.ChannelTwo_Button);
             this.permanentControlsPanel.Controls.Add(this.ChannelOne_Button);
             this.permanentControlsPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -1386,6 +1473,310 @@ namespace Oscilloscope
             this.permanentControlsPanel.Name = "permanentControlsPanel";
             this.permanentControlsPanel.Size = new System.Drawing.Size(1040, 94);
             this.permanentControlsPanel.TabIndex = 13;
+            // 
+            // triggerLevel_StatusBar
+            // 
+            this.triggerLevel_StatusBar.Image = ((System.Drawing.Image)(resources.GetObject("triggerLevel_StatusBar.Image")));
+            this.triggerLevel_StatusBar.Location = new System.Drawing.Point(710, 24);
+            this.triggerLevel_StatusBar.Margin = new System.Windows.Forms.Padding(0);
+            this.triggerLevel_StatusBar.Name = "triggerLevel_StatusBar";
+            this.triggerLevel_StatusBar.Size = new System.Drawing.Size(90, 5);
+            this.triggerLevel_StatusBar.TabIndex = 99;
+            this.triggerLevel_StatusBar.TabStop = false;
+            // 
+            // triggerLevel_TextBox
+            // 
+            this.triggerLevel_TextBox.BackColor = System.Drawing.Color.Black;
+            this.triggerLevel_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.triggerLevel_TextBox.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.triggerLevel_TextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(132)))));
+            this.triggerLevel_TextBox.Location = new System.Drawing.Point(710, 6);
+            this.triggerLevel_TextBox.Margin = new System.Windows.Forms.Padding(0);
+            this.triggerLevel_TextBox.Name = "triggerLevel_TextBox";
+            this.triggerLevel_TextBox.ReadOnly = true;
+            this.triggerLevel_TextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.triggerLevel_TextBox.Size = new System.Drawing.Size(90, 20);
+            this.triggerLevel_TextBox.TabIndex = 98;
+            this.triggerLevel_TextBox.Text = " 0 V";
+            // 
+            // triggerLevel_BigUpButton
+            // 
+            this.triggerLevel_BigUpButton.Image = ((System.Drawing.Image)(resources.GetObject("triggerLevel_BigUpButton.Image")));
+            this.triggerLevel_BigUpButton.Location = new System.Drawing.Point(780, 29);
+            this.triggerLevel_BigUpButton.Margin = new System.Windows.Forms.Padding(0);
+            this.triggerLevel_BigUpButton.Name = "triggerLevel_BigUpButton";
+            this.triggerLevel_BigUpButton.Size = new System.Drawing.Size(21, 18);
+            this.triggerLevel_BigUpButton.TabIndex = 97;
+            this.triggerLevel_BigUpButton.TabStop = false;
+            // 
+            // triggerLevel_BigDownButton
+            // 
+            this.triggerLevel_BigDownButton.Image = ((System.Drawing.Image)(resources.GetObject("triggerLevel_BigDownButton.Image")));
+            this.triggerLevel_BigDownButton.Location = new System.Drawing.Point(761, 29);
+            this.triggerLevel_BigDownButton.Margin = new System.Windows.Forms.Padding(0);
+            this.triggerLevel_BigDownButton.Name = "triggerLevel_BigDownButton";
+            this.triggerLevel_BigDownButton.Size = new System.Drawing.Size(21, 18);
+            this.triggerLevel_BigDownButton.TabIndex = 96;
+            this.triggerLevel_BigDownButton.TabStop = false;
+            // 
+            // triggerLevel_ZeroButton
+            // 
+            this.triggerLevel_ZeroButton.Image = ((System.Drawing.Image)(resources.GetObject("triggerLevel_ZeroButton.Image")));
+            this.triggerLevel_ZeroButton.Location = new System.Drawing.Point(748, 29);
+            this.triggerLevel_ZeroButton.Margin = new System.Windows.Forms.Padding(0);
+            this.triggerLevel_ZeroButton.Name = "triggerLevel_ZeroButton";
+            this.triggerLevel_ZeroButton.Size = new System.Drawing.Size(14, 18);
+            this.triggerLevel_ZeroButton.TabIndex = 95;
+            this.triggerLevel_ZeroButton.TabStop = false;
+            // 
+            // triggerLevel_SmallUpButton
+            // 
+            this.triggerLevel_SmallUpButton.Image = ((System.Drawing.Image)(resources.GetObject("triggerLevel_SmallUpButton.Image")));
+            this.triggerLevel_SmallUpButton.Location = new System.Drawing.Point(729, 29);
+            this.triggerLevel_SmallUpButton.Margin = new System.Windows.Forms.Padding(0);
+            this.triggerLevel_SmallUpButton.Name = "triggerLevel_SmallUpButton";
+            this.triggerLevel_SmallUpButton.Size = new System.Drawing.Size(21, 18);
+            this.triggerLevel_SmallUpButton.TabIndex = 94;
+            this.triggerLevel_SmallUpButton.TabStop = false;
+            // 
+            // triggerLevel_SmallDownButton
+            // 
+            this.triggerLevel_SmallDownButton.Image = ((System.Drawing.Image)(resources.GetObject("triggerLevel_SmallDownButton.Image")));
+            this.triggerLevel_SmallDownButton.Location = new System.Drawing.Point(710, 29);
+            this.triggerLevel_SmallDownButton.Margin = new System.Windows.Forms.Padding(0);
+            this.triggerLevel_SmallDownButton.Name = "triggerLevel_SmallDownButton";
+            this.triggerLevel_SmallDownButton.Size = new System.Drawing.Size(21, 18);
+            this.triggerLevel_SmallDownButton.TabIndex = 93;
+            this.triggerLevel_SmallDownButton.TabStop = false;
+            // 
+            // triggerMode_TriggeredButton
+            // 
+            this.triggerMode_TriggeredButton.Image = ((System.Drawing.Image)(resources.GetObject("triggerMode_TriggeredButton.Image")));
+            this.triggerMode_TriggeredButton.Location = new System.Drawing.Point(757, 51);
+            this.triggerMode_TriggeredButton.Name = "triggerMode_TriggeredButton";
+            this.triggerMode_TriggeredButton.Size = new System.Drawing.Size(47, 19);
+            this.triggerMode_TriggeredButton.TabIndex = 92;
+            this.triggerMode_TriggeredButton.TabStop = false;
+            // 
+            // triggerMode_FreerunButton
+            // 
+            this.triggerMode_FreerunButton.Image = ((System.Drawing.Image)(resources.GetObject("triggerMode_FreerunButton.Image")));
+            this.triggerMode_FreerunButton.Location = new System.Drawing.Point(710, 51);
+            this.triggerMode_FreerunButton.Name = "triggerMode_FreerunButton";
+            this.triggerMode_FreerunButton.Size = new System.Drawing.Size(48, 19);
+            this.triggerMode_FreerunButton.TabIndex = 91;
+            this.triggerMode_FreerunButton.TabStop = false;
+            // 
+            // triggerSlope_Bislope
+            // 
+            this.triggerSlope_Bislope.Image = ((System.Drawing.Image)(resources.GetObject("triggerSlope_Bislope.Image")));
+            this.triggerSlope_Bislope.Location = new System.Drawing.Point(757, 74);
+            this.triggerSlope_Bislope.Name = "triggerSlope_Bislope";
+            this.triggerSlope_Bislope.Size = new System.Drawing.Size(47, 19);
+            this.triggerSlope_Bislope.TabIndex = 90;
+            this.triggerSlope_Bislope.TabStop = false;
+            // 
+            // triggerSlope_Negative
+            // 
+            this.triggerSlope_Negative.Image = ((System.Drawing.Image)(resources.GetObject("triggerSlope_Negative.Image")));
+            this.triggerSlope_Negative.Location = new System.Drawing.Point(711, 74);
+            this.triggerSlope_Negative.Name = "triggerSlope_Negative";
+            this.triggerSlope_Negative.Size = new System.Drawing.Size(47, 19);
+            this.triggerSlope_Negative.TabIndex = 89;
+            this.triggerSlope_Negative.TabStop = false;
+            // 
+            // triggerSlope_Positive
+            // 
+            this.triggerSlope_Positive.Image = ((System.Drawing.Image)(resources.GetObject("triggerSlope_Positive.Image")));
+            this.triggerSlope_Positive.Location = new System.Drawing.Point(665, 74);
+            this.triggerSlope_Positive.Name = "triggerSlope_Positive";
+            this.triggerSlope_Positive.Size = new System.Drawing.Size(47, 19);
+            this.triggerSlope_Positive.TabIndex = 88;
+            this.triggerSlope_Positive.TabStop = false;
+            // 
+            // triggerSource_ChannelFour
+            // 
+            this.triggerSource_ChannelFour.Image = ((System.Drawing.Image)(resources.GetObject("triggerSource_ChannelFour.Image")));
+            this.triggerSource_ChannelFour.Location = new System.Drawing.Point(665, 54);
+            this.triggerSource_ChannelFour.Name = "triggerSource_ChannelFour";
+            this.triggerSource_ChannelFour.Size = new System.Drawing.Size(41, 17);
+            this.triggerSource_ChannelFour.TabIndex = 87;
+            this.triggerSource_ChannelFour.TabStop = false;
+            // 
+            // triggerSource_ChannelThree
+            // 
+            this.triggerSource_ChannelThree.Image = ((System.Drawing.Image)(resources.GetObject("triggerSource_ChannelThree.Image")));
+            this.triggerSource_ChannelThree.Location = new System.Drawing.Point(665, 38);
+            this.triggerSource_ChannelThree.Name = "triggerSource_ChannelThree";
+            this.triggerSource_ChannelThree.Size = new System.Drawing.Size(41, 17);
+            this.triggerSource_ChannelThree.TabIndex = 86;
+            this.triggerSource_ChannelThree.TabStop = false;
+            // 
+            // triggerSource_ChannelTwo
+            // 
+            this.triggerSource_ChannelTwo.Image = ((System.Drawing.Image)(resources.GetObject("triggerSource_ChannelTwo.Image")));
+            this.triggerSource_ChannelTwo.Location = new System.Drawing.Point(665, 22);
+            this.triggerSource_ChannelTwo.Name = "triggerSource_ChannelTwo";
+            this.triggerSource_ChannelTwo.Size = new System.Drawing.Size(41, 17);
+            this.triggerSource_ChannelTwo.TabIndex = 85;
+            this.triggerSource_ChannelTwo.TabStop = false;
+            // 
+            // triggerSource_ChannelOne
+            // 
+            this.triggerSource_ChannelOne.Image = ((System.Drawing.Image)(resources.GetObject("triggerSource_ChannelOne.Image")));
+            this.triggerSource_ChannelOne.Location = new System.Drawing.Point(665, 6);
+            this.triggerSource_ChannelOne.Name = "triggerSource_ChannelOne";
+            this.triggerSource_ChannelOne.Size = new System.Drawing.Size(41, 17);
+            this.triggerSource_ChannelOne.TabIndex = 84;
+            this.triggerSource_ChannelOne.TabStop = false;
+            // 
+            // timebase_StatusBar
+            // 
+            this.timebase_StatusBar.Image = ((System.Drawing.Image)(resources.GetObject("timebase_StatusBar.Image")));
+            this.timebase_StatusBar.Location = new System.Drawing.Point(562, 25);
+            this.timebase_StatusBar.Margin = new System.Windows.Forms.Padding(0);
+            this.timebase_StatusBar.Name = "timebase_StatusBar";
+            this.timebase_StatusBar.Size = new System.Drawing.Size(92, 5);
+            this.timebase_StatusBar.TabIndex = 83;
+            this.timebase_StatusBar.TabStop = false;
+            // 
+            // timebase_BigRightButton
+            // 
+            this.timebase_BigRightButton.Image = ((System.Drawing.Image)(resources.GetObject("timebase_BigRightButton.Image")));
+            this.timebase_BigRightButton.Location = new System.Drawing.Point(634, 29);
+            this.timebase_BigRightButton.Margin = new System.Windows.Forms.Padding(0);
+            this.timebase_BigRightButton.Name = "timebase_BigRightButton";
+            this.timebase_BigRightButton.Size = new System.Drawing.Size(20, 18);
+            this.timebase_BigRightButton.TabIndex = 82;
+            this.timebase_BigRightButton.TabStop = false;
+            // 
+            // timebase_BigLeftButton
+            // 
+            this.timebase_BigLeftButton.Image = ((System.Drawing.Image)(resources.GetObject("timebase_BigLeftButton.Image")));
+            this.timebase_BigLeftButton.Location = new System.Drawing.Point(615, 29);
+            this.timebase_BigLeftButton.Margin = new System.Windows.Forms.Padding(0);
+            this.timebase_BigLeftButton.Name = "timebase_BigLeftButton";
+            this.timebase_BigLeftButton.Size = new System.Drawing.Size(20, 18);
+            this.timebase_BigLeftButton.TabIndex = 81;
+            this.timebase_BigLeftButton.TabStop = false;
+            // 
+            // timebase_DefaultButton
+            // 
+            this.timebase_DefaultButton.Image = ((System.Drawing.Image)(resources.GetObject("timebase_DefaultButton.Image")));
+            this.timebase_DefaultButton.Location = new System.Drawing.Point(600, 29);
+            this.timebase_DefaultButton.Margin = new System.Windows.Forms.Padding(0);
+            this.timebase_DefaultButton.Name = "timebase_DefaultButton";
+            this.timebase_DefaultButton.Size = new System.Drawing.Size(16, 18);
+            this.timebase_DefaultButton.TabIndex = 80;
+            this.timebase_DefaultButton.TabStop = false;
+            // 
+            // timebase_SmallRightButton
+            // 
+            this.timebase_SmallRightButton.Image = ((System.Drawing.Image)(resources.GetObject("timebase_SmallRightButton.Image")));
+            this.timebase_SmallRightButton.Location = new System.Drawing.Point(581, 29);
+            this.timebase_SmallRightButton.Margin = new System.Windows.Forms.Padding(0);
+            this.timebase_SmallRightButton.Name = "timebase_SmallRightButton";
+            this.timebase_SmallRightButton.Size = new System.Drawing.Size(20, 18);
+            this.timebase_SmallRightButton.TabIndex = 79;
+            this.timebase_SmallRightButton.TabStop = false;
+            // 
+            // timebase_SmallLeftButton
+            // 
+            this.timebase_SmallLeftButton.Image = ((System.Drawing.Image)(resources.GetObject("timebase_SmallLeftButton.Image")));
+            this.timebase_SmallLeftButton.Location = new System.Drawing.Point(562, 29);
+            this.timebase_SmallLeftButton.Margin = new System.Windows.Forms.Padding(0);
+            this.timebase_SmallLeftButton.Name = "timebase_SmallLeftButton";
+            this.timebase_SmallLeftButton.Size = new System.Drawing.Size(20, 18);
+            this.timebase_SmallLeftButton.TabIndex = 78;
+            this.timebase_SmallLeftButton.TabStop = false;
+            // 
+            // timebase_TextBox
+            // 
+            this.timebase_TextBox.BackColor = System.Drawing.Color.Black;
+            this.timebase_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.timebase_TextBox.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.timebase_TextBox.ForeColor = System.Drawing.Color.White;
+            this.timebase_TextBox.Location = new System.Drawing.Point(562, 6);
+            this.timebase_TextBox.Margin = new System.Windows.Forms.Padding(0);
+            this.timebase_TextBox.Name = "timebase_TextBox";
+            this.timebase_TextBox.ReadOnly = true;
+            this.timebase_TextBox.Size = new System.Drawing.Size(92, 20);
+            this.timebase_TextBox.TabIndex = 77;
+            this.timebase_TextBox.Text = "10 ns/div";
+            // 
+            // timebase_PosDelay_StatusBar
+            // 
+            this.timebase_PosDelay_StatusBar.Image = ((System.Drawing.Image)(resources.GetObject("timebase_PosDelay_StatusBar.Image")));
+            this.timebase_PosDelay_StatusBar.Location = new System.Drawing.Point(562, 71);
+            this.timebase_PosDelay_StatusBar.Margin = new System.Windows.Forms.Padding(0);
+            this.timebase_PosDelay_StatusBar.Name = "timebase_PosDelay_StatusBar";
+            this.timebase_PosDelay_StatusBar.Size = new System.Drawing.Size(92, 5);
+            this.timebase_PosDelay_StatusBar.TabIndex = 76;
+            this.timebase_PosDelay_StatusBar.TabStop = false;
+            // 
+            // timebase_PosDelay_BigRightButton
+            // 
+            this.timebase_PosDelay_BigRightButton.Image = ((System.Drawing.Image)(resources.GetObject("timebase_PosDelay_BigRightButton.Image")));
+            this.timebase_PosDelay_BigRightButton.Location = new System.Drawing.Point(634, 75);
+            this.timebase_PosDelay_BigRightButton.Margin = new System.Windows.Forms.Padding(0);
+            this.timebase_PosDelay_BigRightButton.Name = "timebase_PosDelay_BigRightButton";
+            this.timebase_PosDelay_BigRightButton.Size = new System.Drawing.Size(20, 18);
+            this.timebase_PosDelay_BigRightButton.TabIndex = 75;
+            this.timebase_PosDelay_BigRightButton.TabStop = false;
+            // 
+            // timebase_PosDelay_BigLeftButton
+            // 
+            this.timebase_PosDelay_BigLeftButton.Image = ((System.Drawing.Image)(resources.GetObject("timebase_PosDelay_BigLeftButton.Image")));
+            this.timebase_PosDelay_BigLeftButton.Location = new System.Drawing.Point(615, 75);
+            this.timebase_PosDelay_BigLeftButton.Margin = new System.Windows.Forms.Padding(0);
+            this.timebase_PosDelay_BigLeftButton.Name = "timebase_PosDelay_BigLeftButton";
+            this.timebase_PosDelay_BigLeftButton.Size = new System.Drawing.Size(20, 18);
+            this.timebase_PosDelay_BigLeftButton.TabIndex = 74;
+            this.timebase_PosDelay_BigLeftButton.TabStop = false;
+            // 
+            // timebase_PosDelay_DefaultButton
+            // 
+            this.timebase_PosDelay_DefaultButton.Image = ((System.Drawing.Image)(resources.GetObject("timebase_PosDelay_DefaultButton.Image")));
+            this.timebase_PosDelay_DefaultButton.Location = new System.Drawing.Point(600, 75);
+            this.timebase_PosDelay_DefaultButton.Margin = new System.Windows.Forms.Padding(0);
+            this.timebase_PosDelay_DefaultButton.Name = "timebase_PosDelay_DefaultButton";
+            this.timebase_PosDelay_DefaultButton.Size = new System.Drawing.Size(16, 18);
+            this.timebase_PosDelay_DefaultButton.TabIndex = 73;
+            this.timebase_PosDelay_DefaultButton.TabStop = false;
+            // 
+            // timebase_PosDelay_SmallRightButton
+            // 
+            this.timebase_PosDelay_SmallRightButton.Image = ((System.Drawing.Image)(resources.GetObject("timebase_PosDelay_SmallRightButton.Image")));
+            this.timebase_PosDelay_SmallRightButton.Location = new System.Drawing.Point(581, 75);
+            this.timebase_PosDelay_SmallRightButton.Margin = new System.Windows.Forms.Padding(0);
+            this.timebase_PosDelay_SmallRightButton.Name = "timebase_PosDelay_SmallRightButton";
+            this.timebase_PosDelay_SmallRightButton.Size = new System.Drawing.Size(20, 18);
+            this.timebase_PosDelay_SmallRightButton.TabIndex = 72;
+            this.timebase_PosDelay_SmallRightButton.TabStop = false;
+            // 
+            // timebase_PosDelay_SmallLeftButton
+            // 
+            this.timebase_PosDelay_SmallLeftButton.Image = ((System.Drawing.Image)(resources.GetObject("timebase_PosDelay_SmallLeftButton.Image")));
+            this.timebase_PosDelay_SmallLeftButton.Location = new System.Drawing.Point(562, 75);
+            this.timebase_PosDelay_SmallLeftButton.Margin = new System.Windows.Forms.Padding(0);
+            this.timebase_PosDelay_SmallLeftButton.Name = "timebase_PosDelay_SmallLeftButton";
+            this.timebase_PosDelay_SmallLeftButton.Size = new System.Drawing.Size(20, 18);
+            this.timebase_PosDelay_SmallLeftButton.TabIndex = 71;
+            this.timebase_PosDelay_SmallLeftButton.TabStop = false;
+            // 
+            // timebase_PosDelay_TextBox
+            // 
+            this.timebase_PosDelay_TextBox.BackColor = System.Drawing.Color.Black;
+            this.timebase_PosDelay_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.timebase_PosDelay_TextBox.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.timebase_PosDelay_TextBox.ForeColor = System.Drawing.Color.White;
+            this.timebase_PosDelay_TextBox.Location = new System.Drawing.Point(562, 52);
+            this.timebase_PosDelay_TextBox.Margin = new System.Windows.Forms.Padding(0);
+            this.timebase_PosDelay_TextBox.Name = "timebase_PosDelay_TextBox";
+            this.timebase_PosDelay_TextBox.ReadOnly = true;
+            this.timebase_PosDelay_TextBox.Size = new System.Drawing.Size(92, 20);
+            this.timebase_PosDelay_TextBox.TabIndex = 70;
+            this.timebase_PosDelay_TextBox.Text = "50 %";
             // 
             // ChannelFour_OffsetButton
             // 
@@ -2080,25 +2471,25 @@ namespace Oscilloscope
             this.ChannelOne_SmallDownButton.TabIndex = 4;
             this.ChannelOne_SmallDownButton.TabStop = false;
             // 
-            // Timebase_Trigger_Delay
+            // timebase_DelayButton
             // 
-            this.Timebase_Trigger_Delay.Image = ((System.Drawing.Image)(resources.GetObject("Timebase_Trigger_Delay.Image")));
-            this.Timebase_Trigger_Delay.Location = new System.Drawing.Point(526, 74);
-            this.Timebase_Trigger_Delay.Margin = new System.Windows.Forms.Padding(0);
-            this.Timebase_Trigger_Delay.Name = "Timebase_Trigger_Delay";
-            this.Timebase_Trigger_Delay.Size = new System.Drawing.Size(33, 15);
-            this.Timebase_Trigger_Delay.TabIndex = 3;
-            this.Timebase_Trigger_Delay.TabStop = false;
+            this.timebase_DelayButton.Image = ((System.Drawing.Image)(resources.GetObject("timebase_DelayButton.Image")));
+            this.timebase_DelayButton.Location = new System.Drawing.Point(526, 74);
+            this.timebase_DelayButton.Margin = new System.Windows.Forms.Padding(0);
+            this.timebase_DelayButton.Name = "timebase_DelayButton";
+            this.timebase_DelayButton.Size = new System.Drawing.Size(33, 15);
+            this.timebase_DelayButton.TabIndex = 3;
+            this.timebase_DelayButton.TabStop = false;
             // 
-            // Timebase_Trigger_Position
+            // timebase_PositionButton
             // 
-            this.Timebase_Trigger_Position.Image = ((System.Drawing.Image)(resources.GetObject("Timebase_Trigger_Position.Image")));
-            this.Timebase_Trigger_Position.Location = new System.Drawing.Point(526, 58);
-            this.Timebase_Trigger_Position.Margin = new System.Windows.Forms.Padding(0);
-            this.Timebase_Trigger_Position.Name = "Timebase_Trigger_Position";
-            this.Timebase_Trigger_Position.Size = new System.Drawing.Size(33, 16);
-            this.Timebase_Trigger_Position.TabIndex = 2;
-            this.Timebase_Trigger_Position.TabStop = false;
+            this.timebase_PositionButton.Image = ((System.Drawing.Image)(resources.GetObject("timebase_PositionButton.Image")));
+            this.timebase_PositionButton.Location = new System.Drawing.Point(526, 58);
+            this.timebase_PositionButton.Margin = new System.Windows.Forms.Padding(0);
+            this.timebase_PositionButton.Name = "timebase_PositionButton";
+            this.timebase_PositionButton.Size = new System.Drawing.Size(33, 16);
+            this.timebase_PositionButton.TabIndex = 2;
+            this.timebase_PositionButton.TabStop = false;
             // 
             // ChannelTwo_Button
             // 
@@ -2399,6 +2790,33 @@ namespace Oscilloscope
             ((System.ComponentModel.ISupportInitialize)(this.iconPanel)).EndInit();
             this.permanentControlsPanel.ResumeLayout(false);
             this.permanentControlsPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.triggerLevel_StatusBar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.triggerLevel_BigUpButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.triggerLevel_BigDownButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.triggerLevel_ZeroButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.triggerLevel_SmallUpButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.triggerLevel_SmallDownButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.triggerMode_TriggeredButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.triggerMode_FreerunButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.triggerSlope_Bislope)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.triggerSlope_Negative)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.triggerSlope_Positive)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.triggerSource_ChannelFour)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.triggerSource_ChannelThree)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.triggerSource_ChannelTwo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.triggerSource_ChannelOne)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timebase_StatusBar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timebase_BigRightButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timebase_BigLeftButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timebase_DefaultButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timebase_SmallRightButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timebase_SmallLeftButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timebase_PosDelay_StatusBar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timebase_PosDelay_BigRightButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timebase_PosDelay_BigLeftButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timebase_PosDelay_DefaultButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timebase_PosDelay_SmallRightButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timebase_PosDelay_SmallLeftButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ChannelFour_OffsetButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ChannelFour_PositionButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ChannelThree_OffsetButton)).EndInit();
@@ -2457,8 +2875,8 @@ namespace Oscilloscope
             ((System.ComponentModel.ISupportInitialize)(this.ChannelOne_DefaultButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ChannelOne_SmallUpButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ChannelOne_SmallDownButton)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Timebase_Trigger_Delay)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Timebase_Trigger_Position)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timebase_DelayButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timebase_PositionButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ChannelTwo_Button)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ChannelOne_Button)).EndInit();
             this.downMenuPanel.ResumeLayout(false);
@@ -2708,8 +3126,48 @@ namespace Oscilloscope
         private System.Windows.Forms.PictureBox ChannelFour_PosOfs_StatusBar;           //  Channel Four Position Offset Status Bar
 
         //  Timebase
-        private System.Windows.Forms.PictureBox Timebase_Trigger_Delay;                 //  Timebase Trigger Delay
-        private System.Windows.Forms.PictureBox Timebase_Trigger_Position;              //  Timebase Trigger Position
+        private System.Windows.Forms.TextBox timebase_TextBox;                          //  Timebase TextBox
+        private System.Windows.Forms.PictureBox timebase_StatusBar;                     //  Timebase Status Bar
+        private System.Windows.Forms.PictureBox timebase_BigLeftButton;                 //  Timebase Big Left Button
+        private System.Windows.Forms.PictureBox timebase_BigRightButton;                //  Timebase Big Right Button
+        private System.Windows.Forms.PictureBox timebase_DefaultButton;                 //  Timebase Default Button
+        private System.Windows.Forms.PictureBox timebase_SmallLeftButton;               //  Timebase Small Left Button
+        private System.Windows.Forms.PictureBox timebase_SmallRightButton;              //  Timebase Small Right Button
+
+        //  Timabase Position Delay
+        private System.Windows.Forms.TextBox timebase_PosDelay_TextBox;                 //  Timebase Position Delay TextBox
+        private System.Windows.Forms.PictureBox timebase_PosDelay_StatusBar;            //  Timebase Position Delay Status Bar
+        private System.Windows.Forms.PictureBox timebase_PosDelay_SmallLeftButton;      //  Timebase Position Delay Small Left Button
+        private System.Windows.Forms.PictureBox timebase_PosDelay_SmallRightButton;     //  Timebase Position Delay Small Right Button
+        private System.Windows.Forms.PictureBox timebase_PosDelay_DefaultButton;        //  Timebase Position Delay Default Button
+        private System.Windows.Forms.PictureBox timebase_PosDelay_BigLeftButton;        //  Timebase Position Delay Big Left Button
+        private System.Windows.Forms.PictureBox timebase_PosDelay_BigRightButton;       //  Timebase Position Delay 
+        private System.Windows.Forms.PictureBox timebase_DelayButton;                   //  Timebase Delay Button
+        private System.Windows.Forms.PictureBox timebase_PositionButton;                //  Timebase Position Button
+
+        //  Trigger Mode
+        private System.Windows.Forms.PictureBox triggerMode_TriggeredButton;            //  Trigger Mode Triggered Button
+        private System.Windows.Forms.PictureBox triggerMode_FreerunButton;              //  Trigger Mode Freerun Button
+
+        //  Trigger Level
+        private System.Windows.Forms.TextBox triggerLevel_TextBox;                      //  Trigger Level TextBox
+        private System.Windows.Forms.PictureBox triggerLevel_StatusBar;                 //  Trigger Level Status Bar
+        private System.Windows.Forms.PictureBox triggerLevel_SmallDownButton;           //  Trigger Level Small Down Button
+        private System.Windows.Forms.PictureBox triggerLevel_SmallUpButton;             //  Trigger Level Small Up Button
+        private System.Windows.Forms.PictureBox triggerLevel_ZeroButton;                //  Trigger Level Zero Button
+        private System.Windows.Forms.PictureBox triggerLevel_BigDownButton;             //  Trigger Level Big Down Button
+        private System.Windows.Forms.PictureBox triggerLevel_BigUpButton;               //  Trigger Level Big Up Button
+
+        //  Trigger Source
+        private System.Windows.Forms.PictureBox triggerSource_ChannelOne;               //  Trigger Source Channel One
+        private System.Windows.Forms.PictureBox triggerSource_ChannelTwo;               //  Trigger Source Channel Two
+        private System.Windows.Forms.PictureBox triggerSource_ChannelThree;             //  Trigger Source Channel Three
+        private System.Windows.Forms.PictureBox triggerSource_ChannelFour;              //  Trigger Source Channel Four
+
+        //  Trigger Slope
+        private System.Windows.Forms.PictureBox triggerSlope_Positive;                  //  Trigger Slope Positive
+        private System.Windows.Forms.PictureBox triggerSlope_Negative;                  //  Trigger Slope Negative
+        private System.Windows.Forms.PictureBox triggerSlope_Bislope;                   //  Trigger Slope Bislope
 
         //  Down Menu Panel
         private System.Windows.Forms.Panel downMenuPanel;                               //  Down Menu Panel
