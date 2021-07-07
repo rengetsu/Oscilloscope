@@ -234,6 +234,16 @@ namespace Oscilloscope
             this.rightMainTab = new System.Windows.Forms.Panel();
             this.rightTopTab = new System.Windows.Forms.Panel();
             this.rightTopTab_CancelButton = new System.Windows.Forms.PictureBox();
+            this.menuStrip = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.setupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.measurementsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ananlysisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.systemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.utilityToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.leftMainTab.SuspendLayout();
             this.leftTopTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.leftTopTab_CancelButton)).BeginInit();
@@ -381,6 +391,7 @@ namespace Oscilloscope
             this.rightMainTab.SuspendLayout();
             this.rightTopTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.rightTopTab_CancelButton)).BeginInit();
+            this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // leftMainTab
@@ -388,10 +399,10 @@ namespace Oscilloscope
             this.leftMainTab.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.leftMainTab.Controls.Add(this.leftTopTab);
             this.leftMainTab.Dock = System.Windows.Forms.DockStyle.Left;
-            this.leftMainTab.Location = new System.Drawing.Point(0, 0);
+            this.leftMainTab.Location = new System.Drawing.Point(0, 24);
             this.leftMainTab.Margin = new System.Windows.Forms.Padding(0);
             this.leftMainTab.Name = "leftMainTab";
-            this.leftMainTab.Size = new System.Drawing.Size(230, 704);
+            this.leftMainTab.Size = new System.Drawing.Size(230, 680);
             this.leftMainTab.TabIndex = 1;
             this.leftMainTab.Visible = false;
             // 
@@ -426,9 +437,9 @@ namespace Oscilloscope
             this.mainTab.Controls.Add(this.permanentControlsPanel);
             this.mainTab.Controls.Add(this.downMenuPanel);
             this.mainTab.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mainTab.Location = new System.Drawing.Point(230, 0);
+            this.mainTab.Location = new System.Drawing.Point(230, 24);
             this.mainTab.Name = "mainTab";
-            this.mainTab.Size = new System.Drawing.Size(1040, 704);
+            this.mainTab.Size = new System.Drawing.Size(1040, 680);
             this.mainTab.TabIndex = 3;
             // 
             // screenPanel
@@ -440,7 +451,7 @@ namespace Oscilloscope
             this.screenPanel.ForeColor = System.Drawing.SystemColors.ControlText;
             this.screenPanel.Location = new System.Drawing.Point(0, 68);
             this.screenPanel.Name = "screenPanel";
-            this.screenPanel.Size = new System.Drawing.Size(1040, 371);
+            this.screenPanel.Size = new System.Drawing.Size(1040, 347);
             this.screenPanel.TabIndex = 17;
             // 
             // topControlsPanel
@@ -1006,7 +1017,7 @@ namespace Oscilloscope
             this.measurementsPanel.Controls.Add(this.measurementAreaScale);
             this.measurementsPanel.Controls.Add(this.iconPanel);
             this.measurementsPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.measurementsPanel.Location = new System.Drawing.Point(0, 439);
+            this.measurementsPanel.Location = new System.Drawing.Point(0, 415);
             this.measurementsPanel.Name = "measurementsPanel";
             this.measurementsPanel.Size = new System.Drawing.Size(1040, 116);
             this.measurementsPanel.TabIndex = 14;
@@ -1469,7 +1480,7 @@ namespace Oscilloscope
             this.permanentControlsPanel.Controls.Add(this.ChannelTwo_Button);
             this.permanentControlsPanel.Controls.Add(this.ChannelOne_Button);
             this.permanentControlsPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.permanentControlsPanel.Location = new System.Drawing.Point(0, 555);
+            this.permanentControlsPanel.Location = new System.Drawing.Point(0, 531);
             this.permanentControlsPanel.Name = "permanentControlsPanel";
             this.permanentControlsPanel.Size = new System.Drawing.Size(1040, 94);
             this.permanentControlsPanel.TabIndex = 13;
@@ -2530,7 +2541,7 @@ namespace Oscilloscope
             this.downMenuPanel.Controls.Add(this.downMenu_SaveButton);
             this.downMenuPanel.Controls.Add(this.downMenu_TriggerButton);
             this.downMenuPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.downMenuPanel.Location = new System.Drawing.Point(0, 649);
+            this.downMenuPanel.Location = new System.Drawing.Point(0, 625);
             this.downMenuPanel.Margin = new System.Windows.Forms.Padding(0);
             this.downMenuPanel.Name = "downMenuPanel";
             this.downMenuPanel.Size = new System.Drawing.Size(1040, 55);
@@ -2703,10 +2714,10 @@ namespace Oscilloscope
             this.rightMainTab.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.rightMainTab.Controls.Add(this.rightTopTab);
             this.rightMainTab.Dock = System.Windows.Forms.DockStyle.Right;
-            this.rightMainTab.Location = new System.Drawing.Point(1040, 0);
+            this.rightMainTab.Location = new System.Drawing.Point(1040, 24);
             this.rightMainTab.Margin = new System.Windows.Forms.Padding(0);
             this.rightMainTab.Name = "rightMainTab";
-            this.rightMainTab.Size = new System.Drawing.Size(230, 704);
+            this.rightMainTab.Size = new System.Drawing.Size(230, 680);
             this.rightMainTab.TabIndex = 4;
             this.rightMainTab.Visible = false;
             // 
@@ -2730,6 +2741,79 @@ namespace Oscilloscope
             this.rightTopTab_CancelButton.TabStop = false;
             this.rightTopTab_CancelButton.Click += new System.EventHandler(this.rightTopTab_CancelButton_Click);
             // 
+            // menuStrip
+            // 
+            this.menuStrip.BackColor = System.Drawing.Color.White;
+            this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem,
+            this.editToolStripMenuItem,
+            this.viewToolStripMenuItem,
+            this.setupToolStripMenuItem,
+            this.measurementsToolStripMenuItem,
+            this.ananlysisToolStripMenuItem,
+            this.systemToolStripMenuItem,
+            this.utilityToolStripMenuItem,
+            this.helpToolStripMenuItem});
+            this.menuStrip.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip.Name = "menuStrip";
+            this.menuStrip.Size = new System.Drawing.Size(1270, 24);
+            this.menuStrip.TabIndex = 6;
+            this.menuStrip.Text = "menuStrip1";
+            // 
+            // fileToolStripMenuItem
+            // 
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Text = "File";
+            // 
+            // editToolStripMenuItem
+            // 
+            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
+            this.editToolStripMenuItem.Text = "Edit";
+            // 
+            // viewToolStripMenuItem
+            // 
+            this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
+            this.viewToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.viewToolStripMenuItem.Text = "View";
+            // 
+            // setupToolStripMenuItem
+            // 
+            this.setupToolStripMenuItem.Name = "setupToolStripMenuItem";
+            this.setupToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
+            this.setupToolStripMenuItem.Text = "Setup";
+            // 
+            // measurementsToolStripMenuItem
+            // 
+            this.measurementsToolStripMenuItem.Name = "measurementsToolStripMenuItem";
+            this.measurementsToolStripMenuItem.Size = new System.Drawing.Size(97, 20);
+            this.measurementsToolStripMenuItem.Text = "Measurements";
+            // 
+            // ananlysisToolStripMenuItem
+            // 
+            this.ananlysisToolStripMenuItem.Name = "ananlysisToolStripMenuItem";
+            this.ananlysisToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
+            this.ananlysisToolStripMenuItem.Text = "Analysis";
+            // 
+            // systemToolStripMenuItem
+            // 
+            this.systemToolStripMenuItem.Name = "systemToolStripMenuItem";
+            this.systemToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
+            this.systemToolStripMenuItem.Text = "System";
+            // 
+            // utilityToolStripMenuItem
+            // 
+            this.utilityToolStripMenuItem.Name = "utilityToolStripMenuItem";
+            this.utilityToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
+            this.utilityToolStripMenuItem.Text = "Utility";
+            // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Text = "Help";
+            // 
             // GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2738,8 +2822,10 @@ namespace Oscilloscope
             this.Controls.Add(this.rightMainTab);
             this.Controls.Add(this.mainTab);
             this.Controls.Add(this.leftMainTab);
+            this.Controls.Add(this.menuStrip);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
+            this.MainMenuStrip = this.menuStrip;
             this.Name = "GUI";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "   PicoSample 4   PicoScope 9404L-05   Sampler Extended Oscilloscope    5 GHz   1" +
@@ -2900,11 +2986,28 @@ namespace Oscilloscope
             this.rightMainTab.ResumeLayout(false);
             this.rightTopTab.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.rightTopTab_CancelButton)).EndInit();
+            this.menuStrip.ResumeLayout(false);
+            this.menuStrip.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        //  Menu Strip
+        private System.Windows.Forms.MenuStrip menuStrip;                               //  Menu Strip
+
+        //  Menu Items
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;           //  Menu Item - File
+        private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;           //  Menu Item - Edit
+        private System.Windows.Forms.ToolStripMenuItem viewToolStripMenuItem;           //  Menu Item - View
+        private System.Windows.Forms.ToolStripMenuItem setupToolStripMenuItem;          //  Menu Item - Setup
+        private System.Windows.Forms.ToolStripMenuItem measurementsToolStripMenuItem;   //  Menu Item - Measurements
+        private System.Windows.Forms.ToolStripMenuItem ananlysisToolStripMenuItem;      //  Menu Item - Analysis
+        private System.Windows.Forms.ToolStripMenuItem systemToolStripMenuItem;         //  Menu Item - System
+        private System.Windows.Forms.ToolStripMenuItem utilityToolStripMenuItem;        //  Menu Item - Utility
+        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;           //  Menu Item - Help
 
         //  Tabs
         private System.Windows.Forms.Panel mainTab;                                     //  Main Tab
