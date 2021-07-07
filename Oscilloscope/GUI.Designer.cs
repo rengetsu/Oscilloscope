@@ -2738,10 +2738,12 @@ namespace Oscilloscope
             this.Controls.Add(this.rightMainTab);
             this.Controls.Add(this.mainTab);
             this.Controls.Add(this.leftMainTab);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.Name = "GUI";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "   PicoSample 4   PicoScope 9404L-05   Sampler Extended Oscilloscope    5 GHz   1" +
+    "2-bit ADC   500 MS/s RT   1 TS/s ET";
             this.leftMainTab.ResumeLayout(false);
             this.leftTopTab.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.leftTopTab_CancelButton)).EndInit();
