@@ -236,11 +236,21 @@ namespace Oscilloscope
             this.rightTopTab_CancelButton = new System.Windows.Forms.PictureBox();
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.wfmMemoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.downloadWfmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveWaveformToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.databaseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.setupsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openDfltSetupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.printToPrinterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.printerSetupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.setupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.measurementsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ananlysisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.analysisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.systemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.utilityToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -2750,7 +2760,7 @@ namespace Oscilloscope
             this.viewToolStripMenuItem,
             this.setupToolStripMenuItem,
             this.measurementsToolStripMenuItem,
-            this.ananlysisToolStripMenuItem,
+            this.analysisToolStripMenuItem,
             this.systemToolStripMenuItem,
             this.utilityToolStripMenuItem,
             this.helpToolStripMenuItem});
@@ -2762,44 +2772,115 @@ namespace Oscilloscope
             // 
             // fileToolStripMenuItem
             // 
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.wfmMemoryToolStripMenuItem,
+            this.downloadWfmToolStripMenuItem,
+            this.saveWaveformToolStripMenuItem,
+            this.databaseToolStripMenuItem,
+            this.setupsToolStripMenuItem,
+            this.openDfltSetupToolStripMenuItem,
+            this.printToPrinterToolStripMenuItem,
+            this.printToolStripMenuItem,
+            this.printerSetupToolStripMenuItem,
+            this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(35, 20);
             this.fileToolStripMenuItem.Text = "File";
+            // 
+            // wfmMemoryToolStripMenuItem
+            // 
+            this.wfmMemoryToolStripMenuItem.Name = "wfmMemoryToolStripMenuItem";
+            this.wfmMemoryToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.wfmMemoryToolStripMenuItem.Text = "Waveform Memory";
+            // 
+            // downloadWfmToolStripMenuItem
+            // 
+            this.downloadWfmToolStripMenuItem.Name = "downloadWfmToolStripMenuItem";
+            this.downloadWfmToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.downloadWfmToolStripMenuItem.Text = "Download Waveform";
+            // 
+            // saveWaveformToolStripMenuItem
+            // 
+            this.saveWaveformToolStripMenuItem.Name = "saveWaveformToolStripMenuItem";
+            this.saveWaveformToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.saveWaveformToolStripMenuItem.Text = "Save Waveform";
+            // 
+            // databaseToolStripMenuItem
+            // 
+            this.databaseToolStripMenuItem.Name = "databaseToolStripMenuItem";
+            this.databaseToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.databaseToolStripMenuItem.Text = "Database";
+            // 
+            // setupsToolStripMenuItem
+            // 
+            this.setupsToolStripMenuItem.Name = "setupsToolStripMenuItem";
+            this.setupsToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.setupsToolStripMenuItem.Text = "Setups";
+            // 
+            // openDfltSetupToolStripMenuItem
+            // 
+            this.openDfltSetupToolStripMenuItem.Name = "openDfltSetupToolStripMenuItem";
+            this.openDfltSetupToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.openDfltSetupToolStripMenuItem.Text = "Open Default Setup";
+            // 
+            // printToPrinterToolStripMenuItem
+            // 
+            this.printToPrinterToolStripMenuItem.Name = "printToPrinterToolStripMenuItem";
+            this.printToPrinterToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.printToPrinterToolStripMenuItem.Text = "Print to Printer";
+            // 
+            // printToolStripMenuItem
+            // 
+            this.printToolStripMenuItem.Name = "printToolStripMenuItem";
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.printToolStripMenuItem.Text = "Print ...";
+            // 
+            // printerSetupToolStripMenuItem
+            // 
+            this.printerSetupToolStripMenuItem.Name = "printerSetupToolStripMenuItem";
+            this.printerSetupToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.printerSetupToolStripMenuItem.Text = "Printer Setup ...";
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.exitToolStripMenuItem.Text = "Exit";
             // 
             // editToolStripMenuItem
             // 
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(36, 20);
             this.editToolStripMenuItem.Text = "Edit";
             // 
             // viewToolStripMenuItem
             // 
             this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
-            this.viewToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.viewToolStripMenuItem.Size = new System.Drawing.Size(45, 20);
             this.viewToolStripMenuItem.Text = "View";
             // 
             // setupToolStripMenuItem
             // 
             this.setupToolStripMenuItem.Name = "setupToolStripMenuItem";
-            this.setupToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
+            this.setupToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
             this.setupToolStripMenuItem.Text = "Setup";
             // 
             // measurementsToolStripMenuItem
             // 
             this.measurementsToolStripMenuItem.Name = "measurementsToolStripMenuItem";
-            this.measurementsToolStripMenuItem.Size = new System.Drawing.Size(97, 20);
+            this.measurementsToolStripMenuItem.Size = new System.Drawing.Size(90, 20);
             this.measurementsToolStripMenuItem.Text = "Measurements";
             // 
-            // ananlysisToolStripMenuItem
+            // analysisToolStripMenuItem
             // 
-            this.ananlysisToolStripMenuItem.Name = "ananlysisToolStripMenuItem";
-            this.ananlysisToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
-            this.ananlysisToolStripMenuItem.Text = "Analysis";
+            this.analysisToolStripMenuItem.Name = "analysisToolStripMenuItem";
+            this.analysisToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+            this.analysisToolStripMenuItem.Text = "Analysis";
             // 
             // systemToolStripMenuItem
             // 
             this.systemToolStripMenuItem.Name = "systemToolStripMenuItem";
-            this.systemToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
+            this.systemToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
             this.systemToolStripMenuItem.Text = "System";
             // 
             // utilityToolStripMenuItem
@@ -2998,15 +3079,43 @@ namespace Oscilloscope
         //  Menu Strip
         private System.Windows.Forms.MenuStrip menuStrip;                               //  Menu Strip
 
-        //  Menu Items
+        //  Menu Item - File
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;           //  Menu Item - File
+        private System.Windows.Forms.ToolStripMenuItem wfmMemoryToolStripMenuItem;      //  Menu Item - File - Waveform Memory
+
+
+        private System.Windows.Forms.ToolStripMenuItem downloadWfmToolStripMenuItem;    //  Menu Item - File - Download Waveform
+        private System.Windows.Forms.ToolStripMenuItem saveWaveformToolStripMenuItem;   //  Menu Item - File - Save Waveform
+        private System.Windows.Forms.ToolStripMenuItem databaseToolStripMenuItem;       //  Menu Item - File - Database
+        private System.Windows.Forms.ToolStripMenuItem setupsToolStripMenuItem;         //  Menu Item - File - Setups
+        private System.Windows.Forms.ToolStripMenuItem openDfltSetupToolStripMenuItem;  //  Menu Item - FIle - Open Default Setup
+        private System.Windows.Forms.ToolStripMenuItem printToPrinterToolStripMenuItem; //  Menu Item - File - Print to Printer
+        private System.Windows.Forms.ToolStripMenuItem printToolStripMenuItem;          //  Menu Item - File - Print
+        private System.Windows.Forms.ToolStripMenuItem printerSetupToolStripMenuItem;   //  Menu Item - File - Printer Setup
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;           //  Menu Item - File - Exit
+
+        //  Menu Item - Edit
         private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;           //  Menu Item - Edit
+
+        //  Menu Item - View
         private System.Windows.Forms.ToolStripMenuItem viewToolStripMenuItem;           //  Menu Item - View
+
+        //  Menu Item - Setup
         private System.Windows.Forms.ToolStripMenuItem setupToolStripMenuItem;          //  Menu Item - Setup
+
+        //  Menu Item - Measurements
         private System.Windows.Forms.ToolStripMenuItem measurementsToolStripMenuItem;   //  Menu Item - Measurements
-        private System.Windows.Forms.ToolStripMenuItem ananlysisToolStripMenuItem;      //  Menu Item - Analysis
+
+        //  Menu Item - Analysis
+        private System.Windows.Forms.ToolStripMenuItem analysisToolStripMenuItem;       //  Menu Item - Analysis
+
+        //  Menu Item - System
         private System.Windows.Forms.ToolStripMenuItem systemToolStripMenuItem;         //  Menu Item - System
+
+        //  Menu Item - Utylity
         private System.Windows.Forms.ToolStripMenuItem utilityToolStripMenuItem;        //  Menu Item - Utility
+
+        //  Menu Item - Help
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;           //  Menu Item - Help
 
         //  Tabs
