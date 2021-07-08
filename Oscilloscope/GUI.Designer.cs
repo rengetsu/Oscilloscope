@@ -247,13 +247,100 @@ namespace Oscilloscope
             this.printerSetupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.copyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.copyFullScreenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.copyFullWindowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.copyToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.copyInvClientAreaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.copyScopeScreenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.copyInvScopeScreenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolbarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.permanentControlToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.measurementAreaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.leftSideMenuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.rightSideMenuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bothSideMenuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.noSideMenusToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.displayStyleScreenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.displayViewColorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.touchscreenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fixedPositionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.floatingPositionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.largeDotsEnabledToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.setupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.channel1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.channel2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.channel3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.channel4ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.timebaseAcquisitionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.triggerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.measurementsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.markerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.measureToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.histogramToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eyeDiagramToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.analysisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mathematicsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.maskTestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.systemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.changeInstrumentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.commonLANSettingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.scanningLANSettingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.utilityToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.calibrateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.demoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.adjustmentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.languageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.picoSample4HelpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.instrumentInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.functionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.scalingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.parameterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.definitionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.limitTestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.setupToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.windowScaleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.parameterToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.definitionToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.englishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.visibleM1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.visibleM2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.visibleM3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.visibleM4ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.visibleAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.invisibleAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clearM1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clearM2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clearM3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clearM4ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clearAllMemoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toMemoryM1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toMemoryM2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toMemoryM3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toMemoryM4ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ch1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ch2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ch3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ch4ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.f1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.f2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.f3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.f4ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.m1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.m2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.m3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.m4ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.downloadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.visibleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clearToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openSetupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openFactorySetupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openPowerOffSetupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveSetupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveAsDefaultSetupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.leftMainTab.SuspendLayout();
             this.leftTopTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.leftTopTab_CancelButton)).BeginInit();
@@ -2784,116 +2871,743 @@ namespace Oscilloscope
             this.printerSetupToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(35, 20);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // wfmMemoryToolStripMenuItem
             // 
+            this.wfmMemoryToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.visibleM1ToolStripMenuItem,
+            this.visibleM2ToolStripMenuItem,
+            this.visibleM3ToolStripMenuItem,
+            this.visibleM4ToolStripMenuItem,
+            this.visibleAllToolStripMenuItem,
+            this.invisibleAllToolStripMenuItem,
+            this.clearM1ToolStripMenuItem,
+            this.clearM2ToolStripMenuItem,
+            this.clearM3ToolStripMenuItem,
+            this.clearM4ToolStripMenuItem,
+            this.clearAllMemoToolStripMenuItem});
             this.wfmMemoryToolStripMenuItem.Name = "wfmMemoryToolStripMenuItem";
-            this.wfmMemoryToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.wfmMemoryToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
             this.wfmMemoryToolStripMenuItem.Text = "Waveform Memory";
             // 
             // downloadWfmToolStripMenuItem
             // 
+            this.downloadWfmToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toMemoryM1ToolStripMenuItem,
+            this.toMemoryM2ToolStripMenuItem,
+            this.toMemoryM3ToolStripMenuItem,
+            this.toMemoryM4ToolStripMenuItem});
             this.downloadWfmToolStripMenuItem.Name = "downloadWfmToolStripMenuItem";
-            this.downloadWfmToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.downloadWfmToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
             this.downloadWfmToolStripMenuItem.Text = "Download Waveform";
             // 
             // saveWaveformToolStripMenuItem
             // 
+            this.saveWaveformToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ch1ToolStripMenuItem,
+            this.ch2ToolStripMenuItem,
+            this.ch3ToolStripMenuItem,
+            this.ch4ToolStripMenuItem,
+            this.f1ToolStripMenuItem,
+            this.f2ToolStripMenuItem,
+            this.f3ToolStripMenuItem,
+            this.f4ToolStripMenuItem,
+            this.m1ToolStripMenuItem,
+            this.m2ToolStripMenuItem,
+            this.m3ToolStripMenuItem,
+            this.m4ToolStripMenuItem});
             this.saveWaveformToolStripMenuItem.Name = "saveWaveformToolStripMenuItem";
-            this.saveWaveformToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.saveWaveformToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
             this.saveWaveformToolStripMenuItem.Text = "Save Waveform";
             // 
             // databaseToolStripMenuItem
             // 
+            this.databaseToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.downloadToolStripMenuItem,
+            this.visibleToolStripMenuItem,
+            this.clearToolStripMenuItem});
             this.databaseToolStripMenuItem.Name = "databaseToolStripMenuItem";
-            this.databaseToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.databaseToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
             this.databaseToolStripMenuItem.Text = "Database";
             // 
             // setupsToolStripMenuItem
             // 
+            this.setupsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.openSetupToolStripMenuItem,
+            this.openFactorySetupToolStripMenuItem,
+            this.openPowerOffSetupToolStripMenuItem,
+            this.saveSetupToolStripMenuItem,
+            this.saveAsDefaultSetupToolStripMenuItem});
             this.setupsToolStripMenuItem.Name = "setupsToolStripMenuItem";
-            this.setupsToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.setupsToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
             this.setupsToolStripMenuItem.Text = "Setups";
             // 
             // openDfltSetupToolStripMenuItem
             // 
             this.openDfltSetupToolStripMenuItem.Name = "openDfltSetupToolStripMenuItem";
-            this.openDfltSetupToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.openDfltSetupToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
             this.openDfltSetupToolStripMenuItem.Text = "Open Default Setup";
             // 
             // printToPrinterToolStripMenuItem
             // 
             this.printToPrinterToolStripMenuItem.Name = "printToPrinterToolStripMenuItem";
-            this.printToPrinterToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.printToPrinterToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
             this.printToPrinterToolStripMenuItem.Text = "Print to Printer";
             // 
             // printToolStripMenuItem
             // 
             this.printToolStripMenuItem.Name = "printToolStripMenuItem";
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
             this.printToolStripMenuItem.Text = "Print ...";
             // 
             // printerSetupToolStripMenuItem
             // 
             this.printerSetupToolStripMenuItem.Name = "printerSetupToolStripMenuItem";
-            this.printerSetupToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.printerSetupToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
             this.printerSetupToolStripMenuItem.Text = "Printer Setup ...";
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             // 
             // editToolStripMenuItem
             // 
+            this.editToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.copyToolStripMenuItem,
+            this.copyFullScreenToolStripMenuItem,
+            this.copyFullWindowToolStripMenuItem,
+            this.copyToolStripMenuItem1,
+            this.copyInvClientAreaToolStripMenuItem,
+            this.copyScopeScreenToolStripMenuItem,
+            this.copyInvScopeScreenToolStripMenuItem});
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(36, 20);
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
             this.editToolStripMenuItem.Text = "Edit";
+            // 
+            // copyToolStripMenuItem
+            // 
+            this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
+            this.copyToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
+            this.copyToolStripMenuItem.Text = "Copy";
+            // 
+            // copyFullScreenToolStripMenuItem
+            // 
+            this.copyFullScreenToolStripMenuItem.Name = "copyFullScreenToolStripMenuItem";
+            this.copyFullScreenToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
+            this.copyFullScreenToolStripMenuItem.Text = "Copy Full Screen";
+            // 
+            // copyFullWindowToolStripMenuItem
+            // 
+            this.copyFullWindowToolStripMenuItem.Name = "copyFullWindowToolStripMenuItem";
+            this.copyFullWindowToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
+            this.copyFullWindowToolStripMenuItem.Text = "Copy Full Window";
+            // 
+            // copyToolStripMenuItem1
+            // 
+            this.copyToolStripMenuItem1.Name = "copyToolStripMenuItem1";
+            this.copyToolStripMenuItem1.Size = new System.Drawing.Size(197, 22);
+            this.copyToolStripMenuItem1.Text = "Copy Client Area";
+            // 
+            // copyInvClientAreaToolStripMenuItem
+            // 
+            this.copyInvClientAreaToolStripMenuItem.Name = "copyInvClientAreaToolStripMenuItem";
+            this.copyInvClientAreaToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
+            this.copyInvClientAreaToolStripMenuItem.Text = "Copy Inv. Client Area";
+            // 
+            // copyScopeScreenToolStripMenuItem
+            // 
+            this.copyScopeScreenToolStripMenuItem.Name = "copyScopeScreenToolStripMenuItem";
+            this.copyScopeScreenToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
+            this.copyScopeScreenToolStripMenuItem.Text = "Copy Scope Screen";
+            // 
+            // copyInvScopeScreenToolStripMenuItem
+            // 
+            this.copyInvScopeScreenToolStripMenuItem.Name = "copyInvScopeScreenToolStripMenuItem";
+            this.copyInvScopeScreenToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
+            this.copyInvScopeScreenToolStripMenuItem.Text = "Copy Inv. Scope Screen";
             // 
             // viewToolStripMenuItem
             // 
+            this.viewToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolbarToolStripMenuItem,
+            this.permanentControlToolStripMenuItem,
+            this.measurementAreaToolStripMenuItem,
+            this.leftSideMenuToolStripMenuItem,
+            this.rightSideMenuToolStripMenuItem,
+            this.bothSideMenuToolStripMenuItem,
+            this.noSideMenusToolStripMenuItem,
+            this.displayStyleScreenToolStripMenuItem,
+            this.displayViewColorToolStripMenuItem,
+            this.touchscreenToolStripMenuItem,
+            this.fixedPositionToolStripMenuItem,
+            this.floatingPositionToolStripMenuItem,
+            this.largeDotsEnabledToolStripMenuItem});
             this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
-            this.viewToolStripMenuItem.Size = new System.Drawing.Size(45, 20);
+            this.viewToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.viewToolStripMenuItem.Text = "View";
+            // 
+            // toolbarToolStripMenuItem
+            // 
+            this.toolbarToolStripMenuItem.Name = "toolbarToolStripMenuItem";
+            this.toolbarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.toolbarToolStripMenuItem.Text = "Toolbar";
+            // 
+            // permanentControlToolStripMenuItem
+            // 
+            this.permanentControlToolStripMenuItem.Name = "permanentControlToolStripMenuItem";
+            this.permanentControlToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.permanentControlToolStripMenuItem.Text = "Permanent Control";
+            // 
+            // measurementAreaToolStripMenuItem
+            // 
+            this.measurementAreaToolStripMenuItem.Name = "measurementAreaToolStripMenuItem";
+            this.measurementAreaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.measurementAreaToolStripMenuItem.Text = "Measurement Area";
+            // 
+            // leftSideMenuToolStripMenuItem
+            // 
+            this.leftSideMenuToolStripMenuItem.Name = "leftSideMenuToolStripMenuItem";
+            this.leftSideMenuToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.leftSideMenuToolStripMenuItem.Text = "Left Side Menu";
+            // 
+            // rightSideMenuToolStripMenuItem
+            // 
+            this.rightSideMenuToolStripMenuItem.Name = "rightSideMenuToolStripMenuItem";
+            this.rightSideMenuToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.rightSideMenuToolStripMenuItem.Text = "Right Side Menu";
+            // 
+            // bothSideMenuToolStripMenuItem
+            // 
+            this.bothSideMenuToolStripMenuItem.Name = "bothSideMenuToolStripMenuItem";
+            this.bothSideMenuToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.bothSideMenuToolStripMenuItem.Text = "Both Side Menu";
+            // 
+            // noSideMenusToolStripMenuItem
+            // 
+            this.noSideMenusToolStripMenuItem.Name = "noSideMenusToolStripMenuItem";
+            this.noSideMenusToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.noSideMenusToolStripMenuItem.Text = "No Side Menus";
+            // 
+            // displayStyleScreenToolStripMenuItem
+            // 
+            this.displayStyleScreenToolStripMenuItem.Name = "displayStyleScreenToolStripMenuItem";
+            this.displayStyleScreenToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.displayStyleScreenToolStripMenuItem.Text = "Display Style/Screen";
+            // 
+            // displayViewColorToolStripMenuItem
+            // 
+            this.displayViewColorToolStripMenuItem.Name = "displayViewColorToolStripMenuItem";
+            this.displayViewColorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.displayViewColorToolStripMenuItem.Text = "Display View/Color";
+            // 
+            // touchscreenToolStripMenuItem
+            // 
+            this.touchscreenToolStripMenuItem.Name = "touchscreenToolStripMenuItem";
+            this.touchscreenToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.touchscreenToolStripMenuItem.Text = "Touchscreen";
+            // 
+            // fixedPositionToolStripMenuItem
+            // 
+            this.fixedPositionToolStripMenuItem.Name = "fixedPositionToolStripMenuItem";
+            this.fixedPositionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.fixedPositionToolStripMenuItem.Text = "Fixed Position";
+            // 
+            // floatingPositionToolStripMenuItem
+            // 
+            this.floatingPositionToolStripMenuItem.Name = "floatingPositionToolStripMenuItem";
+            this.floatingPositionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.floatingPositionToolStripMenuItem.Text = "Floating Position";
+            // 
+            // largeDotsEnabledToolStripMenuItem
+            // 
+            this.largeDotsEnabledToolStripMenuItem.Name = "largeDotsEnabledToolStripMenuItem";
+            this.largeDotsEnabledToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.largeDotsEnabledToolStripMenuItem.Text = "Large Dots Enabled";
             // 
             // setupToolStripMenuItem
             // 
+            this.setupToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.channel1ToolStripMenuItem,
+            this.channel2ToolStripMenuItem,
+            this.channel3ToolStripMenuItem,
+            this.channel4ToolStripMenuItem,
+            this.timebaseAcquisitionToolStripMenuItem,
+            this.triggerToolStripMenuItem});
             this.setupToolStripMenuItem.Name = "setupToolStripMenuItem";
-            this.setupToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
+            this.setupToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
             this.setupToolStripMenuItem.Text = "Setup";
+            // 
+            // channel1ToolStripMenuItem
+            // 
+            this.channel1ToolStripMenuItem.Name = "channel1ToolStripMenuItem";
+            this.channel1ToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
+            this.channel1ToolStripMenuItem.Text = "Channel 1";
+            // 
+            // channel2ToolStripMenuItem
+            // 
+            this.channel2ToolStripMenuItem.Name = "channel2ToolStripMenuItem";
+            this.channel2ToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
+            this.channel2ToolStripMenuItem.Text = "Channel 2";
+            // 
+            // channel3ToolStripMenuItem
+            // 
+            this.channel3ToolStripMenuItem.Name = "channel3ToolStripMenuItem";
+            this.channel3ToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
+            this.channel3ToolStripMenuItem.Text = "Channel 3";
+            // 
+            // channel4ToolStripMenuItem
+            // 
+            this.channel4ToolStripMenuItem.Name = "channel4ToolStripMenuItem";
+            this.channel4ToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
+            this.channel4ToolStripMenuItem.Text = "Channel 4";
+            // 
+            // timebaseAcquisitionToolStripMenuItem
+            // 
+            this.timebaseAcquisitionToolStripMenuItem.Name = "timebaseAcquisitionToolStripMenuItem";
+            this.timebaseAcquisitionToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
+            this.timebaseAcquisitionToolStripMenuItem.Text = "Timebase/Acquisition";
+            // 
+            // triggerToolStripMenuItem
+            // 
+            this.triggerToolStripMenuItem.Name = "triggerToolStripMenuItem";
+            this.triggerToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
+            this.triggerToolStripMenuItem.Text = "Trigger";
             // 
             // measurementsToolStripMenuItem
             // 
+            this.measurementsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.markerToolStripMenuItem,
+            this.measureToolStripMenuItem,
+            this.histogramToolStripMenuItem,
+            this.eyeDiagramToolStripMenuItem});
             this.measurementsToolStripMenuItem.Name = "measurementsToolStripMenuItem";
-            this.measurementsToolStripMenuItem.Size = new System.Drawing.Size(90, 20);
+            this.measurementsToolStripMenuItem.Size = new System.Drawing.Size(97, 20);
             this.measurementsToolStripMenuItem.Text = "Measurements";
+            // 
+            // markerToolStripMenuItem
+            // 
+            this.markerToolStripMenuItem.Name = "markerToolStripMenuItem";
+            this.markerToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.markerToolStripMenuItem.Text = "Marker";
+            // 
+            // measureToolStripMenuItem
+            // 
+            this.measureToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.parameterToolStripMenuItem,
+            this.definitionToolStripMenuItem,
+            this.limitTestToolStripMenuItem});
+            this.measureToolStripMenuItem.Name = "measureToolStripMenuItem";
+            this.measureToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.measureToolStripMenuItem.Text = "Measure";
+            // 
+            // histogramToolStripMenuItem
+            // 
+            this.histogramToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.setupToolStripMenuItem1,
+            this.windowScaleToolStripMenuItem});
+            this.histogramToolStripMenuItem.Name = "histogramToolStripMenuItem";
+            this.histogramToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.histogramToolStripMenuItem.Text = "Histogram";
+            // 
+            // eyeDiagramToolStripMenuItem
+            // 
+            this.eyeDiagramToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.parameterToolStripMenuItem1,
+            this.definitionToolStripMenuItem1});
+            this.eyeDiagramToolStripMenuItem.Name = "eyeDiagramToolStripMenuItem";
+            this.eyeDiagramToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.eyeDiagramToolStripMenuItem.Text = "Eye Diagram";
             // 
             // analysisToolStripMenuItem
             // 
+            this.analysisToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mathematicsToolStripMenuItem,
+            this.maskTestToolStripMenuItem});
             this.analysisToolStripMenuItem.Name = "analysisToolStripMenuItem";
-            this.analysisToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+            this.analysisToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
             this.analysisToolStripMenuItem.Text = "Analysis";
+            // 
+            // mathematicsToolStripMenuItem
+            // 
+            this.mathematicsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.functionToolStripMenuItem,
+            this.scalingToolStripMenuItem});
+            this.mathematicsToolStripMenuItem.Name = "mathematicsToolStripMenuItem";
+            this.mathematicsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.mathematicsToolStripMenuItem.Text = "Mathematics";
+            // 
+            // maskTestToolStripMenuItem
+            // 
+            this.maskTestToolStripMenuItem.Name = "maskTestToolStripMenuItem";
+            this.maskTestToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.maskTestToolStripMenuItem.Text = "Mask Test";
             // 
             // systemToolStripMenuItem
             // 
+            this.systemToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.changeInstrumentToolStripMenuItem,
+            this.commonLANSettingsToolStripMenuItem,
+            this.scanningLANSettingsToolStripMenuItem});
             this.systemToolStripMenuItem.Name = "systemToolStripMenuItem";
-            this.systemToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
+            this.systemToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
             this.systemToolStripMenuItem.Text = "System";
+            // 
+            // changeInstrumentToolStripMenuItem
+            // 
+            this.changeInstrumentToolStripMenuItem.Name = "changeInstrumentToolStripMenuItem";
+            this.changeInstrumentToolStripMenuItem.Size = new System.Drawing.Size(224, 22);
+            this.changeInstrumentToolStripMenuItem.Text = "Change Instrument";
+            // 
+            // commonLANSettingsToolStripMenuItem
+            // 
+            this.commonLANSettingsToolStripMenuItem.Name = "commonLANSettingsToolStripMenuItem";
+            this.commonLANSettingsToolStripMenuItem.Size = new System.Drawing.Size(224, 22);
+            this.commonLANSettingsToolStripMenuItem.Text = "Common LAN Settings";
+            // 
+            // scanningLANSettingsToolStripMenuItem
+            // 
+            this.scanningLANSettingsToolStripMenuItem.Name = "scanningLANSettingsToolStripMenuItem";
+            this.scanningLANSettingsToolStripMenuItem.Size = new System.Drawing.Size(224, 22);
+            this.scanningLANSettingsToolStripMenuItem.Text = "Scanning LAN Instruments...";
             // 
             // utilityToolStripMenuItem
             // 
+            this.utilityToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.calibrateToolStripMenuItem,
+            this.demoToolStripMenuItem,
+            this.adjustmentToolStripMenuItem,
+            this.languageToolStripMenuItem});
             this.utilityToolStripMenuItem.Name = "utilityToolStripMenuItem";
             this.utilityToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
             this.utilityToolStripMenuItem.Text = "Utility";
             // 
+            // calibrateToolStripMenuItem
+            // 
+            this.calibrateToolStripMenuItem.Name = "calibrateToolStripMenuItem";
+            this.calibrateToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.calibrateToolStripMenuItem.Text = "Calibrate";
+            // 
+            // demoToolStripMenuItem
+            // 
+            this.demoToolStripMenuItem.Name = "demoToolStripMenuItem";
+            this.demoToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.demoToolStripMenuItem.Text = "Demo";
+            // 
+            // adjustmentToolStripMenuItem
+            // 
+            this.adjustmentToolStripMenuItem.Name = "adjustmentToolStripMenuItem";
+            this.adjustmentToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.adjustmentToolStripMenuItem.Text = "Adjustment";
+            // 
+            // languageToolStripMenuItem
+            // 
+            this.languageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.englishToolStripMenuItem});
+            this.languageToolStripMenuItem.Name = "languageToolStripMenuItem";
+            this.languageToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.languageToolStripMenuItem.Text = "Language";
+            // 
             // helpToolStripMenuItem
             // 
+            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.picoSample4HelpToolStripMenuItem,
+            this.aboutToolStripMenuItem,
+            this.instrumentInfoToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.helpToolStripMenuItem.Text = "Help";
+            // 
+            // picoSample4HelpToolStripMenuItem
+            // 
+            this.picoSample4HelpToolStripMenuItem.Name = "picoSample4HelpToolStripMenuItem";
+            this.picoSample4HelpToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.picoSample4HelpToolStripMenuItem.Text = "PicoSample 4 Help";
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aboutToolStripMenuItem.Text = "About...";
+            // 
+            // instrumentInfoToolStripMenuItem
+            // 
+            this.instrumentInfoToolStripMenuItem.Name = "instrumentInfoToolStripMenuItem";
+            this.instrumentInfoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.instrumentInfoToolStripMenuItem.Text = "Instrument Info...";
+            // 
+            // functionToolStripMenuItem
+            // 
+            this.functionToolStripMenuItem.Name = "functionToolStripMenuItem";
+            this.functionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.functionToolStripMenuItem.Text = "Function";
+            // 
+            // scalingToolStripMenuItem
+            // 
+            this.scalingToolStripMenuItem.Name = "scalingToolStripMenuItem";
+            this.scalingToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.scalingToolStripMenuItem.Text = "Scaling";
+            // 
+            // parameterToolStripMenuItem
+            // 
+            this.parameterToolStripMenuItem.Name = "parameterToolStripMenuItem";
+            this.parameterToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.parameterToolStripMenuItem.Text = "Parameter";
+            // 
+            // definitionToolStripMenuItem
+            // 
+            this.definitionToolStripMenuItem.Name = "definitionToolStripMenuItem";
+            this.definitionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.definitionToolStripMenuItem.Text = "Definition";
+            // 
+            // limitTestToolStripMenuItem
+            // 
+            this.limitTestToolStripMenuItem.Name = "limitTestToolStripMenuItem";
+            this.limitTestToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.limitTestToolStripMenuItem.Text = "Limit Test";
+            // 
+            // setupToolStripMenuItem1
+            // 
+            this.setupToolStripMenuItem1.Name = "setupToolStripMenuItem1";
+            this.setupToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.setupToolStripMenuItem1.Text = "Setup";
+            // 
+            // windowScaleToolStripMenuItem
+            // 
+            this.windowScaleToolStripMenuItem.Name = "windowScaleToolStripMenuItem";
+            this.windowScaleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.windowScaleToolStripMenuItem.Text = "Window/Scale";
+            // 
+            // parameterToolStripMenuItem1
+            // 
+            this.parameterToolStripMenuItem1.Name = "parameterToolStripMenuItem1";
+            this.parameterToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.parameterToolStripMenuItem1.Text = "Parameter";
+            // 
+            // definitionToolStripMenuItem1
+            // 
+            this.definitionToolStripMenuItem1.Name = "definitionToolStripMenuItem1";
+            this.definitionToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.definitionToolStripMenuItem1.Text = "Definition";
+            // 
+            // englishToolStripMenuItem
+            // 
+            this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
+            this.englishToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.englishToolStripMenuItem.Text = "English";
+            // 
+            // visibleM1ToolStripMenuItem
+            // 
+            this.visibleM1ToolStripMenuItem.Name = "visibleM1ToolStripMenuItem";
+            this.visibleM1ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.visibleM1ToolStripMenuItem.Text = "Visible M1";
+            // 
+            // visibleM2ToolStripMenuItem
+            // 
+            this.visibleM2ToolStripMenuItem.Name = "visibleM2ToolStripMenuItem";
+            this.visibleM2ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.visibleM2ToolStripMenuItem.Text = "Visible M2";
+            // 
+            // visibleM3ToolStripMenuItem
+            // 
+            this.visibleM3ToolStripMenuItem.Name = "visibleM3ToolStripMenuItem";
+            this.visibleM3ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.visibleM3ToolStripMenuItem.Text = "Visible M3";
+            // 
+            // visibleM4ToolStripMenuItem
+            // 
+            this.visibleM4ToolStripMenuItem.Name = "visibleM4ToolStripMenuItem";
+            this.visibleM4ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.visibleM4ToolStripMenuItem.Text = "Visible M4";
+            // 
+            // visibleAllToolStripMenuItem
+            // 
+            this.visibleAllToolStripMenuItem.Name = "visibleAllToolStripMenuItem";
+            this.visibleAllToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.visibleAllToolStripMenuItem.Text = "Visible All";
+            // 
+            // invisibleAllToolStripMenuItem
+            // 
+            this.invisibleAllToolStripMenuItem.Name = "invisibleAllToolStripMenuItem";
+            this.invisibleAllToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.invisibleAllToolStripMenuItem.Text = "Invisible All";
+            // 
+            // clearM1ToolStripMenuItem
+            // 
+            this.clearM1ToolStripMenuItem.Name = "clearM1ToolStripMenuItem";
+            this.clearM1ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.clearM1ToolStripMenuItem.Text = "Clear M1";
+            // 
+            // clearM2ToolStripMenuItem
+            // 
+            this.clearM2ToolStripMenuItem.Name = "clearM2ToolStripMenuItem";
+            this.clearM2ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.clearM2ToolStripMenuItem.Text = "Clear M2";
+            // 
+            // clearM3ToolStripMenuItem
+            // 
+            this.clearM3ToolStripMenuItem.Name = "clearM3ToolStripMenuItem";
+            this.clearM3ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.clearM3ToolStripMenuItem.Text = "Clear M3";
+            // 
+            // clearM4ToolStripMenuItem
+            // 
+            this.clearM4ToolStripMenuItem.Name = "clearM4ToolStripMenuItem";
+            this.clearM4ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.clearM4ToolStripMenuItem.Text = "Clear M4";
+            // 
+            // clearAllMemoToolStripMenuItem
+            // 
+            this.clearAllMemoToolStripMenuItem.Name = "clearAllMemoToolStripMenuItem";
+            this.clearAllMemoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.clearAllMemoToolStripMenuItem.Text = "Clear All Memo";
+            // 
+            // toMemoryM1ToolStripMenuItem
+            // 
+            this.toMemoryM1ToolStripMenuItem.Name = "toMemoryM1ToolStripMenuItem";
+            this.toMemoryM1ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.toMemoryM1ToolStripMenuItem.Text = "to Memory M1";
+            // 
+            // toMemoryM2ToolStripMenuItem
+            // 
+            this.toMemoryM2ToolStripMenuItem.Name = "toMemoryM2ToolStripMenuItem";
+            this.toMemoryM2ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.toMemoryM2ToolStripMenuItem.Text = "to Memory M2";
+            // 
+            // toMemoryM3ToolStripMenuItem
+            // 
+            this.toMemoryM3ToolStripMenuItem.Name = "toMemoryM3ToolStripMenuItem";
+            this.toMemoryM3ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.toMemoryM3ToolStripMenuItem.Text = "to Memory M3";
+            // 
+            // toMemoryM4ToolStripMenuItem
+            // 
+            this.toMemoryM4ToolStripMenuItem.Name = "toMemoryM4ToolStripMenuItem";
+            this.toMemoryM4ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.toMemoryM4ToolStripMenuItem.Text = "to Memory M4";
+            // 
+            // ch1ToolStripMenuItem
+            // 
+            this.ch1ToolStripMenuItem.Name = "ch1ToolStripMenuItem";
+            this.ch1ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ch1ToolStripMenuItem.Text = "Ch1";
+            // 
+            // ch2ToolStripMenuItem
+            // 
+            this.ch2ToolStripMenuItem.Name = "ch2ToolStripMenuItem";
+            this.ch2ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ch2ToolStripMenuItem.Text = "Ch2";
+            // 
+            // ch3ToolStripMenuItem
+            // 
+            this.ch3ToolStripMenuItem.Name = "ch3ToolStripMenuItem";
+            this.ch3ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ch3ToolStripMenuItem.Text = "Ch3";
+            // 
+            // ch4ToolStripMenuItem
+            // 
+            this.ch4ToolStripMenuItem.Name = "ch4ToolStripMenuItem";
+            this.ch4ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ch4ToolStripMenuItem.Text = "Ch4";
+            // 
+            // f1ToolStripMenuItem
+            // 
+            this.f1ToolStripMenuItem.Name = "f1ToolStripMenuItem";
+            this.f1ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.f1ToolStripMenuItem.Text = "F1";
+            // 
+            // f2ToolStripMenuItem
+            // 
+            this.f2ToolStripMenuItem.Name = "f2ToolStripMenuItem";
+            this.f2ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.f2ToolStripMenuItem.Text = "F2";
+            // 
+            // f3ToolStripMenuItem
+            // 
+            this.f3ToolStripMenuItem.Name = "f3ToolStripMenuItem";
+            this.f3ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.f3ToolStripMenuItem.Text = "F3";
+            // 
+            // f4ToolStripMenuItem
+            // 
+            this.f4ToolStripMenuItem.Name = "f4ToolStripMenuItem";
+            this.f4ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.f4ToolStripMenuItem.Text = "F4";
+            // 
+            // m1ToolStripMenuItem
+            // 
+            this.m1ToolStripMenuItem.Name = "m1ToolStripMenuItem";
+            this.m1ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.m1ToolStripMenuItem.Text = "M1";
+            // 
+            // m2ToolStripMenuItem
+            // 
+            this.m2ToolStripMenuItem.Name = "m2ToolStripMenuItem";
+            this.m2ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.m2ToolStripMenuItem.Text = "M2";
+            // 
+            // m3ToolStripMenuItem
+            // 
+            this.m3ToolStripMenuItem.Name = "m3ToolStripMenuItem";
+            this.m3ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.m3ToolStripMenuItem.Text = "M3";
+            // 
+            // m4ToolStripMenuItem
+            // 
+            this.m4ToolStripMenuItem.Name = "m4ToolStripMenuItem";
+            this.m4ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.m4ToolStripMenuItem.Text = "M4";
+            // 
+            // downloadToolStripMenuItem
+            // 
+            this.downloadToolStripMenuItem.Name = "downloadToolStripMenuItem";
+            this.downloadToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.downloadToolStripMenuItem.Text = "Download";
+            // 
+            // visibleToolStripMenuItem
+            // 
+            this.visibleToolStripMenuItem.Name = "visibleToolStripMenuItem";
+            this.visibleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.visibleToolStripMenuItem.Text = "Visible";
+            // 
+            // clearToolStripMenuItem
+            // 
+            this.clearToolStripMenuItem.Name = "clearToolStripMenuItem";
+            this.clearToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.clearToolStripMenuItem.Text = "Clear";
+            // 
+            // openSetupToolStripMenuItem
+            // 
+            this.openSetupToolStripMenuItem.Name = "openSetupToolStripMenuItem";
+            this.openSetupToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
+            this.openSetupToolStripMenuItem.Text = "Open Setup...";
+            // 
+            // openFactorySetupToolStripMenuItem
+            // 
+            this.openFactorySetupToolStripMenuItem.Name = "openFactorySetupToolStripMenuItem";
+            this.openFactorySetupToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
+            this.openFactorySetupToolStripMenuItem.Text = "Open Factory Setup";
+            // 
+            // openPowerOffSetupToolStripMenuItem
+            // 
+            this.openPowerOffSetupToolStripMenuItem.Name = "openPowerOffSetupToolStripMenuItem";
+            this.openPowerOffSetupToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
+            this.openPowerOffSetupToolStripMenuItem.Text = "Open Power Off Setup";
+            // 
+            // saveSetupToolStripMenuItem
+            // 
+            this.saveSetupToolStripMenuItem.Name = "saveSetupToolStripMenuItem";
+            this.saveSetupToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
+            this.saveSetupToolStripMenuItem.Text = "Save Setup...";
+            // 
+            // saveAsDefaultSetupToolStripMenuItem
+            // 
+            this.saveAsDefaultSetupToolStripMenuItem.Name = "saveAsDefaultSetupToolStripMenuItem";
+            this.saveAsDefaultSetupToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
+            this.saveAsDefaultSetupToolStripMenuItem.Text = "Save as Default Setup";
             // 
             // GUI
             // 
@@ -3077,331 +3791,419 @@ namespace Oscilloscope
         #endregion
 
         //  Menu Strip
-        private System.Windows.Forms.MenuStrip menuStrip;                               //  Menu Strip
+        private System.Windows.Forms.MenuStrip menuStrip;                                   //  Menu Strip
 
         //  Menu Item - File
-        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;           //  Menu Item - File
-        private System.Windows.Forms.ToolStripMenuItem wfmMemoryToolStripMenuItem;      //  Menu Item - File - Waveform Memory
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;               //  Menu Item - File
+        private System.Windows.Forms.ToolStripMenuItem wfmMemoryToolStripMenuItem;          //  Menu Item - File - Waveform Memory
 
 
-        private System.Windows.Forms.ToolStripMenuItem downloadWfmToolStripMenuItem;    //  Menu Item - File - Download Waveform
-        private System.Windows.Forms.ToolStripMenuItem saveWaveformToolStripMenuItem;   //  Menu Item - File - Save Waveform
-        private System.Windows.Forms.ToolStripMenuItem databaseToolStripMenuItem;       //  Menu Item - File - Database
-        private System.Windows.Forms.ToolStripMenuItem setupsToolStripMenuItem;         //  Menu Item - File - Setups
-        private System.Windows.Forms.ToolStripMenuItem openDfltSetupToolStripMenuItem;  //  Menu Item - FIle - Open Default Setup
-        private System.Windows.Forms.ToolStripMenuItem printToPrinterToolStripMenuItem; //  Menu Item - File - Print to Printer
-        private System.Windows.Forms.ToolStripMenuItem printToolStripMenuItem;          //  Menu Item - File - Print
-        private System.Windows.Forms.ToolStripMenuItem printerSetupToolStripMenuItem;   //  Menu Item - File - Printer Setup
-        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;           //  Menu Item - File - Exit
+        private System.Windows.Forms.ToolStripMenuItem downloadWfmToolStripMenuItem;        //  Menu Item - File - Download Waveform
+        private System.Windows.Forms.ToolStripMenuItem saveWaveformToolStripMenuItem;       //  Menu Item - File - Save Waveform
+        private System.Windows.Forms.ToolStripMenuItem databaseToolStripMenuItem;           //  Menu Item - File - Database
+        private System.Windows.Forms.ToolStripMenuItem setupsToolStripMenuItem;             //  Menu Item - File - Setups
+        private System.Windows.Forms.ToolStripMenuItem openDfltSetupToolStripMenuItem;      //  Menu Item - FIle - Open Default Setup
+        private System.Windows.Forms.ToolStripMenuItem printToPrinterToolStripMenuItem;     //  Menu Item - File - Print to Printer
+        private System.Windows.Forms.ToolStripMenuItem printToolStripMenuItem;              //  Menu Item - File - Print
+        private System.Windows.Forms.ToolStripMenuItem printerSetupToolStripMenuItem;       //  Menu Item - File - Printer Setup
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;               //  Menu Item - File - Exit
 
         //  Menu Item - Edit
-        private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;           //  Menu Item - Edit
+        private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;               //  Menu Item - Edit
 
         //  Menu Item - View
-        private System.Windows.Forms.ToolStripMenuItem viewToolStripMenuItem;           //  Menu Item - View
+        private System.Windows.Forms.ToolStripMenuItem viewToolStripMenuItem;               //  Menu Item - View
 
         //  Menu Item - Setup
-        private System.Windows.Forms.ToolStripMenuItem setupToolStripMenuItem;          //  Menu Item - Setup
+        private System.Windows.Forms.ToolStripMenuItem setupToolStripMenuItem;              //  Menu Item - Setup
 
         //  Menu Item - Measurements
-        private System.Windows.Forms.ToolStripMenuItem measurementsToolStripMenuItem;   //  Menu Item - Measurements
+        private System.Windows.Forms.ToolStripMenuItem measurementsToolStripMenuItem;       //  Menu Item - Measurements
 
         //  Menu Item - Analysis
-        private System.Windows.Forms.ToolStripMenuItem analysisToolStripMenuItem;       //  Menu Item - Analysis
+        private System.Windows.Forms.ToolStripMenuItem analysisToolStripMenuItem;           //  Menu Item - Analysis
 
         //  Menu Item - System
-        private System.Windows.Forms.ToolStripMenuItem systemToolStripMenuItem;         //  Menu Item - System
+        private System.Windows.Forms.ToolStripMenuItem systemToolStripMenuItem;             //  Menu Item - System
 
         //  Menu Item - Utylity
-        private System.Windows.Forms.ToolStripMenuItem utilityToolStripMenuItem;        //  Menu Item - Utility
+        private System.Windows.Forms.ToolStripMenuItem utilityToolStripMenuItem;            //  Menu Item - Utility
 
         //  Menu Item - Help
-        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;           //  Menu Item - Help
+        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;               //  Menu Item - Help
 
         //  Tabs
-        private System.Windows.Forms.Panel mainTab;                                     //  Main Tab
-        private System.Windows.Forms.Panel leftMainTab;                                 //  Left Main Tab
+        private System.Windows.Forms.Panel mainTab;                                         //  Main Tab
+        private System.Windows.Forms.Panel leftMainTab;                                     //  Left Main Tab
 
         //  Left Top Tab
-        private System.Windows.Forms.Panel leftTopTab;                                  //  Left Top Tab
-        private System.Windows.Forms.PictureBox leftTopTab_CancelButton;                //  Left Top Tab Cancel Button
+        private System.Windows.Forms.Panel leftTopTab;                                      //  Left Top Tab
+        private System.Windows.Forms.PictureBox leftTopTab_CancelButton;                    //  Left Top Tab Cancel Button
 
         //  Right Main Tab
-        private System.Windows.Forms.Panel rightMainTab;                                //  Right Main Tab
+        private System.Windows.Forms.Panel rightMainTab;                                    //  Right Main Tab
 
         //  Right Top Tab
-        private System.Windows.Forms.Panel rightTopTab;                                 //  Right Top Tab
-        private System.Windows.Forms.PictureBox rightTopTab_CancelButton;               //  Right Top Tab Cancel Button
+        private System.Windows.Forms.Panel rightTopTab;                                     //  Right Top Tab
+        private System.Windows.Forms.PictureBox rightTopTab_CancelButton;                   //  Right Top Tab Cancel Button
 
         //  Top Menu Panel
-        private System.Windows.Forms.Panel topMenuPanel;                                //  Top Menu Panel
+        private System.Windows.Forms.Panel topMenuPanel;                                    //  Top Menu Panel
 
         //  Top Menu Buttons
-        private System.Windows.Forms.PictureBox topMenu_HelpButton;                     //  Help Button
-        private System.Windows.Forms.PictureBox topMenu_CopyButton;                     //  Copy Button
-        private System.Windows.Forms.PictureBox topMenu_BackButton;                     //  Back Button
-        private System.Windows.Forms.PictureBox topMenu_ForwardButton;                  //  Forward Button
-        private System.Windows.Forms.PictureBox topMenu_DefaultButton;                  //  Default Button
-        private System.Windows.Forms.PictureBox topMenu_AutoscaleButton;                //  Autoscale Button
-        private System.Windows.Forms.PictureBox topMenu_SingleButton;                   //  Single Button
-        private System.Windows.Forms.PictureBox topMenu_StopButton;                     //  Stop Button
-        private System.Windows.Forms.PictureBox topMenu_RunButton;                      //  Run Button
-        private System.Windows.Forms.PictureBox topMenu_ClearButton;                    //  Clear Button
+        private System.Windows.Forms.PictureBox topMenu_HelpButton;                         //  Help Button
+        private System.Windows.Forms.PictureBox topMenu_CopyButton;                         //  Copy Button
+        private System.Windows.Forms.PictureBox topMenu_BackButton;                         //  Back Button
+        private System.Windows.Forms.PictureBox topMenu_ForwardButton;                      //  Forward Button
+        private System.Windows.Forms.PictureBox topMenu_DefaultButton;                      //  Default Button
+        private System.Windows.Forms.PictureBox topMenu_AutoscaleButton;                    //  Autoscale Button
+        private System.Windows.Forms.PictureBox topMenu_SingleButton;                       //  Single Button
+        private System.Windows.Forms.PictureBox topMenu_StopButton;                         //  Stop Button
+        private System.Windows.Forms.PictureBox topMenu_RunButton;                          //  Run Button
+        private System.Windows.Forms.PictureBox topMenu_ClearButton;                        //  Clear Button
 
         //  Top Controls Panel
-        private System.Windows.Forms.Panel topControlsPanel;                            //  Top Controls Panel
+        private System.Windows.Forms.Panel topControlsPanel;                                //  Top Controls Panel
 
         //  Status Area Channel Panels
-        private System.Windows.Forms.Panel statusArea_ChannelOnePanel;                  //  Status Area Channel One Panel
-        private System.Windows.Forms.Panel statusArea_ChannelTwoPanel;                  //  Status Area Channel Two Panel
-        private System.Windows.Forms.Panel statusArea_ChannelThreePanel;                //  Status Area Channel Three Panel
-        private System.Windows.Forms.Panel statusArea_ChannelFourPanel;                 //  Status Area Channel Four Panel
+        private System.Windows.Forms.Panel statusArea_ChannelOnePanel;                      //  Status Area Channel One Panel
+        private System.Windows.Forms.Panel statusArea_ChannelTwoPanel;                      //  Status Area Channel Two Panel
+        private System.Windows.Forms.Panel statusArea_ChannelThreePanel;                    //  Status Area Channel Three Panel
+        private System.Windows.Forms.Panel statusArea_ChannelFourPanel;                     //  Status Area Channel Four Panel
 
         //  Status Area Channel Frames
-        private System.Windows.Forms.PictureBox statusArea_ChannelOneFrame;             //  Status Area Channel One Frame
-        private System.Windows.Forms.Label statusArea_ChannelOne_Scale;                 //  Status Area Channel One Scale
-        private System.Windows.Forms.Label statusArea_ChannelOne_Offset;                //  Status Area Channel One Offset
+        private System.Windows.Forms.PictureBox statusArea_ChannelOneFrame;                 //  Status Area Channel One Frame
+        private System.Windows.Forms.Label statusArea_ChannelOne_Scale;                     //  Status Area Channel One Scale
+        private System.Windows.Forms.Label statusArea_ChannelOne_Offset;                    //  Status Area Channel One Offset
 
-        private System.Windows.Forms.PictureBox statusArea_ChannelTwoFrame;             //  Status Area Channel Two Frame
-        private System.Windows.Forms.Label statusArea_ChannelTwo_Scale;                 //  Status Area Channel Two Scale
-        private System.Windows.Forms.Label statusArea_ChannelTwo_Offset;                //  Status Area Channel Two Offset
+        private System.Windows.Forms.PictureBox statusArea_ChannelTwoFrame;                 //  Status Area Channel Two Frame
+        private System.Windows.Forms.Label statusArea_ChannelTwo_Scale;                     //  Status Area Channel Two Scale
+        private System.Windows.Forms.Label statusArea_ChannelTwo_Offset;                    //  Status Area Channel Two Offset
 
-        private System.Windows.Forms.PictureBox statusArea_ChannelThreeFrame;           //  Status Area Channel Three Frame
-        private System.Windows.Forms.Label statusArea_ChannelThree_Scale;               //  Status Area Channel Three Scale
-        private System.Windows.Forms.Label statusArea_ChannelThree_Offset;              //  Status Area Channel Three Offset
+        private System.Windows.Forms.PictureBox statusArea_ChannelThreeFrame;               //  Status Area Channel Three Frame
+        private System.Windows.Forms.Label statusArea_ChannelThree_Scale;                   //  Status Area Channel Three Scale
+        private System.Windows.Forms.Label statusArea_ChannelThree_Offset;                  //  Status Area Channel Three Offset
 
-        private System.Windows.Forms.PictureBox statusArea_ChannelFourFrame;            //  Status Area Channel Four Frame
-        private System.Windows.Forms.Label statusArea_ChannelFour_Scale;                //  Status Area Channel Four Scale
-        private System.Windows.Forms.Label statusArea_ChannelFour_Offset;               //  Status Area Channel Four Offset
+        private System.Windows.Forms.PictureBox statusArea_ChannelFourFrame;                //  Status Area Channel Four Frame
+        private System.Windows.Forms.Label statusArea_ChannelFour_Scale;                    //  Status Area Channel Four Scale
+        private System.Windows.Forms.Label statusArea_ChannelFour_Offset;                   //  Status Area Channel Four Offset
 
         //  Status Area Acquire
-        private System.Windows.Forms.Panel statusArea_AcquirePanel;                     //  Status Area Acquire Panel
-        private System.Windows.Forms.PictureBox statusArea_AcquireFrame;                //  Status Area Acquire Frame
-        private System.Windows.Forms.Label statusArea_Acquire_KS;                       //  Status Area Acquire KS
-        private System.Windows.Forms.Label statusArea_Acquire_Mode;                     //  Status Area Acquire Mode
-        private System.Windows.Forms.Label statusArea_Acquire_Scale;                    //  Status Area Acquire Scale
-        private System.Windows.Forms.Label statusArea_Acquire_Waveforms;                //  Status Area Acquire Waveforms
-        private System.Windows.Forms.Label statusArea_Acquire_SampleRate;               //  Status Area Acquire Sample Rate
-        private System.Windows.Forms.Label statusArea_Acquire_SamplingMode;             //  Status Area Acuire Sampling Mode
+        private System.Windows.Forms.Panel statusArea_AcquirePanel;                         //  Status Area Acquire Panel
+        private System.Windows.Forms.PictureBox statusArea_AcquireFrame;                    //  Status Area Acquire Frame
+        private System.Windows.Forms.Label statusArea_Acquire_KS;                           //  Status Area Acquire KS
+        private System.Windows.Forms.Label statusArea_Acquire_Mode;                         //  Status Area Acquire Mode
+        private System.Windows.Forms.Label statusArea_Acquire_Scale;                        //  Status Area Acquire Scale
+        private System.Windows.Forms.Label statusArea_Acquire_Waveforms;                    //  Status Area Acquire Waveforms
+        private System.Windows.Forms.Label statusArea_Acquire_SampleRate;                   //  Status Area Acquire Sample Rate
+        private System.Windows.Forms.Label statusArea_Acquire_SamplingMode;                 //  Status Area Acuire Sampling Mode
 
         //  Status Area Trigger
-        private System.Windows.Forms.Panel statusArea_TriggerPanel;                     //  Status Area Trigger Panel
-        private System.Windows.Forms.PictureBox statusArea_TriggerFrame;                //  Status Area Trigger Frame
-        private System.Windows.Forms.Label statusArea_Trigger_Source;                   //  Status Area Trigger Source
-        private System.Windows.Forms.Label statusArea_Trigger_Mode;                     //  Status Area Trigger Mode
-        private System.Windows.Forms.Label statusArea_Trigger_Frequency;                //  Status Area Trigger Frequency
-        private System.Windows.Forms.Label statusArea_Trigger_Style;                    //  Status Area Trigger Style
-        private System.Windows.Forms.Label statusArea_Trigger_Sensitivity;              //  Status Area Trigger Sensitivity
+        private System.Windows.Forms.Panel statusArea_TriggerPanel;                         //  Status Area Trigger Panel
+        private System.Windows.Forms.PictureBox statusArea_TriggerFrame;                    //  Status Area Trigger Frame
+        private System.Windows.Forms.Label statusArea_Trigger_Source;                       //  Status Area Trigger Source
+        private System.Windows.Forms.Label statusArea_Trigger_Mode;                         //  Status Area Trigger Mode
+        private System.Windows.Forms.Label statusArea_Trigger_Frequency;                    //  Status Area Trigger Frequency
+        private System.Windows.Forms.Label statusArea_Trigger_Style;                        //  Status Area Trigger Style
+        private System.Windows.Forms.Label statusArea_Trigger_Sensitivity;                  //  Status Area Trigger Sensitivity
 
         //  Status Area Display
-        private System.Windows.Forms.Panel statusArea_DisplayPanel;                     //  Status Area Display Panel
-        private System.Windows.Forms.PictureBox statusArea_DisplayFrame;                //  Status Area Display Frame
-        private System.Windows.Forms.Label statusArea_Display_Style;                    //  Status Area Display Style
-        private System.Windows.Forms.Label statusArea_Display_PersistenceTime;          //  Status Area Display Persistence Time
+        private System.Windows.Forms.Panel statusArea_DisplayPanel;                         //  Status Area Display Panel
+        private System.Windows.Forms.PictureBox statusArea_DisplayFrame;                    //  Status Area Display Frame
+        private System.Windows.Forms.Label statusArea_Display_Style;                        //  Status Area Display Style
+        private System.Windows.Forms.Label statusArea_Display_PersistenceTime;              //  Status Area Display Persistence Time
 
         //  Screen Panel
-        private System.Windows.Forms.Panel screenPanel;                                 //  Screen Panel
+        private System.Windows.Forms.Panel screenPanel;                                     //  Screen Panel
 
         //  Measurements Panel
-        private System.Windows.Forms.Panel measurementsPanel;                           //  Measurements Panel
+        private System.Windows.Forms.Panel measurementsPanel;                               //  Measurements Panel
 
         //  Measurement Area Scale
-        private System.Windows.Forms.PictureBox measurementAreaScale;                   //  Measurement Area Scale
+        private System.Windows.Forms.PictureBox measurementAreaScale;                       //  Measurement Area Scale
 
         //  Measurement Area Buttons
-        private System.Windows.Forms.PictureBox measurementArea_MinButton;              //  Measurement Area Min Button
-        private System.Windows.Forms.PictureBox measurementArea_MidButton;              //  Measurement Area Mid Button
-        private System.Windows.Forms.PictureBox measurementArea_MaxButton;              //  Measurement Area Max Button
-        private System.Windows.Forms.PictureBox measurementArea_AutoButton;             //  Measurement Area Auto Button
-        private System.Windows.Forms.PictureBox measurementArea_ScalesButton;           //  Measurement Area Scales Button
+        private System.Windows.Forms.PictureBox measurementArea_MinButton;                  //  Measurement Area Min Button
+        private System.Windows.Forms.PictureBox measurementArea_MidButton;                  //  Measurement Area Mid Button
+        private System.Windows.Forms.PictureBox measurementArea_MaxButton;                  //  Measurement Area Max Button
+        private System.Windows.Forms.PictureBox measurementArea_AutoButton;                 //  Measurement Area Auto Button
+        private System.Windows.Forms.PictureBox measurementArea_ScalesButton;               //  Measurement Area Scales Button
 
         //  Measurement Area Channels
-        private System.Windows.Forms.Label measurementArea_ChannelOne;                  //  Measurement Area Channel One
-        private System.Windows.Forms.Label measurementArea_ChannelTwo;                  //  Measurement Area Channel Two
-        private System.Windows.Forms.Label measurementArea_ChannelThree;                //  Measurement Area Channel Three
-        private System.Windows.Forms.Label measurementArea_ChannelFour;                 //  Measurement Area Channel Four
+        private System.Windows.Forms.Label measurementArea_ChannelOne;                      //  Measurement Area Channel One
+        private System.Windows.Forms.Label measurementArea_ChannelTwo;                      //  Measurement Area Channel Two
+        private System.Windows.Forms.Label measurementArea_ChannelThree;                    //  Measurement Area Channel Three
+        private System.Windows.Forms.Label measurementArea_ChannelFour;                     //  Measurement Area Channel Four
 
         //  Measurement Area Vertical Scale
-        private System.Windows.Forms.Label measurementArea_VerticalScale;               //  Measurement Area Vertical Scale
-        private System.Windows.Forms.Label measurementArea_VerticalScale_1ch;           //  Measurement Area Vertical Scale 1 channel
-        private System.Windows.Forms.Label measurementArea_VerticalScale_2ch;           //  Measurement Area Vertical Scale 2 channel
-        private System.Windows.Forms.Label measurementArea_VerticalScale_3ch;           //  Measurement Area Vertical Scale 3 channel
-        private System.Windows.Forms.Label measurementArea_VerticalScale_4ch;           //  Measurement Area Vertical Scale 4 channel
+        private System.Windows.Forms.Label measurementArea_VerticalScale;                   //  Measurement Area Vertical Scale
+        private System.Windows.Forms.Label measurementArea_VerticalScale_1ch;               //  Measurement Area Vertical Scale 1 channel
+        private System.Windows.Forms.Label measurementArea_VerticalScale_2ch;               //  Measurement Area Vertical Scale 2 channel
+        private System.Windows.Forms.Label measurementArea_VerticalScale_3ch;               //  Measurement Area Vertical Scale 3 channel
+        private System.Windows.Forms.Label measurementArea_VerticalScale_4ch;               //  Measurement Area Vertical Scale 4 channel
 
         //  Measurement Area Offset Position
-        private System.Windows.Forms.Label measurementArea_OffsetPosition;              //  Measurement Area Offset Position
-        private System.Windows.Forms.Label measurementArea_OffsetPosition_1ch;          //  Measurement Area Offset Position 1 channel
-        private System.Windows.Forms.Label measurementArea_OffsetPosition_2ch;          //  Measurement Area Offset Position 2 channel
-        private System.Windows.Forms.Label measurementArea_OffsetPosition_3ch;          //  Measurement Area Offset Position 3 channel
-        private System.Windows.Forms.Label measurementArea_OffsetPosition_4ch;          //  Measurement Area Offset Position 4 channel
+        private System.Windows.Forms.Label measurementArea_OffsetPosition;                  //  Measurement Area Offset Position
+        private System.Windows.Forms.Label measurementArea_OffsetPosition_1ch;              //  Measurement Area Offset Position 1 channel
+        private System.Windows.Forms.Label measurementArea_OffsetPosition_2ch;              //  Measurement Area Offset Position 2 channel
+        private System.Windows.Forms.Label measurementArea_OffsetPosition_3ch;              //  Measurement Area Offset Position 3 channel
+        private System.Windows.Forms.Label measurementArea_OffsetPosition_4ch;              //  Measurement Area Offset Position 4 channel
         
         //  Measurement Area Horizontal Scale
-        private System.Windows.Forms.Label measurementArea_HorizontalScale;             //  Measurement Area Horizontal Scale
-        private System.Windows.Forms.Label measurementArea_HorizontalScale_1ch;         //  Measurement Area Horizontal Scale 1 channel
-        private System.Windows.Forms.Label measurementArea_HorizontalScale_2ch;         //  Measurement Area Horizontal Scale 2 channel
-        private System.Windows.Forms.Label measurementArea_HorizontalScale_3ch;         //  Measurement Area Horizontal Scale 3 channel
-        private System.Windows.Forms.Label measurementArea_HorizontalScale_4ch;         //  Measurement Area Horizontal Scale 4 channel
+        private System.Windows.Forms.Label measurementArea_HorizontalScale;                 //  Measurement Area Horizontal Scale
+        private System.Windows.Forms.Label measurementArea_HorizontalScale_1ch;             //  Measurement Area Horizontal Scale 1 channel
+        private System.Windows.Forms.Label measurementArea_HorizontalScale_2ch;             //  Measurement Area Horizontal Scale 2 channel
+        private System.Windows.Forms.Label measurementArea_HorizontalScale_3ch;             //  Measurement Area Horizontal Scale 3 channel
+        private System.Windows.Forms.Label measurementArea_HorizontalScale_4ch;             //  Measurement Area Horizontal Scale 4 channel
         
         //  Measurement Area Delay Position
-        private System.Windows.Forms.Label measurementArea_DelayPosition;               //  Measurement Area Delay Position
-        private System.Windows.Forms.Label measurementArea_DelayPosition_1ch;           //  Measurement Area Delay Position 1 channel
-        private System.Windows.Forms.Label measurementArea_DelayPosition_2ch;           //  Measurement Area Delay Position 2 channel
-        private System.Windows.Forms.Label measurementArea_DelayPosition_3ch;           //  Measurement Area Delay Position 3 channel
-        private System.Windows.Forms.Label measurementArea_DelayPosition_4ch;           //  Measurement Area Delay Position 4 channel
+        private System.Windows.Forms.Label measurementArea_DelayPosition;                   //  Measurement Area Delay Position
+        private System.Windows.Forms.Label measurementArea_DelayPosition_1ch;               //  Measurement Area Delay Position 1 channel
+        private System.Windows.Forms.Label measurementArea_DelayPosition_2ch;               //  Measurement Area Delay Position 2 channel
+        private System.Windows.Forms.Label measurementArea_DelayPosition_3ch;               //  Measurement Area Delay Position 3 channel
+        private System.Windows.Forms.Label measurementArea_DelayPosition_4ch;               //  Measurement Area Delay Position 4 channel
         
         //  Icon Panel
-        private System.Windows.Forms.PictureBox iconPanel;                              //  Icon Panel
+        private System.Windows.Forms.PictureBox iconPanel;                                  //  Icon Panel
 
         //  Permament Controls Panel
-        private System.Windows.Forms.Panel permanentControlsPanel;                      //  Permanent Controls Panel
+        private System.Windows.Forms.Panel permanentControlsPanel;                          //  Permanent Controls Panel
 
         //  Channel One
-        private System.Windows.Forms.TextBox ChannelOne_TextBox;                        //  Channel One TextBox
-        private System.Windows.Forms.PictureBox ChannelOne_Button;                      //  Channel One Button
-        private System.Windows.Forms.PictureBox ChannelOne_SmallDownButton;             //  Channel One Small Down Button
-        private System.Windows.Forms.PictureBox ChannelOne_SmallUpButton;               //  Channel One Small Up Button
-        private System.Windows.Forms.PictureBox ChannelOne_DefaultButton;               //  Channel One Default Button
-        private System.Windows.Forms.PictureBox ChannelOne_BigDownButton;               //  Channel One Big Down Button
-        private System.Windows.Forms.PictureBox ChannelOne_BigUpButton;                 //  Channel One Big Up Button
-        private System.Windows.Forms.PictureBox ChannelOne_StatusBar;                   //  Channel One Status Bar
+        private System.Windows.Forms.TextBox ChannelOne_TextBox;                            //  Channel One TextBox
+        private System.Windows.Forms.PictureBox ChannelOne_Button;                          //  Channel One Button
+        private System.Windows.Forms.PictureBox ChannelOne_SmallDownButton;                 //  Channel One Small Down Button
+        private System.Windows.Forms.PictureBox ChannelOne_SmallUpButton;                   //  Channel One Small Up Button
+        private System.Windows.Forms.PictureBox ChannelOne_DefaultButton;                   //  Channel One Default Button
+        private System.Windows.Forms.PictureBox ChannelOne_BigDownButton;                   //  Channel One Big Down Button
+        private System.Windows.Forms.PictureBox ChannelOne_BigUpButton;                     //  Channel One Big Up Button
+        private System.Windows.Forms.PictureBox ChannelOne_StatusBar;                       //  Channel One Status Bar
 
         //  Channel One Position Offset
-        private System.Windows.Forms.TextBox ChannelOne_PosOfs_TextBox;                 //  Channel One Position Offset TextBox
-        private System.Windows.Forms.PictureBox ChannelOne_PositionButton;              //  Channel One Position Button
-        private System.Windows.Forms.PictureBox ChannelOne_OffsetButton;                //  Channel One Offset Button
-        private System.Windows.Forms.PictureBox ChannelOne_PosOfs_SmallDownButton;      //  Channel One Position Offset Small Down Button
-        private System.Windows.Forms.PictureBox ChannelOne_PosOfs_SmallUpButton;        //  Channel One Position Offset Small Up Button
-        private System.Windows.Forms.PictureBox ChannelOne_PosOfs_DefaultButton;        //  Channel One Position Offset Default Button
-        private System.Windows.Forms.PictureBox ChannelOne_PosOfs_BigDownButton;        //  Channel One Position Offset Big Down Button
-        private System.Windows.Forms.PictureBox ChannelOne_PosOfs_BigUpButton;          //  Channel One Position Offset Big Up Button
-        private System.Windows.Forms.PictureBox ChannelOne_PosOfs_StatusBar;            //  Channel One Position Offset Status Bar
+        private System.Windows.Forms.TextBox ChannelOne_PosOfs_TextBox;                     //  Channel One Position Offset TextBox
+        private System.Windows.Forms.PictureBox ChannelOne_PositionButton;                  //  Channel One Position Button
+        private System.Windows.Forms.PictureBox ChannelOne_OffsetButton;                    //  Channel One Offset Button
+        private System.Windows.Forms.PictureBox ChannelOne_PosOfs_SmallDownButton;          //  Channel One Position Offset Small Down Button
+        private System.Windows.Forms.PictureBox ChannelOne_PosOfs_SmallUpButton;            //  Channel One Position Offset Small Up Button
+        private System.Windows.Forms.PictureBox ChannelOne_PosOfs_DefaultButton;            //  Channel One Position Offset Default Button
+        private System.Windows.Forms.PictureBox ChannelOne_PosOfs_BigDownButton;            //  Channel One Position Offset Big Down Button
+        private System.Windows.Forms.PictureBox ChannelOne_PosOfs_BigUpButton;              //  Channel One Position Offset Big Up Button
+        private System.Windows.Forms.PictureBox ChannelOne_PosOfs_StatusBar;                //  Channel One Position Offset Status Bar
 
         //  Channel Two
-        private System.Windows.Forms.TextBox ChannelTwo_TextBox;                        //  Channel Two TextBox
-        private System.Windows.Forms.PictureBox ChannelTwo_Button;                      //  Channel Two Button
-        private System.Windows.Forms.PictureBox ChannelTwo_SmallDownButton;             //  Channel Two Small Down Button
-        private System.Windows.Forms.PictureBox ChannelTwo_SmallUpButton;               //  Channel Two Small Up Button
-        private System.Windows.Forms.PictureBox ChannelTwo_DefaultButton;               //  Channel Two Default Button
-        private System.Windows.Forms.PictureBox ChannelTwo_BigDownButton;               //  Channel Two Big Down Button
-        private System.Windows.Forms.PictureBox ChannelTwo_BigUpButton;                 //  Channel Two Big Up Button
-        private System.Windows.Forms.PictureBox ChannelTwo_StatusBar;                   //  Channel Two Status Bar
+        private System.Windows.Forms.TextBox ChannelTwo_TextBox;                            //  Channel Two TextBox
+        private System.Windows.Forms.PictureBox ChannelTwo_Button;                          //  Channel Two Button
+        private System.Windows.Forms.PictureBox ChannelTwo_SmallDownButton;                 //  Channel Two Small Down Button
+        private System.Windows.Forms.PictureBox ChannelTwo_SmallUpButton;                   //  Channel Two Small Up Button
+        private System.Windows.Forms.PictureBox ChannelTwo_DefaultButton;                   //  Channel Two Default Button
+        private System.Windows.Forms.PictureBox ChannelTwo_BigDownButton;                   //  Channel Two Big Down Button
+        private System.Windows.Forms.PictureBox ChannelTwo_BigUpButton;                     //  Channel Two Big Up Button
+        private System.Windows.Forms.PictureBox ChannelTwo_StatusBar;                       //  Channel Two Status Bar
 
         //  Channel Two Position Offset
-        private System.Windows.Forms.TextBox ChannelTwo_PosOfs_TextBox;                 //  Channel Two Position Offset TextBox
-        private System.Windows.Forms.PictureBox ChannelTwo_PositionButton;              //  Channel Two Position Button
-        private System.Windows.Forms.PictureBox ChannelTwo_OffsetButton;                //  Channel Two Offset Button
-        private System.Windows.Forms.PictureBox ChannelTwo_PosOfs_SmallDownButton;      //  Channel Two Position Offset Small Down Button
-        private System.Windows.Forms.PictureBox ChannelTwo_PosOfs_SmallUpButton;        //  Channel Two Position Offset Small Up Button
-        private System.Windows.Forms.PictureBox ChannelTwo_PosOfs_DefaultButton;        //  Channel Two Position Offset Default Button
-        private System.Windows.Forms.PictureBox ChannelTwo_PosOfs_BigDownButton;        //  Channel Two Position Offset Big Down Button
-        private System.Windows.Forms.PictureBox ChannelTwo_PosOfs_BigUpButton;          //  Channel Two Position Offset Big Up Button
-        private System.Windows.Forms.PictureBox ChannelTwo_PosOfs_StatusBar;            //  Channel Two Position Offset Status Bar
+        private System.Windows.Forms.TextBox ChannelTwo_PosOfs_TextBox;                     //  Channel Two Position Offset TextBox
+        private System.Windows.Forms.PictureBox ChannelTwo_PositionButton;                  //  Channel Two Position Button
+        private System.Windows.Forms.PictureBox ChannelTwo_OffsetButton;                    //  Channel Two Offset Button
+        private System.Windows.Forms.PictureBox ChannelTwo_PosOfs_SmallDownButton;          //  Channel Two Position Offset Small Down Button
+        private System.Windows.Forms.PictureBox ChannelTwo_PosOfs_SmallUpButton;            //  Channel Two Position Offset Small Up Button
+        private System.Windows.Forms.PictureBox ChannelTwo_PosOfs_DefaultButton;            //  Channel Two Position Offset Default Button
+        private System.Windows.Forms.PictureBox ChannelTwo_PosOfs_BigDownButton;            //  Channel Two Position Offset Big Down Button
+        private System.Windows.Forms.PictureBox ChannelTwo_PosOfs_BigUpButton;              //  Channel Two Position Offset Big Up Button
+        private System.Windows.Forms.PictureBox ChannelTwo_PosOfs_StatusBar;                //  Channel Two Position Offset Status Bar
 
         //  Channel Three
-        private System.Windows.Forms.TextBox ChannelThree_TextBox;                      //  Channel Three TextBox
-        private System.Windows.Forms.PictureBox ChannelThree_Button;                    //  Channel Three Button
-        private System.Windows.Forms.PictureBox ChannelThree_SmallDownButton;           //  Channel Three Small Down Button
-        private System.Windows.Forms.PictureBox ChannelThree_SmallUpButton;             //  Channel Three Small Up Button
-        private System.Windows.Forms.PictureBox ChannelThree_DefaultButton;             //  Channel Three Default Button
-        private System.Windows.Forms.PictureBox ChannelThree_BigDownButton;             //  Channel Three Big Down Button
-        private System.Windows.Forms.PictureBox ChannelThree_BigUpButton;               //  Channel Three Big Up Button
-        private System.Windows.Forms.PictureBox ChannelThree_StatusBar;                 //  Channel Three Status Bar
+        private System.Windows.Forms.TextBox ChannelThree_TextBox;                          //  Channel Three TextBox
+        private System.Windows.Forms.PictureBox ChannelThree_Button;                        //  Channel Three Button
+        private System.Windows.Forms.PictureBox ChannelThree_SmallDownButton;               //  Channel Three Small Down Button
+        private System.Windows.Forms.PictureBox ChannelThree_SmallUpButton;                 //  Channel Three Small Up Button
+        private System.Windows.Forms.PictureBox ChannelThree_DefaultButton;                 //  Channel Three Default Button
+        private System.Windows.Forms.PictureBox ChannelThree_BigDownButton;                 //  Channel Three Big Down Button
+        private System.Windows.Forms.PictureBox ChannelThree_BigUpButton;                   //  Channel Three Big Up Button
+        private System.Windows.Forms.PictureBox ChannelThree_StatusBar;                     //  Channel Three Status Bar
 
         //  Channel Three Position Offset
-        private System.Windows.Forms.TextBox ChannelThree_PosOfs_TextBox;               //  Channel Three Position Offset TextBox
-        private System.Windows.Forms.PictureBox ChannelThree_PositionButton;            //  Channel Three Position Button
-        private System.Windows.Forms.PictureBox ChannelThree_OffsetButton;              //  Channel Three Offset Button
-        private System.Windows.Forms.PictureBox ChannelThree_PosOfs_SmallDownButton;    //  Channel Three Position Offset Small Down Button
-        private System.Windows.Forms.PictureBox ChannelThree_PosOfs_SmallUpButton;      //  Channel Three Position Offset Small Up Button
-        private System.Windows.Forms.PictureBox ChannelThree_PosOfs_DefaultButton;      //  Channel Three Position Offset Default Button
-        private System.Windows.Forms.PictureBox ChannelThree_PosOfs_BigDownButton;      //  Channel Three Position Offset Big Down Button
-        private System.Windows.Forms.PictureBox ChannelThree_PosOfs_BigUpButton;        //  Channel Three Position Offset Big Up Button
-        private System.Windows.Forms.PictureBox ChannelThree_PosOfs_StatusBar;          //  Channel Three Position Offset Status Bar
+        private System.Windows.Forms.TextBox ChannelThree_PosOfs_TextBox;                   //  Channel Three Position Offset TextBox
+        private System.Windows.Forms.PictureBox ChannelThree_PositionButton;                //  Channel Three Position Button
+        private System.Windows.Forms.PictureBox ChannelThree_OffsetButton;                  //  Channel Three Offset Button
+        private System.Windows.Forms.PictureBox ChannelThree_PosOfs_SmallDownButton;        //  Channel Three Position Offset Small Down Button
+        private System.Windows.Forms.PictureBox ChannelThree_PosOfs_SmallUpButton;          //  Channel Three Position Offset Small Up Button
+        private System.Windows.Forms.PictureBox ChannelThree_PosOfs_DefaultButton;          //  Channel Three Position Offset Default Button
+        private System.Windows.Forms.PictureBox ChannelThree_PosOfs_BigDownButton;          //  Channel Three Position Offset Big Down Button
+        private System.Windows.Forms.PictureBox ChannelThree_PosOfs_BigUpButton;            //  Channel Three Position Offset Big Up Button
+        private System.Windows.Forms.PictureBox ChannelThree_PosOfs_StatusBar;              //  Channel Three Position Offset Status Bar
 
         //  Channel Four
-        private System.Windows.Forms.TextBox ChannelFour_TextBox;                       //  Channel Four TextBox
-        private System.Windows.Forms.PictureBox ChannelFour_Button;                     //  Channel Four Button
-        private System.Windows.Forms.PictureBox ChannelFour_SmallDownButton;            //  Channel Four Small Down Button
-        private System.Windows.Forms.PictureBox ChannelFour_SmallUpButton;              //  Channel Four Small Up Button
-        private System.Windows.Forms.PictureBox ChannelFour_DefaultButton;              //  Channel Four Default Button
-        private System.Windows.Forms.PictureBox ChannelFour_BigDownButton;              //  Channel Four Big Down Button
-        private System.Windows.Forms.PictureBox ChannelFour_BigUpButton;                //  Channel Four Big Up Button
-        private System.Windows.Forms.PictureBox ChannelFour_StatusBar;                  //  Channel Four Status Bar
+        private System.Windows.Forms.TextBox ChannelFour_TextBox;                           //  Channel Four TextBox
+        private System.Windows.Forms.PictureBox ChannelFour_Button;                         //  Channel Four Button
+        private System.Windows.Forms.PictureBox ChannelFour_SmallDownButton;                //  Channel Four Small Down Button
+        private System.Windows.Forms.PictureBox ChannelFour_SmallUpButton;                  //  Channel Four Small Up Button
+        private System.Windows.Forms.PictureBox ChannelFour_DefaultButton;                  //  Channel Four Default Button
+        private System.Windows.Forms.PictureBox ChannelFour_BigDownButton;                  //  Channel Four Big Down Button
+        private System.Windows.Forms.PictureBox ChannelFour_BigUpButton;                    //  Channel Four Big Up Button
+        private System.Windows.Forms.PictureBox ChannelFour_StatusBar;                      //  Channel Four Status Bar
 
         //  Channel Four Position Offset
-        private System.Windows.Forms.TextBox ChannelFour_PosOfs_TextBox;                //  Channel Four Position Offset TextBox
-        private System.Windows.Forms.PictureBox ChannelFour_PositionButton;             //  Channel Four Position Button
-        private System.Windows.Forms.PictureBox ChannelFour_OffsetButton;               //  Channel Four Offset Button
-        private System.Windows.Forms.PictureBox ChannelFour_PosOfs_SmallDownButton;     //  Channel Four Position Offset Small Down Button
-        private System.Windows.Forms.PictureBox ChannelFour_PosOfs_SmallUpButton;       //  Channel Four Position Offset Small Up Button
-        private System.Windows.Forms.PictureBox ChannelFour_PosOfs_DefaultButton;       //  Channel Four Position Offset Default Button
-        private System.Windows.Forms.PictureBox ChannelFour_PosOfs_BigDownButton;       //  Channel Four Position Offset Big Down Button
-        private System.Windows.Forms.PictureBox ChannelFour_PosOfs_BigUpButton;         //  Channel Four Position Offset Big Up Button
-        private System.Windows.Forms.PictureBox ChannelFour_PosOfs_StatusBar;           //  Channel Four Position Offset Status Bar
+        private System.Windows.Forms.TextBox ChannelFour_PosOfs_TextBox;                    //  Channel Four Position Offset TextBox
+        private System.Windows.Forms.PictureBox ChannelFour_PositionButton;                 //  Channel Four Position Button
+        private System.Windows.Forms.PictureBox ChannelFour_OffsetButton;                   //  Channel Four Offset Button
+        private System.Windows.Forms.PictureBox ChannelFour_PosOfs_SmallDownButton;         //  Channel Four Position Offset Small Down Button
+        private System.Windows.Forms.PictureBox ChannelFour_PosOfs_SmallUpButton;           //  Channel Four Position Offset Small Up Button
+        private System.Windows.Forms.PictureBox ChannelFour_PosOfs_DefaultButton;           //  Channel Four Position Offset Default Button
+        private System.Windows.Forms.PictureBox ChannelFour_PosOfs_BigDownButton;           //  Channel Four Position Offset Big Down Button
+        private System.Windows.Forms.PictureBox ChannelFour_PosOfs_BigUpButton;             //  Channel Four Position Offset Big Up Button
+        private System.Windows.Forms.PictureBox ChannelFour_PosOfs_StatusBar;               //  Channel Four Position Offset Status Bar
 
         //  Timebase
-        private System.Windows.Forms.TextBox timebase_TextBox;                          //  Timebase TextBox
-        private System.Windows.Forms.PictureBox timebase_StatusBar;                     //  Timebase Status Bar
-        private System.Windows.Forms.PictureBox timebase_BigLeftButton;                 //  Timebase Big Left Button
-        private System.Windows.Forms.PictureBox timebase_BigRightButton;                //  Timebase Big Right Button
-        private System.Windows.Forms.PictureBox timebase_DefaultButton;                 //  Timebase Default Button
-        private System.Windows.Forms.PictureBox timebase_SmallLeftButton;               //  Timebase Small Left Button
-        private System.Windows.Forms.PictureBox timebase_SmallRightButton;              //  Timebase Small Right Button
+        private System.Windows.Forms.TextBox timebase_TextBox;                              //  Timebase TextBox
+        private System.Windows.Forms.PictureBox timebase_StatusBar;                         //  Timebase Status Bar
+        private System.Windows.Forms.PictureBox timebase_BigLeftButton;                     //  Timebase Big Left Button
+        private System.Windows.Forms.PictureBox timebase_BigRightButton;                    //  Timebase Big Right Button
+        private System.Windows.Forms.PictureBox timebase_DefaultButton;                     //  Timebase Default Button
+        private System.Windows.Forms.PictureBox timebase_SmallLeftButton;                   //  Timebase Small Left Button
+        private System.Windows.Forms.PictureBox timebase_SmallRightButton;                  //  Timebase Small Right Button
 
         //  Timabase Position Delay
-        private System.Windows.Forms.TextBox timebase_PosDelay_TextBox;                 //  Timebase Position Delay TextBox
-        private System.Windows.Forms.PictureBox timebase_PosDelay_StatusBar;            //  Timebase Position Delay Status Bar
-        private System.Windows.Forms.PictureBox timebase_PosDelay_SmallLeftButton;      //  Timebase Position Delay Small Left Button
-        private System.Windows.Forms.PictureBox timebase_PosDelay_SmallRightButton;     //  Timebase Position Delay Small Right Button
-        private System.Windows.Forms.PictureBox timebase_PosDelay_DefaultButton;        //  Timebase Position Delay Default Button
-        private System.Windows.Forms.PictureBox timebase_PosDelay_BigLeftButton;        //  Timebase Position Delay Big Left Button
-        private System.Windows.Forms.PictureBox timebase_PosDelay_BigRightButton;       //  Timebase Position Delay 
-        private System.Windows.Forms.PictureBox timebase_DelayButton;                   //  Timebase Delay Button
-        private System.Windows.Forms.PictureBox timebase_PositionButton;                //  Timebase Position Button
+        private System.Windows.Forms.TextBox timebase_PosDelay_TextBox;                     //  Timebase Position Delay TextBox
+        private System.Windows.Forms.PictureBox timebase_PosDelay_StatusBar;                //  Timebase Position Delay Status Bar
+        private System.Windows.Forms.PictureBox timebase_PosDelay_SmallLeftButton;          //  Timebase Position Delay Small Left Button
+        private System.Windows.Forms.PictureBox timebase_PosDelay_SmallRightButton;         //  Timebase Position Delay Small Right Button
+        private System.Windows.Forms.PictureBox timebase_PosDelay_DefaultButton;            //  Timebase Position Delay Default Button
+        private System.Windows.Forms.PictureBox timebase_PosDelay_BigLeftButton;            //  Timebase Position Delay Big Left Button
+        private System.Windows.Forms.PictureBox timebase_PosDelay_BigRightButton;           //  Timebase Position Delay 
+        private System.Windows.Forms.PictureBox timebase_DelayButton;                       //  Timebase Delay Button
+        private System.Windows.Forms.PictureBox timebase_PositionButton;                    //  Timebase Position Button
 
         //  Trigger Mode
-        private System.Windows.Forms.PictureBox triggerMode_TriggeredButton;            //  Trigger Mode Triggered Button
-        private System.Windows.Forms.PictureBox triggerMode_FreerunButton;              //  Trigger Mode Freerun Button
+        private System.Windows.Forms.PictureBox triggerMode_TriggeredButton;                //  Trigger Mode Triggered Button
+        private System.Windows.Forms.PictureBox triggerMode_FreerunButton;                  //  Trigger Mode Freerun Button
 
         //  Trigger Level
-        private System.Windows.Forms.TextBox triggerLevel_TextBox;                      //  Trigger Level TextBox
-        private System.Windows.Forms.PictureBox triggerLevel_StatusBar;                 //  Trigger Level Status Bar
-        private System.Windows.Forms.PictureBox triggerLevel_SmallDownButton;           //  Trigger Level Small Down Button
-        private System.Windows.Forms.PictureBox triggerLevel_SmallUpButton;             //  Trigger Level Small Up Button
-        private System.Windows.Forms.PictureBox triggerLevel_ZeroButton;                //  Trigger Level Zero Button
-        private System.Windows.Forms.PictureBox triggerLevel_BigDownButton;             //  Trigger Level Big Down Button
-        private System.Windows.Forms.PictureBox triggerLevel_BigUpButton;               //  Trigger Level Big Up Button
+        private System.Windows.Forms.TextBox triggerLevel_TextBox;                          //  Trigger Level TextBox
+        private System.Windows.Forms.PictureBox triggerLevel_StatusBar;                     //  Trigger Level Status Bar
+        private System.Windows.Forms.PictureBox triggerLevel_SmallDownButton;               //  Trigger Level Small Down Button
+        private System.Windows.Forms.PictureBox triggerLevel_SmallUpButton;                 //  Trigger Level Small Up Button
+        private System.Windows.Forms.PictureBox triggerLevel_ZeroButton;                    //  Trigger Level Zero Button
+        private System.Windows.Forms.PictureBox triggerLevel_BigDownButton;                 //  Trigger Level Big Down Button
+        private System.Windows.Forms.PictureBox triggerLevel_BigUpButton;                   //  Trigger Level Big Up Button
 
         //  Trigger Source
-        private System.Windows.Forms.PictureBox triggerSource_ChannelOne;               //  Trigger Source Channel One
-        private System.Windows.Forms.PictureBox triggerSource_ChannelTwo;               //  Trigger Source Channel Two
-        private System.Windows.Forms.PictureBox triggerSource_ChannelThree;             //  Trigger Source Channel Three
-        private System.Windows.Forms.PictureBox triggerSource_ChannelFour;              //  Trigger Source Channel Four
+        private System.Windows.Forms.PictureBox triggerSource_ChannelOne;                   //  Trigger Source Channel One
+        private System.Windows.Forms.PictureBox triggerSource_ChannelTwo;                   //  Trigger Source Channel Two
+        private System.Windows.Forms.PictureBox triggerSource_ChannelThree;                 //  Trigger Source Channel Three
+        private System.Windows.Forms.PictureBox triggerSource_ChannelFour;                  //  Trigger Source Channel Four
 
         //  Trigger Slope
-        private System.Windows.Forms.PictureBox triggerSlope_Positive;                  //  Trigger Slope Positive
-        private System.Windows.Forms.PictureBox triggerSlope_Negative;                  //  Trigger Slope Negative
-        private System.Windows.Forms.PictureBox triggerSlope_Bislope;                   //  Trigger Slope Bislope
+        private System.Windows.Forms.PictureBox triggerSlope_Positive;                      //  Trigger Slope Positive
+        private System.Windows.Forms.PictureBox triggerSlope_Negative;                      //  Trigger Slope Negative
+        private System.Windows.Forms.PictureBox triggerSlope_Bislope;                       //  Trigger Slope Bislope
 
         //  Down Menu Panel
-        private System.Windows.Forms.Panel downMenuPanel;                               //  Down Menu Panel
+        private System.Windows.Forms.Panel downMenuPanel;                                   //  Down Menu Panel
 
         //  Down Menu Icons and Buttons
-        private System.Windows.Forms.PictureBox downMenu_LeftMouseIcon;                 //  Left Mouse Icon
-        private System.Windows.Forms.PictureBox downMenu_ChannelsButton;                //  Channels Button
-        private System.Windows.Forms.PictureBox downMenu_AcquireButton;                 //  Acquire Button
-        private System.Windows.Forms.PictureBox downMenu_TriggerButton;                 //  Trigger Button
-        private System.Windows.Forms.PictureBox downMenu_DisplayButton;                 //  Display Button
-        private System.Windows.Forms.PictureBox downMenu_SaveButton;                    //  Save Button
-        private System.Windows.Forms.PictureBox downMenu_MarkerButton;                  //  Marker Button
-        private System.Windows.Forms.PictureBox downMenu_MeasureButton;                 //  Measure Button
-        private System.Windows.Forms.PictureBox downMenu_MathButton;                    //  Math Button
-        private System.Windows.Forms.PictureBox downMenu_RightMouseIcon;                //  Right Mouse Icon
-        private System.Windows.Forms.PictureBox downMenu_HistogramButton;               //  Histogram Button
-        private System.Windows.Forms.PictureBox downMenu_DiagramButton;                 //  Diagram Button
-        private System.Windows.Forms.PictureBox downMenu_MaskButton;                    //  Mask Button
-        private System.Windows.Forms.PictureBox downMenu_EmptyButtons;                  //  Empty Buttons
-        private System.Windows.Forms.PictureBox downMenu_UtilityButton;                 //  Utility Button
+        private System.Windows.Forms.PictureBox downMenu_LeftMouseIcon;                     //  Left Mouse Icon
+        private System.Windows.Forms.PictureBox downMenu_ChannelsButton;                    //  Channels Button
+        private System.Windows.Forms.PictureBox downMenu_AcquireButton;                     //  Acquire Button
+        private System.Windows.Forms.PictureBox downMenu_TriggerButton;                     //  Trigger Button
+        private System.Windows.Forms.PictureBox downMenu_DisplayButton;                     //  Display Button
+        private System.Windows.Forms.PictureBox downMenu_SaveButton;                        //  Save Button
+        private System.Windows.Forms.PictureBox downMenu_MarkerButton;                      //  Marker Button
+        private System.Windows.Forms.PictureBox downMenu_MeasureButton;                     //  Measure Button
+        private System.Windows.Forms.PictureBox downMenu_MathButton;                        //  Math Button
+        private System.Windows.Forms.PictureBox downMenu_RightMouseIcon;                    //  Right Mouse Icon
+        private System.Windows.Forms.PictureBox downMenu_HistogramButton;                   //  Histogram Button
+        private System.Windows.Forms.PictureBox downMenu_DiagramButton;                     //  Diagram Button
+        private System.Windows.Forms.PictureBox downMenu_MaskButton;                        //  Mask Button
+        private System.Windows.Forms.PictureBox downMenu_EmptyButtons;                      //  Empty Buttons
+        private System.Windows.Forms.PictureBox downMenu_UtilityButton;                     //  Utility Button
+
+        private System.Windows.Forms.ToolStripMenuItem copyToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem copyFullScreenToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem copyFullWindowToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem copyToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem copyInvClientAreaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem copyScopeScreenToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem copyInvScopeScreenToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolbarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem permanentControlToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem measurementAreaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem leftSideMenuToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem rightSideMenuToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem bothSideMenuToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem noSideMenusToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem displayStyleScreenToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem displayViewColorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem touchscreenToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fixedPositionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem floatingPositionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem largeDotsEnabledToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem channel1ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem channel2ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem channel3ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem channel4ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem timebaseAcquisitionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem triggerToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem markerToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem measureToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem histogramToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eyeDiagramToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mathematicsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem maskTestToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem changeInstrumentToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem commonLANSettingsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem scanningLANSettingsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem calibrateToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem demoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem adjustmentToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem languageToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem picoSample4HelpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem instrumentInfoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem parameterToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem definitionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem limitTestToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem setupToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem windowScaleToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem parameterToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem definitionToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem functionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem scalingToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem englishToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem visibleM1ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem visibleM2ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem visibleM3ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem visibleM4ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem visibleAllToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem invisibleAllToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem clearM1ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem clearM2ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem clearM3ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem clearM4ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem clearAllMemoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toMemoryM1ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toMemoryM2ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toMemoryM3ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toMemoryM4ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ch1ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ch2ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ch3ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ch4ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem f1ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem f2ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem f3ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem f4ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem m1ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem m2ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem m3ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem m4ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem downloadToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem visibleToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem clearToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem openSetupToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem openFactorySetupToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem openPowerOffSetupToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem saveSetupToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem saveAsDefaultSetupToolStripMenuItem;
     }
 }
 
