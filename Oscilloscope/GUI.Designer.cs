@@ -317,11 +317,11 @@ namespace Oscilloscope
             this.definitionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.limitTestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.histogramToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.setupToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.histogramSetupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.windowScaleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eyeDiagramToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.parameterToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.definitionToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.parameterEyeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.definitionEyeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.analysisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mathematicsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.functionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -3401,7 +3401,7 @@ namespace Oscilloscope
             // markerToolStripMenuItem
             // 
             this.markerToolStripMenuItem.Name = "markerToolStripMenuItem";
-            this.markerToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.markerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.markerToolStripMenuItem.Text = "Marker";
             // 
             // measureToolStripMenuItem
@@ -3411,7 +3411,7 @@ namespace Oscilloscope
             this.definitionToolStripMenuItem,
             this.limitTestToolStripMenuItem});
             this.measureToolStripMenuItem.Name = "measureToolStripMenuItem";
-            this.measureToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.measureToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.measureToolStripMenuItem.Text = "Measure";
             // 
             // parameterToolStripMenuItem
@@ -3435,17 +3435,17 @@ namespace Oscilloscope
             // histogramToolStripMenuItem
             // 
             this.histogramToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.setupToolStripMenuItem1,
+            this.histogramSetupToolStripMenuItem,
             this.windowScaleToolStripMenuItem});
             this.histogramToolStripMenuItem.Name = "histogramToolStripMenuItem";
-            this.histogramToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.histogramToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.histogramToolStripMenuItem.Text = "Histogram";
             // 
-            // setupToolStripMenuItem1
+            // histogramSetupToolStripMenuItem
             // 
-            this.setupToolStripMenuItem1.Name = "setupToolStripMenuItem1";
-            this.setupToolStripMenuItem1.Size = new System.Drawing.Size(150, 22);
-            this.setupToolStripMenuItem1.Text = "Setup";
+            this.histogramSetupToolStripMenuItem.Name = "histogramSetupToolStripMenuItem";
+            this.histogramSetupToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.histogramSetupToolStripMenuItem.Text = "Setup";
             // 
             // windowScaleToolStripMenuItem
             // 
@@ -3456,23 +3456,23 @@ namespace Oscilloscope
             // eyeDiagramToolStripMenuItem
             // 
             this.eyeDiagramToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.parameterToolStripMenuItem1,
-            this.definitionToolStripMenuItem1});
+            this.parameterEyeToolStripMenuItem,
+            this.definitionEyeToolStripMenuItem});
             this.eyeDiagramToolStripMenuItem.Name = "eyeDiagramToolStripMenuItem";
-            this.eyeDiagramToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.eyeDiagramToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.eyeDiagramToolStripMenuItem.Text = "Eye Diagram";
             // 
-            // parameterToolStripMenuItem1
+            // parameterEyeToolStripMenuItem
             // 
-            this.parameterToolStripMenuItem1.Name = "parameterToolStripMenuItem1";
-            this.parameterToolStripMenuItem1.Size = new System.Drawing.Size(128, 22);
-            this.parameterToolStripMenuItem1.Text = "Parameter";
+            this.parameterEyeToolStripMenuItem.Name = "parameterEyeToolStripMenuItem";
+            this.parameterEyeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.parameterEyeToolStripMenuItem.Text = "Parameter";
             // 
-            // definitionToolStripMenuItem1
+            // definitionEyeToolStripMenuItem
             // 
-            this.definitionToolStripMenuItem1.Name = "definitionToolStripMenuItem1";
-            this.definitionToolStripMenuItem1.Size = new System.Drawing.Size(128, 22);
-            this.definitionToolStripMenuItem1.Text = "Definition";
+            this.definitionEyeToolStripMenuItem.Name = "definitionEyeToolStripMenuItem";
+            this.definitionEyeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.definitionEyeToolStripMenuItem.Text = "Definition";
             // 
             // analysisToolStripMenuItem
             // 
@@ -3796,10 +3796,45 @@ namespace Oscilloscope
         //  Menu Item - File
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;                   //  Menu Item - File
         private System.Windows.Forms.ToolStripMenuItem wfmMemoryToolStripMenuItem;              //  Menu Item - File - Waveform Memory
+        private System.Windows.Forms.ToolStripMenuItem visibleM1ToolStripMenuItem;              //  Menu Item - File - Waveform Memomory - Visible M1
+        private System.Windows.Forms.ToolStripMenuItem visibleM2ToolStripMenuItem;              //  Menu Item - File - Waveform Memomory - Visible M2
+        private System.Windows.Forms.ToolStripMenuItem visibleM3ToolStripMenuItem;              //  Menu Item - File - Waveform Memomory - Visible M3
+        private System.Windows.Forms.ToolStripMenuItem visibleM4ToolStripMenuItem;              //  Menu Item - File - Waveform Memomory - Visible M4
+        private System.Windows.Forms.ToolStripMenuItem visibleAllToolStripMenuItem;             //  Menu Item - File - Waveform Memomory - Visible All
+        private System.Windows.Forms.ToolStripMenuItem invisibleAllToolStripMenuItem;           //  Menu Item - File - Waveform Memomory - Invisible All
+        private System.Windows.Forms.ToolStripMenuItem clearM1ToolStripMenuItem;                //  Menu Item - File - Waveform Memomory - Clear M1
+        private System.Windows.Forms.ToolStripMenuItem clearM2ToolStripMenuItem;                //  Menu Item - File - Waveform Memomory - Clear M2
+        private System.Windows.Forms.ToolStripMenuItem clearM3ToolStripMenuItem;                //  Menu Item - File - Waveform Memomory - Clear M3
+        private System.Windows.Forms.ToolStripMenuItem clearM4ToolStripMenuItem;                //  Menu Item - File - Waveform Memomory - Clear M4
+        private System.Windows.Forms.ToolStripMenuItem clearAllMemoToolStripMenuItem;           //  Menu Item - File - Waveform Memomory - Clear All Memo
         private System.Windows.Forms.ToolStripMenuItem downloadWfmToolStripMenuItem;            //  Menu Item - File - Download Waveform
+        private System.Windows.Forms.ToolStripMenuItem toMemoryM1ToolStripMenuItem;             //  Menu Item - File - Download Waveform - to Memory M1
+        private System.Windows.Forms.ToolStripMenuItem toMemoryM2ToolStripMenuItem;             //  Menu Item - File - Download Waveform - to Memory M2
+        private System.Windows.Forms.ToolStripMenuItem toMemoryM3ToolStripMenuItem;             //  Menu Item - File - Download Waveform - to Memory M3
+        private System.Windows.Forms.ToolStripMenuItem toMemoryM4ToolStripMenuItem;             //  Menu Item - File - Download Waveform - to Memory M4
         private System.Windows.Forms.ToolStripMenuItem saveWaveformToolStripMenuItem;           //  Menu Item - File - Save Waveform
+        private System.Windows.Forms.ToolStripMenuItem ch1ToolStripMenuItem;                    //  Menu Item - File - Save Waveform - Ch1
+        private System.Windows.Forms.ToolStripMenuItem ch2ToolStripMenuItem;                    //  Menu Item - File - Save Waveform - Ch2
+        private System.Windows.Forms.ToolStripMenuItem ch3ToolStripMenuItem;                    //  Menu Item - File - Save Waveform - Ch3
+        private System.Windows.Forms.ToolStripMenuItem ch4ToolStripMenuItem;                    //  Menu Item - File - Save Waveform - Ch4
+        private System.Windows.Forms.ToolStripMenuItem f1ToolStripMenuItem;                     //  Menu Item - File - Save Waveform - F1
+        private System.Windows.Forms.ToolStripMenuItem f2ToolStripMenuItem;                     //  Menu Item - File - Save Waveform - F2
+        private System.Windows.Forms.ToolStripMenuItem f3ToolStripMenuItem;                     //  Menu Item - File - Save Waveform - F3
+        private System.Windows.Forms.ToolStripMenuItem f4ToolStripMenuItem;                     //  Menu Item - File - Save Waveform - F4
+        private System.Windows.Forms.ToolStripMenuItem m1ToolStripMenuItem;                     //  Menu Item - File - Save Waveform - M1
+        private System.Windows.Forms.ToolStripMenuItem m2ToolStripMenuItem;                     //  Menu Item - File - Save Waveform - M2
+        private System.Windows.Forms.ToolStripMenuItem m3ToolStripMenuItem;                     //  Menu Item - File - Save Waveform - M3
+        private System.Windows.Forms.ToolStripMenuItem m4ToolStripMenuItem;                     //  Menu Item - File - Save Waveform - M4
         private System.Windows.Forms.ToolStripMenuItem databaseToolStripMenuItem;               //  Menu Item - File - Database
+        private System.Windows.Forms.ToolStripMenuItem downloadToolStripMenuItem;               //  Menu Item - File - Database - Download
+        private System.Windows.Forms.ToolStripMenuItem visibleToolStripMenuItem;                //  Menu Item - File - Database - Visible
+        private System.Windows.Forms.ToolStripMenuItem clearToolStripMenuItem;                  //  Menu Item - File - Database - Clear
         private System.Windows.Forms.ToolStripMenuItem setupsToolStripMenuItem;                 //  Menu Item - File - Setups
+        private System.Windows.Forms.ToolStripMenuItem openSetupToolStripMenuItem;              //  Menu Item - File - Setups - Open Setup
+        private System.Windows.Forms.ToolStripMenuItem openFactorySetupToolStripMenuItem;       //  Menu Item - File - Setups - Open Factory Setup
+        private System.Windows.Forms.ToolStripMenuItem openPowerOffSetupToolStripMenuItem;      //  Menu Item - File - Setups - Open Power Off
+        private System.Windows.Forms.ToolStripMenuItem saveSetupToolStripMenuItem;              //  Menu Item - File - Setups - Save Setup...
+        private System.Windows.Forms.ToolStripMenuItem saveAsDefaultSetupToolStripMenuItem;     //  Menu Item - File - Setups - Save as Default Setup
         private System.Windows.Forms.ToolStripMenuItem openDfltSetupToolStripMenuItem;          //  Menu Item - FIle - Open Default Setup
         private System.Windows.Forms.ToolStripMenuItem printToPrinterToolStripMenuItem;         //  Menu Item - File - Print to Printer
         private System.Windows.Forms.ToolStripMenuItem printToolStripMenuItem;                  //  Menu Item - File - Print
@@ -3849,11 +3884,17 @@ namespace Oscilloscope
         private System.Windows.Forms.ToolStripMenuItem definitionToolStripMenuItem;             //  Menu Item - Measurements - Measure - Definition
         private System.Windows.Forms.ToolStripMenuItem limitTestToolStripMenuItem;              //  Menu Item - Measurements - Measure - Limit Test
         private System.Windows.Forms.ToolStripMenuItem histogramToolStripMenuItem;              //  Menu Item - Measurements - Histogram
+        private System.Windows.Forms.ToolStripMenuItem histogramSetupToolStripMenuItem;         //  Menu Item - Measurements - Histogram - Setup
+        private System.Windows.Forms.ToolStripMenuItem windowScaleToolStripMenuItem;            //  Menu Item - Measurements - Histogram - windowScale
         private System.Windows.Forms.ToolStripMenuItem eyeDiagramToolStripMenuItem;             //  Menu Item - Measurements - Eye Diagram
+        private System.Windows.Forms.ToolStripMenuItem parameterEyeToolStripMenuItem;           //  Menu Item - Measurements - Eye Diagram - Parameter
+        private System.Windows.Forms.ToolStripMenuItem definitionEyeToolStripMenuItem;          //  Menu Item - Measurements - Eye Diagram - Definition
 
         //  Menu Item - Analysis
         private System.Windows.Forms.ToolStripMenuItem analysisToolStripMenuItem;               //  Menu Item - Analysis
         private System.Windows.Forms.ToolStripMenuItem mathematicsToolStripMenuItem;            //  Menu Item - Analysis - Mathematics
+        private System.Windows.Forms.ToolStripMenuItem functionToolStripMenuItem;               //  Menu Item - Analysis - Function
+        private System.Windows.Forms.ToolStripMenuItem scalingToolStripMenuItem;                //  Menu Item - Analysis - Scaling
         private System.Windows.Forms.ToolStripMenuItem maskTestToolStripMenuItem;               //  Menu Item - Analysis - Mask Test
 
         //  Menu Item - System
@@ -3864,16 +3905,17 @@ namespace Oscilloscope
 
         //  Menu Item - Utylity
         private System.Windows.Forms.ToolStripMenuItem utilityToolStripMenuItem;                //  Menu Item - Utility
-        private System.Windows.Forms.ToolStripMenuItem calibrateToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem demoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem adjustmentToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem languageToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem calibrateToolStripMenuItem;              //  Menu Item - Utility - Calibrate
+        private System.Windows.Forms.ToolStripMenuItem demoToolStripMenuItem;                   //  Menu Item - Utility - Demo
+        private System.Windows.Forms.ToolStripMenuItem adjustmentToolStripMenuItem;             //  Menu Item - Utility - Adjustment
+        private System.Windows.Forms.ToolStripMenuItem languageToolStripMenuItem;               //  Menu Item - Utility - Language
+        private System.Windows.Forms.ToolStripMenuItem englishToolStripMenuItem;                //  Menu Item - Utility - Language - English
 
         //  Menu Item - Help
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;                   //  Menu Item - Help
-        private System.Windows.Forms.ToolStripMenuItem picoSample4HelpToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem instrumentInfoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem picoSample4HelpToolStripMenuItem;        //  Menu Item - Help - PicoSample 4 Help
+        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;                  //  Menu Item - Help - About...
+        private System.Windows.Forms.ToolStripMenuItem instrumentInfoToolStripMenuItem;         //  Menu Item - Help - Instrument Info...
 
         //  Tabs
         private System.Windows.Forms.Panel mainTab;                                             //  Main Tab
@@ -4162,52 +4204,6 @@ namespace Oscilloscope
         private System.Windows.Forms.PictureBox downMenu_MaskButton;                            //  Mask Button
         private System.Windows.Forms.PictureBox downMenu_EmptyButtons;                          //  Empty Buttons
         private System.Windows.Forms.PictureBox downMenu_UtilityButton;                         //  Utility Button
-
-        
-        private System.Windows.Forms.ToolStripMenuItem setupToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem windowScaleToolStripMenuItem;
-
-        private System.Windows.Forms.ToolStripMenuItem parameterToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem definitionToolStripMenuItem1;
-
-        private System.Windows.Forms.ToolStripMenuItem functionToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem scalingToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem englishToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem visibleM1ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem visibleM2ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem visibleM3ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem visibleM4ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem visibleAllToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem invisibleAllToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem clearM1ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem clearM2ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem clearM3ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem clearM4ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem clearAllMemoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem toMemoryM1ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem toMemoryM2ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem toMemoryM3ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem toMemoryM4ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ch1ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ch2ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ch3ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ch4ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem f1ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem f2ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem f3ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem f4ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem m1ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem m2ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem m3ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem m4ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem downloadToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem visibleToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem clearToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem openSetupToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem openFactorySetupToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem openPowerOffSetupToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem saveSetupToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem saveAsDefaultSetupToolStripMenuItem;
     }
 }
 
