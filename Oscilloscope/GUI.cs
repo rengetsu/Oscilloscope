@@ -235,17 +235,13 @@ namespace Oscilloscope
             }
         }
 
-        private void ChannelOne_BigDownButton_Click(object sender, EventArgs e)
+        private void ChannelOne_BigUpButton_Click(object sender, EventArgs e)
         {
             double w = glControl1.Width;
             double h = glControl1.Height;
             double ar = w / h;
             Render(w, h, ar);
             glControl1.SwapBuffers();
-        }
-
-        private void glControl1_Load(object sender, EventArgs e)
-        {
 
         }
     }
