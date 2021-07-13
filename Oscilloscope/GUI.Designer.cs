@@ -35,6 +35,7 @@ namespace Oscilloscope
             this.leftTopTab_CancelButton = new System.Windows.Forms.PictureBox();
             this.mainTab = new System.Windows.Forms.Panel();
             this.screenPanel = new System.Windows.Forms.Panel();
+            this.glControl1 = new OpenTK.GLControl();
             this.topControlsPanel = new System.Windows.Forms.Panel();
             this.statusArea_DisplayPanel = new System.Windows.Forms.Panel();
             this.statusArea_Display_PersistenceTime = new System.Windows.Forms.Label();
@@ -345,6 +346,7 @@ namespace Oscilloscope
             this.leftTopTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.leftTopTab_CancelButton)).BeginInit();
             this.mainTab.SuspendLayout();
+            this.screenPanel.SuspendLayout();
             this.topControlsPanel.SuspendLayout();
             this.statusArea_DisplayPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.statusArea_DisplayFrame)).BeginInit();
@@ -544,12 +546,24 @@ namespace Oscilloscope
             this.screenPanel.BackColor = System.Drawing.Color.Black;
             this.screenPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("screenPanel.BackgroundImage")));
             this.screenPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.screenPanel.Controls.Add(this.glControl1);
             this.screenPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.screenPanel.ForeColor = System.Drawing.SystemColors.ControlText;
             this.screenPanel.Location = new System.Drawing.Point(0, 68);
             this.screenPanel.Name = "screenPanel";
             this.screenPanel.Size = new System.Drawing.Size(1040, 347);
             this.screenPanel.TabIndex = 17;
+            // 
+            // glControl1
+            // 
+            this.glControl1.BackColor = System.Drawing.Color.Black;
+            this.glControl1.Location = new System.Drawing.Point(144, 20);
+            this.glControl1.Name = "glControl1";
+            this.glControl1.Size = new System.Drawing.Size(654, 282);
+            this.glControl1.TabIndex = 0;
+            this.glControl1.VSync = false;
+            this.glControl1.Load += new System.EventHandler(this.glControl1_Load);
+            this.glControl1.Resize += new System.EventHandler(this.glControl1_Resize);
             // 
             // topControlsPanel
             // 
@@ -2547,6 +2561,7 @@ namespace Oscilloscope
             this.ChannelOne_BigDownButton.Size = new System.Drawing.Size(20, 18);
             this.ChannelOne_BigDownButton.TabIndex = 7;
             this.ChannelOne_BigDownButton.TabStop = false;
+            this.ChannelOne_BigDownButton.Click += new System.EventHandler(this.ChannelOne_BigDownButton_Click);
             // 
             // ChannelOne_DefaultButton
             // 
@@ -3401,7 +3416,7 @@ namespace Oscilloscope
             // markerToolStripMenuItem
             // 
             this.markerToolStripMenuItem.Name = "markerToolStripMenuItem";
-            this.markerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.markerToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
             this.markerToolStripMenuItem.Text = "Marker";
             // 
             // measureToolStripMenuItem
@@ -3411,7 +3426,7 @@ namespace Oscilloscope
             this.definitionToolStripMenuItem,
             this.limitTestToolStripMenuItem});
             this.measureToolStripMenuItem.Name = "measureToolStripMenuItem";
-            this.measureToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.measureToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
             this.measureToolStripMenuItem.Text = "Measure";
             // 
             // parameterToolStripMenuItem
@@ -3438,7 +3453,7 @@ namespace Oscilloscope
             this.histogramSetupToolStripMenuItem,
             this.windowScaleToolStripMenuItem});
             this.histogramToolStripMenuItem.Name = "histogramToolStripMenuItem";
-            this.histogramToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.histogramToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
             this.histogramToolStripMenuItem.Text = "Histogram";
             // 
             // histogramSetupToolStripMenuItem
@@ -3459,19 +3474,19 @@ namespace Oscilloscope
             this.parameterEyeToolStripMenuItem,
             this.definitionEyeToolStripMenuItem});
             this.eyeDiagramToolStripMenuItem.Name = "eyeDiagramToolStripMenuItem";
-            this.eyeDiagramToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.eyeDiagramToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
             this.eyeDiagramToolStripMenuItem.Text = "Eye Diagram";
             // 
             // parameterEyeToolStripMenuItem
             // 
             this.parameterEyeToolStripMenuItem.Name = "parameterEyeToolStripMenuItem";
-            this.parameterEyeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.parameterEyeToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
             this.parameterEyeToolStripMenuItem.Text = "Parameter";
             // 
             // definitionEyeToolStripMenuItem
             // 
             this.definitionEyeToolStripMenuItem.Name = "definitionEyeToolStripMenuItem";
-            this.definitionEyeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.definitionEyeToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
             this.definitionEyeToolStripMenuItem.Text = "Definition";
             // 
             // analysisToolStripMenuItem
@@ -3629,6 +3644,7 @@ namespace Oscilloscope
             this.leftTopTab.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.leftTopTab_CancelButton)).EndInit();
             this.mainTab.ResumeLayout(false);
+            this.screenPanel.ResumeLayout(false);
             this.topControlsPanel.ResumeLayout(false);
             this.statusArea_DisplayPanel.ResumeLayout(false);
             this.statusArea_DisplayPanel.PerformLayout();
@@ -4204,6 +4220,7 @@ namespace Oscilloscope
         private System.Windows.Forms.PictureBox downMenu_MaskButton;                            //  Mask Button
         private System.Windows.Forms.PictureBox downMenu_EmptyButtons;                          //  Empty Buttons
         private System.Windows.Forms.PictureBox downMenu_UtilityButton;                         //  Utility Button
+        private OpenTK.GLControl glControl1;
     }
 }
 
