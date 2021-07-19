@@ -36,6 +36,7 @@ namespace Oscilloscope
             this.mainTab = new System.Windows.Forms.Panel();
             this.screenPanel = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.glControl1 = new OpenTK.GLControl();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.topControlsPanel = new System.Windows.Forms.Panel();
             this.statusArea_DisplayPanel = new System.Windows.Forms.Panel();
@@ -343,7 +344,6 @@ namespace Oscilloscope
             this.picoSample4HelpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.instrumentInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.glControl1 = new OpenTK.GLControl();
             this.leftMainTab.SuspendLayout();
             this.leftTopTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.leftTopTab_CancelButton)).BeginInit();
@@ -570,6 +570,16 @@ namespace Oscilloscope
             this.panel1.Padding = new System.Windows.Forms.Padding(38, 0, 33, 0);
             this.panel1.Size = new System.Drawing.Size(1040, 347);
             this.panel1.TabIndex = 0;
+            // 
+            // glControl1
+            // 
+            this.glControl1.BackColor = System.Drawing.Color.Black;
+            this.glControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.glControl1.Location = new System.Drawing.Point(38, 0);
+            this.glControl1.Name = "glControl1";
+            this.glControl1.Size = new System.Drawing.Size(969, 347);
+            this.glControl1.TabIndex = 1;
+            this.glControl1.VSync = false;
             // 
             // pictureBox1
             // 
@@ -3640,15 +3650,6 @@ namespace Oscilloscope
             this.instrumentInfoToolStripMenuItem.Name = "instrumentInfoToolStripMenuItem";
             this.instrumentInfoToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.instrumentInfoToolStripMenuItem.Text = "Instrument Info...";
-            // 
-            // glControl1
-            // 
-            this.glControl1.BackColor = System.Drawing.Color.Black;
-            this.glControl1.Location = new System.Drawing.Point(54, 68);
-            this.glControl1.Name = "glControl1";
-            this.glControl1.Size = new System.Drawing.Size(1100, 215);
-            this.glControl1.TabIndex = 1;
-            this.glControl1.VSync = false;
             // 
             // GUI
             // 
