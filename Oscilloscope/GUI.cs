@@ -117,6 +117,21 @@ namespace Oscilloscope
             ChannelOne_TextBox.Text = cal.Channel_SmallStep_Up();
         }
 
+        private void ChannelOne_BigUpButton_Click(object sender, EventArgs e)
+        {
+            ChannelOne_TextBox.Text = cal.Channel_BigStep_Up();
+        }
+
+        private void ChannelOne_BigDownButton_Click(object sender, EventArgs e)
+        {
+            ChannelOne_TextBox.Text = cal.Channel_BigStep_Down();
+        }
+
+        private void ChannelOne_SmallDownButton_Click(object sender, EventArgs e)
+        {
+            ChannelOne_TextBox.Text = cal.Channel_SmallStep_Down();
+        }
+
         private void ChannelOne_Button_Click(object sender, EventArgs e)
         {
             double w = glControl1.Width;

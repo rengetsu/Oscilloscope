@@ -2578,6 +2578,7 @@ namespace Oscilloscope
             this.ChannelOne_BigUpButton.Size = new System.Drawing.Size(20, 18);
             this.ChannelOne_BigUpButton.TabIndex = 8;
             this.ChannelOne_BigUpButton.TabStop = false;
+            this.ChannelOne_BigUpButton.Click += new System.EventHandler(this.ChannelOne_BigUpButton_Click);
             // 
             // ChannelOne_BigDownButton
             // 
@@ -2588,6 +2589,7 @@ namespace Oscilloscope
             this.ChannelOne_BigDownButton.Size = new System.Drawing.Size(20, 18);
             this.ChannelOne_BigDownButton.TabIndex = 7;
             this.ChannelOne_BigDownButton.TabStop = false;
+            this.ChannelOne_BigDownButton.Click += new System.EventHandler(this.ChannelOne_BigDownButton_Click);
             // 
             // ChannelOne_DefaultButton
             // 
@@ -2619,6 +2621,7 @@ namespace Oscilloscope
             this.ChannelOne_SmallDownButton.Size = new System.Drawing.Size(20, 18);
             this.ChannelOne_SmallDownButton.TabIndex = 4;
             this.ChannelOne_SmallDownButton.TabStop = false;
+            this.ChannelOne_SmallDownButton.Click += new System.EventHandler(this.ChannelOne_SmallDownButton_Click);
             // 
             // timebase_DelayButton
             // 
