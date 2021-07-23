@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using OpenTK;
 using OpenTK.Graphics;
 using OpenTK.Graphics.OpenGL;
+using Oscilloscope.Properties;
 
 namespace Oscilloscope
 {
@@ -116,14 +117,13 @@ namespace Oscilloscope
             ChannelOne_TextBox.Text = cal.Channel_SmallStep_Up();
         }
 
-        private void ChannelOne_BigUpButton_Click(object sender, EventArgs e)
+        private void ChannelOne_Button_Click(object sender, EventArgs e)
         {
             double w = glControl1.Width;
             double h = glControl1.Height;
             double ar = w / h;
-            gl.Render(w, h, ar);
+            gl.Render(1, w, h, ar);
             glControl1.SwapBuffers();
-
         }
     }
 }

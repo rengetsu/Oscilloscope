@@ -2578,7 +2578,6 @@ namespace Oscilloscope
             this.ChannelOne_BigUpButton.Size = new System.Drawing.Size(20, 18);
             this.ChannelOne_BigUpButton.TabIndex = 8;
             this.ChannelOne_BigUpButton.TabStop = false;
-            this.ChannelOne_BigUpButton.Click += new System.EventHandler(this.ChannelOne_BigUpButton_Click);
             // 
             // ChannelOne_BigDownButton
             // 
@@ -2660,6 +2659,7 @@ namespace Oscilloscope
             this.ChannelOne_Button.Size = new System.Drawing.Size(29, 41);
             this.ChannelOne_Button.TabIndex = 0;
             this.ChannelOne_Button.TabStop = false;
+            this.ChannelOne_Button.Click += new System.EventHandler(this.ChannelOne_Button_Click);
             // 
             // downMenuPanel
             // 
