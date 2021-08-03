@@ -4253,9 +4253,9 @@ namespace Oscilloscope
         private System.Windows.Forms.PictureBox downMenu_MaskButton;                            //  Mask Button
         private System.Windows.Forms.PictureBox downMenu_EmptyButtons;                          //  Empty Buttons
         private System.Windows.Forms.PictureBox downMenu_UtilityButton;                         //  Utility Button
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private OpenTK.GLControl glControl1;
+        private System.Windows.Forms.Panel panel1;                                              //  GL Panel
+        private System.Windows.Forms.PictureBox pictureBox1;                                    //  GL PictureBox
+        private OpenTK.GLControl glControl1;                                                    //  GL Control
     }
 }
 

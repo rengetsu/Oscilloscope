@@ -57,6 +57,7 @@
       <DependentUpon>Channels_Form.cs</DependentUpon>
     </Compile>
     <Compile Include="Configurations.cs" />
+    <Compile Include="DeviceCheck.cs" />
     <Compile Include="GUI.cs">
       <SubType>Form</SubType>
     </Compile>
