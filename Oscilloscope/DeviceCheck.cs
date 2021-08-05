@@ -13,7 +13,7 @@ namespace Oscilloscope
     }
 
     //  ALL Arrow Registers for I2C and DAC
-    enum dac_registers_arrow
+    public enum dac_registers_arrow
     {
         ad5625r_d36     = 0x18,
         ad5625r_d41     = 0x1E,
@@ -27,9 +27,10 @@ namespace Oscilloscope
         p49v5901_d801   = 0xD0
     }
 
-    class DeviceCheck
+    public class DeviceCheck
     {
-        private const char V = 'Test:RgDAC:Response? %d';
+        public const char V = 'T';
+        string com = "Test:RgDAC:Response? %d'";
         public Device DeviceType;
         public dac_registers_arrow ArrowDac;
 
@@ -83,12 +84,17 @@ namespace Oscilloscope
             return 0;
         }
 
-        private object format(char v, object p)
+        internal double GetStringFromTheUnit()
         {
             throw new NotImplementedException();
         }
 
-        private void SendCommantToTheUnit(object p)
+        public object format(char v, object p)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void SendCommantToTheUnit(object p)
         {
             throw new NotImplementedException();
         }

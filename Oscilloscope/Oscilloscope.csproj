@@ -68,6 +68,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ScreenChange.cs" />
+    <Compile Include="Temperature.cs" />
     <Compile Include="Trigger_Form.cs">
       <SubType>Form</SubType>
     </Compile>
