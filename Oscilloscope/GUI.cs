@@ -140,5 +140,11 @@ namespace Oscilloscope
             gl.Render(1, w, h, ar);
             glControl1.SwapBuffers();
         }
+
+        private void adjustmentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Adjustments adjustments = new Adjustments();
+            adjustments.Show();
+        }
     }
 }

@@ -3597,27 +3597,28 @@ namespace Oscilloscope
             // calibrateToolStripMenuItem
             // 
             this.calibrateToolStripMenuItem.Name = "calibrateToolStripMenuItem";
-            this.calibrateToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.calibrateToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.calibrateToolStripMenuItem.Text = "Calibrate";
             // 
             // demoToolStripMenuItem
             // 
             this.demoToolStripMenuItem.Name = "demoToolStripMenuItem";
-            this.demoToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.demoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.demoToolStripMenuItem.Text = "Demo";
             // 
             // adjustmentToolStripMenuItem
             // 
             this.adjustmentToolStripMenuItem.Name = "adjustmentToolStripMenuItem";
-            this.adjustmentToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.adjustmentToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.adjustmentToolStripMenuItem.Text = "Adjustment";
+            this.adjustmentToolStripMenuItem.Click += new System.EventHandler(this.adjustmentToolStripMenuItem_Click);
             // 
             // languageToolStripMenuItem
             // 
             this.languageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.englishToolStripMenuItem});
             this.languageToolStripMenuItem.Name = "languageToolStripMenuItem";
-            this.languageToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.languageToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.languageToolStripMenuItem.Text = "Language";
             // 
             // englishToolStripMenuItem
