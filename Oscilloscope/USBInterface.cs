@@ -21,7 +21,7 @@ namespace Oscilloscope
         int timeoutVar = 50;
 
         //  Device Path
-        const string DevicePath = "usb#vid_0ce9&pid_1600#PS9400-2019#{15ad01f2-440d-4ca6-8867-3f9d1a960ead}";
+        const string DevicePath = "usb#vid_0ce9&pid_1014#PS9400-2019#{15ad01f2-440d-4ca6-8867-3f9d1a960ead}";
 
         //  Pipe IDs
         byte PipeIDRead     =   0x81;       //  Pipe ID Byte to Read
