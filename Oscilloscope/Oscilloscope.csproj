@@ -67,6 +67,7 @@
     </Compile>
     <Compile Include="Configurations.cs" />
     <Compile Include="DeviceCheck.cs" />
+    <Compile Include="EMITests.cs" />
     <Compile Include="GUI.cs">
       <SubType>Form</SubType>
     </Compile>
