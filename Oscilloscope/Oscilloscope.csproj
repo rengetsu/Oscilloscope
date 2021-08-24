@@ -80,6 +80,7 @@
     <Compile Include="Load.Designer.cs">
       <DependentUpon>Load.cs</DependentUpon>
     </Compile>
+    <Compile Include="Loading.cs" />
     <Compile Include="WinUSBConnect.cs" />
     <Compile Include="OpenGL.cs" />
     <Compile Include="Program.cs" />
