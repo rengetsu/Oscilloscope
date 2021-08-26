@@ -338,6 +338,7 @@ namespace Oscilloscope
         void SeqStepNext(Object currentSequence)
         {
             Sequence seq = new Sequence();
+            //  Rewrite
             bool q2 = seq.isI2C;
             string qq = seq.Addr;
             string q3 = seq.Dat;
