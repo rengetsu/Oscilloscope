@@ -51,6 +51,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AcquisitionParameters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AcquisitionParameters.Designer.cs">
+      <DependentUpon>AcquisitionParameters.cs</DependentUpon>
+    </Compile>
     <Compile Include="Adjustments.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +107,9 @@
     </Compile>
     <Compile Include="USBInterface.cs" />
     <Compile Include="WinUsbDll.cs" />
+    <EmbeddedResource Include="AcquisitionParameters.resx">
+      <DependentUpon>AcquisitionParameters.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Adjustments.resx">
       <DependentUpon>Adjustments.cs</DependentUpon>
     </EmbeddedResource>
