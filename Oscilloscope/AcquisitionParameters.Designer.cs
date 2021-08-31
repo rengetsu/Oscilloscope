@@ -36,8 +36,8 @@ namespace Oscilloscope
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.AcqParam_NumberTextBox = new System.Windows.Forms.TextBox();
+            this.AcqParam_PercentTextBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -96,19 +96,21 @@ namespace Oscilloscope
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
-            // textBox3
+            // AcqParam_NumberTextBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(65, 52);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 6;
+            this.AcqParam_NumberTextBox.Location = new System.Drawing.Point(65, 52);
+            this.AcqParam_NumberTextBox.Name = "AcqParam_NumberTextBox";
+            this.AcqParam_NumberTextBox.Size = new System.Drawing.Size(100, 20);
+            this.AcqParam_NumberTextBox.TabIndex = 6;
+            this.AcqParam_NumberTextBox.TextChanged += new System.EventHandler(this.AcqParam_NumberTextBox_TextChanged);
             // 
-            // textBox4
+            // AcqParam_PercentTextBox
             // 
-            this.textBox4.Location = new System.Drawing.Point(65, 98);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 7;
+            this.AcqParam_PercentTextBox.Location = new System.Drawing.Point(65, 98);
+            this.AcqParam_PercentTextBox.Name = "AcqParam_PercentTextBox";
+            this.AcqParam_PercentTextBox.Size = new System.Drawing.Size(100, 20);
+            this.AcqParam_PercentTextBox.TabIndex = 7;
+            this.AcqParam_PercentTextBox.TextChanged += new System.EventHandler(this.AcqParam_PercentTextBox_TextChanged);
             // 
             // label3
             // 
@@ -138,8 +140,8 @@ namespace Oscilloscope
             this.ClientSize = new System.Drawing.Size(936, 354);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.AcqParam_PercentTextBox);
+            this.Controls.Add(this.AcqParam_NumberTextBox);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox2);
@@ -163,8 +165,8 @@ namespace Oscilloscope
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox AcqParam_NumberTextBox;
+        private System.Windows.Forms.TextBox AcqParam_PercentTextBox;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
     }
