@@ -52,6 +52,8 @@ namespace Oscilloscope
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -258,12 +260,31 @@ namespace Oscilloscope
             this.label13.TabIndex = 21;
             this.label13.Text = "0";
             // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(292, 116);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(100, 20);
+            this.textBox6.TabIndex = 22;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(188, 118);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(99, 15);
+            this.label14.TabIndex = 23;
+            this.label14.Text = "Between Points:";
+            // 
             // AcquisitionParameters
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(936, 360);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.textBox6);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
@@ -319,5 +340,7 @@ namespace Oscilloscope
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Label label14;
     }
 }

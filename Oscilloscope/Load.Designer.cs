@@ -58,7 +58,7 @@ namespace Oscilloscope
             this.panel1.Controls.Add(this.loadScreenLogo);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(605, 417);
+            this.panel1.Size = new System.Drawing.Size(605, 404);
             this.panel1.TabIndex = 1;
             // 
             // panel2
@@ -67,31 +67,31 @@ namespace Oscilloscope
             this.panel2.Controls.Add(this.label2);
             this.panel2.Location = new System.Drawing.Point(0, 317);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(605, 76);
+            this.panel2.Size = new System.Drawing.Size(605, 64);
             this.panel2.TabIndex = 4;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(0, 12);
+            this.label1.Location = new System.Drawing.Point(7, 1);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(292, 13);
+            this.label1.Size = new System.Drawing.Size(269, 13);
             this.label1.TabIndex = 2;
-            this.label1.Text = "PicoSample 4 - PC Oscilloscope software version 4.6.61.234";
+            this.label1.Text = "ARROW - PC Oscilloscope software version 4.6.61.234";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(0, 25);
+            this.label2.Location = new System.Drawing.Point(8, 14);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(182, 13);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Copyright 2019, Pico Technology Ltd";
+            this.label2.Text = "Copyright 2021, Pico Technology Ltd";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(3, 399);
+            this.pictureBox1.Location = new System.Drawing.Point(3, 381);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(600, 15);
             this.pictureBox1.TabIndex = 1;
@@ -102,7 +102,7 @@ namespace Oscilloscope
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(605, 416);
+            this.ClientSize = new System.Drawing.Size(605, 404);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Load";
