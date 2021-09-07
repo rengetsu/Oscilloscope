@@ -41,7 +41,16 @@ namespace Oscilloscope
 
         private void downMenu_AcquireButton_Click(object sender, EventArgs e)
         {
-            
+            leftMainTab.Visible = true;
+            //  Child Form Object
+            Acquire_Form acquireform = new Acquire_Form();
+            acquireform.TopLevel = false;
+            leftMainTab.Controls.Add(acquireform);
+            acquireform.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            acquireform.Dock = DockStyle.Fill;
+
+            //  Define MDI parent form
+            acquireform.Show();
         }
 
         private void downMenu_TriggerButton_Click(object sender, EventArgs e)

@@ -8,6 +8,7 @@ namespace Oscilloscope
 {
     public class AcqParameters
     {
+        //  Variables 
         private double percent_start = 0, percent_end = 0;
 
         /// <summary>
