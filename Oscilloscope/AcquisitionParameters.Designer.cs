@@ -59,10 +59,12 @@ namespace Oscilloscope
             // 
             // textBox1
             // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(88, 10);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 0;
+            this.textBox1.Text = "0";
             // 
             // label1
             // 
@@ -86,10 +88,12 @@ namespace Oscilloscope
             // 
             // textBox2
             // 
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.Location = new System.Drawing.Point(292, 10);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 3;
+            this.textBox2.Text = "0";
             // 
             // button1
             // 
@@ -112,18 +116,22 @@ namespace Oscilloscope
             // 
             // AcqParam_NumberTextBox
             // 
+            this.AcqParam_NumberTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AcqParam_NumberTextBox.Location = new System.Drawing.Point(88, 90);
             this.AcqParam_NumberTextBox.Name = "AcqParam_NumberTextBox";
             this.AcqParam_NumberTextBox.Size = new System.Drawing.Size(100, 20);
             this.AcqParam_NumberTextBox.TabIndex = 6;
+            this.AcqParam_NumberTextBox.Text = "/16";
             this.AcqParam_NumberTextBox.TextChanged += new System.EventHandler(this.AcqParam_NumberTextBox_TextChanged);
             // 
             // AcqParam_PercentTextBox
             // 
+            this.AcqParam_PercentTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AcqParam_PercentTextBox.Location = new System.Drawing.Point(88, 116);
             this.AcqParam_PercentTextBox.Name = "AcqParam_PercentTextBox";
             this.AcqParam_PercentTextBox.Size = new System.Drawing.Size(100, 20);
             this.AcqParam_PercentTextBox.TabIndex = 7;
+            this.AcqParam_PercentTextBox.Text = "100";
             this.AcqParam_PercentTextBox.TextChanged += new System.EventHandler(this.AcqParam_PercentTextBox_TextChanged);
             // 
             // label3
@@ -188,17 +196,21 @@ namespace Oscilloscope
             // 
             // textBox3
             // 
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox3.Location = new System.Drawing.Point(88, 37);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 20);
             this.textBox3.TabIndex = 13;
+            this.textBox3.Text = "0x00000000";
             // 
             // textBox4
             // 
+            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox4.Location = new System.Drawing.Point(292, 36);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(100, 20);
             this.textBox4.TabIndex = 16;
+            this.textBox4.Text = "0x00000000";
             // 
             // label9
             // 
@@ -222,10 +234,12 @@ namespace Oscilloscope
             // 
             // textBox5
             // 
+            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox5.Location = new System.Drawing.Point(292, 92);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(100, 20);
             this.textBox5.TabIndex = 17;
+            this.textBox5.Text = "edRegDIP2";
             // 
             // label11
             // 
@@ -262,10 +276,12 @@ namespace Oscilloscope
             // 
             // textBox6
             // 
+            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox6.Location = new System.Drawing.Point(292, 116);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(100, 20);
             this.textBox6.TabIndex = 22;
+            this.textBox6.Text = "edRegDIP2";
             // 
             // label14
             // 
