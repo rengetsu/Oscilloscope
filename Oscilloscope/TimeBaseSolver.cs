@@ -8,6 +8,25 @@ namespace Oscilloscope
 {
     public class TimeBaseSolver
     {
+        //  Variables that we will use outside class
+        public String FCurrentSamplingMode = "smsRandom";
+        public double Resolution = 2E-10;
+        public double cADC_Period = 2E-10;
+
+        // Текущее значение 2-х настоящих параметров
+        double[] FParams = new double[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+
+        //
+        //(************************************************************************)
+        //(************************************************************************)
+        //(**                                                                    **)
+        //(**                                                                    **)
+        //(**                           IMPLEMENTATION                           **)
+        //(**                                                                    **)
+        //(**                                                                    **)
+        //(************************************************************************)
+        //(************************************************************************)
+
         // Время на точку АЦП, всегда 2 нс!!!
         // В RT реальная резолюция в Множитель раз больше (1 .. 4 000 000 000)
         // В Random реальная резолюция в Делитель раз меньше (2 .. 20 000)
@@ -47,7 +66,7 @@ namespace Oscilloscope
         // ибо такой коэффициент децимации необходим для 62500 точек при 2 ms/дел
 
         uint[] cRealMultipliers = new uint[] { 1, 2,
-        4, 8, 12, 15, 16, 18, 20, 25, 30, 35, 40, 45, 50, 60, 75, 80, 100, 125,
+        4, 8, 16, 32, 33, 34, 35, 36, 38, 39, 40, 45, 50, 60, 75, 80, 100, 125,             //  4, 10, 12, 15, 16, 18, 20, 25, 30, 35, 40, 45, 50, 60, 75, 80, 100, 125
         150,  160, 175, 200, 250, 300, 350, 400, 450, 500, 625, 750, 800, 1000, 1250,
         1500, 1750, 2000, 2500, 3000, 3500, 4000, 4500, 5000, 6250, 7500, 8000,
         10000, 12500, 15000, 17500, 20000, 25000, 30000, 35000, 40000, 45000, 50000,
@@ -74,7 +93,7 @@ namespace Oscilloscope
         const int cRealMultipliersForScaleCount = 69;
 
         // Массив мномителей (коэффициентов децимации) реального времени
-        uint[] cRealMultipliersForScale = new uint[] { 1, 2, 4, 8, 16, 25, 40, 50, 100, 125, 200, 250, 400, 500,
+        uint[] cRealMultipliersForScale = new uint[] { 1, 2, 4, 8, 16, 32, 40, 50, 100, 125, 200, 250, 400, 500, // 1, 2, 4, 10, 20, 25, 40, 50, 100, 125, 200, 250, 400, 500,
         625, 1000, 1250, 2000, 2500, 3000, 3500, 4000, 4500, 5000, 6250, 7500, 8000,
         10000, 12500, 15000, 17500, 20000, 25000, 40000, 50000, 62500, 100000,
         125000, 200000, 250000, 400000, 500000, 625000, 1000000, 1250000, 2000000,
@@ -111,6 +130,52 @@ namespace Oscilloscope
         2000, 2500, 4000, 5000, 6250, 8000, 10000, 12500, 20000, 40000, 50000,
         62500, 80000, 100000, 125000, 200000, 250000};
 
+        public int TtbSmplRate { get; set; } = (int)_CalcSmpl_Rate(1, 1);
+
+        /// Main function to calculate Scale, Record Length and Sample Rate
+
+        /// <summary>
+        /// Main function to calculate scale
+        /// </summary>
+        /// <param name="Rec_Len">Record Length</param>
+        /// <param name="Smpl_Rate">Sample Rate</param>
+        /// <returns>Returning calculcated Scale</returns>
+        static double _CalcScale(ulong Rec_Len, Double Smpl_Rate)
+        {
+            double Result = Rec_Len / (Smpl_Rate * 10);
+
+            //  Returns the result 
+            return Result;
+        }
+
+        /// <summary>
+        /// Main function to calcucale record length
+        /// </summary>
+        /// <param name="Scale">Scale</param>
+        /// <param name="Smpl_Rate">Sample Rate</param>
+        /// <returns>Returning calculated Record Length</returns>
+        static double _CalcRec_Len(Double Scale, Double Smpl_Rate)
+        {
+            double Result = Scale * Smpl_Rate * 10;
+
+            //  Returns the result 
+            return Result;
+        }
+
+        /// <summary>
+        /// Main function to calculate Sample Rate
+        /// </summary>
+        /// <param name="Rec_Len">Record Length</param>
+        /// <param name="Scale">Scale</param>
+        /// <returns>Returning calculated Sample Rate</returns>
+        static double _CalcSmpl_Rate(ulong Rec_Len, Double Scale)
+        {
+            double Result = Rec_Len / (Scale * 10);
+
+            //  Returns the result 
+            return Result;
+        }
+
         /// <summary>
         /// Get maximum of sample rate
         /// </summary>
@@ -119,6 +184,7 @@ namespace Oscilloscope
         //  Для Элтестовских приборов оставили 5 TS/s
         double GetMaxSmplRate()
         {
+            //  Variables used in this function
             double Result;
             Result = 2E10;
 
@@ -126,7 +192,7 @@ namespace Oscilloscope
             {
                 Result = cAbsMaxRandomSmplRate;
             }
-
+            //  Returns the result 
             return Result;
         }
 
@@ -139,6 +205,7 @@ namespace Oscilloscope
         //  Однако при неправильном значении (из-за моей ошибки давала вел. > Max) - даёт ошибку!!!
         double GetMinRandomScale()
         {
+            //  Variables used in this function
             double SR;
             ulong RL;
 
@@ -147,7 +214,237 @@ namespace Oscilloscope
 
             double Result;
             Result = RL / SR / 10;
+            //  Returns the result 
+            return Result;
+        }
 
+        /// <summary>
+        /// Calculating index
+        /// </summary>
+        /// <param name="Val">Value</param>
+        /// <param name="M">M parametr, for now same for all</param>
+        /// <returns>returning index</returns>
+        int CalcIndex(Double Val, uint M)
+        {
+            //  Variables used in this function
+            int iMin, iMax, i, i0, i1;
+            double vi, v0, v1;
+            
+            iMin = 0;
+            iMax = (int)M;
+
+            i0 = iMin;
+            i1 = iMax;
+            i = iMax / 2;
+
+            do
+            {
+                v0 = M;
+                vi = M;
+
+                if (Val < vi)
+                {
+                    i1 = i;
+                    i = (i0 + i) / 2;
+                }
+                else
+                {
+                    i0 = i;
+
+                    i = (i1 + i + 1) / 2;
+                }
+            } while (i1 - i0 <= 1);
+            return i;
+        }
+
+        /// <summary>
+        /// Get nearest multiplier
+        /// </summary>
+        /// <param name="Multiplier">Current multiplier</param>
+        /// <param name="RealMultipliersIndex">Real index of current multiplier</param>
+        /// <returns></returns>
+        double GetNearMultiplier(double Multiplier, int RealMultipliersIndex)
+        {
+            //  Variables used in this function
+            double Index, i0, Result;
+
+            Index = CalcIndex(Multiplier, cRealMultipliers[RealMultipliersIndex]);
+
+            i0 = Math.Truncate(Index + 0.01);
+
+            int i0index = (int)Math.Round(i0);
+
+            if (Index - i0 > 0.4)
+            {
+                Result = cRealMultipliers[i0index];
+            }
+            Result = Multiplier;
+
+            //  Returns the result 
+            return Result;
+        }
+
+        /// <summary>
+        /// Resolution Corrected
+        /// </summary>
+        void ResolutionCorrected()
+        {
+            //  Variables used in this function
+            Boolean Random;
+            Double vDivider;
+            int Divider;
+            double vMultiplier;
+            uint Multiplier;
+            ulong MaxTableMultiplier;
+            Boolean OnlyFromTBTable;
+            Boolean LimCorrected;
+            Boolean Result;
+
+            //  Random := Resolution < 1.42E-9;
+            //  Assert(Random = (FCurrentSamplingMode = smsRandom), 'Резолюция конфликтует с Sample Mode');
+
+            //  2019-02-27 Резолюция и будет конфликтовать с Cемпл моде при переключении семпл моды!
+            if (FCurrentSamplingMode == "smsRandom")
+            {
+                Random = true;
+            }
+            else
+            {
+                Random = false;
+            }
+            FCurrentSamplingMode = "smsRandom";
+
+            if(Random)
+            {
+                LimCorrected = Resolution > 1.01E-10;   //  10/09/2021 Изменено Павлом для Arrow, было 1.01E-10
+                if (LimCorrected)                       //  2019-02-27
+                {
+                    Resolution = 1E-10;                 //  10/09/2021 Изменено Павлом для Arrow, было 1E-10
+                }
+
+                vDivider = cADC_Period / Resolution;
+                double forCheck = Math.Round(vDivider);
+                Divider = (int)forCheck;
+                if(Divider == 1)
+                {
+                    Divider++;
+                }
+
+                //  Returns the result
+                Result = LimCorrected;
+            }
+            else
+            {
+                LimCorrected = Resolution < 1.99E-10;  //  10/09/2021 Изменено Павлом для Arrow, было 1.99E-10
+                if(LimCorrected)
+                {
+                    Resolution = 2E-10;                 //  10/09/2021 Изменено Павлом для Arrow, было 2E-10
+                    LimCorrected = true;
+                }
+
+                vMultiplier = Resolution / cADC_Period;
+                //  Round(vMultiplier) - При малых Multiplier в половине случаев округлял резолюцию в бОльшую сторону, что уменьшало
+                Multiplier = (uint)Math.Truncate(vMultiplier + 1e-5);
+
+                if(Multiplier == 0)
+                {
+                    Multiplier = 1;
+                }
+
+                //  Для отработки коррекции момента триггера по таблице MTriggerDefects
+                //  Multiplier должен соответствовать точно значениям из cRealMultipliersCount
+                //  (Это касается значений Multiplier менее или равному
+                //  cRealMultipliersCount[cLastcorrectedMultiplierIndex])!
+
+                MaxTableMultiplier = cRealMultipliers[cLastcorrectedMultiplierIndex];
+                // последний индекс в таблице cRealMultipliers, указывающий на
+                // мультиплеер M = cRealMultipliers[cLastcorrectedMultiplierIndex].
+                // Это самый большой Multiplier, кля которого в приборе проводится
+                // коррекция дефекта триггера. Другими словами, значения Multiplier
+                // <= М должны всегда быть равными значениям из таблицы cRealMultipliers!!!
+
+                OnlyFromTBTable = Multiplier <= MaxTableMultiplier;
+
+                if(OnlyFromTBTable)
+                {
+                    Multiplier = GetNearMultiplier(Multiplier);
+                }
+
+                //Это Пятов писал ранее, без учета необходимости коррекции дефекта триггера
+                //if (Multiplier > 2) and(Multiplier < 7) then
+                //Multiplier := 4
+                //else if (Multiplier >= 7) and(Multiplier < 11) then
+                //Multiplier := 10;
+
+                Result = LimCorrected;
+                if(Result)
+                {
+                    Resolution = cADC_Period * Multiplier;
+                }
+            }
+        }
+
+        private uint GetNearMultiplier(uint multiplier)
+        {
+            throw new NotImplementedException();
+        }
+
+        /// <summary>
+        /// Check if difference is more than something
+        /// </summary>
+        /// <param name="V1">First parameter</param>
+        /// <param name="V2">Second parameter</param>
+        /// <param name="Diff">Difference between this two parameters</param>
+        /// <returns>Returning a difference between this parameters as a result as answer yes/no like true/false</returns>
+        private bool DifferMoreThan(double V1, double V2, double Diff)
+        {
+            bool Result;
+            Result = Math.Abs(V1 - V2) > Diff;
+            //  Returns the result
+            return Result;
+        }
+
+        /// <summary>
+        /// Check if difference if more than something in percents
+        /// </summary>
+        /// <param name="V1">First parameter</param>
+        /// <param name="V2">Second parameter</param>
+        /// <param name="Perc">Percent value</param>
+        /// <returns>Returning a difference between this parameters as a result in percents as answer yes/no like true/false</returns>
+        private bool DifferMoreThanPerc(double V1, double V2, double Perc)
+        {
+            bool Result;
+            double differ;
+            differ = Math.Max(Math.Abs(V1), Math.Abs(V2) * Perc / 100);
+            //  Sending the difference to another function 
+            Result = DifferMoreThan(V1, V2, differ);
+            //  Returns the result 
+            return Result;
+        }
+
+        /// <summary>
+        /// Checking if solver related to sampling mode
+        /// </summary>
+        /// <returns>Return true/false if solver related or not</returns>
+        Boolean CheckSolverSvjaznostj()
+        {
+            //  Variables used in this function
+            Boolean Result;
+            if ( FCurrentSamplingMode == "smsRandom" )
+            {
+                Result = FParams[TtbSmplRate] > 99999999990;
+            }
+            else
+            {
+                Result = FParams[(int)TtbSmplRate] < 50000000010;
+            }
+
+            if ( Result == true )
+            {
+                Result = DifferMoreThanPerc(FParams[TtbSmplRate] / 10 *
+             (1 / FParams[TtbSmplRate]), FParams[TtbSmplRate], 1e-5);
+            }
+            //  Returns the result 
             return Result;
         }
     }

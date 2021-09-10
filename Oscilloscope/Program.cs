@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -16,7 +17,8 @@ namespace Oscilloscope
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Load());
+            //Application.Run(new Load());
+            Process.Start("C:\\Users\\pavel\\source\\repos\\Oscilloscope\\Debug\\PicoSample4.exe");
         }
     }
 }
