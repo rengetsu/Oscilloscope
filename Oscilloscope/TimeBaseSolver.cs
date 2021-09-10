@@ -105,6 +105,8 @@ namespace Oscilloscope
 
 
         //  Делители периода дискретизации = 2 ns для получения круглых значений Sample Rate
+
+        //  Random Dividers Count
         const int cRandomDividersCount = 57;
         uint[] cRandomDividers = new uint[] {2, 3, 4,
         5, 8, 10, 12, 15, 16, 20, 25, 30, 35, 40, 45, 50, 60, 75, 80, 100, 125, 150,
@@ -112,11 +114,13 @@ namespace Oscilloscope
         1750, 2000, 2500, 3000, 3500, 4000, 4500, 5000, 6250, 7500, 8000, 10000,
         12500, 15000, 17500, 20000, 25000, 30000, 40000, 45000, 50000 };
 
+        //  Random Dividers For Scale Count
         const int cRandomDividersForScaleCount = 38;
         uint[] cRandomDividersForScale = new uint[] { 2, 4, 5, 8, 10, 16, 20, 25, 40, 50, 60, 75, 80, 100, 125,
         200, 250, 320, 400, 500, 625, 800, 1000, 1250, 2000, 2500, 3200, 4000, 5000,
         6250, 8000, 10000, 12500, 20000, 25000, 32000, 40000, 50000 };
 
+        //  Record Lengths Count
         const int cRecordLengthsCount = 54;
         uint[] cRecordLengths = new uint[]  {50, 60,
         75, 80, 100, 125, 150, 175, 200, 250, 300, 350, 400, 450, 500, 625, 750,
@@ -125,6 +129,7 @@ namespace Oscilloscope
         45000, 50000, 62500, 75000, 80000, 100000, 125000, 150000, 175000,
         200000, 250000, 500000, 1000000};
 
+        //  Record Lengths For Scale Count
         const int cRecordLengthsForScaleCount = 29;
         uint[] cRecordLengthsForScale = new uint[]  {50, 80, 100, 125, 200, 250, 400, 500, 625, 800, 1000, 1250,
         2000, 2500, 4000, 5000, 6250, 8000, 10000, 12500, 20000, 40000, 50000,
