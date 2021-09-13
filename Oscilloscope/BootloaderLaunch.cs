@@ -73,11 +73,11 @@ namespace Oscilloscope
             string versionType = ".exe";
 
             //  Debug
-            if( ModeDebug ){
+            if( ModeDebug ) {
                 versionName = "PicoSample4";
             }
             //  Release
-            else{
+            else {
                 versionName = "PicoSample4";
             }
             string ModePath = versionPref + versionName + versionType;
