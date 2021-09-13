@@ -101,6 +101,7 @@
       <DependentUpon>Load.cs</DependentUpon>
     </Compile>
     <Compile Include="Loading.cs" />
+    <Compile Include="SignalAcqRun.cs" />
     <Compile Include="TimeBaseSolver.cs" />
     <Compile Include="WinUSBConnect.cs" />
     <Compile Include="OpenGL.cs" />
