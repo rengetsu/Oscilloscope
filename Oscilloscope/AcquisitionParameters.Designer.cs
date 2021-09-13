@@ -54,7 +54,13 @@ namespace Oscilloscope
             this.label13 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBox1
@@ -98,7 +104,7 @@ namespace Oscilloscope
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Arial Narrow", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(30, 153);
+            this.button1.Location = new System.Drawing.Point(8, 328);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(94, 20);
             this.button1.TabIndex = 4;
@@ -293,12 +299,59 @@ namespace Oscilloscope
             this.label14.TabIndex = 23;
             this.label14.Text = "Between Points:";
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panel1.Controls.Add(this.label16);
+            this.panel1.Controls.Add(this.label15);
+            this.panel1.Controls.Add(this.textBox8);
+            this.panel1.Controls.Add(this.textBox7);
+            this.panel1.Location = new System.Drawing.Point(8, 142);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(195, 180);
+            this.panel1.TabIndex = 24;
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(80, 32);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(100, 20);
+            this.textBox7.TabIndex = 0;
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(80, 59);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(100, 20);
+            this.textBox8.TabIndex = 1;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(22, 39);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(50, 13);
+            this.label15.TabIndex = 2;
+            this.label15.Text = "Low IP:";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(19, 66);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(53, 13);
+            this.label16.TabIndex = 3;
+            this.label16.Text = "High IP:";
+            // 
             // AcquisitionParameters
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(936, 360);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.label13);
@@ -327,6 +380,8 @@ namespace Oscilloscope
             this.Name = "AcquisitionParameters";
             this.Text = "ARROW - Acquisition Parameters";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -358,5 +413,10 @@ namespace Oscilloscope
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox textBox7;
     }
 }

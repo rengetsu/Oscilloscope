@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,10 +16,16 @@ namespace Oscilloscope
         [STAThread]
         static void Main()
         {
+            //  Including the bootloader class
+            BootloaderLaunch BL = new BootloaderLaunch();
+
+            //  Change mode to debug in bootloader
+            BL.changeMode("Debug");
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Load());
-            Process.Start("C:\\Users\\pavel\\source\\repos\\Oscilloscope\\Debug\\PicoSample4.exe");
+            Process.Start(BL.getLoadPath());
         }
     }
 }

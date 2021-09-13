@@ -71,6 +71,7 @@
       <DependentUpon>Adjustments.cs</DependentUpon>
     </Compile>
     <Compile Include="Animations.cs" />
+    <Compile Include="BootloaderLaunch.cs" />
     <Compile Include="BugFinder.cs">
       <SubType>Form</SubType>
     </Compile>
