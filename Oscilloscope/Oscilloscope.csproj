@@ -102,6 +102,7 @@
     </Compile>
     <Compile Include="Loading.cs" />
     <Compile Include="SignalAcqRun.cs" />
+    <Compile Include="TimeBase.cs" />
     <Compile Include="TimeBaseSolver.cs" />
     <Compile Include="WinUSBConnect.cs" />
     <Compile Include="OpenGL.cs" />
@@ -150,6 +151,9 @@
     <EmbeddedResource Include="Trigger_Form.resx">
       <DependentUpon>Trigger_Form.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="..\.editorconfig">
+      <Link>.editorconfig</Link>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -11,7 +11,7 @@ namespace Oscilloscope
         //  Variables that we will use outside class
         public String FCurrentSamplingMode = "smsRandom";
         public double Resolution = 2E-10;
-        public double cADC_Period = 2E-10;
+        public const double cADC_Period = 200E-12;
 
         // Текущее значение 2-х настоящих параметров
         double[] FParams = new double[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
@@ -31,32 +31,32 @@ namespace Oscilloscope
         // В RT реальная резолюция в Множитель раз больше (1 .. 4 000 000 000)
         // В Random реальная резолюция в Делитель раз меньше (2 .. 20 000)
 
-        uint cAbsMinSmplRate = (uint)0.125;  // Resolution   8 s
-        uint cAbsMinRandonSmplRate = (uint)1e9;    // Resolution   1 ns  - Минимальный Smpl Rate для рандома
-        ulong cAbsMidSmplRate = (ulong)20E9;   // Resolution  50 ps
-        ulong cAbsMaxRandomSmplRate = (ulong)5E12;   // Resolution 200 fs - Для конкретного прибора вычисляется в GetMaxSmplRate
-        ulong cAbsMaxSmplRateLJ = (ulong)25E12;  // 2020-09-22   Resolution 100 fs - только для LJ! Для конкретного прибора вычисляется в GetMaxSmplRate
-        ulong cAbsMaxSmplRateLJKost = (ulong)25E12;  // 2020-09-22   Resolution 50 fs - только для LJ! Для конкретного прибора вычисляется в GetMaxSmplRate
-        ulong cAbsMaxRollSmplRate = (ulong)62.5e3; // Resolution 16 us  -  ROll 100 ms/ 62500 точек
+        const double cAbsMinSmplRate = 0.125;  // Resolution   8 s
+        const double cAbsMinRandonSmplRate = 1e9;    // Resolution   1 ns  - Минимальный Smpl Rate для рандома
+        const double cAbsMidSmplRate = 20E9;   // Resolution  50 ps
+        const double cAbsMaxRandomSmplRate = 5E12;   // Resolution 200 fs - Для конкретного прибора вычисляется в GetMaxSmplRate
+        const double cAbsMaxSmplRateLJ = 25E12;  // 2020-09-22   Resolution 100 fs - только для LJ! Для конкретного прибора вычисляется в GetMaxSmplRate
+        const double cAbsMaxSmplRateLJKost = 25E12;  // 2020-09-22   Resolution 50 fs - только для LJ! Для конкретного прибора вычисляется в GetMaxSmplRate
+        const double cAbsMaxRollSmplRate = 62.5e3; // Resolution 16 us  -  ROll 100 ms/ 62500 точек
 
         // 2020-09-23 константы мин. шкалы для рандома убрал - вычисляю мин. значение в GetMinRandomScale
         //  cAbsMinScale          = 10E-12;   //  Для конкретного прибора и режима - см. GetMinRandomScale
         //  cAbsMinScaleLJKost    = 2E-12;    // 2020-09-22   2 ps/ - только для LJ! Для конкретного прибора и режима - см. GetMinRandomScale
         //  cAbsMinScaleLJ        = 5E-12;    // 2020-09-22   2 ps/ - только для LJ! Для конкретного прибора и режима - см. GetMinRandomScale
-        ulong cAbsMinScaleRT = (ulong)10E-9;
-        ulong cAbsMinScaleAutoRT = (ulong)100E-9;      //  Мин. развертка для RT в режиме Auto
-        ulong cAbsMinScaleRoll = (ulong)100.000E-3;
-        ulong cAbsMidScale = (ulong)10E-9;
-        uint cAbsMaxScale = 1000;
+        const double cAbsMinScaleRT = 10E-9;
+        const double cAbsMinScaleAutoRT = 100E-9;      //  Мин. развертка для RT в режиме Auto
+        const double cAbsMinScaleRoll = 100.000E-3;
+        const double cAbsMidScale = 10E-9;
+        const double cAbsMaxScale = 1000;
 
-        uint cAbsMinRecLenRt = 50;
-        uint cAbsMinRecLenAutoRt = 500;
-        uint cMinRandomRecordLength = 500; // Мин число точек для Random
-        uint cAbsMidRecLen = 2000;
+        const uint cAbsMinRecLenRt = 50;
+        const uint cAbsMinRecLenAutoRt = 500;
+        const uint cMinRandomRecordLength = 500; // Мин число точек для Random
+        const uint cAbsMidRecLen = 2000;
 
         // 2019-11-08  - НАВОДИМ  порядок в  Roll
-        uint cAbsMinRecLenRoll = 2000;
-        uint cAbsMaxRecLenRoll = 62500;         //  82500 - Для получения сбоя инферфейса при Roll RL > 64К и передергивании параметров
+        const uint cAbsMinRecLenRoll = 2000;
+        const uint cAbsMaxRecLenRoll = 62500;         //  82500 - Для получения сбоя инферфейса при Roll RL > 64К и передергивании параметров
 
         const int cRealMultipliersCount = 126; // до 20 ноября 2019 было 125;
                                                // Массив мномителей (коэффициентов децимации) реального времени
@@ -101,7 +101,6 @@ namespace Oscilloscope
         40000000, 50000000, 62500000, 100000000, 125000000, 200000000, 250000000,
         400000000, 500000000, 625000000, 1000000000, 1250000000, 2000000000,
         2500000000, 4000000000 };
-
 
 
         //  Делители периода дискретизации = 2 ns для получения круглых значений Sample Rate
@@ -173,7 +172,7 @@ namespace Oscilloscope
         /// <param name="Rec_Len">Record Length</param>
         /// <param name="Scale">Scale</param>
         /// <returns>Returning calculated Sample Rate</returns>
-        static double _CalcSmpl_Rate(ulong Rec_Len, Double Scale)
+        public static double _CalcSmpl_Rate(ulong Rec_Len, Double Scale)
         {
             double Result = Rec_Len / (Scale * 10);
 
