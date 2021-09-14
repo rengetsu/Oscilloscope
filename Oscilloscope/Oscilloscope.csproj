@@ -101,6 +101,7 @@
       <DependentUpon>Load.cs</DependentUpon>
     </Compile>
     <Compile Include="Loading.cs" />
+    <Compile Include="RandomGenerator.cs" />
     <Compile Include="SignalAcqRun.cs" />
     <Compile Include="TimeBase.cs" />
     <Compile Include="TimeBaseSolver.cs" />
