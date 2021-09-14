@@ -10,11 +10,13 @@ namespace Oscilloscope
     {
         TimeBase TB = new TimeBase();                   //  TimeBase Class
         TimeBaseSolver TBS = new TimeBaseSolver();      //  TimeBaseSolver Class
+        public const double cADC_Period = 200E-12;
+        public const double cArrow_Period = 32E-10;
 
         // Применяется в слове MMMM (код плавного интерполятора)
         //        int SpecCode_NotTriggerFlag = int.Parse("FFFF", System.Globalization.NumberStyles.AllowHexSpecifier);
         const int SpecCode_NotTriggerFlag = 0xFFFF;  // ", System.Globalization.NumberStyles.AllowHexSpecifier);
-        UInt16
+
         //  65535  (данных не имеет)
         // команд SpecCode_Interpolator или SpecCode_FR_FineInterpolator
 
@@ -22,8 +24,11 @@ namespace Oscilloscope
         Random rand = new Random();
 
         Boolean TaktInterpolatorNotUse = false;
+        Boolean Interpol_Noice1bitDepressed = true;
 
-        String LastPointFineIP;  //  Для отладки
+        int SettedPreTriggerPoints;
+
+        UInt16 LastPointFineIP;  //  Для отладки
 
         /// <summary>
         /// Get ADC Frequency For Current Resolution
@@ -68,6 +73,28 @@ namespace Oscilloscope
             return Result;
         }
 
+
+        /// <summary>
+        /// This function add fine interpolator code to Stats and returns interpolator values
+        /// </summary>
+        /// <param name="fineIP_Val"></param>
+        /// <param name="fineIP_Min"></param>
+        /// <param name="fineIP_Scale"></param>
+        private void AddFineInterpCodeToStats_ReturnInterpolatorValues(ushort fineIP_Val, long fineIP_Min, long fineIP_Scale)
+        {
+            throw new NotImplementedException();
+        }
+
+        /// <summary>
+        /// Check if interpolator is inverse
+        /// </summary>
+        /// <returns>Returns true or false if interpolator is inverse or not</returns>
+        private bool IsInterpolator_Inverse()
+        {
+            bool Result = false;
+            return Result;
+        }
+
         /// <summary>
         /// Calculating First Point Time Traditional Interpolator
         /// </summary>
@@ -83,11 +110,11 @@ namespace Oscilloscope
             //  2017-06-07 при WO_Interpol интерполятор не учитывается, например при усреднении!!!
             double Result = 0;
             double dTime;
-            long Period_ns;
-            Int32 DigPart;  //  2016-01-28 - было byte - Работа с DIP4 "вешалась при времени на точку 1 мкс или более
-            long FineIP_Min;
-            long FineIP_Scale;
-            Int32 StrobesBetweenPeriods;    //  число стробов АЦП между двумя выборками (медленные развертки)
+            double Period_ns;
+            double DigPart;  //  2016-01-28 - было byte - Работа с DIP4 "вешалась при времени на точку 1 мкс или более
+            long FineIP_Min = 0;
+            long FineIP_Scale = 0;
+            double StrobesBetweenPeriods;    //  число стробов АЦП между двумя выборками (медленные развертки)
             double PhysPeriodOfStrobe;
             double Fine_dTime;
             double FloatFineIP;
@@ -113,8 +140,7 @@ namespace Oscilloscope
             }
             else
             {
-                Random.ra
-                StrobesBetweenPeriods = Period_ns / (TBS.cADC_Period*1E9); //  (0.2) ADC Period in nanoseconds
+                StrobesBetweenPeriods = Period_ns / (cADC_Period * 1E9); //  (0.2) ADC Period in nanoseconds
 
                 if (FineIP_Val != SpecCode_NotTriggerFlag)
                 {
@@ -122,7 +148,7 @@ namespace Oscilloscope
                 }
                 else
                 {
-                    DigPart = rand.Next(StrobesBetweenPeriods);
+                    DigPart = rand.Next((int)StrobesBetweenPeriods);
                 }
                 //  Set dTime
                 dTime   = dTime + cADC_Period * DigPart;
@@ -138,41 +164,52 @@ namespace Oscilloscope
                 if (FineIP_Val != SpecCode_NotTriggerFlag)
                 {
                     AddFineInterpCodeToStats_ReturnInterpolatorValues(FineIP_Val, FineIP_Min, FineIP_Scale);
+
+                    if (FineIP_Scale < 1000)
+                    {
+                        FineIP_Scale = 1000;
+                    }
+
+                    //        {$IFDEF PULT}
+                    //          if Assigned(frmPultParamSbora) and frmPultParamSbora.Visible then
+                    //            frmPultParamSbora.SetInterpAmplitude(ScaleValue);
+                    //        {$ENDIF}
+
+                    //  2018-10-17
+                    if (Interpol_Noice1bitDepressed)
+                    {
+                        FloatFineIP = FineIP_Val;             //  Нет добавления шума в 1 квант АЦП интерполятора
+                    }
+                    else
+                    {
+                        FloatFineIP = FineIP_Val + rand.Next(0);   //  Добавляется шума в 1 квант АЦП интерполятора
+                        // End 2018-10-17
+                    }
+
+                    InverseInterpolator = IsInterpolator_Inverse();
+
+                    if (InverseInterpolator)
+                    {
+                        Fine_dTime = cArrow_Period * (1 - (FloatFineIP - FineIP_Min) / FineIP_Scale);  // 2017-10-03 инверсия плавного интерполятора          //  2018-10-17
+                    }
+                    else
+                    {
+                        Fine_dTime = cArrow_Period * (FloatFineIP - FineIP_Min) / FineIP_Scale;  // 2016-05-10 плавный интерполятор перекрывает 2 нс!                //  2018-10-17
+                    }
+                    dTime = dTime + Fine_dTime;
                 }
-            if FineIP_Scale < 1000 then
-              FineIP_Scale := 1000;
+                else
+                {
+                    //  Включаем рандом для имитации работы интерполятора при отсутствии синхронизации
+                    // 2016-05-10 Теперь плавный интерполятор перекрывает не 1 нс, а 2 нс!  FineCode := ZeroValue + Trunc(Analog/1e-9 * ScaleValue);
+                    dTime = dTime + cADC_Period * rand.Next(0);
+                }
 
-            //        {$IFDEF PULT}
-            //          if Assigned(frmPultParamSbora) and frmPultParamSbora.Visible then
-            //            frmPultParamSbora.SetInterpAmplitude(ScaleValue);
-            //        {$ENDIF}
-
-
-
-            //  2018-10-17
-            if Interpol_Noice1bitDepressed then
-              FloatFineIP := FineIP_Val             //  Нет добавления шума в 1 квант АЦП интерполятора
-          else
-        FloatFineIP:= FineIP_Val + Random;   //  Добавляется шума в 1 квант АЦП интерполятора
-        // End 2018-10-17
-
-        InverseInterpolator:= IsInterpolator_Inverse;
-            if InverseInterpolator then
-              Fine_dTime := cArrow_Period * (1 - (FloatFineIP - FineIP_Min) / FineIP_Scale)  // 2017-10-03 инверсия плавного интерполятора          //  2018-10-17
-        else
-            Fine_dTime:= cArrow_Period * (FloatFineIP - FineIP_Min) / FineIP_Scale;  // 2016-05-10 плавный интерполятор перекрывает 2 нс!                //  2018-10-17
-
-        dTime:= dTime + Fine_dTime;
-            end
-    else
-            //  Включаем рандом для имитации работы интерполятора при отсутствии синхронизации
-            dTime:= dTime + cADC_Period * Random;  // 2016-05-10 Теперь плавный интерполятор перекрывает не 1 нс, а 2 нс!  FineCode := ZeroValue + Trunc(Analog/1e-9 * ScaleValue);
-
-
-        PhysPeriodOfStrobe:= 1 / Get_Physical_SampleRate;  //  физическое значение периода точек, s  (Для Random - в каждом частном сборе)
-
-        Result:= -(SettedPreTriggerPoints * PhysPeriodOfStrobe) + dTime;
-
+            }
+            //  физическое значение периода точек, s  (Для Random - в каждом частном сборе)
+            PhysPeriodOfStrobe = 1 / Get_Physical_SampleRate();
+            
+            Result = -(SettedPreTriggerPoints * PhysPeriodOfStrobe) + dTime;
 
             return Result;
         }
