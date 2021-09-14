@@ -1,6 +1,6 @@
 # Oscilloscope
 
-Oscilloscope
+Oscilloscope - Oscilloscope project.
 
 ## Tabs
 
