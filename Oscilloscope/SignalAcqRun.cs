@@ -10,6 +10,8 @@ namespace Oscilloscope
     {
         TimeBase TB = new TimeBase();                   //  TimeBase Class
         TimeBaseSolver TBS = new TimeBaseSolver();      //  TimeBaseSolver Class
+        RandomGenerator RG = new RandomGenerator();     //  Random Generator
+
         public const double cADC_Period = 200E-12;
         public const double cArrow_Period = 32E-10;
 
@@ -19,9 +21,6 @@ namespace Oscilloscope
 
         //  65535  (данных не имеет)
         // команд SpecCode_Interpolator или SpecCode_FR_FineInterpolator
-
-        // Instantiate random number generator using system-supplied value as seed.
-        Random rand = new Random();
 
         Boolean TaktInterpolatorNotUse = false;
         Boolean Interpol_Noice1bitDepressed = true;
@@ -114,7 +113,7 @@ namespace Oscilloscope
             double DigPart;  //  2016-01-28 - было byte - Работа с DIP4 "вешалась при времени на точку 1 мкс или более
             long FineIP_Min = 0;
             long FineIP_Scale = 0;
-            double StrobesBetweenPeriods;    //  число стробов АЦП между двумя выборками (медленные развертки)
+            int StrobesBetweenPeriods;    //  число стробов АЦП между двумя выборками (медленные развертки)
             double PhysPeriodOfStrobe;
             double Fine_dTime;
             double FloatFineIP;
@@ -140,7 +139,7 @@ namespace Oscilloscope
             }
             else
             {
-                StrobesBetweenPeriods = Period_ns / (cADC_Period * 1E9); //  (0.2) ADC Period in nanoseconds
+                StrobesBetweenPeriods = (int)(Period_ns / (cADC_Period * 1E9)); //  (0.2) ADC Period in nanoseconds
 
                 if (FineIP_Val != SpecCode_NotTriggerFlag)
                 {
@@ -148,7 +147,7 @@ namespace Oscilloscope
                 }
                 else
                 {
-                    DigPart = rand.Next((int)StrobesBetweenPeriods);
+                    DigPart = RG.randomGen(0, StrobesBetweenPeriods);
                 }
                 //  Set dTime
                 dTime   = dTime + cADC_Period * DigPart;
@@ -182,7 +181,7 @@ namespace Oscilloscope
                     }
                     else
                     {
-                        FloatFineIP = FineIP_Val + rand.Next(0);   //  Добавляется шума в 1 квант АЦП интерполятора
+                        FloatFineIP = FineIP_Val + RG.randomGenDouble();   //  Добавляется шума в 1 квант АЦП интерполятора
                         // End 2018-10-17
                     }
 
@@ -202,7 +201,7 @@ namespace Oscilloscope
                 {
                     //  Включаем рандом для имитации работы интерполятора при отсутствии синхронизации
                     // 2016-05-10 Теперь плавный интерполятор перекрывает не 1 нс, а 2 нс!  FineCode := ZeroValue + Trunc(Analog/1e-9 * ScaleValue);
-                    dTime = dTime + cADC_Period * rand.Next(0);
+                    dTime = dTime + cADC_Period * RG.randomGenDouble();
                 }
 
             }

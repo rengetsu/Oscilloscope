@@ -8,13 +8,27 @@ namespace Oscilloscope
 {
     public class RandomGenerator
     {
-        //  Random Class
+        // Instantiate random number generator using system-supplied value as seed.
         Random rand = new Random();
 
-
-        public double randomGen()
+        /// <summary>
+        /// Generate random double
+        /// </summary>
+        /// <returns>Returns random double</returns>
+        public double randomGenDouble()
         {
             return rand.NextDouble();
+        }
+
+        /// <summary>
+        /// Generate random number between min and max values
+        /// </summary>
+        /// <param name="MinVal">Minimum value</param>
+        /// <param name="MaxVal">Maximum value</param>
+        /// <returns>Returns a random number from a given interval</returns>
+        public int randomGen(int MinVal, int MaxVal)
+        {
+            return rand.Next(MinVal, MaxVal);
         }
     }
 }
