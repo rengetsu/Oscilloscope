@@ -1,6 +1,6 @@
 # Oscilloscope
 
-Oscilloscope - Oscilloscope project.
+Oscilloscope - Oscilloscope project. Works both with real oscilloscope and in demo mode. 
 
 ## Tabs
 
