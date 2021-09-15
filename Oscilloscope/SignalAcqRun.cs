@@ -13,7 +13,7 @@ namespace Oscilloscope
         RandomGenerator RG = new RandomGenerator();     //  Random Generator
 
         public const double cADC_Period = 200E-12;
-        public const double cArrow_Period = 32E-10;
+        public const double cArrow_Period = 3.2E-9;
 
         // Применяется в слове MMMM (код плавного интерполятора)
         //        int SpecCode_NotTriggerFlag = int.Parse("FFFF", System.Globalization.NumberStyles.AllowHexSpecifier);
@@ -28,6 +28,10 @@ namespace Oscilloscope
         int SettedPreTriggerPoints;
 
         UInt16 LastPointFineIP;  //  Для отладки
+
+        int cBeginValueOfDIP4 = 3;
+
+        int[] AdditionalData = { 3, 14, 59, 26, 53, 0 };
 
         /// <summary>
         /// Get ADC Frequency For Current Resolution
@@ -150,7 +154,7 @@ namespace Oscilloscope
                     DigPart = RG.randomGen(0, StrobesBetweenPeriods);
                 }
                 //  Set dTime
-                dTime   = dTime + cADC_Period * DigPart;
+                dTime   = dTime + cArrow_Period * DigPart;
             }
 
             // Время плавной части интерполятора (Теперь 2015-12-29 независимо от цифрового)
@@ -211,6 +215,40 @@ namespace Oscilloscope
             Result = -(SettedPreTriggerPoints * PhysPeriodOfStrobe) + dTime;
 
             return Result;
+        }
+        
+        /// <summary>
+        /// Decode Interpolator Data
+        /// </summary>
+        /// <param name="_FineIP">Fine Interpolator</param>
+        /// <param name="_DigIP">Digital Interpolator</param>
+        void DecodeInterpolatorData(int _FineIP, int _DigIP)
+        {
+            // возвращает Плавный интьерполятор и Новый цифровой интерполятор  (FW ver. 02.02.03.00 or newer)
+            // Выяснилось, что Саня иногда выдает код 9, а как было задумано - он должен быть не менее 10 (при этом cBeginValueOfDIP4 = 10)
+            // Старая процедура превращала код 9 в 999. Новая будет превращать в 10010 - (код-cBeginValueOfDIP4). Таким образом,
+            //  код 9 превратится в 99999, код 8 - в 99998 и т.д.
+            int DP4 = AdditionalData[1] >> 16;
+            if (DP4 == 0)
+            {
+                //  Если не было триггера - прибор возвращает 0 - превратим его в 555!!!
+                _DigIP = 555;
+            }
+            else
+            {
+                if (DP4 < cBeginValueOfDIP4)
+                {
+                    //  Если не было триггера - прибор возвращает 0, может полуситься отрицательный результат!!!
+                    _DigIP = 10000 + DP4;
+                }
+                else
+                {
+                    // Так как DP4 всегда > 3, раньше было > 10, это изменено для Arrow
+                    _DigIP = DP4 - cBeginValueOfDIP4;
+                }
+            }
+            // Плавный интерполятор
+            _FineIP = AdditionalData[2];
         }
     }
 }
