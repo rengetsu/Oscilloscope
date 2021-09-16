@@ -310,6 +310,7 @@ namespace Oscilloscope
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(100, 20);
             this.textBox7.TabIndex = 24;
+            this.textBox7.Text = "0";
             // 
             // textBox8
             // 
@@ -318,6 +319,7 @@ namespace Oscilloscope
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(100, 20);
             this.textBox8.TabIndex = 25;
+            this.textBox8.Text = "0";
             // 
             // textBox9
             // 
@@ -349,11 +351,11 @@ namespace Oscilloscope
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(7, 170);
+            this.label16.Location = new System.Drawing.Point(13, 173);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(75, 15);
+            this.label16.Size = new System.Drawing.Size(69, 15);
             this.label16.TabIndex = 29;
-            this.label16.Text = "Fine_dTime:";
+            this.label16.Text = "FIG_dTime:";
             // 
             // button2
             // 

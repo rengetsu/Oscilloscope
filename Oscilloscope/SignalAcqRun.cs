@@ -15,6 +15,9 @@ namespace Oscilloscope
         public const double cADC_Period = 200E-12;
         public const double cArrow_Period = 3.2E-9;
 
+        public double DIG_dTime;    //  Вывод в TextBox DIG_dTime
+        public double FIG_dTime;    //  Вывод в TextBox FIG_dTime
+
         // Применяется в слове MMMM (код плавного интерполятора)
         //        int SpecCode_NotTriggerFlag = int.Parse("FFFF", System.Globalization.NumberStyles.AllowHexSpecifier);
         const int SpecCode_NotTriggerFlag = 0xFFFF;  // ", System.Globalization.NumberStyles.AllowHexSpecifier);
@@ -155,6 +158,9 @@ namespace Oscilloscope
                 }
                 //  Set dTime
                 dTime   = dTime + cArrow_Period * DigPart;
+
+                //  16/09/2021  Отправка в вывод в TextBox DIG_dTime
+                DIG_dTime = dTime;
             }
 
             // Время плавной части интерполятора (Теперь 2015-12-29 независимо от цифрового)
@@ -200,6 +206,9 @@ namespace Oscilloscope
                         Fine_dTime = cArrow_Period * (FloatFineIP - FineIP_Min) / FineIP_Scale;  // 2016-05-10 плавный интерполятор перекрывает 2 нс!                //  2018-10-17
                     }
                     dTime = dTime + Fine_dTime;
+
+                    //  16/09/2021  Отправка в вывод в TextBox FIG_dTime
+                    FIG_dTime = Fine_dTime;
                 }
                 else
                 {
