@@ -15,7 +15,7 @@ namespace Oscilloscope
         /// Generate random double
         /// </summary>
         /// <returns>Returns random double</returns>
-        public double randomGenDouble()
+        public double RandomGenDouble()
         {
             return rand.NextDouble();
         }
@@ -26,7 +26,7 @@ namespace Oscilloscope
         /// <param name="MinVal">Minimum value</param>
         /// <param name="MaxVal">Maximum value</param>
         /// <returns>Returns a random number from a given interval</returns>
-        public int randomGen(int MinVal, int MaxVal)
+        public int RandomGen(int MinVal, int MaxVal)
         {
             return rand.Next(MinVal, MaxVal);
         }

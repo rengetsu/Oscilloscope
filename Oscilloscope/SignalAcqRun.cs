@@ -28,7 +28,7 @@ namespace Oscilloscope
 
 
         int SettedPreTriggerPoints;
-        int cBeginValueOfDIP4 = 3;
+        readonly int cBeginValueOfDIP4 = 3;
         int[] AdditionalData = { 3, 14, 59, 26, 53, 0 };
 
         public bool IsRandomTB { get; private set; }
@@ -106,6 +106,8 @@ namespace Oscilloscope
             int FineIP_High = 0;
             int Part556;
             Boolean MustAcceptNewValuew;
+
+            int ABCDE;
 
             if(Device_In_FastRandom_Mode())
             {
@@ -190,7 +192,7 @@ namespace Oscilloscope
                 }
                 else
                 {
-                    DigPart = RG.randomGen(0, StrobesBetweenPeriods);
+                    DigPart = RG.RandomGen(0, StrobesBetweenPeriods);
                 }
                 
                 //  Set dTime
@@ -232,7 +234,7 @@ namespace Oscilloscope
                     }
                     else
                     {
-                        FloatFineIP = FineIP_Val + RG.randomGenDouble();   //  Добавляется шума в 1 квант АЦП интерполятора
+                        FloatFineIP = FineIP_Val + RG.RandomGenDouble();   //  Добавляется шума в 1 квант АЦП интерполятора
                         // End 2018-10-17
                     }
 
@@ -263,7 +265,7 @@ namespace Oscilloscope
                 {
                     //  Включаем рандом для имитации работы интерполятора при отсутствии синхронизации
                     // 2016-05-10 Теперь плавный интерполятор перекрывает не 1 нс, а 2 нс!  FineCode := ZeroValue + Trunc(Analog/1e-9 * ScaleValue);
-                    dTime = dTime + BT.GetADC_Period() * RG.randomGenDouble();
+                    dTime = dTime + BT.GetADC_Period() * RG.RandomGenDouble();
                 }
             }
             //  физическое значение периода точек, s  (Для Random - в каждом частном сборе)
