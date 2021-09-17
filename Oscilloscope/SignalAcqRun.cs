@@ -8,33 +8,30 @@ namespace Oscilloscope
 {
     public class SignalAcqRun
     {
+        //  Calling Classes
         TimeBase TB = new TimeBase();                   //  TimeBase Class
+        BaseTypes BT = new BaseTypes();                 //  BaseTypes Class
         TimeBaseSolver TBS = new TimeBaseSolver();      //  TimeBaseSolver Class
         RandomGenerator RG = new RandomGenerator();     //  Random Generator
 
-        public const double cADC_Period = 200E-12;
-        public const double cArrow_Period = 3.2E-9;
-
+        //  Variables for Debug
         public double DIG_dTime;    //  Вывод в TextBox DIG_dTime
         public double FIG_dTime;    //  Вывод в TextBox FIG_dTime
-
-        // Применяется в слове MMMM (код плавного интерполятора)
-        //        int SpecCode_NotTriggerFlag = int.Parse("FFFF", System.Globalization.NumberStyles.AllowHexSpecifier);
-        const int SpecCode_NotTriggerFlag = 0xFFFF;  // ", System.Globalization.NumberStyles.AllowHexSpecifier);
-
-        //  65535  (данных не имеет)
-        // команд SpecCode_Interpolator или SpecCode_FR_FineInterpolator
+        public double   FIP_Float;  //  Вывод в TextBox FIP_Float
+        public long     FIP_Min;    //  Вывод в FIP_Min
+        public long     FIP_Scale;  //  Вывод в FIP_Scale
 
         Boolean TaktInterpolatorNotUse = false;
         Boolean Interpol_Noice1bitDepressed = true;
 
-        int SettedPreTriggerPoints;
-
         UInt16 LastPointFineIP;  //  Для отладки
 
-        int cBeginValueOfDIP4 = 3;
 
+        int SettedPreTriggerPoints;
+        int cBeginValueOfDIP4 = 3;
         int[] AdditionalData = { 3, 14, 59, 26, 53, 0 };
+
+        public bool IsRandomTB { get; private set; }
 
         /// <summary>
         /// Get ADC Frequency For Current Resolution
@@ -79,6 +76,15 @@ namespace Oscilloscope
             return Result;
         }
 
+        /// <summary>
+        /// Check if device in fast random mode or not
+        /// </summary>
+        /// <returns>Returns true or false as an answer</returns>
+        Boolean Device_In_FastRandom_Mode()
+        {
+            Boolean Result = IsRandomTB;
+            return Result;
+        }
 
         /// <summary>
         /// This function add fine interpolator code to Stats and returns interpolator values
@@ -86,9 +92,32 @@ namespace Oscilloscope
         /// <param name="fineIP_Val"></param>
         /// <param name="fineIP_Min"></param>
         /// <param name="fineIP_Scale"></param>
-        private void AddFineInterpCodeToStats_ReturnInterpolatorValues(ushort fineIP_Val, long fineIP_Min, long fineIP_Scale)
+        private long AddFineInterpCodeToStats_ReturnInterpolatorValues(ushort FineIP_Code, long FineIP_Low, long FineIP_Scale)
         {
-            throw new NotImplementedException();
+            // Если задан режим авто-аджаст интерполятора либо проводится калибровка TB -
+            // то Делает 2 задачи:
+            // 1. Каждое новое значение интерполятора NewCode добавляет к статистике интерполятора;
+            // 2. Когда статистики собрано достаточно и Если задан режим авто-аджаст интерполятора
+            //    - то вычисляет по ней границы интерполятора,
+            //    решает - приемлемы ли полученные новые значения, и если да - то
+            //    вписывает их в хандлеры границ.
+            // Далее считывает значения границ (новые или, если обновления не было - то старые),
+            // и возвращает параметры интерполятора (нижнюю границу и размах)
+            int FineIP_High = 0;
+            int Part556;
+            Boolean MustAcceptNewValuew;
+
+            if(Device_In_FastRandom_Mode())
+            {
+                throw new NotImplementedException();
+            }
+            else
+            {
+                //  В ДАННЫЙ МОМЕНТ ПЕРЕПИСЫВАЮ ПРОЦЕДУРУ НО ОНА ВОЗВРАЩЯЕТ ПРАВИЛЬНЫЕ ЗНАЧЕНИЯ
+            }
+
+            FineIP_Scale = FineIP_High - FineIP_Low;
+            return FineIP_Scale;
         }
 
         /// <summary>
@@ -138,6 +167,9 @@ namespace Oscilloscope
 
             if (TaktInterpolatorNotUse)
             {
+                //  В случае попадания в отсутствие такта интерполятора приравниваем значение к 555
+                DIG_dTime = 555;
+
                 // Цифрофой интерполятор между выборками НЕ истпользуем!
                 //  2020-06-02  как я понял (вспомнил), что при коэфф. децимации (или
                 //  StrobesBetweenPeriods) = 1 (что соответствует 500 MHz частоте стробирования)
@@ -147,15 +179,12 @@ namespace Oscilloscope
                 //  только старшая часть цифрового интерполятора (целая часть от DIP4 div
                 //  StrobesBetweenPeriods), остаток же от деления (который равен числу периодов
                 //  500 MHz клока между триггером и очередной выборкой AЦП)
-                
-                //  В случае попадания в отсутствие такта интерполятора приравниваем значение к 555
-                DIG_dTime = 555;
             }
             else
             {
-                StrobesBetweenPeriods = (int)(Period_ns / (cADC_Period * 1E9)); //  (0.2) ADC Period in nanoseconds
+                StrobesBetweenPeriods = (int)(Period_ns / (BT.GetADC_Period() * 1E9)); //  (0.2) ADC Period in nanoseconds
 
-                if (FineIP_Val != SpecCode_NotTriggerFlag)
+                if (FineIP_Val != BT.GetSpecCode_NotTriggerFlag())
                 {
                     DigPart = (Int32)DIP4 % StrobesBetweenPeriods;
                 }
@@ -163,8 +192,10 @@ namespace Oscilloscope
                 {
                     DigPart = RG.randomGen(0, StrobesBetweenPeriods);
                 }
+                
                 //  Set dTime
-                dTime   = dTime + cArrow_Period * DigPart;
+                DIG_dTime = BT.GetFIP_Period() * DigPart;
+                dTime = dTime + DIG_dTime;
 
                 //  16/09/2021  Отправка в вывод в TextBox DIG_dTime
                 DIG_dTime = dTime;
@@ -180,7 +211,7 @@ namespace Oscilloscope
             }
             else
             {
-                if (FineIP_Val != SpecCode_NotTriggerFlag)
+                if (FineIP_Val != BT.GetSpecCode_NotTriggerFlag())
                 {
                     AddFineInterpCodeToStats_ReturnInterpolatorValues(FineIP_Val, FineIP_Min, FineIP_Scale);
 
@@ -209,12 +240,20 @@ namespace Oscilloscope
 
                     if (InverseInterpolator)
                     {
-                        Fine_dTime = cArrow_Period * (1 - (FloatFineIP - FineIP_Min) / FineIP_Scale);  // 2017-10-03 инверсия плавного интерполятора          //  2018-10-17
+                        // 2017-10-03 инверсия плавного интерполятора          //  2018-10-17
+                    Fine_dTime = BT.GetFIP_Period() * ( 1 - (FloatFineIP - FineIP_Min) / FineIP_Scale);
                     }
                     else
                     {
-                        Fine_dTime = cArrow_Period * (FloatFineIP - FineIP_Min) / FineIP_Scale;  // 2016-05-10 плавный интерполятор перекрывает 2 нс!                //  2018-10-17
+                        // 2016-05-10 плавный интерполятор перекрывает 2 нс!                //  2018-10-17
+                        Fine_dTime = (BT.GetFIP_Period() * (FloatFineIP - FineIP_Min) / FineIP_Scale);
                     }
+
+                    //  16/09/2021  Вывод для проверки
+                    FIP_Float = FloatFineIP;
+                    FIP_Min   = FineIP_Min;
+                    FIP_Scale = FineIP_Scale;
+
                     dTime = dTime + Fine_dTime;
 
                     //  16/09/2021  Отправка в вывод в TextBox FIG_dTime
@@ -224,15 +263,14 @@ namespace Oscilloscope
                 {
                     //  Включаем рандом для имитации работы интерполятора при отсутствии синхронизации
                     // 2016-05-10 Теперь плавный интерполятор перекрывает не 1 нс, а 2 нс!  FineCode := ZeroValue + Trunc(Analog/1e-9 * ScaleValue);
-                    dTime = dTime + cADC_Period * RG.randomGenDouble();
+                    dTime = dTime + BT.GetADC_Period() * RG.randomGenDouble();
                 }
-
             }
             //  физическое значение периода точек, s  (Для Random - в каждом частном сборе)
             PhysPeriodOfStrobe = 1 / Get_Physical_SampleRate();
-            
+            DIG_dTime = dTime;
             Result = -(SettedPreTriggerPoints * PhysPeriodOfStrobe) + dTime;
-
+            //  Returns the result 
             return Result;
         }
         
