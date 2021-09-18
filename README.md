@@ -1,7 +1,7 @@
 # Oscilloscope
 
 Project created in "Eltesta".
-Oscilloscope - Oscilloscope project. Works both with real oscilloscope and in demo mode. 
+Oscilloscope - Oscilloscope project. Works both with real oscilloscope and in demo mode. Works in real-time and random-time modes.
 
 ## Tabs
 
