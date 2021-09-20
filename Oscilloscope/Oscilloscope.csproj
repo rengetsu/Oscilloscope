@@ -79,6 +79,7 @@
     <Compile Include="BugFinder.Designer.cs">
       <DependentUpon>BugFinder.cs</DependentUpon>
     </Compile>
+    <Compile Include="BugFinderSearch.cs" />
     <Compile Include="Calibrations.cs" />
     <Compile Include="Channels_Form.cs">
       <SubType>Form</SubType>
