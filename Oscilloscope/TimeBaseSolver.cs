@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Oscilloscope
 {
@@ -352,6 +353,7 @@ namespace Oscilloscope
 
                 if(Multiplier == 0)
                 {
+                    MessageBox.Show("");
                     Multiplier = 1;
                 }
 
