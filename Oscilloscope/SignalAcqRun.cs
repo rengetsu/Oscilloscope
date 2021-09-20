@@ -107,8 +107,6 @@ namespace Oscilloscope
             int Part556;
             Boolean MustAcceptNewValuew;
 
-            int ABCDE;
-
             if(Device_In_FastRandom_Mode())
             {
                 throw new NotImplementedException();
