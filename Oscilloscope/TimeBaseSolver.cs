@@ -9,6 +9,8 @@ namespace Oscilloscope
 {
     public class TimeBaseSolver
     {
+        BugFinderSearch BFS = new BugFinderSearch();
+
         //  Variables that we will use outside class
         public String FCurrentSamplingMode = "smsRandom";
         public double Resolution = 2E-10;
@@ -353,7 +355,7 @@ namespace Oscilloscope
 
                 if(Multiplier == 0)
                 {
-                    MessageBox.Show("");
+                    BFS.BugFinderCall("a");
                     Multiplier = 1;
                 }
 
