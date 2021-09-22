@@ -81,6 +81,7 @@
     </Compile>
     <Compile Include="BugFinderSearch.cs" />
     <Compile Include="Calibrations.cs" />
+    <Compile Include="Channel.cs" />
     <Compile Include="Channels_Form.cs">
       <SubType>Form</SubType>
     </Compile>
