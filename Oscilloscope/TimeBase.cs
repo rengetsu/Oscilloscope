@@ -8,6 +8,8 @@ namespace Oscilloscope
 {
     public class TimeBase
     {
+        Channel CH = new Channel();
+
         //  Private
         private int samplingModenumber = 0;
 
@@ -45,6 +47,20 @@ namespace Oscilloscope
         /// </summary>
         /// <returns></returns>
         private int GetFCurrentSamplingMode() => FCurrentSamplingMode ? 1 : 0;
+
+        public UInt64 Get_ADC_Freq_ForCurrentResulution()
+        {
+            UInt64 Result;
+            if( CH.GetCountOfAcquiredChannels() == 2 )
+            {
+                Result = 2500000000;    // 09/09/2021  Павел добавил 0
+            }
+            else
+            {
+                Result = 5000000000;
+            }
+            return Result;
+        }
 
         /// <summary>
         /// Get Current Sampling Mode Function 
