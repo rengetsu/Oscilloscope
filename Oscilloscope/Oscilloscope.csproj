@@ -97,6 +97,7 @@
     <Compile Include="GUI.Designer.cs">
       <DependentUpon>GUI.cs</DependentUpon>
     </Compile>
+    <Compile Include="Handlers.cs" />
     <Compile Include="Load.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +106,7 @@
     </Compile>
     <Compile Include="Loading.cs" />
     <Compile Include="RandomGenerator.cs" />
+    <Compile Include="SignalAcqCalc.cs" />
     <Compile Include="SignalAcqRun.cs" />
     <Compile Include="TimeBase.cs" />
     <Compile Include="TimeBaseSolver.cs" />

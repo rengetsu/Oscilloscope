@@ -236,7 +236,7 @@ namespace Oscilloscope
         {
             //  Variables used in this function
             int iMin, iMax, i, i0, i1;
-            double vi, v0, v1;
+            double vi, v0;
             
             iMin = 0;
             iMax = (int)M;
