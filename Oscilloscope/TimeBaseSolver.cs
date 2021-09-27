@@ -9,6 +9,7 @@ namespace Oscilloscope
 {
     public class TimeBaseSolver
     {
+        Channel CH = new Channel();
         BugFinderSearch BFS = new BugFinderSearch();
 
         //  Variables that we will use outside class
@@ -270,12 +271,12 @@ namespace Oscilloscope
         /// <param name="Multiplier">Current multiplier</param>
         /// <param name="RealMultipliersIndex">Real index of current multiplier</param>
         /// <returns></returns>
-        double GetNearMultiplier(double Multiplier, int RealMultipliersIndex)
+        double GetNearMultiplier(double Multiplier)
         {
             //  Variables used in this function
             double Index, i0, Result;
 
-            Index = CalcIndex(Multiplier, cRealMultipliers[RealMultipliersIndex]);
+            Index = CalcIndex(Multiplier, cRealMultipliers[cLastcorrectedMultiplierIndex]);
 
             i0 = Math.Truncate(Index + 0.01);
 
@@ -301,7 +302,7 @@ namespace Oscilloscope
             Double vDivider;
             int Divider;
             double vMultiplier;
-            uint Multiplier;
+            double Multiplier;
             ulong MaxTableMultiplier;
             Boolean OnlyFromTBTable;
             Boolean LimCorrected;
@@ -323,10 +324,25 @@ namespace Oscilloscope
 
             if(Random)
             {
-                LimCorrected = Resolution > 1.01E-10;   //  10/09/2021 Изменено Павлом для Arrow, было 1.01E-10
-                if (LimCorrected)                       //  2019-02-27
+                if (CH.GetCountOfAcquiredChannels() == 2)
                 {
-                    Resolution = 1E-10;                 //  10/09/2021 Изменено Павлом для Arrow, было 1E-10
+                    LimCorrected = Resolution > 5.01E-9;   
+                }
+                else
+                {
+                    LimCorrected = Resolution > 1.01E-10;   //  10/09/2021 Изменено Павлом для Arrow, было 1.01E-10
+                }
+                
+                if (LimCorrected)                           //  2019-02-27
+                {
+                    if(CH.GetCountOfAcquiredChannels() == 2)
+                    {
+                        Resolution = 5E-9;                 
+                    }
+                    else
+                    {
+                        Resolution = 1E-10;                 //  10/09/2021 Изменено Павлом для Arrow, было 1E-10
+                    }
                 }
 
                 vDivider = cADC_Period / Resolution;
@@ -342,20 +358,42 @@ namespace Oscilloscope
             }
             else
             {
-                LimCorrected = Resolution < 1.99E-10;  //  10/09/2021 Изменено Павлом для Arrow, было 1.99E-10
+                if (CH.GetCountOfAcquiredChannels() == 2)
+                {
+                    LimCorrected = Resolution < 0.99E-10;
+                }
+                else
+                {
+                    LimCorrected = Resolution < 1.99E-10;   //  10/09/2021 Изменено Павлом для Arrow, было 1.99E-10
+                }
+
                 if(LimCorrected)
                 {
-                    Resolution = 2E-10;                 //  10/09/2021 Изменено Павлом для Arrow, было 2E-10
+                    if (CH.GetCountOfAcquiredChannels() == 2)
+                    {
+                        Resolution = 1E-10;
+                    }
+                    else
+                    {
+                        Resolution = 2E-10;                 //  10/09/2021 Изменено Павлом для Arrow, было 2E-10
+                    }
                     LimCorrected = true;
                 }
 
                 vMultiplier = Resolution / cADC_Period;
                 //  Round(vMultiplier) - При малых Multiplier в половине случаев округлял резолюцию в бОльшую сторону, что уменьшало
-                Multiplier = (uint)Math.Truncate(vMultiplier + 1e-5);
+                if (CH.GetCountOfAcquiredChannels() == 2)
+                {
+                    Multiplier = (uint)Math.Truncate(vMultiplier + 5e-4);
+                }
+                else
+                {
+                    Multiplier = (uint)Math.Truncate(vMultiplier + 1e-5);
+                }
 
                 if(Multiplier == 0)
                 {
-                    BFS.BugFinderCall("a");
+                    //BFS.BugFinderCall("");
                     Multiplier = 1;
                 }
 
@@ -390,11 +428,6 @@ namespace Oscilloscope
                     Resolution = cADC_Period * Multiplier;
                 }
             }
-        }
-
-        private uint GetNearMultiplier(uint multiplier)
-        {
-            throw new NotImplementedException();
         }
 
         /// <summary>

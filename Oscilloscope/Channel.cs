@@ -12,6 +12,16 @@ namespace Oscilloscope
 
         private Channels[] channels;
 
+        bool[] ch = new bool[2];
+
+        public Channel()
+        {
+            foreach (bool res in ch)
+            {
+                ch[ch.Length - 1] = true;
+            }
+        }
+
         /// <summary>
         /// Channel constructor
         /// </summary>
@@ -33,7 +43,13 @@ namespace Oscilloscope
         public int GetCountOfAcquiredChannels()
         {
             int Result = 0;
-
+            for ( int current_channel = 0; current_channel < channel_number; current_channel++ )
+            {
+                if( ch[current_channel] == true)
+                {
+                    Result++;
+                }
+            }
             //  RecordLengthToPribor(PriborRecLength);
             return Result;
         }
