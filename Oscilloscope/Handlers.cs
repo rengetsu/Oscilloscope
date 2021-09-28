@@ -12,13 +12,22 @@ namespace Oscilloscope
     /// </summary>
     public class Handlers
     {
-        //  TTB variables
+        //  TimeBase handlers variables
         private static double ttbpRecLen;       //  ttbRecLen - variable for TTB Record Length
         private static double ttbpSmplRate;     //  ttbSmplRate - variable for TTB Smpl Rate
         private static double ttbpScale;        //  ttbpScale - variable for TTB Scale
 
+        //  Sampling modes handlers variables
+        private static bool smsRealTime = false;
+        private static bool smsRandom = false;
+        private static bool smsRoll = false;
+        private static bool smsFullAuto = false;
+
+        //  Sampling Mode number variable
+        private int samplingModenumber = 0;
+
         /// <summary>
-        /// TTB Record Length Set and Get
+        /// TTB Record Length Get and Set
         /// </summary>
         public double TtbpRecLen
         { 
@@ -27,7 +36,7 @@ namespace Oscilloscope
         }
 
         /// <summary>
-        /// TTB Sample Rate Set and Get
+        /// TTB Sample Rate Get and Set
         /// </summary>
         public double TtbpSmplRate
         {
@@ -36,7 +45,7 @@ namespace Oscilloscope
         }
 
         /// <summary>
-        /// TTB Scale Set and Get
+        /// TTB Scale Get and Set
         /// </summary>
         public double TtbpScale
         {
@@ -45,9 +54,45 @@ namespace Oscilloscope
         }
 
         /// <summary>
-        /// TTB Parameters - Record Length, Sample Rate and Scale
+        /// Current Sampling Mode Get and Set
         /// </summary>
-        private double[] TTB_Params = { ttbpRecLen, ttbpSmplRate, ttbpScale };
+        public bool FCurrentSamplingMode
+        {
+            get
+            {
+                return TSamplingModeSelector[samplingModenumber]; 
+            } 
+            set => TSamplingModeSelector[samplingModenumber] = true; 
+        }
+
+        /// <summary>
+        /// TimeBase Parameters - Record Length, Sample Rate and Scale
+        /// </summary>
+        private readonly double[] TTB_Params = { ttbpRecLen, ttbpSmplRate, ttbpScale };
+
+        /// <summary>
+        /// Sampling Mode Selector - Real Time, Random ET, Roll, Auto
+        /// </summary>
+        public readonly bool[] TSamplingModeSelector = { SmsRealTime, SmsRandom, SmsRoll, SmsFullAuto };
+
+        public Boolean TTBSmplMode;
+
+        public bool SmsRealTime_Take = SmsRealTime;
+        public bool SmsRandom_Take = SmsRandom;
+        public bool SmsRoll_Take = SmsRoll;
+        public bool SmsFullAuto_Take = SmsFullAuto;
+
+        //  SmsRealTime, SmsRandom, SmsRoll, SmsFullAuto
+        public static bool SmsRealTime { get => smsRealTime; set => smsRealTime = false; }
+        public static bool SmsRandom { get => smsRandom; set => smsRandom = false; }
+        public static bool SmsRoll { get => smsRoll; set => smsRoll = false; }
+        public static bool SmsFullAuto { get => smsFullAuto; set => smsFullAuto = false; }
+
+        /// <summary>
+        /// Get Current Sampling Mode
+        /// </summary>
+        /// <returns></returns>
+        public int GetFCurrentSamplingMode() => FCurrentSamplingMode ? 1 : 0;
 
         /// <summary>
         /// Get function for TTB Parameters - Record Length, Sample Rate and Scale

@@ -14,6 +14,7 @@ namespace Oscilloscope
     /// </summary>
     public class TimeBaseSolver
     {
+        Handlers HNDS;
         Channel CH = new Channel();
         BugFinderSearch BFS = new BugFinderSearch();
 
@@ -491,6 +492,17 @@ namespace Oscilloscope
              (1 / FParams[TtbSmplRate]), FParams[TtbSmplRate], 1e-5);
             }
             //  Returns the result 
+            return Result;
+        }
+
+        /// <summary>
+        /// Get Current Sampling Mode Function 
+        /// </summary>
+        /// <param name="fCurrentSamplingMode">Taking current sampling mode as a parameter</param>
+        /// <returns>Returns current sampling mode</returns>
+        public bool GetCurrentSamplingMode(int fCurrentSamplingMode)
+        {
+            bool Result = HNDS.TSamplingModeSelector[fCurrentSamplingMode];
             return Result;
         }
     }
