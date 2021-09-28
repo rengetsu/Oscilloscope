@@ -7,6 +7,11 @@ using System.Windows.Forms;
 
 namespace Oscilloscope
 {
+    /// <summary>
+    /// TimeBaseSolver class <br/>
+    /// Created to calculate timebase values and solve problems <br/>
+    /// with changeable values like sample rate, record length, scale <br/>
+    /// </summary>
     public class TimeBaseSolver
     {
         Channel CH = new Channel();

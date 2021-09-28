@@ -62,6 +62,12 @@ namespace Oscilloscope
             return Result;
         }
 
+        public Double Get_TB_SampleRate()
+        {
+            Double Result = 0;
+            return Result;
+        }
+
         /// <summary>
         /// Get Current Sampling Mode Function 
         /// </summary>

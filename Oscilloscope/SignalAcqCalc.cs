@@ -8,7 +8,7 @@ namespace Oscilloscope
 {
     public class SignalAcqCalc
     {
-        Handlers HND = new Handlers();
+        Handler HND = new Handler();
         const int cBeginValueOfDIP4 = 3;    //  Это мин. код нового цифрового интерполятора
 
         int[] AdditionalData = { 3, 14, 59, 26, 53, 0 };
@@ -53,7 +53,9 @@ namespace Oscilloscope
         /// <returns></returns>
         private double GetRT_LeftTimeOfScreen()
         {
-            double Result = 1 + 1e-6 * HND.GetValueForProgram("hnd_CalibrTbTuneFreqCounter");
+            double Result = 1
+                            + 1e-6
+                            * HND.GetValueForProgram("hnd_CalibrTbTuneFreqCounter");
             return Result;
         }
 
