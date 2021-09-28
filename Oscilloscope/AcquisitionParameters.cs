@@ -12,7 +12,7 @@ namespace Oscilloscope
 {
     public partial class AcquisitionParameters : Form
     {
-        AcqParameters acqPar;
+        AcqParameters acqPar = new AcqParameters();
 
         public int FFine = 65550;
         double percent_end_cur = 0;

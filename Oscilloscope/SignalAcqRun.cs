@@ -9,6 +9,7 @@ namespace Oscilloscope
     public class SignalAcqRun
     {
         //  Calling Classes
+        Handlers HNDS;
         TimeBase TB = new TimeBase();                   //  TimeBase Class
         BaseTypes BT = new BaseTypes();                 //  BaseTypes Class
         TimeBaseSolver TBS = new TimeBaseSolver();      //  TimeBaseSolver Class
@@ -51,7 +52,7 @@ namespace Oscilloscope
         long Get_Physical_SampleRate()
         {
             long Result;
-            if( TB.GET_TB_SampleMod() == TB.SmsRandom_Take )
+            if( TB.GET_TB_SampleMod() == HNDS.SmsRandom_Take )
             {
                 Result = Get_ADC_Freq_ForCurrentResolution();
             }
