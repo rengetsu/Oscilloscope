@@ -74,11 +74,11 @@ namespace Oscilloscope
 
             //  Debug
             if( ModeDebug ) {
-                versionName = "PicoSample4";
+                versionName = "PicoSample5";
             }
             //  Release
             else {
-                versionName = "PicoSample4";
+                versionName = "PicoSample5";
             }
             string ModePath = versionPref + versionName + versionType;
             return ModePath;
