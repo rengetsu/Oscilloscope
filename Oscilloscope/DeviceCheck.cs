@@ -94,9 +94,14 @@ namespace Oscilloscope
             throw new NotImplementedException();
         }
 
-        public void SendCommantToTheUnit(object p)
+        public void SendCommantToTheUnit(object p, Boolean WithoutTerminateSbor = false)
         {
             throw new NotImplementedException();
+        }
+
+        public void SetIntegerParameter(String Command, int Param, Boolean WithoutTerminateSbor = false)
+        {
+            SendCommantToTheUnit(Command + ' ' + Param.ToString());
         }
 
         void showMessage(bool check, int dacName)

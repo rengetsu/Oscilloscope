@@ -89,6 +89,7 @@
       <DependentUpon>Channels_Form.cs</DependentUpon>
     </Compile>
     <Compile Include="Configurations.cs" />
+    <Compile Include="ControlOf.cs" />
     <Compile Include="DeviceCheck.cs" />
     <Compile Include="EMITests.cs" />
     <Compile Include="GUI.cs">
