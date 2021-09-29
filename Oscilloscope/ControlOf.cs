@@ -12,6 +12,8 @@ namespace Oscilloscope
 
         Boolean LowJitter_FreeRun_InstrumentSettings = false;
 
+        String FW_Ver = "FW_Ver";
+
         public int SettedPreTriggerPoint;
 
         //  Tutorials variables
@@ -21,7 +23,43 @@ namespace Oscilloscope
         public int OldValueOfPriborParameters { get; private set; }
 
         /// <summary>
-        /// Record Length sending with command to device (pribor)
+        /// Hold Off Random Min Max send to device (pribor)
+        /// </summary>
+        /// <param name="Max">Max or Not</param>
+        /// <param name="HoldRandTime">Hold Rand Time</param>
+        public void HoldOffRandomMinMaxToPribor(Boolean Max, Double HoldRandTime)
+        {
+            String Mn;
+
+            if( isNewHoldoff_V3_1() )
+            {
+                if( Max )
+                {
+                    Mn = "RandTMax";
+                }
+                else
+                {
+                    Mn = "RandTmin";
+                }
+
+                SetFloatParameter("Trig:HoldOff:" + Mn, HoldRandTime);
+            }
+        }
+
+        private Boolean isNewHoldoff_V3_1()
+        {
+            int[] ZV = { 3, 1, 0, 0 };
+            Boolean result = VersionEqualOrNewer(FW_Ver, ZV);
+            return result;
+        }
+
+        private bool VersionEqualOrNewer(string fW_Ver, int[] ZV)
+        {
+            throw new NotImplementedException();
+        }
+
+        /// <summary>
+        /// Record Length sending with command send to device (pribor)
         /// </summary>
         /// <param name="RecordLength">Record Length</param>
         /// <param name="WithoutTerminateSbor">Without Terminate Sbor or not</param>
@@ -68,7 +106,7 @@ namespace Oscilloscope
         }
 
         /// <summary>
-        /// TimeBase Pre Trigger Points send to Device (Pribor)
+        /// TimeBase Pre Trigger Points send to device (pribor)
         /// </summary>
         /// <param name="PreTrigPnts"></param>
         /// <param name="Code_LJ_Freerun"></param>

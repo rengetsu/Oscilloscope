@@ -92,6 +92,7 @@
     <Compile Include="ControlOf.cs" />
     <Compile Include="DeviceCheck.cs" />
     <Compile Include="EMITests.cs" />
+    <Compile Include="GeneralCalculations.cs" />
     <Compile Include="GUI.cs">
       <SubType>Form</SubType>
     </Compile>

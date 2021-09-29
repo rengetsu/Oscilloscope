@@ -29,6 +29,8 @@ namespace Oscilloscope
 
     public class DeviceCheck
     {
+        GeneralCalculations GC;
+
         public const char V = 'T';
         string com = "Test:RgDAC:Response? %d'";
         public Device DeviceType;
@@ -102,6 +104,21 @@ namespace Oscilloscope
         public void SetIntegerParameter(String Command, int Param, Boolean WithoutTerminateSbor = false)
         {
             SendCommantToTheUnit(Command + ' ' + Param.ToString());
+        }
+
+        public void SetFloatParameter(String Command, Double Param, Boolean WithoutTerminateSbor = false)
+        {
+            String StrParam;
+            Byte poscom;
+            int q;
+
+            StrParam = FloatToStrF_Dot(Param, ffGeneral, 8, 0);
+            poscom = Convert.ToByte(GC.Pos(",", StrParam));
+            if ( poscom > 0 )
+            {
+                StrParam[poscom] = '.';
+            }
+            SendCommantToTheUnit(Command + ' ' + StrParam, WithoutTerminateSbor);
         }
 
         void showMessage(bool check, int dacName)
