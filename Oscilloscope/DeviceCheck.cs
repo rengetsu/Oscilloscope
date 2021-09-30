@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Oscilloscope
 {
+    /// <summary>
+    /// Devices
+    /// </summary>
     public enum Device
     {
         arrow   = 0,
@@ -13,6 +16,10 @@ namespace Oscilloscope
     }
 
     //  ALL Arrow Registers for I2C and DAC
+
+    /// <summary>
+    /// DAC registers for Arrow
+    /// </summary>
     public enum dac_registers_arrow
     {
         ad5625r_d36     = 0x18,
@@ -27,6 +34,11 @@ namespace Oscilloscope
         p49v5901_d801   = 0xD0
     }
 
+    /// <summary>
+    /// Device check class. <br/>
+    /// All stuff to check device, send commands, get responses and much more. <br/>
+    /// If everything works, it's better not to touch. <br/>
+    /// </summary>
     public class DeviceCheck
     {
         GeneralCalculations GC;
@@ -36,7 +48,7 @@ namespace Oscilloscope
         public Device DeviceType;
         public dac_registers_arrow ArrowDac;
 
-        public int I { get; private set; }
+        public int I { get => 0; private set => value = 1; }
 
         void Check_I2C_Regs_DACs()
         {
@@ -60,6 +72,10 @@ namespace Oscilloscope
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         bool CheckDevice()
         {
             //  Arrow
@@ -75,37 +91,76 @@ namespace Oscilloscope
             return false;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         private int GetI()
         {
             return I;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="i"></param>
+        /// <returns></returns>
         int getDacAdress(int i)
         {
             SendCommantToTheUnit(format(V, i));
             return 0;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        /// <exception cref="NotImplementedException"></exception>
         internal double GetStringFromTheUnit()
         {
             throw new NotImplementedException();
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="v"></param>
+        /// <param name="p"></param>
+        /// <returns></returns>
+        /// <exception cref="NotImplementedException"></exception>
         public object format(char v, object p)
         {
             throw new NotImplementedException();
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="p"></param>
+        /// <param name="WithoutTerminateSbor"></param>
+        /// <exception cref="NotImplementedException"></exception>
         public void SendCommantToTheUnit(object p, Boolean WithoutTerminateSbor = false)
         {
             throw new NotImplementedException();
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="Command"></param>
+        /// <param name="Param"></param>
+        /// <param name="WithoutTerminateSbor"></param>
         public void SetIntegerParameter(String Command, int Param, Boolean WithoutTerminateSbor = false)
         {
             SendCommantToTheUnit(Command + ' ' + Param.ToString());
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="Command"></param>
+        /// <param name="Param"></param>
+        /// <param name="WithoutTerminateSbor"></param>
         public void SetFloatParameter(String Command, Double Param, Boolean WithoutTerminateSbor = false)
         {
             String StrParam;
@@ -121,6 +176,11 @@ namespace Oscilloscope
             SendCommantToTheUnit(Command + ' ' + StrParam, WithoutTerminateSbor);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="check"></param>
+        /// <param name="dacName"></param>
         void showMessage(bool check, int dacName)
         {
             if (check == true)
