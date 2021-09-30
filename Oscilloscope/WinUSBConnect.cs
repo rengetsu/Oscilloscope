@@ -13,6 +13,18 @@ namespace Oscilloscope
         bool Initialized = false;
 
         /// <summary>
+        /// Check if we have now USB Connection or not. <br/>
+        /// Now this function is used only in some DeviceInterface elements. <br/>
+        /// It's bad way to check is device is connected or not, so need to rewrite it for something better later <br/>
+        /// </summary>
+        /// <returns></returns>
+        public Boolean checkUSBConnection()
+        {
+            Boolean Result = Initialized;
+            return Result;
+        }
+
+        /// <summary>
         /// Windows USB Initialization function
         /// </summary>
         void WinUSB_Initialize()

@@ -14,6 +14,25 @@ namespace Oscilloscope
         private static Boolean ModeRelease;
 
         /// <summary>
+        /// Get Current Mode. <br/>
+        /// Now this function is used only in some DeviceInterface elements. <br/>
+        /// It's bad way to check is device is connected or not, so need to rewrite it for something better later <br/>
+        /// </summary>
+        /// <returns>It returns 'R' if now we work with real device that connected and work <br/>
+        /// and 'D' if we working in demo mode (if device is not connected or not recognized).</returns>
+        public char GetCurrentMode()
+        {
+            if(ModeRelease == true || ModeDebug == true)
+            {
+                return 'R';
+            }    
+            else
+            {
+                return 'D';
+            }
+        }
+
+        /// <summary>
         /// Mode change function
         /// New modes may be added in the future
         /// </summary>

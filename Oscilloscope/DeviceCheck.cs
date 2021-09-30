@@ -41,6 +41,7 @@ namespace Oscilloscope
     /// </summary>
     public class DeviceCheck
     {
+        DeviceInterface DI;
         GeneralCalculations GC;
 
         public const string V = "Check";
@@ -143,7 +144,7 @@ namespace Oscilloscope
         /// <exception cref="NotImplementedException"></exception>
         public void SendCommandToTheUnit(String command, Boolean WithoutTerminateSbor = false)
         {
-            throw new NotImplementedException();
+            DI.SendCommantToTheUnit(command, WithoutTerminateSbor);
         }
 
         /// <summary>
@@ -154,7 +155,8 @@ namespace Oscilloscope
         /// <param name="WithoutTerminateSbor"></param>
         public void SetIntegerParameter(String Command, int Param, Boolean WithoutTerminateSbor = false)
         {
-            SendCommandToTheUnit(Command + ' ' + Param.ToString());
+            String newCommand = Command + ' ' + Param.ToString();
+            SendCommandToTheUnit(newCommand, WithoutTerminateSbor);
         }
 
         /// <summary>
