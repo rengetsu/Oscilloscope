@@ -43,10 +43,12 @@ namespace Oscilloscope
     {
         GeneralCalculations GC;
 
-        public const char V = 'T';
+        public const string V = "Check";
         string com = "Test:RgDAC:Response? %d'";
         public Device DeviceType;
         public dac_registers_arrow ArrowDac;
+
+        public enum TFloatFormat { ffGeneral, ffExponent, ffFixed, ffNumber, ffCurrency };
 
         public int I { get => 0; private set => value = 1; }
 
@@ -107,7 +109,7 @@ namespace Oscilloscope
         /// <returns></returns>
         int getDacAdress(int i)
         {
-            SendCommantToTheUnit(format(V, i));
+            SendCommandToTheUnit(format(V, i));
             return 0;
         }
 
@@ -128,7 +130,7 @@ namespace Oscilloscope
         /// <param name="p"></param>
         /// <returns></returns>
         /// <exception cref="NotImplementedException"></exception>
-        public object format(char v, object p)
+        public String format(string v, object p)
         {
             throw new NotImplementedException();
         }
@@ -139,7 +141,7 @@ namespace Oscilloscope
         /// <param name="p"></param>
         /// <param name="WithoutTerminateSbor"></param>
         /// <exception cref="NotImplementedException"></exception>
-        public void SendCommantToTheUnit(object p, Boolean WithoutTerminateSbor = false)
+        public void SendCommandToTheUnit(String command, Boolean WithoutTerminateSbor = false)
         {
             throw new NotImplementedException();
         }
@@ -152,7 +154,7 @@ namespace Oscilloscope
         /// <param name="WithoutTerminateSbor"></param>
         public void SetIntegerParameter(String Command, int Param, Boolean WithoutTerminateSbor = false)
         {
-            SendCommantToTheUnit(Command + ' ' + Param.ToString());
+            SendCommandToTheUnit(Command + ' ' + Param.ToString());
         }
 
         /// <summary>
@@ -167,13 +169,15 @@ namespace Oscilloscope
             Byte poscom;
             int q;
 
-            StrParam = FloatToStrF_Dot(Param, ffGeneral, 8, 0);
+            StrParam = FloatToStrF_Dot(Param, TFloatFormat.ffGeneral, 8, 0);
             poscom = Convert.ToByte(GC.Pos(",", StrParam));
             if ( poscom > 0 )
             {
-                StrParam[poscom] = '.';
+                StrParam = StrParam.Insert(poscom,".");
             }
-            SendCommantToTheUnit(Command + ' ' + StrParam, WithoutTerminateSbor);
+            //  Creating new command to send it to sendCommand
+            String newCommand = Command + ' ' + StrParam;
+            SendCommandToTheUnit(newCommand, WithoutTerminateSbor);
         }
 
         /// <summary>
@@ -191,6 +195,20 @@ namespace Oscilloscope
             {
                 Console.WriteLine("Next equipment: \r\n" + dacName + "not responded. Vse rabotayet!");
             }
+        }
+
+        /// <summary>
+        /// Float to str
+        /// </summary>
+        /// <param name="Value">Value</param>
+        /// <param name="Format">Format</param>
+        /// <param name="Precision">Precision</param>
+        /// <param name="Digits">Digits</param>
+        /// <returns>Return string str</returns>
+        /// <exception cref="NotImplementedException"></exception>
+        private string FloatToStrF_Dot(double Value, TFloatFormat Format, int Precision, int Digits)
+        {
+            throw new NotImplementedException();
         }
     }
 }

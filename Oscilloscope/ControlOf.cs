@@ -42,7 +42,7 @@ namespace Oscilloscope
                     Mn = "RandTmin";
                 }
 
-                SetFloatParameter("Trig:HoldOff:" + Mn, HoldRandTime);
+                DC.SetFloatParameter("Trig:HoldOff:" + Mn, HoldRandTime);
             }
         }
 
@@ -99,7 +99,7 @@ namespace Oscilloscope
             com = RecordLength.ToString();
             com = "Acq:RecordLen " + com;
 
-            DC.SendCommantToTheUnit(com);
+            DC.SendCommandToTheUnit(com);
 
             //  29/09/2021  Добавили +16 точек для Arrow
             SetRecordLengthIntoTutorial(RecordLength + 16);

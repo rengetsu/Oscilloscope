@@ -12,7 +12,7 @@ namespace Oscilloscope
 {
     public class Temperature
     {
-        public const char V = 'T';
+        public const string V = "Check";
 
         DeviceCheck dvc;
 
@@ -40,25 +40,25 @@ namespace Oscilloscope
                         //  Get Temperature
                         case (char)1:
                             Console.WriteLine("INFO:GetTemp?");
-                            dvc.SendCommantToTheUnit(dvc.format(V, i));
+                            dvc.SendCommandToTheUnit(dvc.format(V, i));
                             break;
 
                         //  Get ADC Temperature
                         case (char)2:
                             Console.WriteLine("INFO:GetATemp?");
-                            dvc.SendCommantToTheUnit(dvc.format(V, i));
+                            dvc.SendCommandToTheUnit(dvc.format(V, i));
                             break;
 
                         //  Get Digital Temperature
                         case (char)3:
                             Console.WriteLine("INFO:GetDTemp?");
-                            dvc.SendCommantToTheUnit(dvc.format(V, i));
+                            dvc.SendCommandToTheUnit(dvc.format(V, i));
                             break;
 
                         //  Get Temperature
                         default:
                             Console.WriteLine("INFO:GetTemp?");
-                            dvc.SendCommantToTheUnit(dvc.format(V, i));
+                            dvc.SendCommandToTheUnit(dvc.format(V, i));
                             break;
                     }
                     rez = dvc.GetStringFromTheUnit();
