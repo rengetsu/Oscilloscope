@@ -56,13 +56,75 @@ namespace Oscilloscope
         /// <summary>
         /// Current Sampling Mode Get and Set
         /// </summary>
-        public bool FCurrentSamplingMode
+        public bool FCurrentSamplingMode_
         {
             get
             {
                 return TSamplingModeSelector[samplingModenumber]; 
             } 
             set => TSamplingModeSelector[samplingModenumber] = true; 
+        }
+
+        public String FCurrentSamplingMode()
+        {
+            String FCurrentSamplingMode;
+            if(TSamplingModeSelector[0] == true)
+            {
+                return "SmsRealTime";
+            }
+            else if(TSamplingModeSelector[1] == true)
+            {
+                return "SmsRandom";
+            }
+            else if(TSamplingModeSelector[2] == true)
+            {
+                return "SmsRoll";
+            }
+            else if(TSamplingModeSelector[3] == true)
+            {
+                return "SmsFullAuto";
+            }
+            return FCurrentSamplingMode;
+        }
+
+        public void FCurrentSamplingMode_Set(String samplingMode)
+        {
+            if( samplingMode == "SmsRealTime" )
+            {
+                //  Select Real Time mode
+                SmsRealTime = true;
+                //  Deselect others
+                SmsRandom = false;
+                SmsRoll = false;
+                SmsFullAuto = false;
+            }
+            else if( samplingMode == "SmsRandom" )
+            {
+                //  Select Random mode
+                SmsRandom = true;
+                //  Deselect others
+                SmsRoll = false;
+                SmsFullAuto = false;
+                SmsRealTime = false;
+            }
+            else if( samplingMode == "SmsRoll" )
+            {
+                //  Select Roll mode
+                SmsRoll = true;
+                //  Deselect others
+                SmsRandom = false;
+                SmsRealTime = false;
+                SmsFullAuto = false;
+            }
+            else if( samplingMode == "SmsFullAuto" )
+            {
+                //  Select FullAuto mode
+                SmsFullAuto = true;
+                //  Deselect others
+                SmsRandom = false;
+                SmsRoll = false;
+                SmsRealTime = false;
+            }
         }
 
         /// <summary>
@@ -92,7 +154,7 @@ namespace Oscilloscope
         /// Get Current Sampling Mode
         /// </summary>
         /// <returns></returns>
-        public int GetFCurrentSamplingMode() => FCurrentSamplingMode ? 1 : 0;
+        public int GetFCurrentSamplingMode() => FCurrentSamplingMode_ ? 1 : 0;
 
         /// <summary>
         /// Get function for TTB Parameters - Record Length, Sample Rate and Scale

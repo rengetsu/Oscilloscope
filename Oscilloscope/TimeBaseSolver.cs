@@ -19,7 +19,6 @@ namespace Oscilloscope
         BugFinderSearch BFS = new BugFinderSearch();
 
         //  Variables that we will use outside class
-        public String FCurrentSamplingMode = "smsRandom";
         public double Resolution = 2E-10;
         public const double cADC_Period = 200E-12;
 
@@ -318,7 +317,7 @@ namespace Oscilloscope
             //  Assert(Random = (FCurrentSamplingMode = smsRandom), 'Резолюция конфликтует с Sample Mode');
 
             //  2019-02-27 Резолюция и будет конфликтовать с Cемпл моде при переключении семпл моды!
-            if (FCurrentSamplingMode == "smsRandom")
+            if (HNDS.FCurrentSamplingMode() == "smsRandom")
             {
                 Random = true;
             }
@@ -326,7 +325,8 @@ namespace Oscilloscope
             {
                 Random = false;
             }
-            FCurrentSamplingMode = "smsRandom";
+            HNDS.FCurrentSamplingMode_Set("smsRandom");
+            
 
             if(Random)
             {
@@ -477,7 +477,7 @@ namespace Oscilloscope
         {
             //  Variables used in this function
             Boolean Result;
-            if ( FCurrentSamplingMode == "smsRandom" )
+            if ( HNDS.FCurrentSamplingMode() == "smsRandom" )
             {
                 Result = FParams[TtbSmplRate] > 99999999990;
             }
