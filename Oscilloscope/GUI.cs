@@ -152,8 +152,8 @@ namespace Oscilloscope
 
         private void adjustmentToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Adjustments adjustments = new Adjustments();
-            adjustments.Show();
+            AccessAdjustment AdjAcc = new AccessAdjustment();
+            AdjAcc.Show();
         }
     }
 }

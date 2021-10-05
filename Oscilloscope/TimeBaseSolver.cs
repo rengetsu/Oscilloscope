@@ -15,12 +15,12 @@ namespace Oscilloscope
     public class TimeBaseSolver
     {
         Handlers HNDS;
+        BaseTypes BT;
         Channel CH = new Channel();
         BugFinderSearch BFS = new BugFinderSearch();
 
         //  Variables that we will use outside class
         public double Resolution = 2E-10;
-        public const double cADC_Period = 200E-12;
 
         // Текущее значение 2-х настоящих параметров
         double[] FParams = new double[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
@@ -351,7 +351,7 @@ namespace Oscilloscope
                     }
                 }
 
-                vDivider = cADC_Period / Resolution;
+                vDivider = BT.cADC_Period / Resolution;
                 double forCheck = Math.Round(vDivider);
                 Divider = (int)forCheck;
                 if(Divider == 1)
@@ -386,7 +386,7 @@ namespace Oscilloscope
                     LimCorrected = true;
                 }
 
-                vMultiplier = Resolution / cADC_Period;
+                vMultiplier = Resolution / BT.cADC_Period;
                 //  Round(vMultiplier) - При малых Multiplier в половине случаев округлял резолюцию в бОльшую сторону, что уменьшало
                 if (CH.GetCountOfAcquiredChannels() == 2)
                 {
@@ -431,7 +431,7 @@ namespace Oscilloscope
                 Result = LimCorrected;
                 if(Result)
                 {
-                    Resolution = cADC_Period * Multiplier;
+                    Resolution = BT.cADC_Period * Multiplier;
                 }
             }
         }

@@ -9,8 +9,8 @@ namespace Oscilloscope
     public class BaseTypes
     {
         ///  Constant values
-        public const double cADC_Period = 200E-12;      ///  200 ps ADC Period One Channel
-        public const double cFIP_Period = 3200E-12;     ///  3.2 ns Fine Interpolator Period
+        public double cADC_Period = 200E-12;      ///  200 ps ADC Period One Channel
+        public double cFIP_Period = 3200E-12;     ///  3.2 ns Fine Interpolator Period
 
         //     В приборе имеются два цифровых интерполятора и плавный интерполятор.
         //

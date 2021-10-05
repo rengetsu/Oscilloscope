@@ -8,6 +8,9 @@ namespace Oscilloscope
 {
     public class Channel
     {
+        Handlers HND;
+        BaseTypes BT;
+
         private const int channel_number = 2;   //  В Arrow 2 канала
 
         private Channels[] channels;
@@ -50,6 +53,21 @@ namespace Oscilloscope
                     Result++;
                 }
             }
+
+            if(Result == 2)
+            {
+                BT.cADC_Period = 400E-12;
+            }
+            else
+            {
+                BT.cADC_Period = 200E-12;
+            }
+
+            if( HND.FCurrentSamplingMode() == "smsRandom" )
+            {
+                BT.cADC_Period = 400E-12;
+            }
+
             //  RecordLengthToPribor(PriborRecLength);
             return Result;
         }

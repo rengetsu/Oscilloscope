@@ -25,7 +25,7 @@ namespace Oscilloscope
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Process.Start(BL.getLoadPath());
-            //Application.Run(new Load());
+            //Application.Run(new GUI());
         }
     }
 }
