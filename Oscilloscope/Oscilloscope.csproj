@@ -70,11 +70,17 @@
     <Compile Include="AcquisitionParameters.Designer.cs">
       <DependentUpon>AcquisitionParameters.cs</DependentUpon>
     </Compile>
-    <Compile Include="Adjustments.cs">
+    <Compile Include="Adjustments_TB_Delay.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Adjustments.Designer.cs">
-      <DependentUpon>Adjustments.cs</DependentUpon>
+    <Compile Include="Adjustments_TB_Delay.Designer.cs">
+      <DependentUpon>Adjustments_TB_Delay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Adjustments_Vertical.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adjustments_Vertical.Designer.cs">
+      <DependentUpon>Adjustments_Vertical.cs</DependentUpon>
     </Compile>
     <Compile Include="Animations.cs" />
     <Compile Include="BaseTypes.cs" />
@@ -143,8 +149,11 @@
     <EmbeddedResource Include="AcquisitionParameters.resx">
       <DependentUpon>AcquisitionParameters.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Adjustments.resx">
-      <DependentUpon>Adjustments.cs</DependentUpon>
+    <EmbeddedResource Include="Adjustments_TB_Delay.resx">
+      <DependentUpon>Adjustments_TB_Delay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Adjustments_Vertical.resx">
+      <DependentUpon>Adjustments_Vertical.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BugFinder.resx">
       <DependentUpon>BugFinder.cs</DependentUpon>

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Oscilloscope
 {
-    public partial class Adjustments : Form
+    public partial class Adjustments_Vertical : Form
     {
-        public Adjustments()
+        public Adjustments_Vertical()
         {
             InitializeComponent();
         }
