@@ -16,5 +16,10 @@ namespace Oscilloscope
         {
             InitializeComponent();
         }
+
+        private void Adjustments_TB_Delay_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
