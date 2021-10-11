@@ -82,6 +82,7 @@
     <Compile Include="Adjustments_Vertical.Designer.cs">
       <DependentUpon>Adjustments_Vertical.cs</DependentUpon>
     </Compile>
+    <Compile Include="Adjust_Interpolator.cs" />
     <Compile Include="Animations.cs" />
     <Compile Include="BaseTypes.cs" />
     <Compile Include="BootloaderLaunch.cs" />
