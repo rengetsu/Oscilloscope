@@ -80,7 +80,7 @@ namespace Oscilloscope
         /// </summary>
         /// <param name="IP_Val">Interpolator value</param>
         /// <param name="kat"></param>
-        public void TInterpolAutoAdjust_AddValue(ushort IP_Val, int kat = 1)
+        public void TInterpolAutoAdjust_AddValue(ushort IP_Val, int Krat = 1)
         {
             int Val;
 
@@ -98,6 +98,8 @@ namespace Oscilloscope
             }
 
             // Нужно добавить точку
+            FLyrSum = FLyrSum + Krat;
+            Val = Val + Krat;
 
             if (Val > 255)
             {
@@ -137,13 +139,16 @@ namespace Oscilloscope
                 si = 0;
                 for( L = 0; L < cHighLayer; L++ )
                 {
-
+                    si = si + FLyrHysts[L, I];
                 }
 
                 FHyst[I] = (ushort)si;
 
                 if( si > 0 )
                 {
+                    HystCount++;
+                    Hits = Hits + si;
+
                     FHystRight = (ushort)I;
                     if (I < FHystLeft)
                     {
@@ -179,6 +184,23 @@ namespace Oscilloscope
 
             thresh = FHystMeanHeight * cThreshPerc / 100;
 
+            for(I = FHystLeft; I < FHystRight; I++)
+            {
+                if( FHyst[I] > thresh )
+                {
+                    FLowIPCode = (ushort)I;
+                    break;
+                }
+            }
+
+            for (I = FHystRight; I < FHystLeft; I--)
+            {
+                if (FHyst[I] > thresh)
+                {
+                    FHighIPCode = (ushort)I;
+                    break;
+                }
+            }
         }
 
         /// <summary>
@@ -191,6 +213,11 @@ namespace Oscilloscope
             FLyrSum = 0;
 
             //  FillChar(FLyrHysts[FLyr], SizeOf(FLyrHysts[0]), 0);
+            int arr_len = FLyrHysts.Length;
+            for(int i = 0 ; i < arr_len; i++)
+            {
+                FLyrHysts[i, 0] = 0;
+            }
         }
 
         /// <summary>
@@ -213,6 +240,46 @@ namespace Oscilloscope
 
             //  2018-01-26 - было  Fin := (FLyrSum >= 6000) OR (FLyrMax >= 200);
             Fin = (FLyrSum >= 6000);
+
+                // Для отладки чтоб быстро!!!
+                //Fin := (FLyrSum >= 600) OR (FLyrMax >= 200);
+
+            if( (!Fin) && (FLyrSum >= 1000) )
+            {
+                Dur = DateTime.UtcNow.Ticks - FLyrStartTime;
+                Fin = Dur > cTimeInterval;
+            }
+
+            if( !Fin )
+            {
+                //  Exit
+                return;
+            }
+
+            //  Нужно перейти на другой слой
+            FFilledLyrs++;
+
+            Part555 = 555;
+            if( TInterpolAutoAdjust_StatisticsReady(Part555) )
+            {
+                //  Вычисляем суммарную гистограмму и ее параметры
+                TInterpolAutoAdjust_CalcSumSistogrammAndItsParams();
+
+                if( FHystMeanHeight > 0 )
+                {
+                    //  Вычисляем крайние границы кодов интерполяторов
+                    TInterpolAutoAdjust_Calc_Low_High_IPCode();
+                }
+
+                if( FHystMeanHeight == 0 )
+                {
+                    //  Exit
+                    return;
+                }
+            }
+
+            //  Только после вычисления статистики, так как ща самый старый слой обнулится
+            TInterpolAutoAdjust_SwitchToNextLyr();
         }
 
         /// <summary>
@@ -274,6 +341,5 @@ namespace Oscilloscope
 
             TInterpolAutoAdjust_ClrLyr(FLyr);
         }
-
     }
 }
