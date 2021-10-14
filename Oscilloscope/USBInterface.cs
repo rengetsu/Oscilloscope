@@ -30,6 +30,15 @@ namespace Oscilloscope
         //  Byte array
         public byte A { get; private set; }
 
+        public void ConnectionOn()
+        {
+            do
+            {
+                MainStartUsb();
+            }
+            while (true);
+        }
+
         /// <summary>
         /// Get A array
         /// </summary>
@@ -80,7 +89,7 @@ namespace Oscilloscope
         /// Main function to connect with USB
         /// </summary>
         /// <returns>Returning a true or false depending on whether it turned out to be connected via USB or not</returns>
-        bool MainStartUsb()
+        public bool MainStartUsb()
         {
             GetA();         //  Get A array
             result = true;  //  Give a positive result
@@ -107,6 +116,7 @@ namespace Oscilloscope
 
                 throw new Exception(String.Format("Can't read Windows USB Pipe!"), ex);
             }
+            ConnectionOn();
             //  Returning a result
             return result;
         }

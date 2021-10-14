@@ -67,7 +67,6 @@ namespace Oscilloscope
 
         public String FCurrentSamplingMode()
         {
-            String FCurrentSamplingMode;
             if(TSamplingModeSelector[0] == true)
             {
                 return "SmsRealTime";
@@ -84,7 +83,10 @@ namespace Oscilloscope
             {
                 return "SmsFullAuto";
             }
-            return FCurrentSamplingMode;
+            else
+            {
+                return "SmsFullAuto";
+            }
         }
 
         public void FCurrentSamplingMode_Set(String samplingMode)

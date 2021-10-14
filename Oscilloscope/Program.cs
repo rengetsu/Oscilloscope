@@ -26,6 +26,9 @@ namespace Oscilloscope
             Application.SetCompatibleTextRenderingDefault(false);
             Process.Start(BL.getLoadPath());
             //Application.Run(new GUI());
+
+            USBInterface USBIntrf = new USBInterface();
+            USBIntrf.MainStartUsb();
         }
     }
 }
