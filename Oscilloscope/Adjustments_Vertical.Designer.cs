@@ -35,6 +35,38 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Ch1BridgeVolt_TextBox = new System.Windows.Forms.TextBox();
+            this.Ch1_BridgeVolt_Label = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox37 = new System.Windows.Forms.PictureBox();
+            this.pictureBox38 = new System.Windows.Forms.PictureBox();
+            this.pictureBox39 = new System.Windows.Forms.PictureBox();
+            this.Ch2BridgeBal_Label = new System.Windows.Forms.Label();
+            this.pictureBox40 = new System.Windows.Forms.PictureBox();
+            this.pictureBox41 = new System.Windows.Forms.PictureBox();
+            this.pictureBox42 = new System.Windows.Forms.PictureBox();
+            this.Ch2BridgeBal_TextBox = new System.Windows.Forms.TextBox();
+            this.pictureBox43 = new System.Windows.Forms.PictureBox();
+            this.pictureBox44 = new System.Windows.Forms.PictureBox();
+            this.pictureBox45 = new System.Windows.Forms.PictureBox();
+            this.pictureBox46 = new System.Windows.Forms.PictureBox();
+            this.pictureBox48 = new System.Windows.Forms.PictureBox();
+            this.Ch2BridgeVolt_TextBox = new System.Windows.Forms.TextBox();
+            this.pictureBox49 = new System.Windows.Forms.PictureBox();
+            this.pictureBox50 = new System.Windows.Forms.PictureBox();
+            this.Ch2BridgeVolt_Label = new System.Windows.Forms.Label();
+            this.Ch1BridgeBal_Label = new System.Windows.Forms.Label();
+            this.pictureBox51 = new System.Windows.Forms.PictureBox();
+            this.pictureBox52 = new System.Windows.Forms.PictureBox();
+            this.pictureBox53 = new System.Windows.Forms.PictureBox();
+            this.pictureBox54 = new System.Windows.Forms.PictureBox();
+            this.pictureBox55 = new System.Windows.Forms.PictureBox();
+            this.Ch1BridgeBal_TextBox = new System.Windows.Forms.TextBox();
+            this.pictureBox56 = new System.Windows.Forms.PictureBox();
             this.Ch1Balance_TextBox = new System.Windows.Forms.TextBox();
             this.Ch1Balance_Label = new System.Windows.Forms.Label();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
@@ -68,38 +100,6 @@
             this.pictureBox34 = new System.Windows.Forms.PictureBox();
             this.pictureBox36 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.Ch1BridgeVolt_TextBox = new System.Windows.Forms.TextBox();
-            this.Ch1_BridgeVolt_Label = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox37 = new System.Windows.Forms.PictureBox();
-            this.pictureBox38 = new System.Windows.Forms.PictureBox();
-            this.pictureBox39 = new System.Windows.Forms.PictureBox();
-            this.Ch2BridgeBal_Label = new System.Windows.Forms.Label();
-            this.pictureBox40 = new System.Windows.Forms.PictureBox();
-            this.pictureBox41 = new System.Windows.Forms.PictureBox();
-            this.pictureBox42 = new System.Windows.Forms.PictureBox();
-            this.Ch2BridgeBal_TextBox = new System.Windows.Forms.TextBox();
-            this.pictureBox43 = new System.Windows.Forms.PictureBox();
-            this.pictureBox44 = new System.Windows.Forms.PictureBox();
-            this.pictureBox45 = new System.Windows.Forms.PictureBox();
-            this.pictureBox46 = new System.Windows.Forms.PictureBox();
-            this.pictureBox48 = new System.Windows.Forms.PictureBox();
-            this.Ch2BridgeVolt_TextBox = new System.Windows.Forms.TextBox();
-            this.pictureBox49 = new System.Windows.Forms.PictureBox();
-            this.pictureBox50 = new System.Windows.Forms.PictureBox();
-            this.Ch2BridgeVolt_Label = new System.Windows.Forms.Label();
-            this.Ch1BridgeBal_Label = new System.Windows.Forms.Label();
-            this.pictureBox51 = new System.Windows.Forms.PictureBox();
-            this.pictureBox52 = new System.Windows.Forms.PictureBox();
-            this.pictureBox53 = new System.Windows.Forms.PictureBox();
-            this.pictureBox54 = new System.Windows.Forms.PictureBox();
-            this.pictureBox55 = new System.Windows.Forms.PictureBox();
-            this.Ch1BridgeBal_TextBox = new System.Windows.Forms.TextBox();
-            this.pictureBox56 = new System.Windows.Forms.PictureBox();
             this.pictureBox57 = new System.Windows.Forms.PictureBox();
             this.pictureBox58 = new System.Windows.Forms.PictureBox();
             this.pictureBox59 = new System.Windows.Forms.PictureBox();
@@ -108,6 +108,30 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox39)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox40)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox42)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox43)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox44)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox45)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox46)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox48)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox49)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox50)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox51)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox52)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox53)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox54)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox55)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox56)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
@@ -133,30 +157,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox36)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox39)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox40)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox42)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox43)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox44)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox45)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox46)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox48)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox49)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox50)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox51)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox52)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox53)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox54)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox55)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox56)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox57)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox58)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox59)).BeginInit();
@@ -248,6 +248,342 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(210, 164);
             this.panel1.TabIndex = 5;
+            // 
+            // Ch1BridgeVolt_TextBox
+            // 
+            this.Ch1BridgeVolt_TextBox.BackColor = System.Drawing.Color.Black;
+            this.Ch1BridgeVolt_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Ch1BridgeVolt_TextBox.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Ch1BridgeVolt_TextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(132)))));
+            this.Ch1BridgeVolt_TextBox.Location = new System.Drawing.Point(5, 47);
+            this.Ch1BridgeVolt_TextBox.Margin = new System.Windows.Forms.Padding(0);
+            this.Ch1BridgeVolt_TextBox.Name = "Ch1BridgeVolt_TextBox";
+            this.Ch1BridgeVolt_TextBox.ReadOnly = true;
+            this.Ch1BridgeVolt_TextBox.Size = new System.Drawing.Size(92, 20);
+            this.Ch1BridgeVolt_TextBox.TabIndex = 84;
+            this.Ch1BridgeVolt_TextBox.Text = " 0 %";
+            // 
+            // Ch1_BridgeVolt_Label
+            // 
+            this.Ch1_BridgeVolt_Label.AutoSize = true;
+            this.Ch1_BridgeVolt_Label.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Ch1_BridgeVolt_Label.Location = new System.Drawing.Point(2, 32);
+            this.Ch1_BridgeVolt_Label.Name = "Ch1_BridgeVolt_Label";
+            this.Ch1_BridgeVolt_Label.Size = new System.Drawing.Size(96, 15);
+            this.Ch1_BridgeVolt_Label.TabIndex = 109;
+            this.Ch1_BridgeVolt_Label.Text = "Ch1 Bridge Volt.";
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(5, 140);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(20, 18);
+            this.pictureBox5.TabIndex = 93;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(186, 140);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(20, 18);
+            this.pictureBox6.TabIndex = 104;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
+            this.pictureBox8.Location = new System.Drawing.Point(5, 70);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(20, 18);
+            this.pictureBox8.TabIndex = 79;
+            this.pictureBox8.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
+            this.pictureBox9.Location = new System.Drawing.Point(77, 70);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(20, 18);
+            this.pictureBox9.TabIndex = 83;
+            this.pictureBox9.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
+            this.pictureBox10.Location = new System.Drawing.Point(167, 70);
+            this.pictureBox10.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(20, 18);
+            this.pictureBox10.TabIndex = 89;
+            this.pictureBox10.TabStop = false;
+            // 
+            // pictureBox37
+            // 
+            this.pictureBox37.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox37.Image")));
+            this.pictureBox37.Location = new System.Drawing.Point(114, 140);
+            this.pictureBox37.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox37.Name = "pictureBox37";
+            this.pictureBox37.Size = new System.Drawing.Size(20, 18);
+            this.pictureBox37.TabIndex = 100;
+            this.pictureBox37.TabStop = false;
+            // 
+            // pictureBox38
+            // 
+            this.pictureBox38.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox38.Image")));
+            this.pictureBox38.Location = new System.Drawing.Point(152, 70);
+            this.pictureBox38.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox38.Name = "pictureBox38";
+            this.pictureBox38.Size = new System.Drawing.Size(16, 18);
+            this.pictureBox38.TabIndex = 88;
+            this.pictureBox38.TabStop = false;
+            // 
+            // pictureBox39
+            // 
+            this.pictureBox39.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox39.Image")));
+            this.pictureBox39.Location = new System.Drawing.Point(5, 136);
+            this.pictureBox39.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox39.Name = "pictureBox39";
+            this.pictureBox39.Size = new System.Drawing.Size(92, 5);
+            this.pictureBox39.TabIndex = 99;
+            this.pictureBox39.TabStop = false;
+            // 
+            // Ch2BridgeBal_Label
+            // 
+            this.Ch2BridgeBal_Label.AutoSize = true;
+            this.Ch2BridgeBal_Label.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Ch2BridgeBal_Label.Location = new System.Drawing.Point(111, 102);
+            this.Ch2BridgeBal_Label.Name = "Ch2BridgeBal_Label";
+            this.Ch2BridgeBal_Label.Size = new System.Drawing.Size(90, 15);
+            this.Ch2BridgeBal_Label.TabIndex = 112;
+            this.Ch2BridgeBal_Label.Text = "Ch2 Bridge Bal";
+            // 
+            // pictureBox40
+            // 
+            this.pictureBox40.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox40.Image")));
+            this.pictureBox40.Location = new System.Drawing.Point(5, 66);
+            this.pictureBox40.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox40.Name = "pictureBox40";
+            this.pictureBox40.Size = new System.Drawing.Size(92, 5);
+            this.pictureBox40.TabIndex = 85;
+            this.pictureBox40.TabStop = false;
+            // 
+            // pictureBox41
+            // 
+            this.pictureBox41.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox41.Image")));
+            this.pictureBox41.Location = new System.Drawing.Point(167, 140);
+            this.pictureBox41.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox41.Name = "pictureBox41";
+            this.pictureBox41.Size = new System.Drawing.Size(20, 18);
+            this.pictureBox41.TabIndex = 103;
+            this.pictureBox41.TabStop = false;
+            // 
+            // pictureBox42
+            // 
+            this.pictureBox42.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox42.Image")));
+            this.pictureBox42.Location = new System.Drawing.Point(24, 140);
+            this.pictureBox42.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox42.Name = "pictureBox42";
+            this.pictureBox42.Size = new System.Drawing.Size(20, 18);
+            this.pictureBox42.TabIndex = 94;
+            this.pictureBox42.TabStop = false;
+            // 
+            // Ch2BridgeBal_TextBox
+            // 
+            this.Ch2BridgeBal_TextBox.BackColor = System.Drawing.Color.Black;
+            this.Ch2BridgeBal_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Ch2BridgeBal_TextBox.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Ch2BridgeBal_TextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.Ch2BridgeBal_TextBox.Location = new System.Drawing.Point(114, 117);
+            this.Ch2BridgeBal_TextBox.Margin = new System.Windows.Forms.Padding(0);
+            this.Ch2BridgeBal_TextBox.Name = "Ch2BridgeBal_TextBox";
+            this.Ch2BridgeBal_TextBox.ReadOnly = true;
+            this.Ch2BridgeBal_TextBox.Size = new System.Drawing.Size(92, 20);
+            this.Ch2BridgeBal_TextBox.TabIndex = 105;
+            this.Ch2BridgeBal_TextBox.Text = " 80 %";
+            // 
+            // pictureBox43
+            // 
+            this.pictureBox43.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox43.Image")));
+            this.pictureBox43.Location = new System.Drawing.Point(114, 66);
+            this.pictureBox43.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox43.Name = "pictureBox43";
+            this.pictureBox43.Size = new System.Drawing.Size(92, 5);
+            this.pictureBox43.TabIndex = 92;
+            this.pictureBox43.TabStop = false;
+            // 
+            // pictureBox44
+            // 
+            this.pictureBox44.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox44.Image")));
+            this.pictureBox44.Location = new System.Drawing.Point(24, 70);
+            this.pictureBox44.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox44.Name = "pictureBox44";
+            this.pictureBox44.Size = new System.Drawing.Size(20, 18);
+            this.pictureBox44.TabIndex = 80;
+            this.pictureBox44.TabStop = false;
+            // 
+            // pictureBox45
+            // 
+            this.pictureBox45.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox45.Image")));
+            this.pictureBox45.Location = new System.Drawing.Point(58, 70);
+            this.pictureBox45.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox45.Name = "pictureBox45";
+            this.pictureBox45.Size = new System.Drawing.Size(20, 18);
+            this.pictureBox45.TabIndex = 82;
+            this.pictureBox45.TabStop = false;
+            // 
+            // pictureBox46
+            // 
+            this.pictureBox46.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox46.Image")));
+            this.pictureBox46.Location = new System.Drawing.Point(186, 70);
+            this.pictureBox46.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox46.Name = "pictureBox46";
+            this.pictureBox46.Size = new System.Drawing.Size(20, 18);
+            this.pictureBox46.TabIndex = 90;
+            this.pictureBox46.TabStop = false;
+            // 
+            // pictureBox48
+            // 
+            this.pictureBox48.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox48.Image")));
+            this.pictureBox48.Location = new System.Drawing.Point(58, 140);
+            this.pictureBox48.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox48.Name = "pictureBox48";
+            this.pictureBox48.Size = new System.Drawing.Size(20, 18);
+            this.pictureBox48.TabIndex = 96;
+            this.pictureBox48.TabStop = false;
+            // 
+            // Ch2BridgeVolt_TextBox
+            // 
+            this.Ch2BridgeVolt_TextBox.BackColor = System.Drawing.Color.Black;
+            this.Ch2BridgeVolt_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Ch2BridgeVolt_TextBox.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Ch2BridgeVolt_TextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.Ch2BridgeVolt_TextBox.Location = new System.Drawing.Point(5, 117);
+            this.Ch2BridgeVolt_TextBox.Margin = new System.Windows.Forms.Padding(0);
+            this.Ch2BridgeVolt_TextBox.Name = "Ch2BridgeVolt_TextBox";
+            this.Ch2BridgeVolt_TextBox.ReadOnly = true;
+            this.Ch2BridgeVolt_TextBox.Size = new System.Drawing.Size(92, 20);
+            this.Ch2BridgeVolt_TextBox.TabIndex = 98;
+            this.Ch2BridgeVolt_TextBox.Text = " 0 %";
+            // 
+            // pictureBox49
+            // 
+            this.pictureBox49.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox49.Image")));
+            this.pictureBox49.Location = new System.Drawing.Point(133, 70);
+            this.pictureBox49.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox49.Name = "pictureBox49";
+            this.pictureBox49.Size = new System.Drawing.Size(20, 18);
+            this.pictureBox49.TabIndex = 87;
+            this.pictureBox49.TabStop = false;
+            // 
+            // pictureBox50
+            // 
+            this.pictureBox50.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox50.Image")));
+            this.pictureBox50.Location = new System.Drawing.Point(133, 140);
+            this.pictureBox50.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox50.Name = "pictureBox50";
+            this.pictureBox50.Size = new System.Drawing.Size(20, 18);
+            this.pictureBox50.TabIndex = 101;
+            this.pictureBox50.TabStop = false;
+            // 
+            // Ch2BridgeVolt_Label
+            // 
+            this.Ch2BridgeVolt_Label.AutoSize = true;
+            this.Ch2BridgeVolt_Label.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Ch2BridgeVolt_Label.Location = new System.Drawing.Point(2, 102);
+            this.Ch2BridgeVolt_Label.Name = "Ch2BridgeVolt_Label";
+            this.Ch2BridgeVolt_Label.Size = new System.Drawing.Size(96, 15);
+            this.Ch2BridgeVolt_Label.TabIndex = 111;
+            this.Ch2BridgeVolt_Label.Text = "Ch2 Bridge Volt.";
+            // 
+            // Ch1BridgeBal_Label
+            // 
+            this.Ch1BridgeBal_Label.AutoSize = true;
+            this.Ch1BridgeBal_Label.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Ch1BridgeBal_Label.Location = new System.Drawing.Point(111, 32);
+            this.Ch1BridgeBal_Label.Name = "Ch1BridgeBal_Label";
+            this.Ch1BridgeBal_Label.Size = new System.Drawing.Size(90, 15);
+            this.Ch1BridgeBal_Label.TabIndex = 110;
+            this.Ch1BridgeBal_Label.Text = "Ch1 Bridge Bal";
+            // 
+            // pictureBox51
+            // 
+            this.pictureBox51.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox51.Image")));
+            this.pictureBox51.Location = new System.Drawing.Point(152, 140);
+            this.pictureBox51.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox51.Name = "pictureBox51";
+            this.pictureBox51.Size = new System.Drawing.Size(16, 18);
+            this.pictureBox51.TabIndex = 102;
+            this.pictureBox51.TabStop = false;
+            // 
+            // pictureBox52
+            // 
+            this.pictureBox52.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox52.Image")));
+            this.pictureBox52.Location = new System.Drawing.Point(114, 70);
+            this.pictureBox52.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox52.Name = "pictureBox52";
+            this.pictureBox52.Size = new System.Drawing.Size(20, 18);
+            this.pictureBox52.TabIndex = 86;
+            this.pictureBox52.TabStop = false;
+            // 
+            // pictureBox53
+            // 
+            this.pictureBox53.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox53.Image")));
+            this.pictureBox53.Location = new System.Drawing.Point(77, 140);
+            this.pictureBox53.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox53.Name = "pictureBox53";
+            this.pictureBox53.Size = new System.Drawing.Size(20, 18);
+            this.pictureBox53.TabIndex = 97;
+            this.pictureBox53.TabStop = false;
+            // 
+            // pictureBox54
+            // 
+            this.pictureBox54.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox54.Image")));
+            this.pictureBox54.Location = new System.Drawing.Point(43, 140);
+            this.pictureBox54.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox54.Name = "pictureBox54";
+            this.pictureBox54.Size = new System.Drawing.Size(16, 18);
+            this.pictureBox54.TabIndex = 95;
+            this.pictureBox54.TabStop = false;
+            // 
+            // pictureBox55
+            // 
+            this.pictureBox55.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox55.Image")));
+            this.pictureBox55.Location = new System.Drawing.Point(114, 136);
+            this.pictureBox55.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox55.Name = "pictureBox55";
+            this.pictureBox55.Size = new System.Drawing.Size(92, 5);
+            this.pictureBox55.TabIndex = 106;
+            this.pictureBox55.TabStop = false;
+            // 
+            // Ch1BridgeBal_TextBox
+            // 
+            this.Ch1BridgeBal_TextBox.BackColor = System.Drawing.Color.Black;
+            this.Ch1BridgeBal_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Ch1BridgeBal_TextBox.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Ch1BridgeBal_TextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(132)))));
+            this.Ch1BridgeBal_TextBox.Location = new System.Drawing.Point(114, 47);
+            this.Ch1BridgeBal_TextBox.Margin = new System.Windows.Forms.Padding(0);
+            this.Ch1BridgeBal_TextBox.Name = "Ch1BridgeBal_TextBox";
+            this.Ch1BridgeBal_TextBox.ReadOnly = true;
+            this.Ch1BridgeBal_TextBox.Size = new System.Drawing.Size(92, 20);
+            this.Ch1BridgeBal_TextBox.TabIndex = 91;
+            this.Ch1BridgeBal_TextBox.Text = " 80 %";
+            // 
+            // pictureBox56
+            // 
+            this.pictureBox56.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox56.Image")));
+            this.pictureBox56.Location = new System.Drawing.Point(43, 70);
+            this.pictureBox56.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox56.Name = "pictureBox56";
+            this.pictureBox56.Size = new System.Drawing.Size(16, 18);
+            this.pictureBox56.TabIndex = 81;
+            this.pictureBox56.TabStop = false;
             // 
             // Ch1Balance_TextBox
             // 
@@ -624,342 +960,6 @@
             this.panel2.Size = new System.Drawing.Size(210, 148);
             this.panel2.TabIndex = 6;
             // 
-            // Ch1BridgeVolt_TextBox
-            // 
-            this.Ch1BridgeVolt_TextBox.BackColor = System.Drawing.Color.Black;
-            this.Ch1BridgeVolt_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Ch1BridgeVolt_TextBox.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Ch1BridgeVolt_TextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(132)))));
-            this.Ch1BridgeVolt_TextBox.Location = new System.Drawing.Point(5, 47);
-            this.Ch1BridgeVolt_TextBox.Margin = new System.Windows.Forms.Padding(0);
-            this.Ch1BridgeVolt_TextBox.Name = "Ch1BridgeVolt_TextBox";
-            this.Ch1BridgeVolt_TextBox.ReadOnly = true;
-            this.Ch1BridgeVolt_TextBox.Size = new System.Drawing.Size(92, 20);
-            this.Ch1BridgeVolt_TextBox.TabIndex = 84;
-            this.Ch1BridgeVolt_TextBox.Text = " 0 %";
-            // 
-            // Ch1_BridgeVolt_Label
-            // 
-            this.Ch1_BridgeVolt_Label.AutoSize = true;
-            this.Ch1_BridgeVolt_Label.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Ch1_BridgeVolt_Label.Location = new System.Drawing.Point(2, 32);
-            this.Ch1_BridgeVolt_Label.Name = "Ch1_BridgeVolt_Label";
-            this.Ch1_BridgeVolt_Label.Size = new System.Drawing.Size(96, 15);
-            this.Ch1_BridgeVolt_Label.TabIndex = 109;
-            this.Ch1_BridgeVolt_Label.Text = "Ch1 Bridge Volt.";
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(5, 140);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(20, 18);
-            this.pictureBox5.TabIndex = 93;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(186, 140);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(20, 18);
-            this.pictureBox6.TabIndex = 104;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(5, 70);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(20, 18);
-            this.pictureBox8.TabIndex = 79;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(77, 70);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(20, 18);
-            this.pictureBox9.TabIndex = 83;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
-            this.pictureBox10.Location = new System.Drawing.Point(167, 70);
-            this.pictureBox10.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(20, 18);
-            this.pictureBox10.TabIndex = 89;
-            this.pictureBox10.TabStop = false;
-            // 
-            // pictureBox37
-            // 
-            this.pictureBox37.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox37.Image")));
-            this.pictureBox37.Location = new System.Drawing.Point(114, 140);
-            this.pictureBox37.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox37.Name = "pictureBox37";
-            this.pictureBox37.Size = new System.Drawing.Size(20, 18);
-            this.pictureBox37.TabIndex = 100;
-            this.pictureBox37.TabStop = false;
-            // 
-            // pictureBox38
-            // 
-            this.pictureBox38.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox38.Image")));
-            this.pictureBox38.Location = new System.Drawing.Point(152, 70);
-            this.pictureBox38.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox38.Name = "pictureBox38";
-            this.pictureBox38.Size = new System.Drawing.Size(16, 18);
-            this.pictureBox38.TabIndex = 88;
-            this.pictureBox38.TabStop = false;
-            // 
-            // pictureBox39
-            // 
-            this.pictureBox39.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox39.Image")));
-            this.pictureBox39.Location = new System.Drawing.Point(5, 136);
-            this.pictureBox39.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox39.Name = "pictureBox39";
-            this.pictureBox39.Size = new System.Drawing.Size(92, 5);
-            this.pictureBox39.TabIndex = 99;
-            this.pictureBox39.TabStop = false;
-            // 
-            // Ch2BridgeBal_Label
-            // 
-            this.Ch2BridgeBal_Label.AutoSize = true;
-            this.Ch2BridgeBal_Label.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Ch2BridgeBal_Label.Location = new System.Drawing.Point(111, 102);
-            this.Ch2BridgeBal_Label.Name = "Ch2BridgeBal_Label";
-            this.Ch2BridgeBal_Label.Size = new System.Drawing.Size(90, 15);
-            this.Ch2BridgeBal_Label.TabIndex = 112;
-            this.Ch2BridgeBal_Label.Text = "Ch2 Bridge Bal";
-            // 
-            // pictureBox40
-            // 
-            this.pictureBox40.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox40.Image")));
-            this.pictureBox40.Location = new System.Drawing.Point(5, 66);
-            this.pictureBox40.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox40.Name = "pictureBox40";
-            this.pictureBox40.Size = new System.Drawing.Size(92, 5);
-            this.pictureBox40.TabIndex = 85;
-            this.pictureBox40.TabStop = false;
-            // 
-            // pictureBox41
-            // 
-            this.pictureBox41.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox41.Image")));
-            this.pictureBox41.Location = new System.Drawing.Point(167, 140);
-            this.pictureBox41.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox41.Name = "pictureBox41";
-            this.pictureBox41.Size = new System.Drawing.Size(20, 18);
-            this.pictureBox41.TabIndex = 103;
-            this.pictureBox41.TabStop = false;
-            // 
-            // pictureBox42
-            // 
-            this.pictureBox42.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox42.Image")));
-            this.pictureBox42.Location = new System.Drawing.Point(24, 140);
-            this.pictureBox42.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox42.Name = "pictureBox42";
-            this.pictureBox42.Size = new System.Drawing.Size(20, 18);
-            this.pictureBox42.TabIndex = 94;
-            this.pictureBox42.TabStop = false;
-            // 
-            // Ch2BridgeBal_TextBox
-            // 
-            this.Ch2BridgeBal_TextBox.BackColor = System.Drawing.Color.Black;
-            this.Ch2BridgeBal_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Ch2BridgeBal_TextBox.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Ch2BridgeBal_TextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.Ch2BridgeBal_TextBox.Location = new System.Drawing.Point(114, 117);
-            this.Ch2BridgeBal_TextBox.Margin = new System.Windows.Forms.Padding(0);
-            this.Ch2BridgeBal_TextBox.Name = "Ch2BridgeBal_TextBox";
-            this.Ch2BridgeBal_TextBox.ReadOnly = true;
-            this.Ch2BridgeBal_TextBox.Size = new System.Drawing.Size(92, 20);
-            this.Ch2BridgeBal_TextBox.TabIndex = 105;
-            this.Ch2BridgeBal_TextBox.Text = " 80 %";
-            // 
-            // pictureBox43
-            // 
-            this.pictureBox43.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox43.Image")));
-            this.pictureBox43.Location = new System.Drawing.Point(114, 66);
-            this.pictureBox43.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox43.Name = "pictureBox43";
-            this.pictureBox43.Size = new System.Drawing.Size(92, 5);
-            this.pictureBox43.TabIndex = 92;
-            this.pictureBox43.TabStop = false;
-            // 
-            // pictureBox44
-            // 
-            this.pictureBox44.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox44.Image")));
-            this.pictureBox44.Location = new System.Drawing.Point(24, 70);
-            this.pictureBox44.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox44.Name = "pictureBox44";
-            this.pictureBox44.Size = new System.Drawing.Size(20, 18);
-            this.pictureBox44.TabIndex = 80;
-            this.pictureBox44.TabStop = false;
-            // 
-            // pictureBox45
-            // 
-            this.pictureBox45.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox45.Image")));
-            this.pictureBox45.Location = new System.Drawing.Point(58, 70);
-            this.pictureBox45.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox45.Name = "pictureBox45";
-            this.pictureBox45.Size = new System.Drawing.Size(20, 18);
-            this.pictureBox45.TabIndex = 82;
-            this.pictureBox45.TabStop = false;
-            // 
-            // pictureBox46
-            // 
-            this.pictureBox46.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox46.Image")));
-            this.pictureBox46.Location = new System.Drawing.Point(186, 70);
-            this.pictureBox46.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox46.Name = "pictureBox46";
-            this.pictureBox46.Size = new System.Drawing.Size(20, 18);
-            this.pictureBox46.TabIndex = 90;
-            this.pictureBox46.TabStop = false;
-            // 
-            // pictureBox48
-            // 
-            this.pictureBox48.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox48.Image")));
-            this.pictureBox48.Location = new System.Drawing.Point(58, 140);
-            this.pictureBox48.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox48.Name = "pictureBox48";
-            this.pictureBox48.Size = new System.Drawing.Size(20, 18);
-            this.pictureBox48.TabIndex = 96;
-            this.pictureBox48.TabStop = false;
-            // 
-            // Ch2BridgeVolt_TextBox
-            // 
-            this.Ch2BridgeVolt_TextBox.BackColor = System.Drawing.Color.Black;
-            this.Ch2BridgeVolt_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Ch2BridgeVolt_TextBox.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Ch2BridgeVolt_TextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.Ch2BridgeVolt_TextBox.Location = new System.Drawing.Point(5, 117);
-            this.Ch2BridgeVolt_TextBox.Margin = new System.Windows.Forms.Padding(0);
-            this.Ch2BridgeVolt_TextBox.Name = "Ch2BridgeVolt_TextBox";
-            this.Ch2BridgeVolt_TextBox.ReadOnly = true;
-            this.Ch2BridgeVolt_TextBox.Size = new System.Drawing.Size(92, 20);
-            this.Ch2BridgeVolt_TextBox.TabIndex = 98;
-            this.Ch2BridgeVolt_TextBox.Text = " 0 %";
-            // 
-            // pictureBox49
-            // 
-            this.pictureBox49.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox49.Image")));
-            this.pictureBox49.Location = new System.Drawing.Point(133, 70);
-            this.pictureBox49.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox49.Name = "pictureBox49";
-            this.pictureBox49.Size = new System.Drawing.Size(20, 18);
-            this.pictureBox49.TabIndex = 87;
-            this.pictureBox49.TabStop = false;
-            // 
-            // pictureBox50
-            // 
-            this.pictureBox50.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox50.Image")));
-            this.pictureBox50.Location = new System.Drawing.Point(133, 140);
-            this.pictureBox50.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox50.Name = "pictureBox50";
-            this.pictureBox50.Size = new System.Drawing.Size(20, 18);
-            this.pictureBox50.TabIndex = 101;
-            this.pictureBox50.TabStop = false;
-            // 
-            // Ch2BridgeVolt_Label
-            // 
-            this.Ch2BridgeVolt_Label.AutoSize = true;
-            this.Ch2BridgeVolt_Label.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Ch2BridgeVolt_Label.Location = new System.Drawing.Point(2, 102);
-            this.Ch2BridgeVolt_Label.Name = "Ch2BridgeVolt_Label";
-            this.Ch2BridgeVolt_Label.Size = new System.Drawing.Size(96, 15);
-            this.Ch2BridgeVolt_Label.TabIndex = 111;
-            this.Ch2BridgeVolt_Label.Text = "Ch2 Bridge Volt.";
-            // 
-            // Ch1BridgeBal_Label
-            // 
-            this.Ch1BridgeBal_Label.AutoSize = true;
-            this.Ch1BridgeBal_Label.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Ch1BridgeBal_Label.Location = new System.Drawing.Point(111, 32);
-            this.Ch1BridgeBal_Label.Name = "Ch1BridgeBal_Label";
-            this.Ch1BridgeBal_Label.Size = new System.Drawing.Size(90, 15);
-            this.Ch1BridgeBal_Label.TabIndex = 110;
-            this.Ch1BridgeBal_Label.Text = "Ch1 Bridge Bal";
-            // 
-            // pictureBox51
-            // 
-            this.pictureBox51.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox51.Image")));
-            this.pictureBox51.Location = new System.Drawing.Point(152, 140);
-            this.pictureBox51.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox51.Name = "pictureBox51";
-            this.pictureBox51.Size = new System.Drawing.Size(16, 18);
-            this.pictureBox51.TabIndex = 102;
-            this.pictureBox51.TabStop = false;
-            // 
-            // pictureBox52
-            // 
-            this.pictureBox52.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox52.Image")));
-            this.pictureBox52.Location = new System.Drawing.Point(114, 70);
-            this.pictureBox52.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox52.Name = "pictureBox52";
-            this.pictureBox52.Size = new System.Drawing.Size(20, 18);
-            this.pictureBox52.TabIndex = 86;
-            this.pictureBox52.TabStop = false;
-            // 
-            // pictureBox53
-            // 
-            this.pictureBox53.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox53.Image")));
-            this.pictureBox53.Location = new System.Drawing.Point(77, 140);
-            this.pictureBox53.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox53.Name = "pictureBox53";
-            this.pictureBox53.Size = new System.Drawing.Size(20, 18);
-            this.pictureBox53.TabIndex = 97;
-            this.pictureBox53.TabStop = false;
-            // 
-            // pictureBox54
-            // 
-            this.pictureBox54.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox54.Image")));
-            this.pictureBox54.Location = new System.Drawing.Point(43, 140);
-            this.pictureBox54.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox54.Name = "pictureBox54";
-            this.pictureBox54.Size = new System.Drawing.Size(16, 18);
-            this.pictureBox54.TabIndex = 95;
-            this.pictureBox54.TabStop = false;
-            // 
-            // pictureBox55
-            // 
-            this.pictureBox55.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox55.Image")));
-            this.pictureBox55.Location = new System.Drawing.Point(114, 136);
-            this.pictureBox55.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox55.Name = "pictureBox55";
-            this.pictureBox55.Size = new System.Drawing.Size(92, 5);
-            this.pictureBox55.TabIndex = 106;
-            this.pictureBox55.TabStop = false;
-            // 
-            // Ch1BridgeBal_TextBox
-            // 
-            this.Ch1BridgeBal_TextBox.BackColor = System.Drawing.Color.Black;
-            this.Ch1BridgeBal_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Ch1BridgeBal_TextBox.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Ch1BridgeBal_TextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(132)))));
-            this.Ch1BridgeBal_TextBox.Location = new System.Drawing.Point(114, 47);
-            this.Ch1BridgeBal_TextBox.Margin = new System.Windows.Forms.Padding(0);
-            this.Ch1BridgeBal_TextBox.Name = "Ch1BridgeBal_TextBox";
-            this.Ch1BridgeBal_TextBox.ReadOnly = true;
-            this.Ch1BridgeBal_TextBox.Size = new System.Drawing.Size(92, 20);
-            this.Ch1BridgeBal_TextBox.TabIndex = 91;
-            this.Ch1BridgeBal_TextBox.Text = " 80 %";
-            // 
-            // pictureBox56
-            // 
-            this.pictureBox56.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox56.Image")));
-            this.pictureBox56.Location = new System.Drawing.Point(43, 70);
-            this.pictureBox56.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox56.Name = "pictureBox56";
-            this.pictureBox56.Size = new System.Drawing.Size(16, 18);
-            this.pictureBox56.TabIndex = 81;
-            this.pictureBox56.TabStop = false;
-            // 
             // pictureBox57
             // 
             this.pictureBox57.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox57.Image")));
@@ -1004,12 +1004,37 @@
             this.Controls.Add(this.VerticalLabel);
             this.Name = "Adjustments_Vertical";
             this.Text = "Adjustments Vertical";
+            this.Load += new System.EventHandler(this.Adjustments_Vertical_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox39)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox40)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox42)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox43)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox44)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox45)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox46)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox48)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox49)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox50)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox51)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox52)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox53)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox54)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox55)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox56)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
@@ -1036,30 +1061,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox36)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox39)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox40)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox42)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox43)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox44)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox45)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox46)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox48)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox49)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox50)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox51)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox52)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox53)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox54)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox55)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox56)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox57)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox58)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox59)).EndInit();
