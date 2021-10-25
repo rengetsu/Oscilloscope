@@ -16,19 +16,11 @@ namespace Oscilloscope
         [STAThread]
         static void Main()
         {
-            //  Including the bootloader class
-            BootloaderLaunch BL = new BootloaderLaunch();
-
-            //  Change mode to debug in bootloader
-            BL.changeMode("Debug");
-
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Process.Start(BL.getLoadPath());
             //Application.Run(new GUI());
-
-            USBInterface USBIntrf = new USBInterface();
-            USBIntrf.MainStartUsb();
+            Loading load = new Loading();
+            load.MainLoadMethod();
         }
     }
 }
