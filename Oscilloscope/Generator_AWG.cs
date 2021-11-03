@@ -8,5 +8,6 @@ namespace Oscilloscope
 {
     public class Generator_AWG
     {
+        //  Need to add generator awg code here tommorrow
     }
 }
