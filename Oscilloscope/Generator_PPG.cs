@@ -8,5 +8,8 @@ namespace Oscilloscope
 {
     public class Generator_PPG
     {
+        public int Period;
+        public int Delay;
+        public int Width;
     }
 }
