@@ -9,6 +9,7 @@ namespace Oscilloscope
     public class SignalAcqRun
     {
         //  Calling Classes
+        Channel CH;
         Handlers HNDS;
         TimeBase TB = new TimeBase();                   //  TimeBase Class
         BaseTypes BT = new BaseTypes();                 //  BaseTypes Class
@@ -41,7 +42,15 @@ namespace Oscilloscope
         /// <returns></returns>
         long Get_ADC_Freq_ForCurrentResolution()
         {
-            long Result = 5000000000;       // 09/09/2021  Павел добавил 0
+            long Result;
+            if (CH.GetCountOfAcquiredChannels() == 2)
+            {
+                Result = 2500000000;       // 09/09/2021  Павел добавил 0
+            }
+            else
+            {
+                Result = 5000000000;
+            }
             return Result;
         }
 
@@ -69,8 +78,16 @@ namespace Oscilloscope
         /// <returns>Returns real time acquire period in nanoseconds</returns>
         Int64 Get_RT_ACQ_Period_ns()
         {
+            Int64 Result;
             //  Возвращает установленный период сбора реально-временных режимов в наносекундах
-            Int64 Result = (long)Math.Round(1e10 / Get_Physical_SampleRate());
+            if ( CH.GetCountOfAcquiredChannels() == 2 )
+            {
+                Result = (long)Math.Round(5e9 / Get_Physical_SampleRate());
+            }
+            else
+            {
+                Result = (long)Math.Round(1e10 / Get_Physical_SampleRate());
+            }
             return Result;
         }
 
