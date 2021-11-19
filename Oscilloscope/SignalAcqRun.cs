@@ -143,7 +143,7 @@ namespace Oscilloscope
             //  2017-06-07 при WO_Interpol интерполятор не учитывается, например при усреднении!!!
             double Result = 0;
             double dTime;
-            double Period_ns;
+            long Period_ns;
             double DigPart;  //  2016-01-28 - было byte - Работа с DIP4 "вешалась при времени на точку 1 мкс или более
             long FineIP_Min = 0;
             long FineIP_Scale = 0;
