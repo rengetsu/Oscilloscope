@@ -19,11 +19,14 @@ namespace Oscilloscope
         Channel CH = new Channel();
         BugFinderSearch BFS = new BugFinderSearch();
 
+        Double[] TTB_ParamValues;
+        Double[] FFixParams;
+
         //  Variables that we will use outside class
         public double Resolution = 2E-10;
 
         // Текущее значение 2-х настоящих параметров
-        double[] FParams = new double[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        double[] FParams = new double[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
         //
         //(************************************************************************)
@@ -142,6 +145,8 @@ namespace Oscilloscope
         uint[] cRecordLengthsForScale = new uint[]  {50, 80, 100, 125, 200, 250, 400, 500, 625, 800, 1000, 1250,
         2000, 2500, 4000, 5000, 6250, 8000, 10000, 12500, 20000, 40000, 50000,
         62500, 80000, 100000, 125000, 200000, 250000};
+
+        enum TTB_Params : int {ttbpRecLen = 0, ttbpSmplRate = 0, ttbpScale = 0 }
 
         public int TtbSmplRate { get; set; } = (int)_CalcSmpl_Rate(1, 1);
 
@@ -503,6 +508,75 @@ namespace Oscilloscope
         public bool GetCurrentSamplingMode(int fCurrentSamplingMode)
         {
             bool Result = HNDS.TSamplingModeSelector[fCurrentSamplingMode];
+            return Result;
+        }
+
+        /// <summary>
+        /// Do scale fine step command (priority: sample rate)
+        /// </summary>
+        /// <param name="StepUp">Step Up or not</param>
+        /// <returns>always returns true</returns>
+        Boolean TTimeBaseSolver_DoScaleFineStepCommand_PriorSmplRate(Boolean StepUp)
+        {
+            // Изменить шкалу до след. малого шага вверх (StepUp) или вниз (наоборот), по возможности
+            // удерживая SmplRate ближе к зафиксированному значению
+            Double CurrentScale;
+            TTB_Params ConstParam;
+            TTB_Params VarParam;
+            Double TargetSampleRate;
+            // приоритетное значение Sample Rate (текущее, если не задан приор.)
+            Double RL_T0;
+            // Rесоrd Len для Scale0 и Target Sample Rate. Для Cardinal - переполнение
+            Boolean InTargetSampleRate;
+            // TargetSampleRate подходит для текущего и нового значения шкалы
+            Double currentIndex;
+            int MustRL_Ind;
+            int MustRL;
+            Double MustSR;
+            Double CurrentResol0;
+            Double MustResol;
+            Double Divider0;
+            uint MustDivider;
+            int MustDiv_Ind;
+            Double Multiplier0;
+            uint MustMultiplier;
+            int MustMult_Ind;
+            Boolean Result;
+
+            // В DoScaleStepCommand() уже выяснили, что шкала в принципе
+            // не на краю, и нужный режим сбора с лимитами уже выставлены
+
+            CurrentScale = FParams[(int)TTB_Params.ttbpScale];
+            ConstParam = TTB_Params.ttbpSmplRate;
+            VarParam = TTB_Params.ttbpRecLen;
+
+            // Установим Target Sample Rate равным приоритетному значению Sample Rate,
+            // а если не задано - то текущему значению Sample Rate.
+            if (FFixParams[((int)ConstParam)] > 1E-15)
+            {
+                TargetSampleRate = FFixParams[((int)ConstParam)];
+            }
+            else
+            {
+                TargetSampleRate = FParams[((int)ConstParam)];
+            }
+
+            // Ограничим TargetSampleRate пределами, так как в начале данного шага
+            // мог переключиться режим сбора (например - с рандома на реал!)
+
+            // Определим - находится ли текущее значение Scale0 в интервале значений шкалы
+            // для Target Sample Rate
+
+            // -  (вычислим RL_T0: Rесоrd Len для Scale0 и Target Sample Rate).
+            RL_T0 = CurrentScale * 10 * TargetSampleRate;
+
+            // - Находится ли RL_T0 в допуске с учетом требуемого изменения направления
+            // Мы можем искать требуемую точку на Target Sample Rate, если
+            // - Scale (и RL) нужно увеличить, и RL_T0 лежит в пределах: = MinRL .. < MaxRL;
+            // - Scale (и RL) нужно уменьшить, и RL_T0 лежит в пределах: > MinRL .. = MaxRL;
+            // Далее просто берем след. значение RL в нужную сторону.
+
+            Result = true;
             return Result;
         }
     }

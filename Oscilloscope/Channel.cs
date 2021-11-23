@@ -11,6 +11,8 @@ namespace Oscilloscope
         Handlers HND;
         BaseTypes BT;
 
+        public double[] Channels_VoltsByScale;
+
         private const int channel_number = 2;   //  В Arrow 2 канала
 
         private Channels[] channels;
@@ -36,6 +38,20 @@ namespace Oscilloscope
             for (int i = 0; i < names.Length; i++)
             {
                 channels[i] = new Channels(names[i], acquired);
+            }
+        }
+
+        public void MakeChannelsPostInitActions()
+        {
+            uint MidBandBit;
+            uint NarBandBit;
+            Boolean Invis;
+
+            for (int Ch = 0; Ch < channel_number; Ch++)
+            {
+                //  непонятно зачем выбрана чувствительность максимальная на 25% больше чем максимальный коэффициент полного отклонения? 
+                //  Женька говорит, что это я придумал для Масок. А нафига там такой?
+                Channels_VoltsByScale[Ch] = Channels_VoltsByScale[Ch] / 8 * 1.25;
             }
         }
 
