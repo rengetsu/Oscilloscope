@@ -15,7 +15,7 @@ namespace Oscilloscope
         /// Increase Step
         /// </summary>
         /// <param name="step">Step type</param>
-        public Double Increase(StepType step)
+        public Double Increase(Double CurrVal, StepType step)
         {
             Double NewVal = 0;
             switch (step)
@@ -46,6 +46,14 @@ namespace Oscilloscope
                 }
                 case StepType.tasmNewScale:
                 {
+                    if (CurrVal >= 0.1)
+                    {
+                        NewVal = ((Math.Round(CurrVal / 0.1)) + 1) * 0.1;
+                    }
+                    else
+                    {
+                        NewVal = ((Math.Round(CurrVal / 0.01)) + 1) * 0.01;
+                    }
                     break;
                 }
             }
