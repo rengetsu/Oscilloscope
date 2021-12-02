@@ -112,6 +112,7 @@
     <Compile Include="DeviceCheck.cs" />
     <Compile Include="DeviceInterface.cs" />
     <Compile Include="EMITests.cs" />
+    <Compile Include="FlashMemo.cs" />
     <Compile Include="GeneralCalculations.cs" />
     <Compile Include="Generator_AWG.cs" />
     <Compile Include="Generator_PPG.cs" />

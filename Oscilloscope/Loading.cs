@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Diagnostics;
+using System.Windows.Forms;
 
 namespace Oscilloscope
 {
@@ -28,7 +29,10 @@ namespace Oscilloscope
             USBInterface USBIntrf = new USBInterface();
 
             //  Start main USB
-            USBIntrf.MainStartUsb();
+            if (USBIntrf.MainStartUsb() == true)
+            {
+                MessageBox.Show("Work");
+            }
         }
     }
 }
