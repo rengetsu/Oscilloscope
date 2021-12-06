@@ -6,10 +6,25 @@ using System.Threading.Tasks;
 
 namespace Oscilloscope
 {
+    /// <summary>
+    /// Main Channel Class.
+    /// </summary>
     public class Channel
     {
+        /// <summary>
+        /// Importing other classes which are needed for the channels to work 
+        /// </summary>
         Handlers HND;
         BaseTypes BT;
+        DeviceCheck DC;
+
+        //  Scale Steps Int Value for first and second channel
+        public int ScaleStepsIntValueChOne = 1;
+        public int ScaleStepsIntValueChTwo = 1;
+
+        //  Creating channels
+        Channels ChannelOne = new Channels("1", true);
+        Channels ChannelTwo = new Channels("2", true);
 
         public double[] Channels_VoltsByScale;
 
@@ -19,6 +34,183 @@ namespace Oscilloscope
 
         bool[] ch = new bool[2];
 
+        /// <summary>
+        /// The function that changes after changing the channel scale
+        /// </summary>
+        public void AfterChsScaleChangeA(String ActiveChName)
+        {
+            bool Ch1 = false;
+            if (ActiveChName == "Ch1") { Ch1 = true; }
+            else { Ch1 = false; }
+            Double QS;
+            
+            QS = Channels_VoltsByScale[channel_number];
+
+            //  (0.01 V, s10, Step1)
+            if ( (QS >= 0.0099) && (QS < 0.010001))
+            {
+                //  First channel
+                if (Ch1)
+                {
+                    DC.SendCommandToTheUnit("CH1:SCALE s10");
+                    ScaleStepsIntValueChOne = 1;
+                }
+                //  Second channel
+                else
+                {
+                    DC.SendCommandToTheUnit("CH2:SCALE s10");
+                    ScaleStepsIntValueChTwo = 1;
+                }
+            }
+            //  (0.02 V, s20, Step2)
+            else if ( (QS >= 0.010001) && (QS <= 0.0201) )
+            {
+                //  First channel
+                if (Ch1)
+                {
+                    DC.SendCommandToTheUnit("CH1:SCALE s20");
+                    ScaleStepsIntValueChOne = 2;
+                }
+                //  Second channel
+                else
+                {
+                    DC.SendCommandToTheUnit("CH2:SCALE s20");
+                    ScaleStepsIntValueChTwo = 2;
+                }
+            }
+            //  (0.03 V, s30, Step3)
+            else if( (QS >= 0.0201) && (QS <= 0.0301) )
+            {
+                //  First channel
+                if (Ch1)
+                {
+                    DC.SendCommandToTheUnit("CH1:SCALE s30");
+                    ScaleStepsIntValueChOne = 3;
+                }
+                //  Second channel
+                else
+                {
+                    DC.SendCommandToTheUnit("CH2:SCALE s30");
+                    ScaleStepsIntValueChTwo = 3;
+                }
+            }
+            //  (0.04 V, s40, Step4)
+            else if( (QS >= 0.0301) && (QS < 0.0401) )
+            {
+                //  First channel
+                if (Ch1)
+                {
+                    DC.SendCommandToTheUnit("CH1:SCALE s40");
+                    ScaleStepsIntValueChOne = 4;
+                }
+                //  Second channel
+                else
+                {
+                    DC.SendCommandToTheUnit("CH2:SCALE s40");
+                    ScaleStepsIntValueChTwo = 4;
+                }
+            }
+            //  (0.05 V, s50, Step5)
+            else if ((QS >= 0.0401) && (QS < 0.0501))
+            {
+                //  First channel
+                if (Ch1)
+                {
+                    DC.SendCommandToTheUnit("CH1:SCALE s50");
+                    ScaleStepsIntValueChOne = 5;
+                }
+                //  Second channel
+                else
+                {
+                    DC.SendCommandToTheUnit("CH2:SCALE s50");
+                    ScaleStepsIntValueChTwo = 5;
+                }
+            }
+            //  (0.06 V, s60, Step6)
+            else if ((QS >= 0.0501) && (QS < 0.0601))
+            {
+                //  First channel
+                if (Ch1)
+                {
+                    DC.SendCommandToTheUnit("CH1:SCALE s60");
+                    ScaleStepsIntValueChOne = 6;
+                }
+                //  Second channel
+                else
+                {
+                    DC.SendCommandToTheUnit("CH2:SCALE s60");
+                    ScaleStepsIntValueChTwo = 6;
+                }
+            }
+            //  (0.07 V, s70, Step7)
+            else if ((QS >= 0.0601) && (QS < 0.0701))
+            {
+                //  First channel
+                if (Ch1)
+                {
+                    DC.SendCommandToTheUnit("CH1:SCALE s70");
+                    ScaleStepsIntValueChOne = 7;
+                }
+                //  Second channel
+                else
+                {
+                    DC.SendCommandToTheUnit("CH2:SCALE s70");
+                    ScaleStepsIntValueChTwo = 7;
+                }
+            }
+            //  (0.08 V, s80, Step8)
+            else if ((QS >= 0.0701) && (QS < 0.0801))
+            {
+                //  First channel
+                if (Ch1)
+                {
+                    DC.SendCommandToTheUnit("CH1:SCALE s80");
+                    ScaleStepsIntValueChOne = 8;
+                }
+                //  Second channel
+                else
+                {
+                    DC.SendCommandToTheUnit("CH2:SCALE s80");
+                    ScaleStepsIntValueChTwo = 8;
+                }
+            }
+            //  (0.09 V, s90, Step9)
+            else if ((QS >= 0.0801) && (QS < 0.0901))
+            {
+                //  First channel
+                if (Ch1)
+                {
+                    DC.SendCommandToTheUnit("CH1:SCALE s90");
+                    ScaleStepsIntValueChOne = 9;
+                }
+                //  Second channel
+                else
+                {
+                    DC.SendCommandToTheUnit("CH2:SCALE s90");
+                    ScaleStepsIntValueChTwo = 9;
+                }
+            }
+            //  (0.1 V, s100, Step10)
+            else if ((QS >= 0.0901) && (QS < 0.1001))
+            {
+                //  First channel
+                if (Ch1)
+                {
+                    DC.SendCommandToTheUnit("CH1:SCALE s100");
+                    ScaleStepsIntValueChOne = 10;
+                }
+                //  Second channel
+                else
+                {
+                    DC.SendCommandToTheUnit("CH2:SCALE s100");
+                    ScaleStepsIntValueChTwo = 10;
+                }
+            }
+        }
+
+        /// <summary>
+        /// Channel
+        /// </summary>
         public Channel()
         {
             foreach (bool res in ch)
@@ -41,6 +233,9 @@ namespace Oscilloscope
             }
         }
 
+        /// <summary>
+        /// Make Channels post init actions
+        /// </summary>
         public void MakeChannelsPostInitActions()
         {
             uint MidBandBit;
@@ -89,6 +284,9 @@ namespace Oscilloscope
         }
     }
 
+    /// <summary>
+    /// Channels internal class to create new channel
+    /// </summary>
     internal class Channels
     {
         /// <summary>
@@ -102,7 +300,14 @@ namespace Oscilloscope
             Acquired = acquired;
         }
 
+        /// <summary>
+        /// Channel name (ChannelOne etc)
+        /// </summary>
         public string CH_Name { get; }
+
+        /// <summary>
+        /// Channel acquired or not (true/false)
+        /// </summary>
         public bool Acquired { get; }
     }
 }
