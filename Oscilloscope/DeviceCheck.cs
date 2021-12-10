@@ -137,7 +137,7 @@ namespace Oscilloscope
         }
 
         /// <summary>
-        /// 
+        /// Send Command to the Unit
         /// </summary>
         /// <param name="p"></param>
         /// <param name="WithoutTerminateSbor"></param>
@@ -148,7 +148,7 @@ namespace Oscilloscope
         }
 
         /// <summary>
-        /// 
+        /// Set integer parameter
         /// </summary>
         /// <param name="Command"></param>
         /// <param name="Param"></param>
