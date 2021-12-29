@@ -9,6 +9,6 @@ namespace Oscilloscope
     internal class Information
     {
         string[] versionUpdateInfo =
-            {"Happy New Year!"};
+            {"29/12/2021 - Happy New Year!"};
     }
 }
