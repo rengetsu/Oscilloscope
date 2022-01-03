@@ -42,15 +42,19 @@ namespace Oscilloscope
         /// <returns></returns>
         long Get_ADC_Freq_ForCurrentResolution()
         {
-            long Result;
-            if (CH.GetCountOfAcquiredChannels() == 2)
-            {
-                Result = 2500000000;       // 09/09/2021  Павел добавил 0
-            }
-            else
-            {
-                Result = 5000000000;
-            }
+            //  03/01/2022
+            //  Так как в эту функцию всегда попадает только в рандом тайм (всегда ли?) то решил что будет всегда возвращять 2500000000
+            //  Потому что в random time всегда такое значение и для двух и для одного канала
+            long Result = 2500000000;       // 09/09/2021  Павел добавил 0
+
+            //if (CH.GetCountOfAcquiredChannels() == 2)
+            //{
+            //    Result = 2500000000;       // 09/09/2021  Павел добавил 0
+            //}
+            //else
+            //{
+            //    Result = 5000000000;
+            //}
             return Result;
         }
 
