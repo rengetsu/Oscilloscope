@@ -132,6 +132,7 @@
       <DependentUpon>Load.cs</DependentUpon>
     </Compile>
     <Compile Include="Loading.cs" />
+    <Compile Include="Proc.cs" />
     <Compile Include="RandomGenerator.cs" />
     <Compile Include="SignalAcqCalc.cs" />
     <Compile Include="SignalAcqRun.cs" />
