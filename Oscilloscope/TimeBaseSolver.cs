@@ -579,5 +579,101 @@ namespace Oscilloscope
             Result = true;
             return Result;
         }
+
+        /// <summary>
+        /// Calculate next real resolution
+        /// </summary>
+        /// <param name="CurrentResolution">Current resolution</param>
+        /// <param name="ResUp">Up</param>
+        /// <param name="Coarse">Step</param>
+        /// <returns>Returns next real resolution</returns>
+        public Double CalcNextRealResolution(Double CurrentResolution, Boolean ResUp, Boolean Coarse)
+        {
+            //  Переменная для возвращения результата
+            Double Result;
+            //  10/01/2022
+            //  Переменная для подставления индекса Sample Rate после которого включается шаг 1_2_5
+            int srIndexCheckArrow;
+            Double CurrentMultiplier;
+            Double currentIndex;
+
+            //  Резолюция между фиксированных (с мелким шагом) значениями (было введено непосредственно)
+            int NextIndex;
+
+            CurrentMultiplier = CurrentResolution / BT.cADC_Period;
+
+            currentIndex = CalcIndex(CurrentMultiplier, cRealMultipliers[0]);
+
+            //  Такая часть кода была заккоментирована у Пятова
+            //Assert((currentIndex >= 0) And (currentIndex < 10000));
+            //if ((currentIndex >= 0) And (currentIndex < 10000)) then
+            //  currentIndex := 10000;
+
+            // Увеличение резолюции
+            if ( ResUp)
+            {
+                // для 5 и 5.5 должен вернуть 6
+                NextIndex = ((int)(Math.Truncate(currentIndex + 1e-3) + 1));
+            }
+            // Уменьшение резолюции
+            else
+            {
+                // для 5 должен вернуть 4, для 5.5 должен вернуть 5
+                NextIndex = ((int)(Math.Truncate(currentIndex - 1e-3)));
+            }
+
+            // Если шаг грубый - то перебираем индексы начиная с NextIndex, пока
+            // сампл рейт (а значит и резолюция) не станет 1-2-5
+
+            //  10/01/2022
+            //  Указываем сколько индексов надо пропустить перед тем как перейти на шаг 1_2_5
+            srIndexCheckArrow = 6;
+            if( Coarse && (NextIndex > srIndexCheckArrow))
+            {
+                Result = CalcREsolutionMultForIndex(NextIndex);
+                //  While not is_1_2_5(Result) do
+                    if (ResUp)
+                    {
+                        if (NextIndex < cRealMultipliersCount - 1)
+                        {
+                            NextIndex++;
+                            Result = CalcREsolutionMultForIndex(NextIndex);
+                        }
+                    }
+                    else
+                    {
+                        if (NextIndex > 0)
+                        {
+                            NextIndex--;
+                            Result = CalcREsolutionMultForIndex(NextIndex);
+                        }
+                    }
+            }
+            else
+            {
+                Result = CalcREsolutionMultForIndex(NextIndex);
+            }
+            //  Возвращяем результат
+            return Result;
+        }
+
+        /// <summary>
+        /// Calculate resolution multiple for index
+        /// </summary>
+        /// <param name="Ind">Index</param>
+        /// <returns>Returns resolution</returns>
+        private Double CalcREsolutionMultForIndex(int Ind)
+        {
+            //  Переменная для возвращения результата
+            Double Result;
+            //  04/10/2021  Ограничения Sample Rate для Arrow
+            if (Ind > 40)
+            {
+                Ind = 40;
+            }
+            Result = BT.cADC_Period * cRealMultipliers[Ind];
+            //  Возвращяем результат
+            return Result;
+        }
     }
 }
