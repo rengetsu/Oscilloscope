@@ -293,7 +293,7 @@ namespace Oscilloscope
             int i0index = (int)Math.Round(i0);
 
             if (Index - i0 > 0.4)
-            {
+            { 
                 Result = cRealMultipliers[i0index];
             }
             Result = Multiplier;
@@ -673,6 +673,25 @@ namespace Oscilloscope
             }
             Result = BT.cADC_Period * cRealMultipliers[Ind];
             //  Возвращяем результат
+            return Result;
+        }
+
+        /// <summary>
+        /// Do sample rate step command
+        /// </summary>
+        /// <param name="WithFix"></param>
+        /// <param name="StepUp"></param>
+        /// <param name="Coarse"></param>
+        /// <returns></returns>
+        private Boolean DoSampleRateStepCommand(Boolean WithFix, Boolean StepUp, Boolean Coarse)
+        {
+            //  Variable list
+            Double NewSampleRate;
+            Double VarParamValue;
+            Double ConstParamValue;
+            Boolean Limited;
+            Boolean Corrected;
+            Boolean Result = true;
             return Result;
         }
     }
