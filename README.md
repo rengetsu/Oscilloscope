@@ -4,6 +4,8 @@ Project created in "Eltesta".
 Oscilloscope - Oscilloscope project. Works both with real oscilloscope and in demo mode. Works in real-time and random-time modes.
 In real mode, you need an oscilloscope "Arrow 9500" to work with software.
 
+## About Arrow
+
 ## Tabs
 
 * Channels
