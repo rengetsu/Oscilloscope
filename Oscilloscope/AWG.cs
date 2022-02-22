@@ -8,11 +8,15 @@ namespace Oscilloscope
 {
     public class AWG
     {
+        //  Current value
         static int currentValue = 0;
 
+        //  Min, Max, MinLower
         double cMinAmp = 0.01;
         int MaxHi = 10;
         int cMinLo = -10;
+
+        //  Handlers for AWG Period and Width
         private Double[] hnd_AWG_Period;
         private Double[] hnd_AWG_Width;
         private Boolean[] WidthIsSetted;
@@ -74,6 +78,10 @@ namespace Oscilloscope
         /// </summary>
         private class TAWG_Out
         {
+            /// <summary>
+            /// Get Value For Program
+            /// </summary>
+            /// <returns>Returns value for program</returns>
             public int GetValueForProgram()
             {
                 if (currentValue != 0)
@@ -87,6 +95,11 @@ namespace Oscilloscope
                 }
             }
 
+            /// <summary>
+            /// Change Value From Program
+            /// </summary>
+            /// <param name="newVal"></param>
+            /// <returns>Returns value from program</returns>
             public int ChangeValueFromProgram(int newVal)
             {
                 return newVal;
