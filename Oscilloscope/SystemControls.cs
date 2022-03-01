@@ -8,5 +8,7 @@ namespace Oscilloscope
 {
     public class SystemControls
     {
+        //  System Controls
+        //  Need to add code here
     }
 }
