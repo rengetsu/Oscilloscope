@@ -147,6 +147,12 @@
     <Compile Include="Loading.cs" />
     <Compile Include="Proc.cs" />
     <Compile Include="RandomGenerator.cs" />
+    <Compile Include="SegmentFindBad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SegmentFindBad.Designer.cs">
+      <DependentUpon>SegmentFindBad.cs</DependentUpon>
+    </Compile>
     <Compile Include="SignalAcqCalc.cs" />
     <Compile Include="SignalAcqRun.cs" />
     <Compile Include="StepsCalculating.cs" />
@@ -212,6 +218,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SegmentFindBad.resx">
+      <DependentUpon>SegmentFindBad.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Trigger_Form.resx">
       <DependentUpon>Trigger_Form.cs</DependentUpon>
     </EmbeddedResource>
