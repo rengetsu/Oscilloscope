@@ -22,6 +22,8 @@ namespace Oscilloscope
         private Boolean[] WidthIsSetted;
         private int[] WidthSettedValue;
 
+        public Boolean AWG_Checker = false;
+
         /// <summary>
         /// Function to get AWG Period
         /// </summary>
@@ -71,6 +73,15 @@ namespace Oscilloscope
             WidthNoUser = WidthIsSetted[aOut_val];
 
             //  Надо будет не забыть обновить хэндлер (щас обновляем его в другом месте)
+        }
+
+        /// <summary>
+        /// AWG Check
+        /// </summary>
+        /// <returns></returns>
+        public bool AWG_Check()
+        {
+            return AWG_Checker;
         }
 
         /// <summary>
