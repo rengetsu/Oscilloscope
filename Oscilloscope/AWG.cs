@@ -6,8 +6,13 @@ using System.Threading.Tasks;
 
 namespace Oscilloscope
 {
+    /// <summary>
+    /// Arbitary Waveform Generator Class
+    /// </summary>
     public class AWG
     {
+        public DeviceInterface DevInt;
+
         //  Current value
         static int currentValue = 0;
 
@@ -82,6 +87,54 @@ namespace Oscilloscope
         public bool AWG_Check()
         {
             return AWG_Checker;
+        }
+
+        /// <summary>
+        /// AWG main waveform menu update function after click
+        /// </summary>
+        /// <param name="ItemIndex">Number of clicked item in AWG menu</param>
+        public void AWG_WaveformUpdate(int ItemIndex)
+        {
+            //  OFF
+            if (ItemIndex == 1)
+            {
+                DevInt.SendCommantToTheUnit("GEN:AWG:WAV? OFF", false);
+            }
+            //  SINE
+            else if (ItemIndex == 2)
+            {
+                DevInt.SendCommantToTheUnit("GEN:AWG:WAV? SINE", false);
+            }
+            //  SQUARE
+            else if (ItemIndex == 3)
+            {
+                DevInt.SendCommantToTheUnit("GEN:AWG:WAV? SQUARE", false);
+            }
+            //  PULSE
+            else if (ItemIndex == 4)
+            {
+                DevInt.SendCommantToTheUnit("GEN:AWG:WAV? PULSE", false);
+            }
+            //  RAMP
+            else if (ItemIndex == 5)
+            {
+                DevInt.SendCommantToTheUnit("GEN:AWG:WAV? RAMP", false);
+            }
+            //  DC
+            else if (ItemIndex == 6)
+            {
+                DevInt.SendCommantToTheUnit("GEN:AWG:WAV? DC", false);
+            }
+            //  PRBS
+            else if (ItemIndex == 7)
+            {
+                DevInt.SendCommantToTheUnit("GEN:AWG:WAV? PRBS", false);
+            }
+            //  ARBITARY
+            else if (ItemIndex == 8)
+            {
+                DevInt.SendCommantToTheUnit("GEN:AWG:WAV? ARBITARY", false);
+            }
         }
 
         /// <summary>
