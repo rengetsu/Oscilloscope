@@ -23,7 +23,7 @@ namespace Oscilloscope
 
         //  Core command to send to AWG
         String CommandSpace = " ";
-        String AWG_Calibration_Command = "TRIG:HF:CDRCORE:WRW_AWG";
+        String AWG_Calibration_Command = "GEN:AWG:AWGWR";
 
         //  AWG cycle variables
         int zero = 0;
