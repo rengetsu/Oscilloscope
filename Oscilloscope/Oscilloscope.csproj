@@ -70,6 +70,7 @@
     <Compile Include="AcquisitionParameters.Designer.cs">
       <DependentUpon>AcquisitionParameters.cs</DependentUpon>
     </Compile>
+    <Compile Include="Adjustment.cs" />
     <Compile Include="Adjustments_TB_Delay.cs">
       <SubType>Form</SubType>
     </Compile>
