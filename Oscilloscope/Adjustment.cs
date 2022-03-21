@@ -11,10 +11,23 @@ namespace Oscilloscope
     /// </summary>
     abstract class Adjustment
     {
+
         /// <summary>
         /// Adjustment abstract parameter for all adjustment classes
         /// </summary>
         public abstract void Parameter();
+
+        /// <summary>
+        /// Send adjustment command from mnemonic
+        /// </summary>
+        /// <param name="Mnemonic"></param>
+        public void SendAdjustmentCommandFromMnemonic(String Mnemonic, Boolean StatusSbora)
+        {
+            DeviceInterface DI = new DeviceInterface();
+
+            String Command = "COM" + Mnemonic;
+            DI.SendCommantToTheUnit(Command, StatusSbora);
+        }
     }
 
     /// <summary>
@@ -22,6 +35,8 @@ namespace Oscilloscope
     /// </summary>
     class VerticalADC : Adjustment
     {
+        String VertMnem_ADCRef = "ADCREF";
+
         public override void Parameter()
         {
             throw new NotImplementedException();
