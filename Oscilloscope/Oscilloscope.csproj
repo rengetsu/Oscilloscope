@@ -147,6 +147,12 @@
     </Compile>
     <Compile Include="Loading.cs" />
     <Compile Include="Proc.cs" />
+    <Compile Include="Pult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pult.Designer.cs">
+      <DependentUpon>Pult.cs</DependentUpon>
+    </Compile>
     <Compile Include="RandomGenerator.cs" />
     <Compile Include="SegmentFindBad.cs">
       <SubType>Form</SubType>
