@@ -28,6 +28,35 @@ namespace Oscilloscope
             String Command = "COM" + Mnemonic;
             DI.SendCommantToTheUnit(Command, StatusSbora);
         }
+
+        /// <summary>
+        /// Scale create command to send after update Scale list box
+        /// </summary>
+        public String ScaleCreateCommand(int chNmbr, int rgAdjChannel)
+        {
+            //  Variables for command creation
+            String ChLvl, ScaleStr, Scale = "SCALE";
+
+            //  Channel number 
+            ChLvl = "CH" + chNmbr.ToString() + ":";
+
+            if (rgAdjChannel >= 1 && rgAdjChannel <= 10)
+            {
+                //  s10, s20, s30, s40, s50, s60, s70, s80, s90, s100
+                ScaleStr = "s" + (rgAdjChannel * 10).ToString();
+            }
+            else
+            {
+                //  s200, s300, s400, s500, s600, s700, s800, s900, s1000
+                ScaleStr = "s" + ((rgAdjChannel - 9) * 100).ToString();
+            }
+
+            //  Example: "CH1:SCALE:s900"
+            String FinalCommand = ChLvl + Scale + ScaleStr;
+
+            //  Returning scale command
+            return FinalCommand;
+        }
     }
 
     /// <summary>
