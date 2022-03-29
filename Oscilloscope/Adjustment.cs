@@ -64,7 +64,39 @@ namespace Oscilloscope
     /// </summary>
     class VerticalADC : Adjustment
     {
+        public Boolean CalinOnOff_Status = false; 
+
+        //  Channels On/Off status
+        Boolean Ch1_OnOff_Status = false;
+        Boolean Ch2_OnOff_Status = false;
+
         String VertMnem_ADCRef = "ADCREF";
+
+        /// <summary>
+        /// Get Calibrator Input On/Off current item index
+        /// </summary>
+        /// <returns>True if On, false if Off</returns>
+        public Boolean getCalinOnOffItemIndex()
+        {
+            return CalinOnOff_Status;
+        }
+
+        /// <summary>
+        /// Change Calin On/Off item index
+        /// </summary>
+        /// <param name="newStatus">New status to change</param>
+        public void ChangeCalinOnOffItemIndex()
+        {
+            CalinOnOff_Status = !CalinOnOff_Status;
+        }
+
+        /// <summary>
+        /// rg Adj Channel Sub Label Click
+        /// </summary>
+        public void rgAdjChannelSubLabelClick(int ItemIndex)
+        {
+            ChangeCalinOnOffItemIndex();
+        }
 
         public override void Parameter()
         {
