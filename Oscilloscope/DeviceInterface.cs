@@ -15,11 +15,16 @@ namespace Oscilloscope
         Int64 AnswerLAN_Len;
         Char[] AnswerLAN;
 
+        internal int GetIntegerParameter(string command)
+        {
+            throw new NotImplementedException();
+        }
+
         /// <summary>
         /// Function to check if device is connected or not
         /// </summary>
         /// <returns>Returns the answer in the format yes or no (device connected or not)</returns>
-        Boolean PriborYra()
+        public Boolean PriborYra()
         {
             String Intf;
             Boolean Result = false;

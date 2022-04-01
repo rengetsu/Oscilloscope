@@ -123,6 +123,7 @@
       <DependentUpon>Controller_AWG.cs</DependentUpon>
     </Compile>
     <Compile Include="ControlOf.cs" />
+    <Compile Include="CustomAppleHandlers.cs" />
     <Compile Include="DeviceCheck.cs" />
     <Compile Include="DeviceInterface.cs" />
     <Compile Include="EMITests.cs" />
