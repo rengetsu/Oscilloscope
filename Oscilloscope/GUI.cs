@@ -123,22 +123,22 @@ namespace Oscilloscope
 
         private void ChannelOne_SmallUpButton_Click(object sender, EventArgs e)
         {
-            ChannelOne_TextBox.Text = cal.Channel_SmallStep_Up();
+            ChannelOne_TextBox.Text = cal.Channel_SmallStep_Up(1);
         }
 
         private void ChannelOne_BigUpButton_Click(object sender, EventArgs e)
         {
-            ChannelOne_TextBox.Text = cal.Channel_BigStep_Up();
+            ChannelOne_TextBox.Text = cal.Channel_BigStep_Up(1);
         }
 
         private void ChannelOne_BigDownButton_Click(object sender, EventArgs e)
         {
-            ChannelOne_TextBox.Text = cal.Channel_BigStep_Down();
+            ChannelOne_TextBox.Text = cal.Channel_BigStep_Down(1);
         }
 
         private void ChannelOne_SmallDownButton_Click(object sender, EventArgs e)
         {
-            ChannelOne_TextBox.Text = cal.Channel_SmallStep_Down();
+            ChannelOne_TextBox.Text = cal.Channel_SmallStep_Down(1);
         }
 
         private void ChannelOne_Button_Click(object sender, EventArgs e)
