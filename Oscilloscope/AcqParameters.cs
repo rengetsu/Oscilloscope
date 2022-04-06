@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Oscilloscope
 {
+    /// <summary>
+    /// Acquire parameters
+    /// </summary>
     public class AcqParameters
     {
         //  Variables 

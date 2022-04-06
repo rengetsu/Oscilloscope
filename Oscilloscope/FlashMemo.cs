@@ -8,6 +8,12 @@ namespace Oscilloscope
 {
     public class FlashMemo
     {
+
+        object camAll = "All";
+        object camTB = "TimeBase";
+        object camVertical = "Vertical";
+        object camCalibrator = "Calibrator";
+
         //  Used classes
         Channel Channel = new Channel();
         DeviceInterface DI = new DeviceInterface();
@@ -26,6 +32,8 @@ namespace Oscilloscope
             return str_rez;
         }
 
+        enum Cam { Vertical, TimeBase, All }
+
         /// <summary>
         /// Read info from flash or file (selection)
         /// </summary>
@@ -33,10 +41,16 @@ namespace Oscilloscope
         /// <param name="Mode"></param>
         void ReadInfoFromFlashOrFile(object Module, object Mode)
         {
+            //  Adjustment
             if( Mode == "tfmAdjust")
-            {
                 CustomAppleHandlers.Set_TheUnitInInitializationStage = true;
-            }
+
+            if( Module == "camVertical" && Mode == "camAll" )
+                _ReadInfoFromFlashOrFile(camVertical, camAll);
+            if( Module == "camTimeBase" && Mode == "camAll" )
+                _ReadInfoFromFlashOrFile(camTB, camAll);
+            if ( Module == "camCalibrator" && Mode == "camAll" )
+                _ReadInfoFromFlashOrFile(camCalibrator, camAll);
         }
 
         /// <summary>
