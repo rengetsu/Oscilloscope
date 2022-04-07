@@ -155,5 +155,11 @@ namespace Oscilloscope
             AccessAdjustment AdjAcc = new AccessAdjustment();
             AdjAcc.Show();
         }
+
+        private void instrumentInfoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Information info = new Information();
+            MessageBox.Show(info.getVersionUpdateInfo());
+        }
     }
 }
