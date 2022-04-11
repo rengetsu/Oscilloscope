@@ -11,7 +11,6 @@ namespace Oscilloscope
     /// </summary>
     abstract class Adjustment
     {
-
         /// <summary>
         /// Adjustment abstract parameter for all adjustment classes
         /// </summary>
