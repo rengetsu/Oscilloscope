@@ -59,7 +59,7 @@ namespace Oscilloscope
         private const int cHighLayer = 4;   // Для начала 5 слоев (сHighLayer = 4). А быстрее отслеживает дрейф при 1 (сHighLayer = 0).
         private const int cTimeInterval = 1/24/60/60 * 30;  // 30 секунд
 
-        private Boolean FEnable;
+        private bool FEnable;
         private ushort FLowIPCode;
         private ushort FHighIPCode;
 
@@ -67,13 +67,20 @@ namespace Oscilloscope
         private Double FLyrStartTime;
 
         private int FFilledLyrs;
-        private byte [,]FLyrHysts;
+        readonly private byte [,]FLyrHysts;
         private int FLyrSum;
         private int FLyrMax;
-        private ushort[] FHyst;
+        readonly private ushort[] FHyst;
         private ushort FHystLeft;           // Min. палка суммарной гистограммы
         private ushort FHystRight;          // Max. палка суммарной гистограммы
         private Double FHystMeanHeight;     // средняя высота НЕНУЛЕВЫХ палок
+
+        int PartReadyGL;
+
+        public ushort FHighIPCode1 { get => FHighIPCode; set => FHighIPCode = value; }
+        public ushort FLowIPCode1 { get => FLowIPCode; set => FLowIPCode = value; }
+        public bool FEnable1 { get => FEnable; set => FEnable = value; }
+        public int PartReadyGL1 { get => PartReadyGL; set => PartReadyGL = value; }
 
         /// <summary>
         /// Adding value
@@ -98,8 +105,8 @@ namespace Oscilloscope
             }
 
             // Нужно добавить точку
-            FLyrSum = FLyrSum + Krat;
-            Val = Val + Krat;
+            FLyrSum += Krat;
+            Val += Krat;
 
             if (Val > 255)
             {
@@ -139,7 +146,7 @@ namespace Oscilloscope
                 si = 0;
                 for( L = 0; L < cHighLayer; L++ )
                 {
-                    si = si + FLyrHysts[L, I];
+                    si += FLyrHysts[L, I];
                 }
 
                 FHyst[I] = (ushort)si;
@@ -147,7 +154,7 @@ namespace Oscilloscope
                 if( si > 0 )
                 {
                     HystCount++;
-                    Hits = Hits + si;
+                    Hits += si;
 
                     FHystRight = (ushort)I;
                     if (I < FHystLeft)
@@ -207,7 +214,7 @@ namespace Oscilloscope
         /// Clear Lyr
         /// </summary>
         /// <param name="Lyr">Lyr</param>
-        public void TInterpolAutoAdjust_ClrLyr(int Lyr)
+        public void TInterpolAutoAdjust_ClrLyr()
         {
             FLyrMax = 0;
             FLyrSum = 0;
@@ -291,7 +298,7 @@ namespace Oscilloscope
 
             for( Lyr = 0; Lyr < cHighLayer; Lyr++ )
             {
-                TInterpolAutoAdjust_ClrLyr(FLyr);
+                TInterpolAutoAdjust_ClrLyr();
             }
 
             FFilledLyrs = 0;
@@ -313,6 +320,7 @@ namespace Oscilloscope
         /// <returns>Returns if statistics ready or not as true or false</returns>
         public Boolean TInterpolAutoAdjust_StatisticsReady(int PartReady)
         {
+            PartReadySave(PartReady);
             Boolean Result = FFilledLyrs > cHighLayer;
             double needtoroundone = FFilledLyrs / (cHighLayer + 1) * 100;
             PartReady = (int)Math.Round(needtoroundone);
@@ -321,7 +329,17 @@ namespace Oscilloscope
                 double needtoroundtwo = PartReady + (FLyrSum / 6000) * 100 * 1 / (cHighLayer + 1);
                 PartReady = (int)Math.Round(needtoroundtwo);
             }
+            PartReadySave(PartReady);
             return Result;
+        }
+
+        /// <summary>
+        /// Save ready parts
+        /// </summary>
+        /// <param name="PartReady">Created to resolve some problems</param>
+        public void PartReadySave(int PartReady)
+        {
+            PartReadyGL1 = PartReady;
         }
 
         /// <summary>
@@ -339,7 +357,7 @@ namespace Oscilloscope
                 FLyr = 0;
             }
 
-            TInterpolAutoAdjust_ClrLyr(FLyr);
+            TInterpolAutoAdjust_ClrLyr();
         }
     }
 }
