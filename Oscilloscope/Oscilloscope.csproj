@@ -107,6 +107,7 @@
       <DependentUpon>BugFinder.cs</DependentUpon>
     </Compile>
     <Compile Include="BugFinderSearch.cs" />
+    <Compile Include="CalibrAdj.cs" />
     <Compile Include="Calibrations.cs" />
     <Compile Include="Channel.cs" />
     <Compile Include="Channels_Form.cs">

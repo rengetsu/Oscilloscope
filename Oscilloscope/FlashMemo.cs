@@ -15,9 +15,33 @@ namespace Oscilloscope
         object camCalibrator = "Calibrator";
 
         //  Used classes
+        CalibrAdj CA = new CalibrAdj();
         Channel Channel = new Channel();
         DeviceInterface DI = new DeviceInterface();
         CustomAppleHandlers CustomAppleHandlers = new CustomAppleHandlers();
+
+        /// <summary>
+        /// Reading calibrator value
+        /// </summary>
+        /// <param name="Handler">Handler</param>
+        /// <param name="Module">Module</param>
+        /// <param name="Mnem">Mnemonic</param>
+        /// <param name="DefaultValue">Default value</param>
+        /// <param name="IniFile">Initialization file</param>
+        /// <param name="LowLim">Low limit</param>
+        /// <param name="HighLim">High limit</param>
+        void ReadCalValue(object Handler, object Module, string Mnem, int DefaultValue, object IniFile,
+            int LowLim = -int.MaxValue, int HighLim = int.MaxValue)
+        {
+            int IntVal;
+            string GroupMnem;
+            string Sect;
+
+            if( DI.PriborYra() )
+            {
+                GroupMnem = CA.GetFlashMnemonicByModule(Module);
+            }
+        }
 
         /// <summary>
         /// Get command for module RW
