@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace Oscilloscope
 {
+    /// <summary>
+    /// Flash mnemonics class to read information from flash drive
+    /// </summary>
     public class FlashMemo
     {
-
         object camAll = "All";
         object camTB = "TimeBase";
         object camVertical = "Vertical";
@@ -37,9 +39,10 @@ namespace Oscilloscope
             string GroupMnem;
             string Sect;
 
-            if( DI.PriborYra() )
+            if (DI.PriborYra())
             {
-                GroupMnem = CA.GetFlashMnemonicByModule(Module);
+                GroupMnem = CA.GetFlashMnemonicByModule(Module);    //  e.g. 'Flash:ADC:'
+                IntVal = DI.GetIntegerParameter(GroupMnem + Mnem);
             }
         }
 

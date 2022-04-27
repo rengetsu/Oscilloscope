@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Oscilloscope
 {
+    /// <summary>
+    /// Device interface
+    /// </summary>
     public class DeviceInterface
     {
         Instruments Instr;
@@ -15,7 +18,13 @@ namespace Oscilloscope
         Int64 AnswerLAN_Len;
         Char[] AnswerLAN;
 
-        internal int GetIntegerParameter(string command)
+        /// <summary>
+        /// Get integer parameter
+        /// </summary>
+        /// <param name="command">Command</param>
+        /// <returns>Return command</returns>
+        /// <exception cref="NotImplementedException">Exception</exception>
+        public int GetIntegerParameter(string command)
         {
             throw new NotImplementedException();
         }
@@ -33,6 +42,10 @@ namespace Oscilloscope
             return Result;
         }
 
+        /// <summary>
+        /// Functiong to get current interface
+        /// </summary>
+        /// <returns>Return current interface</returns>
         private string CurrentInterface_Get()
         {
             if(BL.GetCurrentMode() == 'D')
@@ -73,7 +86,6 @@ namespace Oscilloscope
         public Boolean SendCommantToTheUnit(String Command, Boolean WithoutTerminateSbor)
         {
             String buf = null;
-
             AnswerLAN_Len = 0;
 
             // 2 May 2013 - в PS9200 не работало измерение джиттера во время паттерн lock (частотомер сбрасывал гистограмму)
@@ -85,7 +97,6 @@ namespace Oscilloscope
             // ProcInterruptCurrentSborImmediat_ClrStat;
 
             buf = buf + "#13#10";
-
 
             Boolean Result = true;
             return Result;
