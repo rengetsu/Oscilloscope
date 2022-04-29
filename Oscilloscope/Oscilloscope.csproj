@@ -129,6 +129,12 @@
     <Compile Include="DeviceInterface.cs" />
     <Compile Include="EMITests.cs" />
     <Compile Include="FlashMemo.cs" />
+    <Compile Include="FRA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRA.Designer.cs">
+      <DependentUpon>FRA.cs</DependentUpon>
+    </Compile>
     <Compile Include="GeneralCalculations.cs" />
     <Compile Include="Generator_AWG.cs" />
     <Compile Include="Generator_PPG.cs" />
@@ -218,6 +224,9 @@
     <EmbeddedResource Include="Controller_AWG.resx">
       <DependentUpon>Controller_AWG.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FRA.resx">
+      <DependentUpon>FRA.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI.resx">
       <DependentUpon>GUI.cs</DependentUpon>
     </EmbeddedResource>
@@ -233,6 +242,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Pult.resx">
+      <DependentUpon>Pult.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SegmentFindBad.resx">
       <DependentUpon>SegmentFindBad.cs</DependentUpon>
     </EmbeddedResource>
