@@ -90,6 +90,7 @@
       <DependentUpon>Adjustments_VerticalADC.cs</DependentUpon>
     </Compile>
     <Compile Include="Adjust_Interpolator.cs" />
+    <Compile Include="Analyze.cs" />
     <Compile Include="Animations.cs" />
     <Compile Include="AWG.cs" />
     <Compile Include="AWG_Form.cs">
